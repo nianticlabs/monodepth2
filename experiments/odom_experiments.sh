@@ -3,21 +3,21 @@
 # We assume this has been extraced to the folder ../kitti_data_odom
 
 # Standard mono odometry model.
-CUDA_VISIBLE_DEVICES=2 python ../train.py --model_name M_odom \
+python ../train.py --model_name M_odom \
   --split odom --dataset kitti_odom --data_path ../kitti_data_odom
 
 # Mono odometry model without Imagenet pretraining
-CUDA_VISIBLE_DEVICES=2 python ../train.py --model_name M_odom_no_pt \
+python ../train.py --model_name M_odom_no_pt \
   --split odom --dataset kitti_odom --data_path ../kitti_data_odom \
   --weights_init scratch --num_epochs 30
 
 # Mono + stereo odometry model
-CUDA_VISIBLE_DEVICES=2 python ../train.py --model_name MS_odom \
+python ../train.py --model_name MS_odom \
   --split odom --dataset kitti_odom --data_path ../kitti_data_odom \
   --use_stereo
 
 # Mono + stereo odometry model without Imagenet pretraining
-CUDA_VISIBLE_DEVICES=2 python ../train.py --model_name MS_odom_no_pt \
+python ../train.py --model_name MS_odom_no_pt \
   --split odom --dataset kitti_odom --data_path ../kitti_data_odom \
   --use_stereo \
   --weights_init scratch --num_epochs 30
