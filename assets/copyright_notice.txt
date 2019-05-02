@@ -1,0 +1,5 @@
+The image test_image.jpg is a modified (cropped) version of the original image which can be found at:
+https://www.flickr.com/photos/31176607@N05/44108158051/in/faves-41364765@N06/
+
+This image was licensed under the creative commons 2.0 CC BY 2.0 licence.
+https://creativecommons.org/licenses/by/2.0/
