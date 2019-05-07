@@ -51,25 +51,25 @@ def sec_to_hm_str(t):
 def download_model_if_doesnt_exist(model_name):
     """If pretrained kitti model doesn't exist, download and unzip it
     """
-    # values are tuples of (<dropbox URL>, <md5 checksum>)
+    # values are tuples of (<google cloud URL>, <md5 checksum>)
     download_paths = {
         "mono_640x192":
-            ("https://www.dropbox.com/s/vwqzo60c8lh76bp/mono_640x192.zip?dl=1",
+            ("https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono_640x192.zip",
              "a964b8356e08a02d009609d9e3928f7c"),
         "stereo_640x192":
-            ("https://www.dropbox.com/s/677tw1sdbhj18qk/stereo_640x192.zip?dl=1",
+            ("https://storage.googleapis.com/niantic-lon-static/research/monodepth2/stereo_640x192.zip",
              "3dfb76bcff0786e4ec07ac00f658dd07"),
         "mono+stereo_640x192":
-            ("https://www.dropbox.com/s/fvrkipsvbtbk6bw/mono%2Bstereo_640x192.zip?dl=1",
+            ("https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono%2Bstereo_640x192.zip",
              "c024d69012485ed05d7eaa9617a96b81"),
         "mono_1024x320":
-            ("https://www.dropbox.com/s/nt1sripjmvalivn/mono_1024x320.zip?dl=1",
+            ("https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono_1024x320.zip",
              "0ab0766efdfeea89a0d9ea8ba90e1e63"),
         "stereo_1024x320":
-            ("https://www.dropbox.com/s/waph78vw4ciw2b2/stereo_1024x320.zip?dl=1",
+            ("https://storage.googleapis.com/niantic-lon-static/research/monodepth2/stereo_1024x320.zip",
              "afc2f2126d70cf3fdf26b550898b501a"),
         "mono+stereo_1024x320":
-            ("https://www.dropbox.com/s/lfj7tw6k3wh22h4/mono%2Bstereo_1024x320.zip?dl=1",
+            ("https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono%2Bstereo_1024x320.zip",
              "cdc5fc9b23513c07d5b19235d9ef08f7"),
         }
 

@@ -59,12 +59,12 @@ We provide the following  options for `--model_name`:
 
 | `--model_name`          | Training modality | Native model resolution  | KITTI abs. rel. error |  delta < 1.25  |
 |-------------------------|-------------------|--------------------------|-----------------------|----------------|
-| [`mono_640x192`](https://www.dropbox.com/s/vwqzo60c8lh76bp/mono_640x192.zip?dl=1)          | Mono              | 640 x 192                | 0.115                 | 0.877          |
-| [`stereo_640x192`](https://www.dropbox.com/s/677tw1sdbhj18qk/stereo_640x192.zip?dl=1)        | Stereo            | 640 x 192                | 0.109                 | 0.864          |
-| [`mono+stereo_640x192`](https://www.dropbox.com/s/fvrkipsvbtbk6bw/mono%2Bstereo_640x192.zip?dl=1)   | Mono + Stereo     | 640 x 192                | 0.106                 | 0.874          |
-| [`mono_1024x320`](https://www.dropbox.com/s/nt1sripjmvalivn/mono_1024x320.zip?dl=1)         | Mono              | 1024 x 320               | 0.115                 | 0.879          |
-| [`stereo_1024x320`](https://www.dropbox.com/s/waph78vw4ciw2b2/stereo_1024x320.zip?dl=1)       | Stereo            | 1024 x 320               | 0.107                 | 0.874          |
-| [`mono+stereo_1024x320`](https://www.dropbox.com/s/lfj7tw6k3wh22h4/mono%2Bstereo_1024x320.zip?dl=1)  | Mono + Stereo     | 1024 x 320               | 0.106                 | 0.876          |
+| [`mono_640x192`](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono_640x192.zip)          | Mono              | 640 x 192                | 0.115                 | 0.877          |
+| [`stereo_640x192`](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/stereo_640x192.zip)        | Stereo            | 640 x 192                | 0.109                 | 0.864          |
+| [`mono+stereo_640x192`](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono%2Bstereo_640x192.zip)   | Mono + Stereo     | 640 x 192                | 0.106                 | 0.874          |
+| [`mono_1024x320`](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono_1024x320.zip)         | Mono              | 1024 x 320               | 0.115                 | 0.879          |
+| [`stereo_1024x320`](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/stereo_1024x320.zip)       | Stereo            | 1024 x 320               | 0.107                 | 0.874          |
+| [`mono+stereo_1024x320`](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono%2Bstereo_1024x320.zip)  | Mono + Stereo     | 1024 x 320               | 0.106                 | 0.876          |
 
 
 ## 💾 KITTI training data
@@ -230,12 +230,12 @@ You can download our precomputed disparity predictions from the following links:
 
 | Training modality | Input size  | `.npy` filesize | Eigen disparities                                                                             |
 |-------------------|-------------|-----------------|-----------------------------------------------------------------------------------------------|
-| Mono              | 640 x 192   | 343 MB          | [Download 🔗](https://www.dropbox.com/s/fygn3n4xa6dcbch/mono_640x192_eigen.npy?dl=1)           |
-| Stereo            | 640 x 192   | 343 MB          | [Download 🔗](https://www.dropbox.com/s/u18u5kfwbz856e1/stereo_640x192_eigen.npy?dl=1)         |
-| Mono + Stereo     | 640 x 192   | 343 MB          | [Download 🔗](https://www.dropbox.com/s/ypom4fofkdrcswq/mono%2Bstereo_640x192_eigen.npy?dl=1)  |
-| Mono              | 1024 x 320  | 914 MB          | [Download 🔗](https://www.dropbox.com/s/g9ybl2tap75va40/mono_1024x320_eigen.npy?dl=1)          |
-| Stereo            | 1024 x 320  | 914 MB          | [Download 🔗](https://www.dropbox.com/s/p4m0i89jvdr2xz3/stereo_1024x320_eigen.npy?dl=1)        |
-| Mono + Stereo     | 1024 x 320  | 914 MB          | [Download 🔗](https://www.dropbox.com/s/kjri31d8bpiowxs/mono%2Bstereo_1024x320_eigen.npy?dl=1) |
+| Mono              | 640 x 192   | 343 MB          | [Download 🔗](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono_640x192_eigen.npy)           |
+| Stereo            | 640 x 192   | 343 MB          | [Download 🔗](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/stereo_640x192_eigen.npy)         |
+| Mono + Stereo     | 640 x 192   | 343 MB          | [Download 🔗](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono%2Bstereo_640x192_eigen.npy)  |
+| Mono              | 1024 x 320  | 914 MB          | [Download 🔗](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono_1024x320_eigen.npy)          |
+| Stereo            | 1024 x 320  | 914 MB          | [Download 🔗](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/stereo_1024x320_eigen.npy)        |
+| Mono + Stereo     | 1024 x 320  | 914 MB          | [Download 🔗](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono%2Bstereo_1024x320_eigen.npy) |
 
 
 
