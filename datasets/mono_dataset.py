@@ -64,13 +64,16 @@ class MonoDataset(data.Dataset):
         self.loader = pil_loader
         self.to_tensor = transforms.ToTensor()
 
-        # Need to specify augmentations differently in pytorch 1.0 compared with 0.4
-        if int(torch.__version__.split('.')[0]) > 0:
+        # We need to specify augmentations differently in newer versions of torchvision.
+        # We first try the newer tuple version; if this fails we fall back to scalars
+        try:
             self.brightness = (0.8, 1.2)
             self.contrast = (0.8, 1.2)
             self.saturation = (0.8, 1.2)
             self.hue = (-0.1, 0.1)
-        else:
+            transforms.ColorJitter.get_params(
+                self.brightness, self.contrast, self.saturation, self.hue)
+        except TypeError:
             self.brightness = 0.2
             self.contrast = 0.2
             self.saturation = 0.2
