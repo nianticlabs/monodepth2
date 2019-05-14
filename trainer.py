@@ -195,7 +195,13 @@ class Trainer:
         print("Training")
         self.set_train()
 
+        data_loading_time = 0
+        gpu_time = 0
+        before_op_time = time.time()
+
         for batch_idx, inputs in enumerate(self.train_loader):
+
+            data_loading_time += (time.time() - before_op_time)
 
             before_op_time = time.time()
 
@@ -206,13 +212,17 @@ class Trainer:
             self.model_optimizer.step()
 
             duration = time.time() - before_op_time
+            gpu_time += duration
 
             # log less frequently after the first 2000 steps to save time & disk space
             early_phase = batch_idx % self.opt.log_frequency == 0 and self.step < 2000
             late_phase = self.step % 2000 == 0
 
             if early_phase or late_phase:
-                self.log_time(batch_idx, duration, losses["loss"].cpu().data)
+                self.log_time(
+                    batch_idx, duration, losses["loss"].cpu().data, data_loading_time, gpu_time)
+                data_loading_time = 0
+                gpu_time = 0
 
                 if "depth_gt" in inputs:
                     self.compute_depth_losses(inputs, outputs, losses)
@@ -221,6 +231,7 @@ class Trainer:
                 self.val()
 
             self.step += 1
+            before_op_time = time.time()
 
     def process_batch(self, inputs):
         """Pass a minibatch through the network and generate images and losses
@@ -521,7 +532,7 @@ class Trainer:
         for i, metric in enumerate(self.depth_metric_names):
             losses[metric] = np.array(depth_errors[i].cpu())
 
-    def log_time(self, batch_idx, duration, loss):
+    def log_time(self, batch_idx, duration, loss, data_time, gpu_time):
         """Print a logging statement to the terminal
         """
         samples_per_sec = self.opt.batch_size / duration
@@ -529,9 +540,10 @@ class Trainer:
         training_time_left = (
             self.num_total_steps / self.step - 1.0) * time_sofar if self.step > 0 else 0
         print_string = "epoch {:>3} | batch {:>6} | examples/s: {:5.1f}" + \
-            " | loss: {:.5f} | time elapsed: {} | time left: {}"
+            " | loss: {:.5f} | time elapsed: {} | time left: {} | CPU/GPU time: {:0.1f}s/{:0.1f}s"
         print(print_string.format(self.epoch, batch_idx, samples_per_sec, loss,
-                                  sec_to_hm_str(time_sofar), sec_to_hm_str(training_time_left)))
+                                  sec_to_hm_str(time_sofar), sec_to_hm_str(training_time_left),
+                                  data_time, gpu_time))
 
     def log(self, mode, inputs, outputs, losses):
         """Write an event to the tensorboard events file
