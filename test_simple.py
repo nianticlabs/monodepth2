@@ -35,6 +35,9 @@ def parse_args():
                             "mono_640x192",
                             "stereo_640x192",
                             "mono+stereo_640x192",
+                            "mono_no_pt_640x192",
+                            "stereo_no_pt_640x192",
+                            "mono+stereo_no_pt_640x192",
                             "mono_1024x320",
                             "stereo_1024x320",
                             "mono+stereo_1024x320"])
