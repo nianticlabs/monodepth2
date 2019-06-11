@@ -12,8 +12,8 @@ import glob
 import argparse
 import numpy as np
 import PIL.Image as pil
-
-import matplotlib.pyplot as plt
+import matplotlib as mpl
+import matplotlib.cm as cm
 
 import torch
 from torchvision import transforms, datasets
@@ -136,8 +136,13 @@ def test_simple(args):
             # Saving colormapped depth image
             disp_resized_np = disp_resized.squeeze().cpu().numpy()
             vmax = np.percentile(disp_resized_np, 95)
+            normalizer = mpl.colors.Normalize(vmin=disp_resized_np.min(), vmax=vmax)
+            mapper = cm.ScalarMappable(norm=normalizer, cmap='magma')
+            colormapped_im = (mapper.to_rgba(disp_resized_np)[:, :, :3] * 255).astype(np.uint8)
+            im = pil.fromarray(colormapped_im)
+
             name_dest_im = os.path.join(output_directory, "{}_disp.jpg".format(output_name))
-            plt.imsave(name_dest_im, disp_resized_np, cmap='magma', vmax=vmax)
+            im.save(name_dest_im)
 
             print("   Processed {:d} of {:d} images - saved prediction to {}".format(
                 idx + 1, len(paths), name_dest_im))
