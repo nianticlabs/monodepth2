@@ -215,7 +215,7 @@ Setting the `--eval_stereo` flag when evaluating will automatically disable medi
 
 **⤴️⤵️ Odometry evaluation**
 
-We include code for evaluating poses predicted by models trained with `--split odom`.
+We include code for evaluating poses predicted by models trained with `--split odom --dataset kitti_odom --data_path /path/to/kitti/odometry/dataset`.
 
 For this evaluation, the [KITTI odometry dataset](http://www.cvlibs.net/datasets/kitti/eval_odometry.php) **(color, 65GB)** and **ground truth poses** zip files must be downloaded.
 As above, we assume that the pngs have been converted to jpgs.
