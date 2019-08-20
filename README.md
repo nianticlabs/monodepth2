@@ -23,8 +23,9 @@ If you find our work useful in your research please consider citing our paper:
                Oisin {Mac Aodha} and
                Michael Firman and
                Gabriel J. Brostow},
-  journal = {arXiv:1806.01260},
-  year = {2018}
+  booktitle = {The International Conference on Computer Vision (ICCV)},
+  month = {October},
+year = {2019}
 }
 ```
 
