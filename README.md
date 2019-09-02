@@ -6,7 +6,7 @@ This is the reference PyTorch implementation for training and testing depth esti
 >
 > [Clément Godard](http://www0.cs.ucl.ac.uk/staff/C.Godard/), [Oisin Mac Aodha](http://vision.caltech.edu/~macaodha/), [Michael Firman](http://www.michaelfirman.co.uk) and [Gabriel J. Brostow](http://www0.cs.ucl.ac.uk/staff/g.brostow/)  
 >
-> [arXiv 2018](https://arxiv.org/abs/1806.01260)
+> [ICCV 2019](https://arxiv.org/abs/1806.01260)
 
 <p align="center">
   <img src="assets/teaser.gif" alt="example input output gif" width="600" />
@@ -23,8 +23,9 @@ If you find our work useful in your research please consider citing our paper:
                Oisin {Mac Aodha} and
                Michael Firman and
                Gabriel J. Brostow},
-  journal = {arXiv:1806.01260},
-  year = {2018}
+  booktitle = {The International Conference on Computer Vision (ICCV)},
+  month = {October},
+year = {2019}
 }
 ```
 
