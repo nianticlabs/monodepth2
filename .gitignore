@@ -1,7 +1,10 @@
 __pycache__
-*.pyc
+*.py[cod]
 *_disp.jpg
 *_disp.npy
 *.npz
 kitti_data
 models
+build
+*.egg-info
+dist
