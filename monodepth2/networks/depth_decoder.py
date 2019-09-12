@@ -6,12 +6,8 @@
 
 from __future__ import absolute_import, division, print_function
 
-import numpy as np
-import torch
-import torch.nn as nn
-
 from collections import OrderedDict
-from layers import *
+from monodepth2.layers import *
 
 
 class DepthDecoder(nn.Module):

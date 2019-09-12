@@ -17,13 +17,12 @@ from tensorboardX import SummaryWriter
 
 import json
 
-from utils import *
-from kitti_utils import *
-from layers import *
+from monodepth2.utils import *
+from monodepth2.kitti_utils import *
+from monodepth2.layers import *
 
-import datasets
-import networks
-from IPython import embed
+from monodepth2 import datasets
+from monodepth2 import networks
 
 
 class Trainer:

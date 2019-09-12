@@ -12,8 +12,8 @@ import argparse
 import numpy as np
 import PIL.Image as pil
 
-from utils import readlines
-from kitti_utils import generate_depth_map
+from monodepth2.utils import readlines
+from monodepth2.kitti_utils import generate_depth_map
 
 
 def export_gt_depths_kitti():

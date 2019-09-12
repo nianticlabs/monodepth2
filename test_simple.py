@@ -7,7 +7,6 @@
 from __future__ import absolute_import, division, print_function
 
 import os
-import sys
 import glob
 import argparse
 import numpy as np
@@ -16,16 +15,17 @@ import matplotlib as mpl
 import matplotlib.cm as cm
 
 import torch
-from torchvision import transforms, datasets
+import torch.nn.functional
+from torchvision import transforms
 
-import networks
-from layers import disp_to_depth
-from utils import download_model_if_doesnt_exist
+from monodepth2 import networks
+from monodepth2.layers import disp_to_depth
+from monodepth2.utils import download_model_if_doesnt_exist
 
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description='Simple testing funtion for Monodepthv2 models.')
+        description='Simple testing function for Monodepthv2 models.')
 
     parser.add_argument('--image_path', type=str,
                         help='path to a test image or folder of images', required=True)

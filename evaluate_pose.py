@@ -12,11 +12,11 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 
-from layers import transformation_from_parameters
-from utils import readlines
-from options import MonodepthOptions
-from datasets import KITTIOdomDataset
-import networks
+from monodepth2.layers import transformation_from_parameters
+from monodepth2.utils import readlines
+from monodepth2.options import MonodepthOptions
+from monodepth2.datasets import KITTIOdomDataset
+from monodepth2 import networks
 
 
 # from https://github.com/tinghuiz/SfMLearner
