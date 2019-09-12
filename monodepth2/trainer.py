@@ -304,6 +304,8 @@ class Trainer:
 
             elif self.opt.pose_model_type == "shared":
                 pose_inputs = [features[i] for i in self.opt.frame_ids if i != "s"]
+            else:
+                raise KeyError
 
             axisangle, translation = self.models["pose"](pose_inputs)
 
