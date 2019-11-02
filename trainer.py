@@ -506,8 +506,6 @@ class Trainer:
         so is only used to give an indication of validation performance
         """
         depth_pred = outputs[("depth", 0, 0)]
-        inputs["depth_pred"] = depth_pred
-
         depth_gt = inputs["depth_gt"]
 
         depth_pred = torch.clamp(F.interpolate(
@@ -583,7 +581,7 @@ class Trainer:
 
                     writer.add_image(
                         "depth_pred_{}/{}".format(frame_id, j),
-                        self.display_depth(inputs["depth_pred"][j].data), self.step)
+                        self.display_depth(outputs[("depth", 0, 0)][j].data), self.step)
 
                 writer.add_image(
                     "disp_{}/{}".format(s, j),
