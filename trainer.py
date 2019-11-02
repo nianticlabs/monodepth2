@@ -46,7 +46,7 @@ class Trainer:
 
         assert self.opt.frame_ids[0] == 0, "frame_ids must start with 0"
 
-        self.use_pose_net = not (self.opt.use_stereo and self.opt.frame_ids == [0])
+        self.use_pose_net = False  # not (self.opt.use_stereo and self.opt.frame_ids == [0])
 
         if self.opt.use_stereo:
             self.opt.frame_ids.append("s")
@@ -129,7 +129,7 @@ class Trainer:
             self.opt.data_path, train_filenames, self.opt.height, self.opt.width,
             self.opt.frame_ids, 4, is_train=True, img_ext=img_ext)
         self.train_loader = DataLoader(
-            train_dataset, self.opt.batch_size, True,
+            train_dataset, self.opt.batch_size, False,
             num_workers=self.opt.num_workers, pin_memory=True, drop_last=True)
         val_dataset = self.dataset(
             self.opt.data_path, val_filenames, self.opt.height, self.opt.width,
@@ -413,7 +413,8 @@ class Trainer:
 
         for scale in self.opt.scales:
             loss = 0
-            reprojection_losses = []
+            #TODO updated for supervised training
+            reprojection_losses = torch.zeros(1, 1).type_as(inputs[("color", 0, scale)])  # []
 
             if self.opt.v1_multiscale:
                 source_scale = scale
@@ -428,7 +429,9 @@ class Trainer:
                 pred = outputs[("color", frame_id, scale)]
                 reprojection_losses.append(self.compute_reprojection_loss(pred, target))
 
-            reprojection_losses = torch.cat(reprojection_losses, 1)
+            #TODO commented out for supervised training
+            # reprojection_losses = torch.cat(reprojection_losses, 1)
+            reprojection_loss = 0.0
 
             if not self.opt.disable_automasking:
                 identity_reprojection_losses = []
@@ -504,16 +507,17 @@ class Trainer:
         """
         depth_pred = outputs[("depth", 0, 0)]
         depth_pred = torch.clamp(F.interpolate(
-            depth_pred, [375, 1242], mode="bilinear", align_corners=False), 1e-3, 80)
+            depth_pred, [480, 640], mode="bilinear", align_corners=False), 1e-3, 80)
         depth_pred = depth_pred.detach()
 
         depth_gt = inputs["depth_gt"]
         mask = depth_gt > 0
 
-        # garg/eigen crop
-        crop_mask = torch.zeros_like(mask)
-        crop_mask[:, :, 153:371, 44:1197] = 1
-        mask = mask * crop_mask
+        #TODO do we need to perform this crop?
+        # # garg/eigen crop
+        # crop_mask = torch.zeros_like(mask)
+        # crop_mask[:, :, 153:371, 44:1197] = 1
+        # mask = mask * crop_mask
 
         depth_gt = depth_gt[mask]
         depth_pred = depth_pred[mask]

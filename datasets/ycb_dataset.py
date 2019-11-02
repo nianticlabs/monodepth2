@@ -25,9 +25,16 @@ class YCBDataset(MonoDataset):
 
     def get_depth(self, folder, frame_index, side, do_flip):
         depth_path = os.path.join(self.data_path, folder, "{0:06d}-depth.png".format(frame_index))
-        depth = self.loader(depth_path)
+
+        meta_data = self.get_metadata(folder, frame_index)
+        factor_depth = meta_data["factor_depth"]
+
+        depth = pil.open(depth_path)
+
         if do_flip:
             depth = depth.transpose(pil.FLIP_LEFT_RIGHT)
+
+        depth = np.array(depth) / factor_depth
 
         return depth
 
@@ -40,15 +47,19 @@ class YCBDataset(MonoDataset):
 
         return os.path.isfile(depth_path)
 
+    def get_metadata(self, folder, frame_index):
+        meta_path = os.path.join(self.data_path, folder, "{0:06d}-meta.mat".format(frame_index))
+        meta_data = sio.loadmat(meta_path)
+        return meta_data
+
     def set_K(self, folder, frame_index):
         """
         Since the intrinsics can vary per image, we set the correct intrinsics per image directly.
         """
-        meta_path = os.path.join(self.data_path, folder, "{0:06d}-meta.mat".format(frame_index))
-        meta_data = sio.loadmat(meta_path)
+        meta_data = self.get_metadata(folder, frame_index)
         intrinsics = meta_data['intrinsic_matrix']
         # K is expected to be a 4x4 (homogeneous) matrix
         K = np.eye(4)
         K[0:3, 0:3] = intrinsics
 
-        self.K = K
+        self.K = K.astype(np.float32)
