@@ -506,11 +506,14 @@ class Trainer:
         so is only used to give an indication of validation performance
         """
         depth_pred = outputs[("depth", 0, 0)]
-        depth_pred = torch.clamp(F.interpolate(
-            depth_pred, [480, 640], mode="bilinear", align_corners=False), 1e-3, 80)
-        depth_pred = depth_pred.detach()
+        inputs["depth_pred"] = depth_pred
 
         depth_gt = inputs["depth_gt"]
+
+        depth_pred = torch.clamp(F.interpolate(
+            depth_pred, depth_gt.shape[2:], mode="bilinear", align_corners=False), 1e-3, 80)
+        depth_pred = depth_pred.detach()
+
         mask = depth_gt > 0
 
         #TODO do we need to perform this crop?
@@ -542,6 +545,24 @@ class Trainer:
         print(print_string.format(self.epoch, batch_idx, samples_per_sec, loss,
                                   sec_to_hm_str(time_sofar), sec_to_hm_str(training_time_left)))
 
+    @staticmethod
+    def display_depth(depth, bits=1):
+        """Display depth.
+
+        Args:
+            depth (array): depth
+        """
+        depth_min = depth.min()
+        depth_max = depth.max()
+
+        max_val = (2 ** (8 * bits)) - 1
+
+        if depth_max - depth_min > np.finfo("float").eps:
+            out = max_val * (depth - depth_min) / (depth_max - depth_min)
+        else:
+            out = 0
+        return out / out.max()
+
     def log(self, mode, inputs, outputs, losses):
         """Write an event to the tensorboard events file
         """
@@ -559,6 +580,10 @@ class Trainer:
                         writer.add_image(
                             "color_pred_{}_{}/{}".format(frame_id, s, j),
                             outputs[("color", frame_id, s)][j].data, self.step)
+
+                    writer.add_image(
+                        "depth_pred_{}/{}".format(frame_id, j),
+                        self.display_depth(inputs["depth_pred"][j].data), self.step)
 
                 writer.add_image(
                     "disp_{}/{}".format(s, j),
