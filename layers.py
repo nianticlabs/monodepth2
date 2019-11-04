@@ -267,3 +267,30 @@ def compute_depth_errors(gt, pred):
     sq_rel = torch.mean((gt - pred) ** 2 / gt)
 
     return abs_rel, sq_rel, rmse, rmse_log, a1, a2, a3
+
+
+class DepthCriterion(nn.Module):
+    """
+    Loss from "Depth Map Prediction from a Single Image using a Multi-Scale Deep Network"
+
+    https://papers.nips.cc/paper/5539-depth-map-prediction-from-a-single-image-using-a-multi-scale-deep-network.pdf
+    """
+    def __init__(self, scale_lambda=0.5):
+        super(DepthCriterion, self).__init__()
+        self.scale_lambda = scale_lambda
+        self.l2_loss = nn.MSELoss(reduction='mean')
+
+    def forward(self, pred, target):
+        batch_size = pred.shape[0]
+        pred = pred.reshape(batch_size, -1)
+        target = target.reshape(batch_size, -1)
+
+        target_log = torch.log(target + 1e-12)
+
+        loss1 = self.l2_loss(pred, target_log)
+
+        loss2 = (pred - target_log).mean(dim=1).pow(2)
+
+        loss = loss1 - (self.scale_lambda*loss2)
+
+        return loss

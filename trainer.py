@@ -147,6 +147,8 @@ class Trainer:
             self.ssim = SSIM()
             self.ssim.to(self.device)
 
+        self.depth_loss = DepthCriterion()
+
         self.backproject_depth = {}
         self.project_3d = {}
         for scale in self.opt.scales:
@@ -485,6 +487,8 @@ class Trainer:
                 outputs["identity_selection/{}".format(scale)] = (
                     idxs > identity_reprojection_loss.shape[1] - 1).float()
 
+            #TODO(Varun) no need for any of these losses
+            """
             loss += to_optimise.mean()
 
             mean_disp = disp.mean(2, True).mean(3, True)
@@ -492,6 +496,17 @@ class Trainer:
             smooth_loss = get_smooth_loss(norm_disp, color)
 
             loss += self.opt.disparity_smoothness * smooth_loss / (2 ** scale)
+            """
+
+            depth_target = inputs[("depth", 0, scale)]
+            depth_pred = outputs[("depth", 0, scale)]
+            depth_pred = torch.clamp(F.interpolate(depth_pred,
+                                                   depth_target.shape[2:],
+                                                   mode="bilinear",
+                                                   align_corners=False), 1e-3, 80)
+
+            loss = self.depth_loss(depth_pred, depth_target).mean()
+
             total_loss += loss
             losses["loss/{}".format(scale)] = loss
 

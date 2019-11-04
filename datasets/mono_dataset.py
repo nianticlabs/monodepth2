@@ -189,6 +189,21 @@ class MonoDataset(data.Dataset):
             inputs["depth_gt"] = np.expand_dims(depth_gt, 0)
             inputs["depth_gt"] = torch.from_numpy(inputs["depth_gt"].astype(np.float32))
 
+            for i in self.frame_idxs:
+                inputs[("depth", i, -1)] = Image.fromarray(depth_gt)
+
+                for s in range(self.num_scales):
+                    scale = 2 ** s
+                    inputs[("depth", i, s)] = transforms.functional.resize(
+                        inputs[("depth", i, s - 1)],
+                        (self.height // scale, self.width // scale))
+
+                for s in range(self.num_scales):
+                    inputs[("depth", i, s)] = np.expand_dims(np.asarray(inputs[("depth", i, s)]), 0)
+                    inputs[("depth", i, s)] = torch.from_numpy(inputs[("depth", i, s)])
+
+                del inputs[("depth", i, -1)]
+
         if "s" in self.frame_idxs:
             stereo_T = np.eye(4, dtype=np.float32)
             baseline_sign = -1 if do_flip else 1
