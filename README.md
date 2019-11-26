@@ -39,8 +39,8 @@ conda install pytorch=0.4.1 torchvision=0.2.1 -c pytorch
 pip install tensorboardX==1.4
 conda install opencv=3.3.1   # just needed for evaluation
 ```
-We ran our experiments with PyTorch 0.4.1, CUDA 9.1, Python 3.6 and Ubuntu 18.04.
-We have also successfully trained models with PyTorch 1.0, and our code is compatible with Python 2.7.
+We ran our experiments with PyTorch 0.4.1, CUDA 9.1, Python 3.6.6 and Ubuntu 18.04.
+We have also successfully trained models with PyTorch 1.0, and our code is compatible with Python 2.7. You may have issues installing OpenCV version 3.3.1 if you use Python 3.7, we recommend to create a virtual environment with Python 3.6.6 `conda create -n monodepth2 python=3.6.6 anaconda `.
 
 <!-- We recommend using a [conda environment](https://conda.io/docs/user-guide/tasks/manage-environments.html) to avoid dependency conflicts.
 
