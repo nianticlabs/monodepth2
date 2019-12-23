@@ -10,7 +10,7 @@ import os
 import argparse
 
 file_dir = os.path.dirname(__file__)  # the directory that options.py resides in
-
+# options.pyD:\08myGithub\project1\monodepth2\options.py
 
 class MonodepthOptions:
     def __init__(self):
@@ -206,3 +206,5 @@ class MonodepthOptions:
     def parse(self):
         self.options = self.parser.parse_args()
         return self.options
+# conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+# conda config -–add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main conda config --set show_channel_urls yes
