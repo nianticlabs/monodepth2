@@ -69,12 +69,23 @@ class Trainer:
 
         assert self.opt.frame_ids[0] == 0, "frame_ids must start with 0"
 
+        """
+        @ use_stereo = 1 stero and mix training
+        @ frame_ids = 0  if stero or  monocolor else [-1, 1 ,0] 
+        @ monocolor trianing => use_pose_net = 1
+        """
 
         self.use_pose_net = not (self.opt.use_stereo and self.opt.frame_ids == [0])
 
         if self.opt.use_stereo:
+            """
+            在立体训练混合训练时，frame_ids = [0,s]or [0,-1, 1, s]
+            """
             self.opt.frame_ids.append("s")
-
+        """
+        @ 初始化时为num_layers ==18，weights_init = "pretrained"
+        
+        """
         self.models["encoder"] = networks.ResnetEncoder(
             self.opt.num_layers, self.opt.weights_init == "pretrained")
         self.models["encoder"].to(self.device)
@@ -112,7 +123,9 @@ class Trainer:
             self.models["pose"].to(self.device)
             self.parameters_to_train += list(self.models["pose"].parameters())
 
+
         if self.opt.predictive_mask: #false
+
             assert self.opt.disable_automasking, \
                 "When using predictive_mask, please disable automasking with --disable_automasking"
 
@@ -233,7 +246,9 @@ class Trainer:
         for batch_idx, inputs in enumerate(self.train_loader):
 
             before_op_time = time.time()
-
+            """
+            @ 模型推理
+            """
             outputs, losses = self.process_batch(inputs)
 
             self.model_optimizer.zero_grad()
@@ -258,10 +273,15 @@ class Trainer:
             self.step += 1
 
     def process_batch(self, inputs):
+
         
         #TODO:：1. 此处的inputs 是什么类型 
         """Pass a minibatch through the network and generate images and losses
         : 1. 
+        """
+        @ Pass a minibatch through the network and generate images and losses
+        @ 
+
         """
         for key, ipt in inputs.items():
             inputs[key] = ipt.to(self.device)
@@ -269,6 +289,11 @@ class Trainer:
         if self.opt.pose_model_type == "shared":#separate_resnet False
             # If we are using a shared encoder for both depth and pose (as advocated
             # in monodepthv1), then all images are fed separately through the depth encoder.
+            """
+            @ 对于共享网络
+                输入多张图片
+
+            """
             all_color_aug = torch.cat([inputs[("color_aug", i, 0)] for i in self.opt.frame_ids])
             all_features = self.models["encoder"](all_color_aug)
             all_features = [torch.split(f, self.opt.batch_size) for f in all_features]
@@ -280,6 +305,10 @@ class Trainer:
             outputs = self.models["depth"](features[0])
         else:
             # Otherwise, we only feed the image with frame_id 0 through the depth encoder
+            """
+            @ 对于分离网络
+                输入三张图片
+            """
             features = self.models["encoder"](inputs["color_aug", 0, 0])
             outputs = self.models["depth"](features)
 

@@ -28,8 +28,12 @@ class KITTIDataset(MonoDataset):
 
         self.full_res_shape = (1242, 375)
         self.side_map = {"2": 2, "3": 3, "l": 2, "r": 3}
+    
 
     def check_depth(self):
+        """
+        @ 
+        """
         line = self.filenames[0].split()
         scene_name = line[0]
         frame_index = int(line[1])
@@ -42,6 +46,14 @@ class KITTIDataset(MonoDataset):
         return os.path.isfile(velo_filename)
 
     def get_color(self, folder, frame_index, side, do_flip):
+        """
+        @ folder: 数据原始路径文件夹
+        @ frame_index: 帧数
+        @ side： 在单目训练中，都是 side = r
+        @ do_flip: 在单目训练中，进行随机翻转
+        @ decription : 使用pillow加载图像并进行随机左右翻转，在这里可以使用上下翻转
+
+        """
         color = self.loader(self.get_image_path(folder, frame_index, side))
 
         if do_flip:
@@ -69,7 +81,10 @@ class KITTIRAWDataset(KITTIDataset):
             self.data_path,
             folder,
             "velodyne_points/data/{:010d}.bin".format(int(frame_index)))
-
+        """
+        1. 获取深度图
+        2. 进行转换 使用skimage.transform.resize()
+        """
         depth_gt = generate_depth_map(calib_path, velo_filename, self.side_map[side])
         depth_gt = skimage.transform.resize(
             depth_gt, self.full_res_shape[::-1], order=0, preserve_range=True, mode='constant')
