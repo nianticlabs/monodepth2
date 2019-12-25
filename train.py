@@ -6,7 +6,7 @@
 
 from __future__ import absolute_import, division, print_function
 
-from trainer import Trainer
+# from trainer import Trainer
 from options import MonodepthOptions
 
 options = MonodepthOptions()
@@ -14,5 +14,12 @@ opts = options.parse()
 
 
 if __name__ == "__main__":
-    trainer = Trainer(opts)
-    trainer.train()
+    # trainer = Trainer(opts)
+    # trainer.train()
+    dirOpts = dir(opts)
+    for dirOp in dirOpts:
+        if not dirOp.startswith('_') :
+            
+            a = getattr(opts,dirOp)
+            print(f"{dirOp}:{a}")
+    print()
