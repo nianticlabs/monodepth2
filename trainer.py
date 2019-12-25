@@ -277,11 +277,7 @@ class Trainer:
         
         #TODO:：1. 此处的inputs 是什么类型 
         """Pass a minibatch through the network and generate images and losses
-        : 1. 
-        """
         @ Pass a minibatch through the network and generate images and losses
-        @ 
-
         """
         for key, ipt in inputs.items():
             inputs[key] = ipt.to(self.device)
