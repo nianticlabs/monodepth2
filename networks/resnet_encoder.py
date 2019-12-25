@@ -1,3 +1,11 @@
+'''
+@Author: your name
+@Date: 2019-12-14 20:16:19
+@LastEditTime : 2019-12-25 22:55:06
+@LastEditors  : Please set LastEditors
+@Description: In User Settings Edit
+@FilePath: \monodepth2\networks\resnet_encoder.py
+'''
 # Copyright Niantic 2019. Patent Pending. All rights reserved.
 #
 # This software is licensed under the terms of the Monodepth2 licence
@@ -50,7 +58,7 @@ def resnet_multiimage_input(num_layers, pretrained=False, num_input_images=1):
     blocks = {18: [2, 2, 2, 2], 50: [3, 4, 6, 3]}[num_layers]
     block_type = {18: models.resnet.BasicBlock, 50: models.resnet.Bottleneck}[num_layers]
     model = ResNetMultiImageInput(block_type, blocks, num_input_images=num_input_images)
-
+    
     if pretrained:
         loaded = model_zoo.load_url(models.resnet.model_urls['resnet{}'.format(num_layers)])
         loaded['conv1.weight'] = torch.cat(
@@ -66,13 +74,17 @@ class ResnetEncoder(nn.Module):
         super(ResnetEncoder, self).__init__()
 
         self.num_ch_enc = np.array([64, 64, 128, 256, 512])
-
+        
+        """
+        @ 残差网络使用标准的 torchvision.models 模块中的残差网络
+        @ 如果输入图像大于1张 使用models.ResNet 中的派生类来生成类，自定义resnet
+        """ 
         resnets = {18: models.resnet18,
                    34: models.resnet34,
                    50: models.resnet50,
                    101: models.resnet101,
                    152: models.resnet152}
-
+        
         if num_layers not in resnets:
             raise ValueError("{} is not a valid number of resnet layers".format(num_layers))
 
