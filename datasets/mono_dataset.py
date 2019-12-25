@@ -53,7 +53,7 @@ class MonoDataset(data.Dataset):
         self.filenames = filenames
         self.height = height
         self.width = width
-        self.num_scales = num_scales
+        self.num_scales = num_scales# 0，1，2，3 一共四个尺度
         self.interp = Image.ANTIALIAS
 
         self.frame_idxs = frame_idxs
@@ -89,7 +89,11 @@ class MonoDataset(data.Dataset):
 
     def preprocess(self, inputs, color_aug):
         """Resize colour images to the required scales and augment if required
-
+        @ inputs[("color", i, -1)] where i in self.frame_idxs = [0,s] or [0,1,-1,s] or [0] 
+        @ inputs[("K", scale)] = torch.from_numpy(K)
+        @ inputs[("inv_K", scale)] = torch.from_numpy(inv_K)
+        @ 使用 resize 并添加 颜色增强后的图像到input 字典中
+        
         We create the color_aug object in advance and apply the same augmentation to all
         images in this item. This ensures that all images input to the pose network receive the
         same augmentation.
@@ -98,7 +102,12 @@ class MonoDataset(data.Dataset):
             frame = inputs[k]
             if "color" in k:
                 n, im, i = k
-                for i in range(self.num_scales):
+                for i in range(self.num_scales): # 0, 1, 2, 3
+                    """
+                    @ 1. 原始("color", i, -1)
+                    @ 2. ("color", i, 0) = > ("color", i, [0,1,2,3])四个不同尺度的图，
+                    @ 3. 
+                    """
                     inputs[(n, im, i)] = self.resize[i](inputs[(n, im, i - 1)])
 
         for k in list(inputs):
@@ -136,7 +145,11 @@ class MonoDataset(data.Dataset):
             3       images resized to (self.width // 8, self.height // 8)
         """
         inputs = {}
-
+        """
+        1. 训练模式下的 self.is_train do_color_aug 开启颜色增强 do_flip = True 开启随机翻转
+        2. 获取路径
+        3. 解析图像的路径line[0], frame_index = line[1] side = line[2]
+        """
         do_color_aug = self.is_train and random.random() > 0.5
         do_flip = self.is_train and random.random() > 0.5
 
@@ -152,39 +165,67 @@ class MonoDataset(data.Dataset):
             side = line[2]
         else:
             side = None
-
+        """
+        4.  self.frame_idxs 在monocolor 0  stero 训练时为0,s ，混合训练时为[-1,0,1,s]
+        """
         for i in self.frame_idxs:
             if i == "s":
                 other_side = {"r": "l", "l": "r"}[side]
                 inputs[("color", i, -1)] = self.get_color(folder, frame_index, other_side, do_flip)
             else:
+                """
+                @ 字典的关键字居然可以是列表
+                @ monocolor 训练 ,获取一帧图像
+                @ self.get_color(folder, frame_index + i, side, do_flip) 为多态函数， 此处monoclor默认使用KITTIRAWDataset派生类
+                @ 将调用KITTIDataset(MonoDataset)派生类中的self.get_color方法
+                """
                 inputs[("color", i, -1)] = self.get_color(folder, frame_index + i, side, do_flip)
 
         # adjusting intrinsics to match each scale in the pyramid
         for scale in range(self.num_scales):
             K = self.K.copy()
 
+            # self.K = np.array(
+            #               [[0.58, 0,    0.5, 0],
+            #                [0,    1.92, 0.5, 0],
+            #                [0,    0,      1, 0],
+            #                [0,    0,      0, 1]], dtype=np.float32)
+
             K[0, :] *= self.width // (2 ** scale)
             K[1, :] *= self.height // (2 ** scale)
-
-            inv_K = np.linalg.pinv(K)
-
+            # 计算矩阵的伪逆矩阵
+            inv_K = np.linalg.pinv(K) 
             inputs[("K", scale)] = torch.from_numpy(K)
             inputs[("inv_K", scale)] = torch.from_numpy(inv_K)
 
         if do_color_aug:
+            """
+            @ 使用torch 自带的transforms 转换模块对图像进行增强
+            """
             color_aug = transforms.ColorJitter.get_params(
                 self.brightness, self.contrast, self.saturation, self.hue)
         else:
             color_aug = (lambda x: x)
-
+        """
+        @ 图像的预处理
+        @ 进行简单的颜色增强，同时进行resize，得到对应的尺度缩放图像
+        """
         self.preprocess(inputs, color_aug)
-
+        
         for i in self.frame_idxs:
             del inputs[("color", i, -1)]
             del inputs[("color_aug", i, -1)]
 
         if self.load_depth:
+            """
+            @ 如果 velodyne_points/data/{:010d}.bin 深度文件存在
+            inputs[("color", i, -1)]
+            inputs[("color__aug", i, -1)]
+            inputs[("K", scale)]
+            inputs[("inv_K", scale)]
+            inputs["depth_gt"] 
+            inputs["stereo_T"]
+            """
             depth_gt = self.get_depth(folder, frame_index, side, do_flip)
             inputs["depth_gt"] = np.expand_dims(depth_gt, 0)
             inputs["depth_gt"] = torch.from_numpy(inputs["depth_gt"].astype(np.float32))

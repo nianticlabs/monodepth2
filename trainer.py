@@ -45,10 +45,17 @@ class Trainer:
         self.num_pose_frames = 2 if self.opt.pose_model_input == "pairs" else self.num_input_frames
 
         assert self.opt.frame_ids[0] == 0, "frame_ids must start with 0"
-
+        """
+        @ use_stereo = 1 stero and mix training
+        @ frame_ids = 0  if stero or  monocolor else [-1, 1 ,0] 
+        @ monocolor trianing => use_pose_net = 1
+        """
         self.use_pose_net = not (self.opt.use_stereo and self.opt.frame_ids == [0])
 
         if self.opt.use_stereo:
+            """
+            在立体训练混合训练时，frame_ids = [0,s]or [0,-1, 1, s]
+            """
             self.opt.frame_ids.append("s")
 
         self.models["encoder"] = networks.ResnetEncoder(
@@ -86,7 +93,7 @@ class Trainer:
 
             self.models["pose"].to(self.device)
             self.parameters_to_train += list(self.models["pose"].parameters())
-
+        
         if self.opt.predictive_mask:
             assert self.opt.disable_automasking, \
                 "When using predictive_mask, please disable automasking with --disable_automasking"
@@ -204,7 +211,9 @@ class Trainer:
         for batch_idx, inputs in enumerate(self.train_loader):
 
             before_op_time = time.time()
-
+            """
+            @ 模型推理
+            """
             outputs, losses = self.process_batch(inputs)
 
             self.model_optimizer.zero_grad()
@@ -229,7 +238,9 @@ class Trainer:
             self.step += 1
 
     def process_batch(self, inputs):
-        """Pass a minibatch through the network and generate images and losses
+        """
+        @ Pass a minibatch through the network and generate images and losses
+        @ 
         """
         for key, ipt in inputs.items():
             inputs[key] = ipt.to(self.device)
@@ -248,6 +259,9 @@ class Trainer:
             outputs = self.models["depth"](features[0])
         else:
             # Otherwise, we only feed the image with frame_id 0 through the depth encoder
+            """
+            @ 使用
+            """
             features = self.models["encoder"](inputs["color_aug", 0, 0])
             outputs = self.models["depth"](features)
 
