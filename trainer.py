@@ -57,7 +57,10 @@ class Trainer:
             在立体训练混合训练时，frame_ids = [0,s]or [0,-1, 1, s]
             """
             self.opt.frame_ids.append("s")
-
+        """
+        @ 初始化时为num_layers ==18，weights_init = "pretrained"
+        
+        """
         self.models["encoder"] = networks.ResnetEncoder(
             self.opt.num_layers, self.opt.weights_init == "pretrained")
         self.models["encoder"].to(self.device)
@@ -248,6 +251,11 @@ class Trainer:
         if self.opt.pose_model_type == "shared":
             # If we are using a shared encoder for both depth and pose (as advocated
             # in monodepthv1), then all images are fed separately through the depth encoder.
+            """
+            @ 对于共享网络
+                输入多张图片
+
+            """
             all_color_aug = torch.cat([inputs[("color_aug", i, 0)] for i in self.opt.frame_ids])
             all_features = self.models["encoder"](all_color_aug)
             all_features = [torch.split(f, self.opt.batch_size) for f in all_features]
@@ -260,7 +268,8 @@ class Trainer:
         else:
             # Otherwise, we only feed the image with frame_id 0 through the depth encoder
             """
-            @ 使用
+            @ 对于分离网络
+                输入三张图片
             """
             features = self.models["encoder"](inputs["color_aug", 0, 0])
             outputs = self.models["depth"](features)

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-12-23 22:57:00
- * @LastEditTime : 2019-12-25 22:03:49
+ * @LastEditTime : 2019-12-25 23:01:55
  * @LastEditors  : Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \monodepth2\coderead\train.md
@@ -17,15 +17,15 @@
     3.  @ use_stereo = 1 stero and mix training
         @ frame_ids = 0  if stero or  monocolor else [-1, 1 ,0] 
         @ monocolor trianing => use_pose_net = 1
-        @ 当monocolor 训练时，use_pose_net==1
-        @ 使用独立的网络 opt.pose_model_type == "separate_resnet":
+          当monocolor 训练时，use_pose_net==1
+          使用独立的网络 opt.pose_model_type == "separate_resnet":
           self.models["pose_encoder"]=networks.ResnetEncoder
           self.models["pose"] = networks.PoseDecoder
         @ 当opt.pose_model_type == "shared"
             self.models["pose"] = networks.PoseDecoder 
             self.models["pose_encoder"] = self.models["encoder"]两个网络共享
     网络结构共享
-            
+    
 
 3. 什么是自监督学习？
 ---
@@ -46,5 +46,25 @@
         inputs[("inv_K", scale)]
         inputs["depth_gt"] #如果 .bin 文件存在 加载深度图
         inputs["stereo_T"] = +-1 # if 's' in frame_id
-    @ 网络结构的组成部分：
-        1. 
+---
+
+4. 共享编码器姿态估计网络推理过程
+- all_features = self.models["encoder"](all_color_aug)
+- networks.ResnetEncoder(
+            self.opt.num_layers, self.opt.weights_init == "pretrained")
+     @ 初始化时为num_layers ==18，weights_init = "pretrained"
+     resnet 的网络结构
+        x = self.conv1(x)
+        x = self.bn1(x)
+        x = self.relu(x)
+        x = self.maxpool(x)
+
+        x = self.layer1(x)
+        x = self.layer2(x)
+        x = self.layer3(x)
+        x = self.layer4(x)
+
+        x = self.avgpool(x)
+        x = torch.flatten(x, 1)
+        x = self.fc(x)
+    ![image](./resnet2.jpg)
