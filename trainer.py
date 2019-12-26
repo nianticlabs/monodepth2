@@ -28,6 +28,29 @@ from IPython import embed
 
 class Trainer:
     def __init__(self, options):
+        """
+        当使用立体训练时使用frame_ids=0，单目训练时使用frame_ids=-1，0，1，混合训练使用frame_ids=-1，0，1
+        单目训练use_stereo =0，立体和混合训练时use_stereo=1
+        立体训练 use_pose_net=0 ，单目和混合训练use_pose_net=1
+        1. 训练参数分为两部分，一部分为encoder的参数
+            self.parameters_to_train += list(self.models["encoder"].parameters())
+        2. 另一部分为depth的参数
+            self.parameters_to_train += list(self.models["depth"].parameters())
+        3. 先分析单目训练
+            use_pose_net=1
+        3.1 单目训练 use_pose_net==1
+            添加pose_encoder模型
+            pose模型作为decoder
+            添加参数作为训练参数
+        3.2 训练数据集使用kitti
+        3.3 使用SSIM
+            SSIM()是干什么的？
+        4. 共有4个尺度
+            1. 每一个尺度有
+                1. backproject_depth
+                2. project_3d
+        """
+
         self.opt = options
         self.log_path = os.path.join(self.opt.log_dir, self.opt.model_name)
 
@@ -45,11 +68,13 @@ class Trainer:
         self.num_pose_frames = 2 if self.opt.pose_model_input == "pairs" else self.num_input_frames
 
         assert self.opt.frame_ids[0] == 0, "frame_ids must start with 0"
+
         """
         @ use_stereo = 1 stero and mix training
         @ frame_ids = 0  if stero or  monocolor else [-1, 1 ,0] 
         @ monocolor trianing => use_pose_net = 1
         """
+
         self.use_pose_net = not (self.opt.use_stereo and self.opt.frame_ids == [0])
 
         if self.opt.use_stereo:
@@ -64,6 +89,7 @@ class Trainer:
         self.models["encoder"] = networks.ResnetEncoder(
             self.opt.num_layers, self.opt.weights_init == "pretrained")
         self.models["encoder"].to(self.device)
+        
         self.parameters_to_train += list(self.models["encoder"].parameters())
 
         self.models["depth"] = networks.DepthDecoder(
@@ -72,7 +98,7 @@ class Trainer:
         self.parameters_to_train += list(self.models["depth"].parameters())
 
         if self.use_pose_net:
-            if self.opt.pose_model_type == "separate_resnet":
+            if self.opt.pose_model_type == "separate_resnet": #true
                 self.models["pose_encoder"] = networks.ResnetEncoder(
                     self.opt.num_layers,
                     self.opt.weights_init == "pretrained",
@@ -96,8 +122,10 @@ class Trainer:
 
             self.models["pose"].to(self.device)
             self.parameters_to_train += list(self.models["pose"].parameters())
-        
-        if self.opt.predictive_mask:
+
+
+        if self.opt.predictive_mask: #false
+
             assert self.opt.disable_automasking, \
                 "When using predictive_mask, please disable automasking with --disable_automasking"
 
@@ -113,14 +141,15 @@ class Trainer:
         self.model_lr_scheduler = optim.lr_scheduler.StepLR(
             self.model_optimizer, self.opt.scheduler_step_size, 0.1)
 
-        if self.opt.load_weights_folder is not None:
+        if self.opt.load_weights_folder is not None: #false
             self.load_model()
-
+        # 单模态训练：self.model_name = monacolor
         print("Training model named:\n  ", self.opt.model_name)
         print("Models and tensorboard events files are saved to:\n  ", self.opt.log_dir)
         print("Training is using:\n  ", self.device)
 
         # data
+
         datasets_dict = {"kitti": datasets.KITTIRAWDataset,
                          "kitti_odom": datasets.KITTIOdomDataset}
         self.dataset = datasets_dict[self.opt.dataset]
@@ -154,13 +183,14 @@ class Trainer:
         self.writers = {}
         for mode in ["train", "val"]:
             self.writers[mode] = SummaryWriter(os.path.join(self.log_path, mode))
-
-        if not self.opt.no_ssim:
+        
+        if not self.opt.no_ssim:# true
             self.ssim = SSIM()
             self.ssim.to(self.device)
 
         self.backproject_depth = {}
         self.project_3d = {}
+       
         for scale in self.opt.scales:
             h = self.opt.height // (2 ** scale)
             w = self.opt.width // (2 ** scale)
@@ -205,6 +235,8 @@ class Trainer:
 
     def run_epoch(self):
         """Run a single epoch of training and validation
+        :1.  outputs, losses = self.process_batch(inputs)
+        :2. 三部曲 zero_grad() (2)loss.backward() (3)model_optimizer.step()
         """
         self.model_lr_scheduler.step()
 
@@ -241,14 +273,16 @@ class Trainer:
             self.step += 1
 
     def process_batch(self, inputs):
-        """
+
+        
+        #TODO:：1. 此处的inputs 是什么类型 
+        """Pass a minibatch through the network and generate images and losses
         @ Pass a minibatch through the network and generate images and losses
-        @ 
         """
         for key, ipt in inputs.items():
             inputs[key] = ipt.to(self.device)
 
-        if self.opt.pose_model_type == "shared":
+        if self.opt.pose_model_type == "shared":#separate_resnet False
             # If we are using a shared encoder for both depth and pose (as advocated
             # in monodepthv1), then all images are fed separately through the depth encoder.
             """

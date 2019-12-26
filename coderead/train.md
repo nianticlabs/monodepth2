@@ -6,8 +6,19 @@
  * @Description: In User Settings Edit
  * @FilePath: \monodepth2\coderead\train.md
  -->
+
+ # 1 现在遇到的问题是：
+    1. 要解决数据集，文章中使用的数据集是kitti2015 ，直接从文章中的链接中下载
+    2. 初始化：
+      1. 训练分为三个步骤
+         monocloar单视训练
+      2. 立体训练
+      3. 立体+单目训练
+      
+=======
  现在遇到的问题是：
  ---
+ 
 1. 要解决数据集，文章中使用的数据集是kitti2015 ，直接从 文章中的链接中下载
 2. 编码器和解码器分别是不同的两个独立的网络
     - 网络结构是什么
@@ -70,9 +81,10 @@
         x = torch.flatten(x, 1)
         x = self.fc(x)
     ![image](./resnet2.jpg)
+
     这个网络实际上使用的与u型网络同样的结构，只不过为了共享网络，进行了编解码器的分离
 使用单模态训练，使用3张图进行深度估计训练，帧的id分别时[-1,0,1]
 
     predict_poses 运动路径估计
     输入 inputs, features (encoder 输出的特征)
-    
+

@@ -1,0 +1,44 @@
+avg_reprojection:False
+batch_size:12
+data_path:E:\01github\monodepth2\kitti_data
+dataset:kitti
+disable_automasking:False
+disable_median_scaling:False
+disparity_smoothness:0.001
+eval_eigen_to_benchmark:False
+eval_mono:False
+eval_out_dir:None
+eval_split:eigen
+eval_stereo:False
+ext_disp_to_eval:None
+frame_ids:[0, -1, 1]
+height:192
+learning_rate:0.0001
+load_weights_folder:None
+log_dir:C:\Users\11648\tmp
+log_frequency:250
+max_depth:100.0
+min_depth:0.1
+model_name:mdp
+models_to_load:['encoder', 'depth', 'pose_encoder', 'pose']
+no_cuda:False
+no_eval:False
+no_ssim:False
+num_epochs:20
+num_layers:18
+num_workers:12
+png:False
+pose_model_input:pairs
+pose_model_type:separate_resnet
+post_process:False
+pred_depth_scale_factor:1
+predictive_mask:False
+save_frequency:1
+save_pred_disps:False
+scales:[0, 1, 2, 3]
+scheduler_step_size:15
+split:eigen_zhou
+use_stereo:True
+v1_multiscale:False
+weights_init:pretrained
+width:640
