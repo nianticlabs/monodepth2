@@ -59,7 +59,7 @@ class Trainer:
             self.opt.frame_ids.append("s")
         """
         @ 初始化时为num_layers ==18，weights_init = "pretrained"
-        
+
         """
         self.models["encoder"] = networks.ResnetEncoder(
             self.opt.num_layers, self.opt.weights_init == "pretrained")
@@ -254,6 +254,12 @@ class Trainer:
             """
             @ 对于共享网络
                 输入多张图片
+                encoder 输出的特征在sample上进行split
+                一共有f1f2f3f4f5 四个不同尺度的特征图
+            @outputs 输出4张深度图，尺度不一 
+            @ 暂时无法判定运行的时候的状态
+            @ 深度估计图仅仅使用了图像增强color_aug 的输入
+            @ 单模态训练有三张图 frame_ids = [-1,0,1]
 
             """
             all_color_aug = torch.cat([inputs[("color_aug", i, 0)] for i in self.opt.frame_ids])
@@ -263,7 +269,7 @@ class Trainer:
             features = {}
             for i, k in enumerate(self.opt.frame_ids):
                 features[k] = [f[i] for f in all_features]
-
+            
             outputs = self.models["depth"](features[0])
         else:
             # Otherwise, we only feed the image with frame_id 0 through the depth encoder
@@ -273,7 +279,10 @@ class Trainer:
             """
             features = self.models["encoder"](inputs["color_aug", 0, 0])
             outputs = self.models["depth"](features)
-
+        #TODO:分析predictive_mask
+        """
+        @ 暂时不分析predictive_mask
+        """
         if self.opt.predictive_mask:
             outputs["predictive_mask"] = self.models["predictive_mask"](features)
 
@@ -289,11 +298,14 @@ class Trainer:
         """Predict poses between input frames for monocular sequences.
         """
         outputs = {}
-        if self.num_pose_frames == 2:
+        if self.num_pose_frames == 2: # 默认为True
             # In this setting, we compute the pose to each source frame via a
             # separate forward pass through the pose network.
 
             # select what features the pose network takes as input
+            """
+            @ 
+            """
             if self.opt.pose_model_type == "shared":
                 pose_feats = {f_i: features[f_i] for f_i in self.opt.frame_ids}
             else:

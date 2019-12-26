@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-12-23 22:57:00
- * @LastEditTime : 2019-12-25 23:01:55
+ * @LastEditTime : 2019-12-26 21:47:14
  * @LastEditors  : Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \monodepth2\coderead\train.md
@@ -46,6 +46,8 @@
         inputs[("inv_K", scale)]
         inputs["depth_gt"] #如果 .bin 文件存在 加载深度图
         inputs["stereo_T"] = +-1 # if 's' in frame_id
+    @ 那么label从何而来？
+    label就是其对应的 depth_gt
 ---
 
 4. 共享编码器姿态估计网络推理过程
@@ -68,3 +70,9 @@
         x = torch.flatten(x, 1)
         x = self.fc(x)
     ![image](./resnet2.jpg)
+    这个网络实际上使用的与u型网络同样的结构，只不过为了共享网络，进行了编解码器的分离
+使用单模态训练，使用3张图进行深度估计训练，帧的id分别时[-1,0,1]
+
+    predict_poses 运动路径估计
+    输入 inputs, features (encoder 输出的特征)
+    
