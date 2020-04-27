@@ -51,7 +51,7 @@ def monodepth_init():
 	if torch.cuda.is_available():
 		device = torch.device("cuda")
 
-	model_path = os.path.join("/home/mpg-agx/Desktop/projects/opencv_jetson/monodepth2/models", model_name)
+	model_path = os.path.join("models", model_name)
 	print("[DepthAI_2] Loading model from ", model_path)
 	encoder_path = os.path.join(model_path, "encoder.pth")
 	depth_decoder_path = os.path.join(model_path, "depth.pth")
