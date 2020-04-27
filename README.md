@@ -1,3 +1,24 @@
+### Webcam or video stream capability using in your code
+```
+#using in your code:
+
+from monodepth import monodepth_init, start_monodepth
+import cv2
+
+monodepth_init()
+cam = cv2.VideoCapture(0)
+while cam.isOpened():
+  _, frame = cam.read()
+  _, _, depth_frame = start_monodepth(frame)
+  cv2.imshow("Depth Estimate", depth_frame)
+  cv2.waitKey(1) & 0xFF == ord('q'):
+    break
+
+cam.release()
+cv2.destroyAllWindows()
+
+```
+
 # Monodepth2
 
 This is the reference PyTorch implementation for training and testing depth estimation models using the method described in
