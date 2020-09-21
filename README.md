@@ -6,7 +6,7 @@ This is the reference PyTorch implementation for training and testing depth esti
 >
 > [Clément Godard](http://www0.cs.ucl.ac.uk/staff/C.Godard/), [Oisin Mac Aodha](http://vision.caltech.edu/~macaodha/), [Michael Firman](http://www.michaelfirman.co.uk) and [Gabriel J. Brostow](http://www0.cs.ucl.ac.uk/staff/g.brostow/)  
 >
-> [ICCV 2019](https://arxiv.org/abs/1806.01260)
+> [ICCV 2019 (arXiv pdf)](https://arxiv.org/abs/1806.01260)
 
 <p align="center">
   <img src="assets/teaser.gif" alt="example input output gif" width="600" />
