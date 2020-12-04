@@ -112,7 +112,8 @@ class Trainer:
 
         # data
         datasets_dict = {"kitti": datasets.KITTIRAWDataset,
-                         "kitti_odom": datasets.KITTIOdomDataset}
+                         "kitti_odom": datasets.KITTIOdomDataset,
+                         "nyu": datasets.NYUDataset}
         self.dataset = datasets_dict[self.opt.dataset]
 
         fpath = os.path.join(os.path.dirname(__file__), "splits", self.opt.split, "{}_files.txt")
@@ -246,7 +247,7 @@ class Trainer:
         else:
             # Otherwise, we only feed the image with frame_id 0 through the depth encoder
             features = self.models["encoder"](inputs["color_aug", 0, 0])
-            outputs = self.models["depth"](features)
+            outputs = self.models["depth"](features) # Depth network outputs inverse disparity
 
         if self.opt.predictive_mask:
             outputs["predictive_mask"] = self.models["predictive_mask"](features)
@@ -502,8 +503,12 @@ class Trainer:
         so is only used to give an indication of validation performance
         """
         depth_pred = outputs[("depth", 0, 0)]
-        depth_pred = torch.clamp(F.interpolate(
-            depth_pred, [375, 1242], mode="bilinear", align_corners=False), 1e-3, 80)
+        if self.opt.dataset != "nyu":
+            depth_pred = torch.clamp(F.interpolate(
+                depth_pred, [375, 1242], mode="bilinear", align_corners=False), 1e-3, 80)
+        else:
+            depth_pred = depth_pred = torch.clamp(F.interpolate(
+                depth_pred, [480, 640], mode="bilinear", align_corners=False), 1e-3, 10)
         depth_pred = depth_pred.detach()
 
         depth_gt = inputs["depth_gt"]
@@ -511,7 +516,11 @@ class Trainer:
 
         # garg/eigen crop
         crop_mask = torch.zeros_like(mask)
-        crop_mask[:, :, 153:371, 44:1197] = 1
+        if self.opt.dataset != "nyu":
+            crop_mask[:, :, 153:371, 44:1197] = 1
+        else:
+            # crop_mask = torch.ones_like(mask)
+            crop_mask[:, :, 10:459, 24:615] = 1
         mask = mask * crop_mask
 
         depth_gt = depth_gt[mask]

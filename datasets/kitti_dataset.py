@@ -64,6 +64,8 @@ class KITTIRAWDataset(KITTIDataset):
         return image_path
 
     def get_depth(self, folder, frame_index, side, do_flip):
+        # The ground truth for the KITTI Raw Dataset is sparse, true depth
+        # that isn't inverted.
         calib_path = os.path.join(self.data_path, folder.split("/")[0])
 
         velo_filename = os.path.join(
