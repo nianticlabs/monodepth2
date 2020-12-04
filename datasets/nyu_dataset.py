@@ -47,8 +47,7 @@ class NYUDataset(MonoDataset):
         folder.
         """
         image_path = os.path.join(self.data_path, folder, str(frame_index), ".png")
-        image_file = open(image_path, 'rb')
-        image = pil.open(image_file)
+        depth_gt = pil.open(image_path)
         depth_gt = np.asarray(image) / 255 * 10
 
         if do_flip:
