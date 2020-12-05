@@ -52,9 +52,11 @@ data/nyu2_train/living_room_0038_out 121
 data/nyu2_train/living_room_0038_out 122
 data/nyu2_train/living_room_0038_out 130
 data/nyu2_train/living_room_0038_out 10
+data/nyu2_train/living_room_0038_out 4
 data/nyu2_train/living_room_0038_out 153
 data/nyu2_train/living_room_0038_out 12
 data/nyu2_train/living_room_0038_out 163
+data/nyu2_train/living_room_0038_out 168
 data/nyu2_train/living_room_0038_out 104
 data/nyu2_train/living_room_0038_out 134
 data/nyu2_train/living_room_0038_out 100
@@ -192,6 +194,7 @@ data/nyu2_train/bedroom_0047_out 70
 data/nyu2_train/bedroom_0047_out 60
 data/nyu2_train/bedroom_0047_out 54
 data/nyu2_train/bedroom_0047_out 10
+data/nyu2_train/bedroom_0047_out 4
 data/nyu2_train/bedroom_0047_out 12
 data/nyu2_train/bedroom_0047_out 64
 data/nyu2_train/bedroom_0047_out 67
@@ -214,6 +217,7 @@ data/nyu2_train/bedroom_0047_out 76
 data/nyu2_train/bedroom_0047_out 69
 data/nyu2_train/bedroom_0047_out 5
 data/nyu2_train/bedroom_0047_out 84
+data/nyu2_train/bedroom_0047_out 92
 data/nyu2_train/bedroom_0047_out 51
 data/nyu2_train/bedroom_0047_out 7
 data/nyu2_train/bedroom_0047_out 15
@@ -301,8 +305,10 @@ data/nyu2_train/bedroom_0113_out 121
 data/nyu2_train/bedroom_0113_out 122
 data/nyu2_train/bedroom_0113_out 130
 data/nyu2_train/bedroom_0113_out 10
+data/nyu2_train/bedroom_0113_out 4
 data/nyu2_train/bedroom_0113_out 153
 data/nyu2_train/bedroom_0113_out 12
+data/nyu2_train/bedroom_0113_out 163
 data/nyu2_train/bedroom_0113_out 104
 data/nyu2_train/bedroom_0113_out 134
 data/nyu2_train/bedroom_0113_out 100
@@ -444,6 +450,7 @@ data/nyu2_train/kitchen_0011b_out 70
 data/nyu2_train/kitchen_0011b_out 60
 data/nyu2_train/kitchen_0011b_out 54
 data/nyu2_train/kitchen_0011b_out 10
+data/nyu2_train/kitchen_0011b_out 4
 data/nyu2_train/kitchen_0011b_out 12
 data/nyu2_train/kitchen_0011b_out 104
 data/nyu2_train/kitchen_0011b_out 100
@@ -502,6 +509,7 @@ data/nyu2_train/kitchen_0011b_out 36
 data/nyu2_train/kitchen_0011b_out 20
 data/nyu2_train/kitchen_0011b_out 106
 data/nyu2_train/kitchen_0011b_out 65
+data/nyu2_train/kitchen_0011b_out 120
 data/nyu2_train/kitchen_0011b_out 86
 data/nyu2_train/kitchen_0011b_out 44
 data/nyu2_train/kitchen_0011b_out 63
@@ -570,6 +578,7 @@ data/nyu2_train/living_room_0035_out 121
 data/nyu2_train/living_room_0035_out 122
 data/nyu2_train/living_room_0035_out 130
 data/nyu2_train/living_room_0035_out 10
+data/nyu2_train/living_room_0035_out 4
 data/nyu2_train/living_room_0035_out 153
 data/nyu2_train/living_room_0035_out 12
 data/nyu2_train/living_room_0035_out 104
@@ -633,6 +642,7 @@ data/nyu2_train/living_room_0035_out 89
 data/nyu2_train/living_room_0035_out 102
 data/nyu2_train/living_room_0035_out 99
 data/nyu2_train/living_room_0035_out 72
+data/nyu2_train/living_room_0035_out 157
 data/nyu2_train/living_room_0035_out 81
 data/nyu2_train/living_room_0035_out 33
 data/nyu2_train/living_room_0035_out 27
@@ -701,6 +711,7 @@ data/nyu2_train/bedroom_0107_out 70
 data/nyu2_train/bedroom_0107_out 60
 data/nyu2_train/bedroom_0107_out 54
 data/nyu2_train/bedroom_0107_out 10
+data/nyu2_train/bedroom_0107_out 4
 data/nyu2_train/bedroom_0107_out 12
 data/nyu2_train/bedroom_0107_out 64
 data/nyu2_train/bedroom_0107_out 67
@@ -722,6 +733,7 @@ data/nyu2_train/bedroom_0107_out 5
 data/nyu2_train/bedroom_0107_out 51
 data/nyu2_train/bedroom_0107_out 7
 data/nyu2_train/bedroom_0107_out 15
+data/nyu2_train/bedroom_0107_out 72
 data/nyu2_train/bedroom_0107_out 33
 data/nyu2_train/bedroom_0107_out 27
 data/nyu2_train/bedroom_0107_out 38
@@ -805,6 +817,7 @@ data/nyu2_train/home_office_0005_out 121
 data/nyu2_train/home_office_0005_out 122
 data/nyu2_train/home_office_0005_out 130
 data/nyu2_train/home_office_0005_out 10
+data/nyu2_train/home_office_0005_out 4
 data/nyu2_train/home_office_0005_out 153
 data/nyu2_train/home_office_0005_out 12
 data/nyu2_train/home_office_0005_out 163
@@ -918,6 +931,7 @@ data/nyu2_train/home_office_0005_out 61
 data/nyu2_train/home_office_0005_out 32
 data/nyu2_train/home_office_0005_out 123
 data/nyu2_train/home_office_0005_out 23
+data/nyu2_train/home_office_0005_out 199
 data/nyu2_train/home_office_0005_out 74
 data/nyu2_train/home_office_0005_out 164
 data/nyu2_train/home_office_0005_out 141
@@ -964,6 +978,7 @@ data/nyu2_train/living_room_0085_out 70
 data/nyu2_train/living_room_0085_out 60
 data/nyu2_train/living_room_0085_out 54
 data/nyu2_train/living_room_0085_out 10
+data/nyu2_train/living_room_0085_out 4
 data/nyu2_train/living_room_0085_out 12
 data/nyu2_train/living_room_0085_out 64
 data/nyu2_train/living_room_0085_out 67
@@ -1016,6 +1031,7 @@ data/nyu2_train/living_room_0085_out 24
 data/nyu2_train/living_room_0085_out 22
 data/nyu2_train/living_room_0085_out 80
 data/nyu2_train/living_room_0085_out 26
+data/nyu2_train/living_room_0085_out 88
 data/nyu2_train/living_room_0085_out 9
 data/nyu2_train/printer_room_0001_out 37
 data/nyu2_train/printer_room_0001_out 6
@@ -1052,12 +1068,14 @@ data/nyu2_train/printer_room_0001_out 70
 data/nyu2_train/printer_room_0001_out 60
 data/nyu2_train/printer_room_0001_out 54
 data/nyu2_train/printer_room_0001_out 10
+data/nyu2_train/printer_room_0001_out 4
 data/nyu2_train/printer_room_0001_out 12
 data/nyu2_train/printer_room_0001_out 104
 data/nyu2_train/printer_room_0001_out 100
 data/nyu2_train/printer_room_0001_out 64
 data/nyu2_train/printer_room_0001_out 103
 data/nyu2_train/printer_room_0001_out 67
+data/nyu2_train/printer_room_0001_out 114
 data/nyu2_train/printer_room_0001_out 8
 data/nyu2_train/printer_room_0001_out 43
 data/nyu2_train/printer_room_0001_out 17
@@ -1173,6 +1191,7 @@ data/nyu2_train/furniture_store_0001b_out 121
 data/nyu2_train/furniture_store_0001b_out 122
 data/nyu2_train/furniture_store_0001b_out 130
 data/nyu2_train/furniture_store_0001b_out 10
+data/nyu2_train/furniture_store_0001b_out 4
 data/nyu2_train/furniture_store_0001b_out 12
 data/nyu2_train/furniture_store_0001b_out 104
 data/nyu2_train/furniture_store_0001b_out 134
@@ -1235,6 +1254,7 @@ data/nyu2_train/furniture_store_0001b_out 38
 data/nyu2_train/furniture_store_0001b_out 78
 data/nyu2_train/furniture_store_0001b_out 73
 data/nyu2_train/furniture_store_0001b_out 110
+data/nyu2_train/furniture_store_0001b_out 143
 data/nyu2_train/furniture_store_0001b_out 83
 data/nyu2_train/furniture_store_0001b_out 87
 data/nyu2_train/furniture_store_0001b_out 59
@@ -1289,6 +1309,7 @@ data/nyu2_train/bedroom_0132_out 42
 data/nyu2_train/bedroom_0132_out 60
 data/nyu2_train/bedroom_0132_out 54
 data/nyu2_train/bedroom_0132_out 10
+data/nyu2_train/bedroom_0132_out 4
 data/nyu2_train/bedroom_0132_out 12
 data/nyu2_train/bedroom_0132_out 64
 data/nyu2_train/bedroom_0132_out 8
@@ -1321,6 +1342,7 @@ data/nyu2_train/bedroom_0132_out 61
 data/nyu2_train/bedroom_0132_out 32
 data/nyu2_train/bedroom_0132_out 23
 data/nyu2_train/bedroom_0132_out 52
+data/nyu2_train/bedroom_0132_out 66
 data/nyu2_train/bedroom_0132_out 24
 data/nyu2_train/bedroom_0132_out 22
 data/nyu2_train/bedroom_0132_out 26
@@ -1363,6 +1385,7 @@ data/nyu2_train/kitchen_0017_out 56
 data/nyu2_train/kitchen_0017_out 119
 data/nyu2_train/kitchen_0017_out 42
 data/nyu2_train/kitchen_0017_out 129
+data/nyu2_train/kitchen_0017_out 160
 data/nyu2_train/kitchen_0017_out 126
 data/nyu2_train/kitchen_0017_out 91
 data/nyu2_train/kitchen_0017_out 93
@@ -1375,6 +1398,7 @@ data/nyu2_train/kitchen_0017_out 121
 data/nyu2_train/kitchen_0017_out 122
 data/nyu2_train/kitchen_0017_out 130
 data/nyu2_train/kitchen_0017_out 10
+data/nyu2_train/kitchen_0017_out 4
 data/nyu2_train/kitchen_0017_out 153
 data/nyu2_train/kitchen_0017_out 12
 data/nyu2_train/kitchen_0017_out 104
@@ -1503,9 +1527,11 @@ data/nyu2_train/conference_room_0002_out 16
 data/nyu2_train/conference_room_0002_out 62
 data/nyu2_train/conference_room_0002_out 56
 data/nyu2_train/conference_room_0002_out 42
+data/nyu2_train/conference_room_0002_out 70
 data/nyu2_train/conference_room_0002_out 60
 data/nyu2_train/conference_room_0002_out 54
 data/nyu2_train/conference_room_0002_out 10
+data/nyu2_train/conference_room_0002_out 4
 data/nyu2_train/conference_room_0002_out 12
 data/nyu2_train/conference_room_0002_out 64
 data/nyu2_train/conference_room_0002_out 67
@@ -1554,8 +1580,10 @@ data/nyu2_train/bathroom_0001_out 28
 data/nyu2_train/bathroom_0001_out 11
 data/nyu2_train/bathroom_0001_out 29
 data/nyu2_train/bathroom_0001_out 14
+data/nyu2_train/bathroom_0001_out 30
 data/nyu2_train/bathroom_0001_out 16
 data/nyu2_train/bathroom_0001_out 10
+data/nyu2_train/bathroom_0001_out 4
 data/nyu2_train/bathroom_0001_out 12
 data/nyu2_train/bathroom_0001_out 8
 data/nyu2_train/bathroom_0001_out 17
@@ -1629,6 +1657,7 @@ data/nyu2_train/kitchen_0010_out 121
 data/nyu2_train/kitchen_0010_out 122
 data/nyu2_train/kitchen_0010_out 130
 data/nyu2_train/kitchen_0010_out 10
+data/nyu2_train/kitchen_0010_out 4
 data/nyu2_train/kitchen_0010_out 153
 data/nyu2_train/kitchen_0010_out 12
 data/nyu2_train/kitchen_0010_out 163
@@ -1649,6 +1678,7 @@ data/nyu2_train/kitchen_0010_out 43
 data/nyu2_train/kitchen_0010_out 144
 data/nyu2_train/kitchen_0010_out 17
 data/nyu2_train/kitchen_0010_out 151
+data/nyu2_train/kitchen_0010_out 185
 data/nyu2_train/kitchen_0010_out 35
 data/nyu2_train/kitchen_0010_out 40
 data/nyu2_train/kitchen_0010_out 55
@@ -1766,6 +1796,7 @@ data/nyu2_train/classroom_0012_out 53
 data/nyu2_train/classroom_0012_out 11
 data/nyu2_train/classroom_0012_out 46
 data/nyu2_train/classroom_0012_out 39
+data/nyu2_train/classroom_0012_out 71
 data/nyu2_train/classroom_0012_out 29
 data/nyu2_train/classroom_0012_out 14
 data/nyu2_train/classroom_0012_out 30
@@ -1777,6 +1808,7 @@ data/nyu2_train/classroom_0012_out 70
 data/nyu2_train/classroom_0012_out 60
 data/nyu2_train/classroom_0012_out 54
 data/nyu2_train/classroom_0012_out 10
+data/nyu2_train/classroom_0012_out 4
 data/nyu2_train/classroom_0012_out 12
 data/nyu2_train/classroom_0012_out 64
 data/nyu2_train/classroom_0012_out 67
@@ -1851,6 +1883,7 @@ data/nyu2_train/living_room_0011_out 39
 data/nyu2_train/living_room_0011_out 71
 data/nyu2_train/living_room_0011_out 29
 data/nyu2_train/living_room_0011_out 14
+data/nyu2_train/living_room_0011_out 194
 data/nyu2_train/living_room_0011_out 113
 data/nyu2_train/living_room_0011_out 138
 data/nyu2_train/living_room_0011_out 30
@@ -1878,6 +1911,7 @@ data/nyu2_train/living_room_0011_out 121
 data/nyu2_train/living_room_0011_out 122
 data/nyu2_train/living_room_0011_out 130
 data/nyu2_train/living_room_0011_out 10
+data/nyu2_train/living_room_0011_out 4
 data/nyu2_train/living_room_0011_out 153
 data/nyu2_train/living_room_0011_out 12
 data/nyu2_train/living_room_0011_out 163
@@ -2087,6 +2121,7 @@ data/nyu2_train/office_0006_out 122
 data/nyu2_train/office_0006_out 130
 data/nyu2_train/office_0006_out 214
 data/nyu2_train/office_0006_out 10
+data/nyu2_train/office_0006_out 4
 data/nyu2_train/office_0006_out 153
 data/nyu2_train/office_0006_out 12
 data/nyu2_train/office_0006_out 205
@@ -2153,6 +2188,7 @@ data/nyu2_train/office_0006_out 173
 data/nyu2_train/office_0006_out 84
 data/nyu2_train/office_0006_out 92
 data/nyu2_train/office_0006_out 133
+data/nyu2_train/office_0006_out 236
 data/nyu2_train/office_0006_out 176
 data/nyu2_train/office_0006_out 150
 data/nyu2_train/office_0006_out 107
@@ -2311,6 +2347,7 @@ data/nyu2_train/bedroom_0062_out 122
 data/nyu2_train/bedroom_0062_out 130
 data/nyu2_train/bedroom_0062_out 214
 data/nyu2_train/bedroom_0062_out 10
+data/nyu2_train/bedroom_0062_out 4
 data/nyu2_train/bedroom_0062_out 153
 data/nyu2_train/bedroom_0062_out 12
 data/nyu2_train/bedroom_0062_out 205
@@ -2407,6 +2444,7 @@ data/nyu2_train/bedroom_0062_out 202
 data/nyu2_train/bedroom_0062_out 219
 data/nyu2_train/bedroom_0062_out 154
 data/nyu2_train/bedroom_0062_out 220
+data/nyu2_train/bedroom_0062_out 224
 data/nyu2_train/bedroom_0062_out 78
 data/nyu2_train/bedroom_0062_out 73
 data/nyu2_train/bedroom_0062_out 159
@@ -2502,6 +2540,7 @@ data/nyu2_train/bedroom_0060_out 121
 data/nyu2_train/bedroom_0060_out 122
 data/nyu2_train/bedroom_0060_out 130
 data/nyu2_train/bedroom_0060_out 10
+data/nyu2_train/bedroom_0060_out 4
 data/nyu2_train/bedroom_0060_out 12
 data/nyu2_train/bedroom_0060_out 104
 data/nyu2_train/bedroom_0060_out 134
@@ -2572,6 +2611,7 @@ data/nyu2_train/bedroom_0060_out 59
 data/nyu2_train/bedroom_0060_out 36
 data/nyu2_train/bedroom_0060_out 20
 data/nyu2_train/bedroom_0060_out 106
+data/nyu2_train/bedroom_0060_out 145
 data/nyu2_train/bedroom_0060_out 65
 data/nyu2_train/bedroom_0060_out 120
 data/nyu2_train/bedroom_0060_out 86
@@ -2677,6 +2717,7 @@ data/nyu2_train/bedroom_0033_out 122
 data/nyu2_train/bedroom_0033_out 130
 data/nyu2_train/bedroom_0033_out 214
 data/nyu2_train/bedroom_0033_out 10
+data/nyu2_train/bedroom_0033_out 4
 data/nyu2_train/bedroom_0033_out 153
 data/nyu2_train/bedroom_0033_out 12
 data/nyu2_train/bedroom_0033_out 205
@@ -2820,6 +2861,7 @@ data/nyu2_train/bedroom_0033_out 192
 data/nyu2_train/bedroom_0033_out 166
 data/nyu2_train/bedroom_0033_out 223
 data/nyu2_train/bedroom_0033_out 80
+data/nyu2_train/bedroom_0033_out 238
 data/nyu2_train/bedroom_0033_out 237
 data/nyu2_train/bedroom_0033_out 96
 data/nyu2_train/bedroom_0033_out 204
@@ -2881,6 +2923,7 @@ data/nyu2_train/bedroom_0021_out 121
 data/nyu2_train/bedroom_0021_out 122
 data/nyu2_train/bedroom_0021_out 130
 data/nyu2_train/bedroom_0021_out 10
+data/nyu2_train/bedroom_0021_out 4
 data/nyu2_train/bedroom_0021_out 153
 data/nyu2_train/bedroom_0021_out 12
 data/nyu2_train/bedroom_0021_out 163
@@ -2975,6 +3018,7 @@ data/nyu2_train/bedroom_0021_out 32
 data/nyu2_train/bedroom_0021_out 123
 data/nyu2_train/bedroom_0021_out 23
 data/nyu2_train/bedroom_0021_out 74
+data/nyu2_train/bedroom_0021_out 164
 data/nyu2_train/bedroom_0021_out 141
 data/nyu2_train/bedroom_0021_out 52
 data/nyu2_train/bedroom_0021_out 66
@@ -3016,6 +3060,7 @@ data/nyu2_train/bathroom_0024_out 70
 data/nyu2_train/bathroom_0024_out 60
 data/nyu2_train/bathroom_0024_out 54
 data/nyu2_train/bathroom_0024_out 10
+data/nyu2_train/bathroom_0024_out 4
 data/nyu2_train/bathroom_0024_out 12
 data/nyu2_train/bathroom_0024_out 64
 data/nyu2_train/bathroom_0024_out 67
@@ -3026,6 +3071,7 @@ data/nyu2_train/bathroom_0024_out 35
 data/nyu2_train/bathroom_0024_out 40
 data/nyu2_train/bathroom_0024_out 55
 data/nyu2_train/bathroom_0024_out 45
+data/nyu2_train/bathroom_0024_out 82
 data/nyu2_train/bathroom_0024_out 79
 data/nyu2_train/bathroom_0024_out 31
 data/nyu2_train/bathroom_0024_out 47
@@ -3193,6 +3239,7 @@ data/nyu2_train/kitchen_0043_out 10
 data/nyu2_train/kitchen_0043_out 262
 data/nyu2_train/kitchen_0043_out 287
 data/nyu2_train/kitchen_0043_out 249
+data/nyu2_train/kitchen_0043_out 4
 data/nyu2_train/kitchen_0043_out 153
 data/nyu2_train/kitchen_0043_out 304
 data/nyu2_train/kitchen_0043_out 344
@@ -3409,6 +3456,7 @@ data/nyu2_train/kitchen_0043_out 284
 data/nyu2_train/kitchen_0043_out 66
 data/nyu2_train/kitchen_0043_out 24
 data/nyu2_train/kitchen_0043_out 22
+data/nyu2_train/kitchen_0043_out 371
 data/nyu2_train/kitchen_0043_out 192
 data/nyu2_train/kitchen_0043_out 305
 data/nyu2_train/kitchen_0043_out 166
@@ -3464,6 +3512,7 @@ data/nyu2_train/kitchen_0006_out 70
 data/nyu2_train/kitchen_0006_out 60
 data/nyu2_train/kitchen_0006_out 54
 data/nyu2_train/kitchen_0006_out 10
+data/nyu2_train/kitchen_0006_out 4
 data/nyu2_train/kitchen_0006_out 12
 data/nyu2_train/kitchen_0006_out 104
 data/nyu2_train/kitchen_0006_out 100
@@ -3483,6 +3532,7 @@ data/nyu2_train/kitchen_0006_out 108
 data/nyu2_train/kitchen_0006_out 79
 data/nyu2_train/kitchen_0006_out 31
 data/nyu2_train/kitchen_0006_out 47
+data/nyu2_train/kitchen_0006_out 111
 data/nyu2_train/kitchen_0006_out 41
 data/nyu2_train/kitchen_0006_out 50
 data/nyu2_train/kitchen_0006_out 19
@@ -3606,7 +3656,9 @@ data/nyu2_train/dining_room_0028_out 146
 data/nyu2_train/dining_room_0028_out 121
 data/nyu2_train/dining_room_0028_out 122
 data/nyu2_train/dining_room_0028_out 130
+data/nyu2_train/dining_room_0028_out 214
 data/nyu2_train/dining_room_0028_out 10
+data/nyu2_train/dining_room_0028_out 4
 data/nyu2_train/dining_room_0028_out 153
 data/nyu2_train/dining_room_0028_out 12
 data/nyu2_train/dining_room_0028_out 205
@@ -3779,6 +3831,7 @@ data/nyu2_train/bathroom_0039_out 70
 data/nyu2_train/bathroom_0039_out 60
 data/nyu2_train/bathroom_0039_out 54
 data/nyu2_train/bathroom_0039_out 10
+data/nyu2_train/bathroom_0039_out 4
 data/nyu2_train/bathroom_0039_out 12
 data/nyu2_train/bathroom_0039_out 104
 data/nyu2_train/bathroom_0039_out 100
@@ -3798,6 +3851,7 @@ data/nyu2_train/bathroom_0039_out 108
 data/nyu2_train/bathroom_0039_out 79
 data/nyu2_train/bathroom_0039_out 31
 data/nyu2_train/bathroom_0039_out 47
+data/nyu2_train/bathroom_0039_out 111
 data/nyu2_train/bathroom_0039_out 41
 data/nyu2_train/bathroom_0039_out 50
 data/nyu2_train/bathroom_0039_out 19
@@ -3884,9 +3938,11 @@ data/nyu2_train/bathroom_0013_out 70
 data/nyu2_train/bathroom_0013_out 60
 data/nyu2_train/bathroom_0013_out 54
 data/nyu2_train/bathroom_0013_out 10
+data/nyu2_train/bathroom_0013_out 4
 data/nyu2_train/bathroom_0013_out 12
 data/nyu2_train/bathroom_0013_out 100
 data/nyu2_train/bathroom_0013_out 64
+data/nyu2_train/bathroom_0013_out 103
 data/nyu2_train/bathroom_0013_out 67
 data/nyu2_train/bathroom_0013_out 8
 data/nyu2_train/bathroom_0013_out 43
@@ -4045,6 +4101,7 @@ data/nyu2_train/home_office_0004_out 252
 data/nyu2_train/home_office_0004_out 10
 data/nyu2_train/home_office_0004_out 262
 data/nyu2_train/home_office_0004_out 249
+data/nyu2_train/home_office_0004_out 4
 data/nyu2_train/home_office_0004_out 153
 data/nyu2_train/home_office_0004_out 12
 data/nyu2_train/home_office_0004_out 205
@@ -4183,6 +4240,7 @@ data/nyu2_train/home_office_0004_out 63
 data/nyu2_train/home_office_0004_out 196
 data/nyu2_train/home_office_0004_out 116
 data/nyu2_train/home_office_0004_out 61
+data/nyu2_train/home_office_0004_out 266
 data/nyu2_train/home_office_0004_out 32
 data/nyu2_train/home_office_0004_out 240
 data/nyu2_train/home_office_0004_out 123
@@ -4250,6 +4308,7 @@ data/nyu2_train/cafe_0001a_out 54
 data/nyu2_train/cafe_0001a_out 121
 data/nyu2_train/cafe_0001a_out 122
 data/nyu2_train/cafe_0001a_out 10
+data/nyu2_train/cafe_0001a_out 4
 data/nyu2_train/cafe_0001a_out 12
 data/nyu2_train/cafe_0001a_out 104
 data/nyu2_train/cafe_0001a_out 100
@@ -4315,6 +4374,7 @@ data/nyu2_train/cafe_0001a_out 63
 data/nyu2_train/cafe_0001a_out 116
 data/nyu2_train/cafe_0001a_out 61
 data/nyu2_train/cafe_0001a_out 32
+data/nyu2_train/cafe_0001a_out 123
 data/nyu2_train/cafe_0001a_out 23
 data/nyu2_train/cafe_0001a_out 74
 data/nyu2_train/cafe_0001a_out 52
@@ -4373,6 +4433,7 @@ data/nyu2_train/bedroom_0125b_out 121
 data/nyu2_train/bedroom_0125b_out 122
 data/nyu2_train/bedroom_0125b_out 130
 data/nyu2_train/bedroom_0125b_out 10
+data/nyu2_train/bedroom_0125b_out 4
 data/nyu2_train/bedroom_0125b_out 12
 data/nyu2_train/bedroom_0125b_out 104
 data/nyu2_train/bedroom_0125b_out 134
@@ -4394,6 +4455,7 @@ data/nyu2_train/bedroom_0125b_out 82
 data/nyu2_train/bedroom_0125b_out 108
 data/nyu2_train/bedroom_0125b_out 79
 data/nyu2_train/bedroom_0125b_out 31
+data/nyu2_train/bedroom_0125b_out 137
 data/nyu2_train/bedroom_0125b_out 47
 data/nyu2_train/bedroom_0125b_out 111
 data/nyu2_train/bedroom_0125b_out 41
@@ -4504,6 +4566,7 @@ data/nyu2_train/bedroom_0059_out 121
 data/nyu2_train/bedroom_0059_out 122
 data/nyu2_train/bedroom_0059_out 130
 data/nyu2_train/bedroom_0059_out 10
+data/nyu2_train/bedroom_0059_out 4
 data/nyu2_train/bedroom_0059_out 12
 data/nyu2_train/bedroom_0059_out 104
 data/nyu2_train/bedroom_0059_out 100
@@ -4541,6 +4604,7 @@ data/nyu2_train/bedroom_0059_out 101
 data/nyu2_train/bedroom_0059_out 112
 data/nyu2_train/bedroom_0059_out 84
 data/nyu2_train/bedroom_0059_out 92
+data/nyu2_train/bedroom_0059_out 133
 data/nyu2_train/bedroom_0059_out 107
 data/nyu2_train/bedroom_0059_out 51
 data/nyu2_train/bedroom_0059_out 7
@@ -4618,6 +4682,7 @@ data/nyu2_train/home_office_0007_out 70
 data/nyu2_train/home_office_0007_out 60
 data/nyu2_train/home_office_0007_out 54
 data/nyu2_train/home_office_0007_out 10
+data/nyu2_train/home_office_0007_out 4
 data/nyu2_train/home_office_0007_out 12
 data/nyu2_train/home_office_0007_out 64
 data/nyu2_train/home_office_0007_out 67
@@ -4644,6 +4709,7 @@ data/nyu2_train/home_office_0007_out 51
 data/nyu2_train/home_office_0007_out 7
 data/nyu2_train/home_office_0007_out 15
 data/nyu2_train/home_office_0007_out 77
+data/nyu2_train/home_office_0007_out 89
 data/nyu2_train/home_office_0007_out 72
 data/nyu2_train/home_office_0007_out 81
 data/nyu2_train/home_office_0007_out 33
@@ -4700,6 +4766,7 @@ data/nyu2_train/bathroom_0005_out 70
 data/nyu2_train/bathroom_0005_out 60
 data/nyu2_train/bathroom_0005_out 54
 data/nyu2_train/bathroom_0005_out 10
+data/nyu2_train/bathroom_0005_out 4
 data/nyu2_train/bathroom_0005_out 12
 data/nyu2_train/bathroom_0005_out 64
 data/nyu2_train/bathroom_0005_out 67
@@ -4735,6 +4802,7 @@ data/nyu2_train/bathroom_0005_out 63
 data/nyu2_train/bathroom_0005_out 61
 data/nyu2_train/bathroom_0005_out 32
 data/nyu2_train/bathroom_0005_out 23
+data/nyu2_train/bathroom_0005_out 74
 data/nyu2_train/bathroom_0005_out 52
 data/nyu2_train/bathroom_0005_out 66
 data/nyu2_train/bathroom_0005_out 24
@@ -4795,6 +4863,7 @@ data/nyu2_train/conference_room_0001_out 119
 data/nyu2_train/conference_room_0001_out 42
 data/nyu2_train/conference_room_0001_out 180
 data/nyu2_train/conference_room_0001_out 193
+data/nyu2_train/conference_room_0001_out 210
 data/nyu2_train/conference_room_0001_out 129
 data/nyu2_train/conference_room_0001_out 160
 data/nyu2_train/conference_room_0001_out 126
@@ -4810,6 +4879,7 @@ data/nyu2_train/conference_room_0001_out 121
 data/nyu2_train/conference_room_0001_out 122
 data/nyu2_train/conference_room_0001_out 130
 data/nyu2_train/conference_room_0001_out 10
+data/nyu2_train/conference_room_0001_out 4
 data/nyu2_train/conference_room_0001_out 153
 data/nyu2_train/conference_room_0001_out 12
 data/nyu2_train/conference_room_0001_out 205
@@ -4979,6 +5049,7 @@ data/nyu2_train/kitchen_0048_out 272
 data/nyu2_train/kitchen_0048_out 218
 data/nyu2_train/kitchen_0048_out 256
 data/nyu2_train/kitchen_0048_out 13
+data/nyu2_train/kitchen_0048_out 379
 data/nyu2_train/kitchen_0048_out 247
 data/nyu2_train/kitchen_0048_out 68
 data/nyu2_train/kitchen_0048_out 250
@@ -5078,6 +5149,7 @@ data/nyu2_train/kitchen_0048_out 10
 data/nyu2_train/kitchen_0048_out 262
 data/nyu2_train/kitchen_0048_out 287
 data/nyu2_train/kitchen_0048_out 249
+data/nyu2_train/kitchen_0048_out 4
 data/nyu2_train/kitchen_0048_out 153
 data/nyu2_train/kitchen_0048_out 304
 data/nyu2_train/kitchen_0048_out 344
@@ -5361,6 +5433,7 @@ data/nyu2_train/reception_room_0004_out 54
 data/nyu2_train/reception_room_0004_out 121
 data/nyu2_train/reception_room_0004_out 122
 data/nyu2_train/reception_room_0004_out 10
+data/nyu2_train/reception_room_0004_out 4
 data/nyu2_train/reception_room_0004_out 12
 data/nyu2_train/reception_room_0004_out 104
 data/nyu2_train/reception_room_0004_out 100
@@ -5390,6 +5463,7 @@ data/nyu2_train/reception_room_0004_out 58
 data/nyu2_train/reception_room_0004_out 98
 data/nyu2_train/reception_room_0004_out 76
 data/nyu2_train/reception_room_0004_out 124
+data/nyu2_train/reception_room_0004_out 128
 data/nyu2_train/reception_room_0004_out 69
 data/nyu2_train/reception_room_0004_out 5
 data/nyu2_train/reception_room_0004_out 101
@@ -5456,6 +5530,7 @@ data/nyu2_train/bathroom_0054_out 14
 data/nyu2_train/bathroom_0054_out 30
 data/nyu2_train/bathroom_0054_out 16
 data/nyu2_train/bathroom_0054_out 10
+data/nyu2_train/bathroom_0054_out 4
 data/nyu2_train/bathroom_0054_out 12
 data/nyu2_train/bathroom_0054_out 8
 data/nyu2_train/bathroom_0054_out 17
@@ -5467,6 +5542,7 @@ data/nyu2_train/bathroom_0054_out 7
 data/nyu2_train/bathroom_0054_out 15
 data/nyu2_train/bathroom_0054_out 33
 data/nyu2_train/bathroom_0054_out 27
+data/nyu2_train/bathroom_0054_out 36
 data/nyu2_train/bathroom_0054_out 20
 data/nyu2_train/bathroom_0054_out 32
 data/nyu2_train/bathroom_0054_out 23
@@ -5500,10 +5576,12 @@ data/nyu2_train/bedroom_0097_out 16
 data/nyu2_train/bedroom_0097_out 62
 data/nyu2_train/bedroom_0097_out 56
 data/nyu2_train/bedroom_0097_out 42
+data/nyu2_train/bedroom_0097_out 91
 data/nyu2_train/bedroom_0097_out 70
 data/nyu2_train/bedroom_0097_out 60
 data/nyu2_train/bedroom_0097_out 54
 data/nyu2_train/bedroom_0097_out 10
+data/nyu2_train/bedroom_0097_out 4
 data/nyu2_train/bedroom_0097_out 12
 data/nyu2_train/bedroom_0097_out 64
 data/nyu2_train/bedroom_0097_out 67
@@ -5568,6 +5646,7 @@ data/nyu2_train/living_room_0071_out 21
 data/nyu2_train/living_room_0071_out 48
 data/nyu2_train/living_room_0071_out 25
 data/nyu2_train/living_room_0071_out 13
+data/nyu2_train/living_room_0071_out 68
 data/nyu2_train/living_room_0071_out 28
 data/nyu2_train/living_room_0071_out 57
 data/nyu2_train/living_room_0071_out 34
@@ -5585,6 +5664,7 @@ data/nyu2_train/living_room_0071_out 42
 data/nyu2_train/living_room_0071_out 60
 data/nyu2_train/living_room_0071_out 54
 data/nyu2_train/living_room_0071_out 10
+data/nyu2_train/living_room_0071_out 4
 data/nyu2_train/living_room_0071_out 12
 data/nyu2_train/living_room_0071_out 64
 data/nyu2_train/living_room_0071_out 67
@@ -5672,6 +5752,7 @@ data/nyu2_train/cafe_0001c_out 121
 data/nyu2_train/cafe_0001c_out 122
 data/nyu2_train/cafe_0001c_out 130
 data/nyu2_train/cafe_0001c_out 10
+data/nyu2_train/cafe_0001c_out 4
 data/nyu2_train/cafe_0001c_out 153
 data/nyu2_train/cafe_0001c_out 12
 data/nyu2_train/cafe_0001c_out 104
@@ -5738,6 +5819,7 @@ data/nyu2_train/cafe_0001c_out 33
 data/nyu2_train/cafe_0001c_out 27
 data/nyu2_train/cafe_0001c_out 139
 data/nyu2_train/cafe_0001c_out 38
+data/nyu2_train/cafe_0001c_out 154
 data/nyu2_train/cafe_0001c_out 78
 data/nyu2_train/cafe_0001c_out 73
 data/nyu2_train/cafe_0001c_out 110
@@ -5780,6 +5862,7 @@ data/nyu2_train/bathroom_0002_out 21
 data/nyu2_train/bathroom_0002_out 48
 data/nyu2_train/bathroom_0002_out 25
 data/nyu2_train/bathroom_0002_out 13
+data/nyu2_train/bathroom_0002_out 68
 data/nyu2_train/bathroom_0002_out 28
 data/nyu2_train/bathroom_0002_out 57
 data/nyu2_train/bathroom_0002_out 34
@@ -5797,6 +5880,7 @@ data/nyu2_train/bathroom_0002_out 42
 data/nyu2_train/bathroom_0002_out 60
 data/nyu2_train/bathroom_0002_out 54
 data/nyu2_train/bathroom_0002_out 10
+data/nyu2_train/bathroom_0002_out 4
 data/nyu2_train/bathroom_0002_out 12
 data/nyu2_train/bathroom_0002_out 64
 data/nyu2_train/bathroom_0002_out 67
@@ -5843,6 +5927,7 @@ data/nyu2_train/dining_room_0002_out 11
 data/nyu2_train/dining_room_0002_out 14
 data/nyu2_train/dining_room_0002_out 16
 data/nyu2_train/dining_room_0002_out 10
+data/nyu2_train/dining_room_0002_out 4
 data/nyu2_train/dining_room_0002_out 12
 data/nyu2_train/dining_room_0002_out 8
 data/nyu2_train/dining_room_0002_out 17
@@ -5851,6 +5936,7 @@ data/nyu2_train/dining_room_0002_out 5
 data/nyu2_train/dining_room_0002_out 7
 data/nyu2_train/dining_room_0002_out 15
 data/nyu2_train/dining_room_0002_out 20
+data/nyu2_train/dining_room_0002_out 23
 data/nyu2_train/dining_room_0002_out 22
 data/nyu2_train/dining_room_0002_out 9
 data/nyu2_train/dining_room_0029_out 37
@@ -5920,6 +6006,7 @@ data/nyu2_train/dining_room_0029_out 121
 data/nyu2_train/dining_room_0029_out 122
 data/nyu2_train/dining_room_0029_out 130
 data/nyu2_train/dining_room_0029_out 10
+data/nyu2_train/dining_room_0029_out 4
 data/nyu2_train/dining_room_0029_out 153
 data/nyu2_train/dining_room_0029_out 12
 data/nyu2_train/dining_room_0029_out 163
@@ -6047,6 +6134,7 @@ data/nyu2_train/dining_room_0029_out 192
 data/nyu2_train/dining_room_0029_out 166
 data/nyu2_train/dining_room_0029_out 80
 data/nyu2_train/dining_room_0029_out 96
+data/nyu2_train/dining_room_0029_out 204
 data/nyu2_train/dining_room_0029_out 26
 data/nyu2_train/dining_room_0029_out 88
 data/nyu2_train/dining_room_0029_out 9
@@ -6146,6 +6234,7 @@ data/nyu2_train/dining_room_0024_out 214
 data/nyu2_train/dining_room_0024_out 252
 data/nyu2_train/dining_room_0024_out 10
 data/nyu2_train/dining_room_0024_out 249
+data/nyu2_train/dining_room_0024_out 4
 data/nyu2_train/dining_room_0024_out 153
 data/nyu2_train/dining_room_0024_out 12
 data/nyu2_train/dining_room_0024_out 205
@@ -6264,6 +6353,7 @@ data/nyu2_train/dining_room_0024_out 186
 data/nyu2_train/dining_room_0024_out 59
 data/nyu2_train/dining_room_0024_out 36
 data/nyu2_train/dining_room_0024_out 20
+data/nyu2_train/dining_room_0024_out 258
 data/nyu2_train/dining_room_0024_out 165
 data/nyu2_train/dining_room_0024_out 106
 data/nyu2_train/dining_room_0024_out 145
@@ -6313,6 +6403,7 @@ data/nyu2_train/bathroom_0042_out 21
 data/nyu2_train/bathroom_0042_out 48
 data/nyu2_train/bathroom_0042_out 25
 data/nyu2_train/bathroom_0042_out 13
+data/nyu2_train/bathroom_0042_out 68
 data/nyu2_train/bathroom_0042_out 28
 data/nyu2_train/bathroom_0042_out 57
 data/nyu2_train/bathroom_0042_out 34
@@ -6330,6 +6421,7 @@ data/nyu2_train/bathroom_0042_out 42
 data/nyu2_train/bathroom_0042_out 60
 data/nyu2_train/bathroom_0042_out 54
 data/nyu2_train/bathroom_0042_out 10
+data/nyu2_train/bathroom_0042_out 4
 data/nyu2_train/bathroom_0042_out 12
 data/nyu2_train/bathroom_0042_out 64
 data/nyu2_train/bathroom_0042_out 67
@@ -6376,6 +6468,7 @@ data/nyu2_train/study_0005_out 11
 data/nyu2_train/study_0005_out 14
 data/nyu2_train/study_0005_out 16
 data/nyu2_train/study_0005_out 10
+data/nyu2_train/study_0005_out 4
 data/nyu2_train/study_0005_out 12
 data/nyu2_train/study_0005_out 8
 data/nyu2_train/study_0005_out 17
@@ -6385,6 +6478,7 @@ data/nyu2_train/study_0005_out 7
 data/nyu2_train/study_0005_out 15
 data/nyu2_train/study_0005_out 20
 data/nyu2_train/study_0005_out 23
+data/nyu2_train/study_0005_out 24
 data/nyu2_train/study_0005_out 22
 data/nyu2_train/study_0005_out 9
 data/nyu2_train/living_room_0010_out 37
@@ -6506,8 +6600,10 @@ data/nyu2_train/living_room_0010_out 10
 data/nyu2_train/living_room_0010_out 262
 data/nyu2_train/living_room_0010_out 287
 data/nyu2_train/living_room_0010_out 249
+data/nyu2_train/living_room_0010_out 4
 data/nyu2_train/living_room_0010_out 153
 data/nyu2_train/living_room_0010_out 304
+data/nyu2_train/living_room_0010_out 344
 data/nyu2_train/living_room_0010_out 12
 data/nyu2_train/living_room_0010_out 205
 data/nyu2_train/living_room_0010_out 275
@@ -6751,6 +6847,7 @@ data/nyu2_train/basement_0001b_out 42
 data/nyu2_train/basement_0001b_out 60
 data/nyu2_train/basement_0001b_out 54
 data/nyu2_train/basement_0001b_out 10
+data/nyu2_train/basement_0001b_out 4
 data/nyu2_train/basement_0001b_out 12
 data/nyu2_train/basement_0001b_out 64
 data/nyu2_train/basement_0001b_out 8
@@ -6783,6 +6880,7 @@ data/nyu2_train/basement_0001b_out 61
 data/nyu2_train/basement_0001b_out 32
 data/nyu2_train/basement_0001b_out 23
 data/nyu2_train/basement_0001b_out 52
+data/nyu2_train/basement_0001b_out 66
 data/nyu2_train/basement_0001b_out 24
 data/nyu2_train/basement_0001b_out 22
 data/nyu2_train/basement_0001b_out 26
@@ -6895,7 +6993,9 @@ data/nyu2_train/study_room_0004_out 10
 data/nyu2_train/study_room_0004_out 262
 data/nyu2_train/study_room_0004_out 287
 data/nyu2_train/study_room_0004_out 249
+data/nyu2_train/study_room_0004_out 4
 data/nyu2_train/study_room_0004_out 153
+data/nyu2_train/study_room_0004_out 304
 data/nyu2_train/study_room_0004_out 12
 data/nyu2_train/study_room_0004_out 205
 data/nyu2_train/study_room_0004_out 275
@@ -7092,6 +7192,7 @@ data/nyu2_train/office_0024_out 6
 data/nyu2_train/office_0024_out 49
 data/nyu2_train/office_0024_out 152
 data/nyu2_train/office_0024_out 142
+data/nyu2_train/office_0024_out 179
 data/nyu2_train/office_0024_out 94
 data/nyu2_train/office_0024_out 158
 data/nyu2_train/office_0024_out 18
@@ -7141,6 +7242,7 @@ data/nyu2_train/office_0024_out 121
 data/nyu2_train/office_0024_out 122
 data/nyu2_train/office_0024_out 130
 data/nyu2_train/office_0024_out 10
+data/nyu2_train/office_0024_out 4
 data/nyu2_train/office_0024_out 153
 data/nyu2_train/office_0024_out 12
 data/nyu2_train/office_0024_out 163
@@ -7289,6 +7391,7 @@ data/nyu2_train/bathroom_0051_out 70
 data/nyu2_train/bathroom_0051_out 60
 data/nyu2_train/bathroom_0051_out 54
 data/nyu2_train/bathroom_0051_out 10
+data/nyu2_train/bathroom_0051_out 4
 data/nyu2_train/bathroom_0051_out 12
 data/nyu2_train/bathroom_0051_out 64
 data/nyu2_train/bathroom_0051_out 67
@@ -7333,6 +7436,7 @@ data/nyu2_train/bathroom_0051_out 52
 data/nyu2_train/bathroom_0051_out 66
 data/nyu2_train/bathroom_0051_out 24
 data/nyu2_train/bathroom_0051_out 22
+data/nyu2_train/bathroom_0051_out 80
 data/nyu2_train/bathroom_0051_out 26
 data/nyu2_train/bathroom_0051_out 9
 data/nyu2_train/dining_room_0012_out 37
@@ -7449,6 +7553,7 @@ data/nyu2_train/dining_room_0012_out 10
 data/nyu2_train/dining_room_0012_out 262
 data/nyu2_train/dining_room_0012_out 287
 data/nyu2_train/dining_room_0012_out 249
+data/nyu2_train/dining_room_0012_out 4
 data/nyu2_train/dining_room_0012_out 153
 data/nyu2_train/dining_room_0012_out 304
 data/nyu2_train/dining_room_0012_out 12
@@ -7589,6 +7694,7 @@ data/nyu2_train/dining_room_0012_out 224
 data/nyu2_train/dining_room_0012_out 78
 data/nyu2_train/dining_room_0012_out 73
 data/nyu2_train/dining_room_0012_out 159
+data/nyu2_train/dining_room_0012_out 326
 data/nyu2_train/dining_room_0012_out 319
 data/nyu2_train/dining_room_0012_out 325
 data/nyu2_train/dining_room_0012_out 110
@@ -7689,7 +7795,9 @@ data/nyu2_train/bedroom_0014_out 70
 data/nyu2_train/bedroom_0014_out 60
 data/nyu2_train/bedroom_0014_out 54
 data/nyu2_train/bedroom_0014_out 10
+data/nyu2_train/bedroom_0014_out 4
 data/nyu2_train/bedroom_0014_out 12
+data/nyu2_train/bedroom_0014_out 100
 data/nyu2_train/bedroom_0014_out 64
 data/nyu2_train/bedroom_0014_out 67
 data/nyu2_train/bedroom_0014_out 8
@@ -7987,6 +8095,7 @@ data/nyu2_train/bookstore_0001f_out 536
 data/nyu2_train/bookstore_0001f_out 287
 data/nyu2_train/bookstore_0001f_out 384
 data/nyu2_train/bookstore_0001f_out 249
+data/nyu2_train/bookstore_0001f_out 4
 data/nyu2_train/bookstore_0001f_out 618
 data/nyu2_train/bookstore_0001f_out 153
 data/nyu2_train/bookstore_0001f_out 468
@@ -8389,6 +8498,7 @@ data/nyu2_train/bookstore_0001f_out 428
 data/nyu2_train/bookstore_0001f_out 61
 data/nyu2_train/bookstore_0001f_out 266
 data/nyu2_train/bookstore_0001f_out 373
+data/nyu2_train/bookstore_0001f_out 729
 data/nyu2_train/bookstore_0001f_out 611
 data/nyu2_train/bookstore_0001f_out 32
 data/nyu2_train/bookstore_0001f_out 240
@@ -8500,6 +8610,7 @@ data/nyu2_train/office_0023_out 42
 data/nyu2_train/office_0023_out 60
 data/nyu2_train/office_0023_out 54
 data/nyu2_train/office_0023_out 10
+data/nyu2_train/office_0023_out 4
 data/nyu2_train/office_0023_out 12
 data/nyu2_train/office_0023_out 64
 data/nyu2_train/office_0023_out 8
@@ -8532,6 +8643,7 @@ data/nyu2_train/office_0023_out 61
 data/nyu2_train/office_0023_out 32
 data/nyu2_train/office_0023_out 23
 data/nyu2_train/office_0023_out 52
+data/nyu2_train/office_0023_out 66
 data/nyu2_train/office_0023_out 24
 data/nyu2_train/office_0023_out 22
 data/nyu2_train/office_0023_out 26
@@ -8549,6 +8661,7 @@ data/nyu2_train/living_room_0006_out 14
 data/nyu2_train/living_room_0006_out 30
 data/nyu2_train/living_room_0006_out 16
 data/nyu2_train/living_room_0006_out 10
+data/nyu2_train/living_room_0006_out 4
 data/nyu2_train/living_room_0006_out 12
 data/nyu2_train/living_room_0006_out 8
 data/nyu2_train/living_room_0006_out 17
@@ -8560,6 +8673,7 @@ data/nyu2_train/living_room_0006_out 7
 data/nyu2_train/living_room_0006_out 15
 data/nyu2_train/living_room_0006_out 33
 data/nyu2_train/living_room_0006_out 27
+data/nyu2_train/living_room_0006_out 36
 data/nyu2_train/living_room_0006_out 20
 data/nyu2_train/living_room_0006_out 32
 data/nyu2_train/living_room_0006_out 23
@@ -8622,6 +8736,7 @@ data/nyu2_train/dining_room_0014_out 121
 data/nyu2_train/dining_room_0014_out 122
 data/nyu2_train/dining_room_0014_out 130
 data/nyu2_train/dining_room_0014_out 10
+data/nyu2_train/dining_room_0014_out 4
 data/nyu2_train/dining_room_0014_out 153
 data/nyu2_train/dining_room_0014_out 12
 data/nyu2_train/dining_room_0014_out 163
@@ -8709,6 +8824,7 @@ data/nyu2_train/dining_room_0014_out 20
 data/nyu2_train/dining_room_0014_out 165
 data/nyu2_train/dining_room_0014_out 106
 data/nyu2_train/dining_room_0014_out 145
+data/nyu2_train/dining_room_0014_out 172
 data/nyu2_train/dining_room_0014_out 65
 data/nyu2_train/dining_room_0014_out 120
 data/nyu2_train/dining_room_0014_out 86
@@ -8759,6 +8875,7 @@ data/nyu2_train/living_room_0086b_out 42
 data/nyu2_train/living_room_0086b_out 60
 data/nyu2_train/living_room_0086b_out 54
 data/nyu2_train/living_room_0086b_out 10
+data/nyu2_train/living_room_0086b_out 4
 data/nyu2_train/living_room_0086b_out 12
 data/nyu2_train/living_room_0086b_out 64
 data/nyu2_train/living_room_0086b_out 8
@@ -8784,6 +8901,7 @@ data/nyu2_train/living_room_0086b_out 38
 data/nyu2_train/living_room_0086b_out 59
 data/nyu2_train/living_room_0086b_out 36
 data/nyu2_train/living_room_0086b_out 20
+data/nyu2_train/living_room_0086b_out 65
 data/nyu2_train/living_room_0086b_out 44
 data/nyu2_train/living_room_0086b_out 63
 data/nyu2_train/living_room_0086b_out 61
@@ -8842,6 +8960,7 @@ data/nyu2_train/kitchen_0031_out 11
 data/nyu2_train/kitchen_0031_out 46
 data/nyu2_train/kitchen_0031_out 259
 data/nyu2_train/kitchen_0031_out 203
+data/nyu2_train/kitchen_0031_out 298
 data/nyu2_train/kitchen_0031_out 230
 data/nyu2_train/kitchen_0031_out 135
 data/nyu2_train/kitchen_0031_out 39
@@ -8901,6 +9020,7 @@ data/nyu2_train/kitchen_0031_out 10
 data/nyu2_train/kitchen_0031_out 262
 data/nyu2_train/kitchen_0031_out 287
 data/nyu2_train/kitchen_0031_out 249
+data/nyu2_train/kitchen_0031_out 4
 data/nyu2_train/kitchen_0031_out 153
 data/nyu2_train/kitchen_0031_out 12
 data/nyu2_train/kitchen_0031_out 205
@@ -9142,6 +9262,7 @@ data/nyu2_train/living_room_0046b_out 121
 data/nyu2_train/living_room_0046b_out 122
 data/nyu2_train/living_room_0046b_out 130
 data/nyu2_train/living_room_0046b_out 10
+data/nyu2_train/living_room_0046b_out 4
 data/nyu2_train/living_room_0046b_out 153
 data/nyu2_train/living_room_0046b_out 12
 data/nyu2_train/living_room_0046b_out 163
@@ -9206,6 +9327,7 @@ data/nyu2_train/living_room_0046b_out 15
 data/nyu2_train/living_room_0046b_out 156
 data/nyu2_train/living_room_0046b_out 77
 data/nyu2_train/living_room_0046b_out 117
+data/nyu2_train/living_room_0046b_out 175
 data/nyu2_train/living_room_0046b_out 125
 data/nyu2_train/living_room_0046b_out 89
 data/nyu2_train/living_room_0046b_out 102
@@ -9301,6 +9423,7 @@ data/nyu2_train/bathroom_0019_out 121
 data/nyu2_train/bathroom_0019_out 122
 data/nyu2_train/bathroom_0019_out 130
 data/nyu2_train/bathroom_0019_out 10
+data/nyu2_train/bathroom_0019_out 4
 data/nyu2_train/bathroom_0019_out 12
 data/nyu2_train/bathroom_0019_out 104
 data/nyu2_train/bathroom_0019_out 100
@@ -9338,6 +9461,7 @@ data/nyu2_train/bathroom_0019_out 101
 data/nyu2_train/bathroom_0019_out 112
 data/nyu2_train/bathroom_0019_out 84
 data/nyu2_train/bathroom_0019_out 92
+data/nyu2_train/bathroom_0019_out 133
 data/nyu2_train/bathroom_0019_out 107
 data/nyu2_train/bathroom_0019_out 51
 data/nyu2_train/bathroom_0019_out 7
@@ -9503,6 +9627,7 @@ data/nyu2_train/dining_room_0001b_out 10
 data/nyu2_train/dining_room_0001b_out 262
 data/nyu2_train/dining_room_0001b_out 287
 data/nyu2_train/dining_room_0001b_out 249
+data/nyu2_train/dining_room_0001b_out 4
 data/nyu2_train/dining_room_0001b_out 153
 data/nyu2_train/dining_room_0001b_out 304
 data/nyu2_train/dining_room_0001b_out 12
@@ -9513,6 +9638,7 @@ data/nyu2_train/dining_room_0001b_out 268
 data/nyu2_train/dining_room_0001b_out 229
 data/nyu2_train/dining_room_0001b_out 184
 data/nyu2_train/dining_room_0001b_out 169
+data/nyu2_train/dining_room_0001b_out 339
 data/nyu2_train/dining_room_0001b_out 168
 data/nyu2_train/dining_room_0001b_out 104
 data/nyu2_train/dining_room_0001b_out 134
@@ -9749,6 +9875,7 @@ data/nyu2_train/bedroom_0066_out 70
 data/nyu2_train/bedroom_0066_out 60
 data/nyu2_train/bedroom_0066_out 54
 data/nyu2_train/bedroom_0066_out 10
+data/nyu2_train/bedroom_0066_out 4
 data/nyu2_train/bedroom_0066_out 12
 data/nyu2_train/bedroom_0066_out 64
 data/nyu2_train/bedroom_0066_out 67
@@ -9787,6 +9914,7 @@ data/nyu2_train/bedroom_0066_out 59
 data/nyu2_train/bedroom_0066_out 36
 data/nyu2_train/bedroom_0066_out 20
 data/nyu2_train/bedroom_0066_out 65
+data/nyu2_train/bedroom_0066_out 86
 data/nyu2_train/bedroom_0066_out 44
 data/nyu2_train/bedroom_0066_out 63
 data/nyu2_train/bedroom_0066_out 61
@@ -9914,6 +10042,7 @@ data/nyu2_train/dining_room_0034_out 10
 data/nyu2_train/dining_room_0034_out 262
 data/nyu2_train/dining_room_0034_out 287
 data/nyu2_train/dining_room_0034_out 249
+data/nyu2_train/dining_room_0034_out 4
 data/nyu2_train/dining_room_0034_out 153
 data/nyu2_train/dining_room_0034_out 304
 data/nyu2_train/dining_room_0034_out 12
@@ -10104,6 +10233,7 @@ data/nyu2_train/dining_room_0034_out 192
 data/nyu2_train/dining_room_0034_out 305
 data/nyu2_train/dining_room_0034_out 166
 data/nyu2_train/dining_room_0034_out 223
+data/nyu2_train/dining_room_0034_out 323
 data/nyu2_train/dining_room_0034_out 270
 data/nyu2_train/dining_room_0034_out 80
 data/nyu2_train/dining_room_0034_out 238
@@ -10158,6 +10288,7 @@ data/nyu2_train/bathroom_0034_out 54
 data/nyu2_train/bathroom_0034_out 121
 data/nyu2_train/bathroom_0034_out 122
 data/nyu2_train/bathroom_0034_out 10
+data/nyu2_train/bathroom_0034_out 4
 data/nyu2_train/bathroom_0034_out 12
 data/nyu2_train/bathroom_0034_out 104
 data/nyu2_train/bathroom_0034_out 100
@@ -10223,6 +10354,7 @@ data/nyu2_train/bathroom_0034_out 63
 data/nyu2_train/bathroom_0034_out 116
 data/nyu2_train/bathroom_0034_out 61
 data/nyu2_train/bathroom_0034_out 32
+data/nyu2_train/bathroom_0034_out 123
 data/nyu2_train/bathroom_0034_out 23
 data/nyu2_train/bathroom_0034_out 74
 data/nyu2_train/bathroom_0034_out 52
@@ -10237,6 +10369,7 @@ data/nyu2_train/bathroom_0034_out 9
 data/nyu2_train/bathroom_0034_out 109
 data/nyu2_train/bathroom_0034_out 90
 data/nyu2_train/living_room_0086a_out 37
+data/nyu2_train/living_room_0086a_out 115
 data/nyu2_train/living_room_0086a_out 6
 data/nyu2_train/living_room_0086a_out 49
 data/nyu2_train/living_room_0086a_out 94
@@ -10271,6 +10404,7 @@ data/nyu2_train/living_room_0086a_out 70
 data/nyu2_train/living_room_0086a_out 60
 data/nyu2_train/living_room_0086a_out 54
 data/nyu2_train/living_room_0086a_out 10
+data/nyu2_train/living_room_0086a_out 4
 data/nyu2_train/living_room_0086a_out 12
 data/nyu2_train/living_room_0086a_out 104
 data/nyu2_train/living_room_0086a_out 100
@@ -10394,6 +10528,7 @@ data/nyu2_train/living_room_0083_out 121
 data/nyu2_train/living_room_0083_out 122
 data/nyu2_train/living_room_0083_out 130
 data/nyu2_train/living_room_0083_out 10
+data/nyu2_train/living_room_0083_out 4
 data/nyu2_train/living_room_0083_out 12
 data/nyu2_train/living_room_0083_out 104
 data/nyu2_train/living_room_0083_out 134
@@ -10429,6 +10564,7 @@ data/nyu2_train/living_room_0083_out 98
 data/nyu2_train/living_room_0083_out 76
 data/nyu2_train/living_room_0083_out 124
 data/nyu2_train/living_room_0083_out 128
+data/nyu2_train/living_room_0083_out 149
 data/nyu2_train/living_room_0083_out 69
 data/nyu2_train/living_room_0083_out 5
 data/nyu2_train/living_room_0083_out 131
@@ -10512,6 +10648,7 @@ data/nyu2_train/bathroom_0014a_out 39
 data/nyu2_train/bathroom_0014a_out 71
 data/nyu2_train/bathroom_0014a_out 29
 data/nyu2_train/bathroom_0014a_out 14
+data/nyu2_train/bathroom_0014a_out 113
 data/nyu2_train/bathroom_0014a_out 30
 data/nyu2_train/bathroom_0014a_out 16
 data/nyu2_train/bathroom_0014a_out 105
@@ -10524,6 +10661,7 @@ data/nyu2_train/bathroom_0014a_out 70
 data/nyu2_train/bathroom_0014a_out 60
 data/nyu2_train/bathroom_0014a_out 54
 data/nyu2_train/bathroom_0014a_out 10
+data/nyu2_train/bathroom_0014a_out 4
 data/nyu2_train/bathroom_0014a_out 12
 data/nyu2_train/bathroom_0014a_out 104
 data/nyu2_train/bathroom_0014a_out 100
@@ -10619,8 +10757,10 @@ data/nyu2_train/bedroom_0057_out 30
 data/nyu2_train/bedroom_0057_out 16
 data/nyu2_train/bedroom_0057_out 56
 data/nyu2_train/bedroom_0057_out 42
+data/nyu2_train/bedroom_0057_out 60
 data/nyu2_train/bedroom_0057_out 54
 data/nyu2_train/bedroom_0057_out 10
+data/nyu2_train/bedroom_0057_out 4
 data/nyu2_train/bedroom_0057_out 12
 data/nyu2_train/bedroom_0057_out 8
 data/nyu2_train/bedroom_0057_out 43
@@ -10669,12 +10809,14 @@ data/nyu2_train/furniture_store_0001c_out 30
 data/nyu2_train/furniture_store_0001c_out 16
 data/nyu2_train/furniture_store_0001c_out 42
 data/nyu2_train/furniture_store_0001c_out 10
+data/nyu2_train/furniture_store_0001c_out 4
 data/nyu2_train/furniture_store_0001c_out 12
 data/nyu2_train/furniture_store_0001c_out 8
 data/nyu2_train/furniture_store_0001c_out 43
 data/nyu2_train/furniture_store_0001c_out 17
 data/nyu2_train/furniture_store_0001c_out 35
 data/nyu2_train/furniture_store_0001c_out 40
+data/nyu2_train/furniture_store_0001c_out 45
 data/nyu2_train/furniture_store_0001c_out 31
 data/nyu2_train/furniture_store_0001c_out 41
 data/nyu2_train/furniture_store_0001c_out 19
@@ -10775,6 +10917,7 @@ data/nyu2_train/bedroom_0019_out 122
 data/nyu2_train/bedroom_0019_out 130
 data/nyu2_train/bedroom_0019_out 214
 data/nyu2_train/bedroom_0019_out 10
+data/nyu2_train/bedroom_0019_out 4
 data/nyu2_train/bedroom_0019_out 153
 data/nyu2_train/bedroom_0019_out 12
 data/nyu2_train/bedroom_0019_out 205
@@ -10905,6 +11048,7 @@ data/nyu2_train/bedroom_0019_out 196
 data/nyu2_train/bedroom_0019_out 116
 data/nyu2_train/bedroom_0019_out 61
 data/nyu2_train/bedroom_0019_out 32
+data/nyu2_train/bedroom_0019_out 240
 data/nyu2_train/bedroom_0019_out 123
 data/nyu2_train/bedroom_0019_out 23
 data/nyu2_train/bedroom_0019_out 199
@@ -11027,9 +11171,11 @@ data/nyu2_train/kitchen_0033_out 252
 data/nyu2_train/kitchen_0033_out 10
 data/nyu2_train/kitchen_0033_out 262
 data/nyu2_train/kitchen_0033_out 249
+data/nyu2_train/kitchen_0033_out 4
 data/nyu2_train/kitchen_0033_out 153
 data/nyu2_train/kitchen_0033_out 12
 data/nyu2_train/kitchen_0033_out 205
+data/nyu2_train/kitchen_0033_out 275
 data/nyu2_train/kitchen_0033_out 163
 data/nyu2_train/kitchen_0033_out 268
 data/nyu2_train/kitchen_0033_out 229
@@ -11312,6 +11458,7 @@ data/nyu2_train/bookstore_0001e_out 10
 data/nyu2_train/bookstore_0001e_out 262
 data/nyu2_train/bookstore_0001e_out 287
 data/nyu2_train/bookstore_0001e_out 249
+data/nyu2_train/bookstore_0001e_out 4
 data/nyu2_train/bookstore_0001e_out 153
 data/nyu2_train/bookstore_0001e_out 304
 data/nyu2_train/bookstore_0001e_out 12
@@ -11378,6 +11525,7 @@ data/nyu2_train/bookstore_0001e_out 128
 data/nyu2_train/bookstore_0001e_out 293
 data/nyu2_train/bookstore_0001e_out 324
 data/nyu2_train/bookstore_0001e_out 261
+data/nyu2_train/bookstore_0001e_out 328
 data/nyu2_train/bookstore_0001e_out 170
 data/nyu2_train/bookstore_0001e_out 317
 data/nyu2_train/bookstore_0001e_out 149
@@ -11580,6 +11728,7 @@ data/nyu2_train/bedroom_0074_out 121
 data/nyu2_train/bedroom_0074_out 122
 data/nyu2_train/bedroom_0074_out 130
 data/nyu2_train/bedroom_0074_out 10
+data/nyu2_train/bedroom_0074_out 4
 data/nyu2_train/bedroom_0074_out 153
 data/nyu2_train/bedroom_0074_out 12
 data/nyu2_train/bedroom_0074_out 163
@@ -11600,6 +11749,7 @@ data/nyu2_train/bedroom_0074_out 43
 data/nyu2_train/bedroom_0074_out 144
 data/nyu2_train/bedroom_0074_out 17
 data/nyu2_train/bedroom_0074_out 151
+data/nyu2_train/bedroom_0074_out 185
 data/nyu2_train/bedroom_0074_out 35
 data/nyu2_train/bedroom_0074_out 40
 data/nyu2_train/bedroom_0074_out 55
@@ -11728,10 +11878,12 @@ data/nyu2_train/furniture_store_0002d_out 62
 data/nyu2_train/furniture_store_0002d_out 56
 data/nyu2_train/furniture_store_0002d_out 42
 data/nyu2_train/furniture_store_0002d_out 91
+data/nyu2_train/furniture_store_0002d_out 93
 data/nyu2_train/furniture_store_0002d_out 70
 data/nyu2_train/furniture_store_0002d_out 60
 data/nyu2_train/furniture_store_0002d_out 54
 data/nyu2_train/furniture_store_0002d_out 10
+data/nyu2_train/furniture_store_0002d_out 4
 data/nyu2_train/furniture_store_0002d_out 12
 data/nyu2_train/furniture_store_0002d_out 64
 data/nyu2_train/furniture_store_0002d_out 67
@@ -11813,6 +11965,7 @@ data/nyu2_train/kitchen_0019b_out 42
 data/nyu2_train/kitchen_0019b_out 60
 data/nyu2_train/kitchen_0019b_out 54
 data/nyu2_train/kitchen_0019b_out 10
+data/nyu2_train/kitchen_0019b_out 4
 data/nyu2_train/kitchen_0019b_out 12
 data/nyu2_train/kitchen_0019b_out 8
 data/nyu2_train/kitchen_0019b_out 43
@@ -11838,6 +11991,7 @@ data/nyu2_train/kitchen_0019b_out 59
 data/nyu2_train/kitchen_0019b_out 36
 data/nyu2_train/kitchen_0019b_out 20
 data/nyu2_train/kitchen_0019b_out 44
+data/nyu2_train/kitchen_0019b_out 61
 data/nyu2_train/kitchen_0019b_out 32
 data/nyu2_train/kitchen_0019b_out 23
 data/nyu2_train/kitchen_0019b_out 52
@@ -11897,6 +12051,7 @@ data/nyu2_train/living_room_0063_out 194
 data/nyu2_train/living_room_0063_out 113
 data/nyu2_train/living_room_0063_out 241
 data/nyu2_train/living_room_0063_out 138
+data/nyu2_train/living_room_0063_out 243
 data/nyu2_train/living_room_0063_out 30
 data/nyu2_train/living_room_0063_out 183
 data/nyu2_train/living_room_0063_out 207
@@ -11928,6 +12083,7 @@ data/nyu2_train/living_room_0063_out 122
 data/nyu2_train/living_room_0063_out 130
 data/nyu2_train/living_room_0063_out 214
 data/nyu2_train/living_room_0063_out 10
+data/nyu2_train/living_room_0063_out 4
 data/nyu2_train/living_room_0063_out 153
 data/nyu2_train/living_room_0063_out 12
 data/nyu2_train/living_room_0063_out 205
@@ -12118,6 +12274,7 @@ data/nyu2_train/bedroom_0106_out 46
 data/nyu2_train/bedroom_0106_out 203
 data/nyu2_train/bedroom_0106_out 135
 data/nyu2_train/bedroom_0106_out 39
+data/nyu2_train/bedroom_0106_out 208
 data/nyu2_train/bedroom_0106_out 71
 data/nyu2_train/bedroom_0106_out 29
 data/nyu2_train/bedroom_0106_out 14
@@ -12151,6 +12308,7 @@ data/nyu2_train/bedroom_0106_out 121
 data/nyu2_train/bedroom_0106_out 122
 data/nyu2_train/bedroom_0106_out 130
 data/nyu2_train/bedroom_0106_out 10
+data/nyu2_train/bedroom_0106_out 4
 data/nyu2_train/bedroom_0106_out 153
 data/nyu2_train/bedroom_0106_out 12
 data/nyu2_train/bedroom_0106_out 205
@@ -12305,6 +12463,7 @@ data/nyu2_train/kitchen_0029a_out 30
 data/nyu2_train/kitchen_0029a_out 16
 data/nyu2_train/kitchen_0029a_out 42
 data/nyu2_train/kitchen_0029a_out 10
+data/nyu2_train/kitchen_0029a_out 4
 data/nyu2_train/kitchen_0029a_out 12
 data/nyu2_train/kitchen_0029a_out 8
 data/nyu2_train/kitchen_0029a_out 43
@@ -12315,6 +12474,7 @@ data/nyu2_train/kitchen_0029a_out 45
 data/nyu2_train/kitchen_0029a_out 31
 data/nyu2_train/kitchen_0029a_out 47
 data/nyu2_train/kitchen_0029a_out 41
+data/nyu2_train/kitchen_0029a_out 50
 data/nyu2_train/kitchen_0029a_out 19
 data/nyu2_train/kitchen_0029a_out 5
 data/nyu2_train/kitchen_0029a_out 7
@@ -12340,6 +12500,7 @@ data/nyu2_train/bathroom_0023_out 11
 data/nyu2_train/bathroom_0023_out 14
 data/nyu2_train/bathroom_0023_out 16
 data/nyu2_train/bathroom_0023_out 10
+data/nyu2_train/bathroom_0023_out 4
 data/nyu2_train/bathroom_0023_out 12
 data/nyu2_train/bathroom_0023_out 8
 data/nyu2_train/bathroom_0023_out 17
@@ -12347,6 +12508,7 @@ data/nyu2_train/bathroom_0023_out 19
 data/nyu2_train/bathroom_0023_out 5
 data/nyu2_train/bathroom_0023_out 7
 data/nyu2_train/bathroom_0023_out 15
+data/nyu2_train/bathroom_0023_out 27
 data/nyu2_train/bathroom_0023_out 20
 data/nyu2_train/bathroom_0023_out 23
 data/nyu2_train/bathroom_0023_out 24
@@ -12382,6 +12544,7 @@ data/nyu2_train/bathroom_0053_out 70
 data/nyu2_train/bathroom_0053_out 60
 data/nyu2_train/bathroom_0053_out 54
 data/nyu2_train/bathroom_0053_out 10
+data/nyu2_train/bathroom_0053_out 4
 data/nyu2_train/bathroom_0053_out 12
 data/nyu2_train/bathroom_0053_out 64
 data/nyu2_train/bathroom_0053_out 67
@@ -12392,6 +12555,7 @@ data/nyu2_train/bathroom_0053_out 35
 data/nyu2_train/bathroom_0053_out 40
 data/nyu2_train/bathroom_0053_out 55
 data/nyu2_train/bathroom_0053_out 45
+data/nyu2_train/bathroom_0053_out 79
 data/nyu2_train/bathroom_0053_out 31
 data/nyu2_train/bathroom_0053_out 47
 data/nyu2_train/bathroom_0053_out 41
@@ -12536,6 +12700,7 @@ data/nyu2_train/bedroom_0016_out 10
 data/nyu2_train/bedroom_0016_out 262
 data/nyu2_train/bedroom_0016_out 287
 data/nyu2_train/bedroom_0016_out 249
+data/nyu2_train/bedroom_0016_out 4
 data/nyu2_train/bedroom_0016_out 153
 data/nyu2_train/bedroom_0016_out 304
 data/nyu2_train/bedroom_0016_out 12
@@ -12725,6 +12890,7 @@ data/nyu2_train/bedroom_0016_out 238
 data/nyu2_train/bedroom_0016_out 237
 data/nyu2_train/bedroom_0016_out 96
 data/nyu2_train/bedroom_0016_out 269
+data/nyu2_train/bedroom_0016_out 310
 data/nyu2_train/bedroom_0016_out 246
 data/nyu2_train/bedroom_0016_out 204
 data/nyu2_train/bedroom_0016_out 26
@@ -12772,6 +12938,7 @@ data/nyu2_train/office_kitchen_0001a_out 54
 data/nyu2_train/office_kitchen_0001a_out 121
 data/nyu2_train/office_kitchen_0001a_out 122
 data/nyu2_train/office_kitchen_0001a_out 10
+data/nyu2_train/office_kitchen_0001a_out 4
 data/nyu2_train/office_kitchen_0001a_out 12
 data/nyu2_train/office_kitchen_0001a_out 104
 data/nyu2_train/office_kitchen_0001a_out 100
@@ -12799,6 +12966,7 @@ data/nyu2_train/office_kitchen_0001a_out 19
 data/nyu2_train/office_kitchen_0001a_out 58
 data/nyu2_train/office_kitchen_0001a_out 98
 data/nyu2_train/office_kitchen_0001a_out 76
+data/nyu2_train/office_kitchen_0001a_out 124
 data/nyu2_train/office_kitchen_0001a_out 69
 data/nyu2_train/office_kitchen_0001a_out 5
 data/nyu2_train/office_kitchen_0001a_out 101
@@ -12933,6 +13101,7 @@ data/nyu2_train/bookstore_0001i_out 122
 data/nyu2_train/bookstore_0001i_out 130
 data/nyu2_train/bookstore_0001i_out 214
 data/nyu2_train/bookstore_0001i_out 10
+data/nyu2_train/bookstore_0001i_out 4
 data/nyu2_train/bookstore_0001i_out 153
 data/nyu2_train/bookstore_0001i_out 12
 data/nyu2_train/bookstore_0001i_out 205
@@ -13076,6 +13245,7 @@ data/nyu2_train/bookstore_0001i_out 192
 data/nyu2_train/bookstore_0001i_out 166
 data/nyu2_train/bookstore_0001i_out 223
 data/nyu2_train/bookstore_0001i_out 80
+data/nyu2_train/bookstore_0001i_out 238
 data/nyu2_train/bookstore_0001i_out 237
 data/nyu2_train/bookstore_0001i_out 96
 data/nyu2_train/bookstore_0001i_out 204
@@ -13151,6 +13321,7 @@ data/nyu2_train/bedroom_0063_out 121
 data/nyu2_train/bedroom_0063_out 122
 data/nyu2_train/bedroom_0063_out 130
 data/nyu2_train/bedroom_0063_out 10
+data/nyu2_train/bedroom_0063_out 4
 data/nyu2_train/bedroom_0063_out 153
 data/nyu2_train/bedroom_0063_out 12
 data/nyu2_train/bedroom_0063_out 205
@@ -13257,6 +13428,7 @@ data/nyu2_train/bedroom_0063_out 145
 data/nyu2_train/bedroom_0063_out 190
 data/nyu2_train/bedroom_0063_out 172
 data/nyu2_train/bedroom_0063_out 65
+data/nyu2_train/bedroom_0063_out 206
 data/nyu2_train/bedroom_0063_out 120
 data/nyu2_train/bedroom_0063_out 86
 data/nyu2_train/bedroom_0063_out 44
@@ -13388,6 +13560,7 @@ data/nyu2_train/kitchen_0028a_out 252
 data/nyu2_train/kitchen_0028a_out 10
 data/nyu2_train/kitchen_0028a_out 262
 data/nyu2_train/kitchen_0028a_out 249
+data/nyu2_train/kitchen_0028a_out 4
 data/nyu2_train/kitchen_0028a_out 153
 data/nyu2_train/kitchen_0028a_out 12
 data/nyu2_train/kitchen_0028a_out 205
@@ -13545,6 +13718,7 @@ data/nyu2_train/kitchen_0028a_out 74
 data/nyu2_train/kitchen_0028a_out 164
 data/nyu2_train/kitchen_0028a_out 141
 data/nyu2_train/kitchen_0028a_out 52
+data/nyu2_train/kitchen_0028a_out 284
 data/nyu2_train/kitchen_0028a_out 66
 data/nyu2_train/kitchen_0028a_out 24
 data/nyu2_train/kitchen_0028a_out 22
@@ -13597,6 +13771,7 @@ data/nyu2_train/bedroom_0080_out 70
 data/nyu2_train/bedroom_0080_out 60
 data/nyu2_train/bedroom_0080_out 54
 data/nyu2_train/bedroom_0080_out 10
+data/nyu2_train/bedroom_0080_out 4
 data/nyu2_train/bedroom_0080_out 12
 data/nyu2_train/bedroom_0080_out 64
 data/nyu2_train/bedroom_0080_out 67
@@ -13616,6 +13791,7 @@ data/nyu2_train/bedroom_0080_out 41
 data/nyu2_train/bedroom_0080_out 50
 data/nyu2_train/bedroom_0080_out 19
 data/nyu2_train/bedroom_0080_out 58
+data/nyu2_train/bedroom_0080_out 98
 data/nyu2_train/bedroom_0080_out 76
 data/nyu2_train/bedroom_0080_out 69
 data/nyu2_train/bedroom_0080_out 5
@@ -13680,6 +13856,7 @@ data/nyu2_train/bedroom_0004_out 171
 data/nyu2_train/bedroom_0004_out 187
 data/nyu2_train/bedroom_0004_out 235
 data/nyu2_train/bedroom_0004_out 25
+data/nyu2_train/bedroom_0004_out 272
 data/nyu2_train/bedroom_0004_out 218
 data/nyu2_train/bedroom_0004_out 256
 data/nyu2_train/bedroom_0004_out 13
@@ -13753,6 +13930,7 @@ data/nyu2_train/bedroom_0004_out 252
 data/nyu2_train/bedroom_0004_out 10
 data/nyu2_train/bedroom_0004_out 262
 data/nyu2_train/bedroom_0004_out 249
+data/nyu2_train/bedroom_0004_out 4
 data/nyu2_train/bedroom_0004_out 153
 data/nyu2_train/bedroom_0004_out 12
 data/nyu2_train/bedroom_0004_out 205
@@ -14011,6 +14189,7 @@ data/nyu2_train/dining_room_0013_out 162
 data/nyu2_train/dining_room_0013_out 93
 data/nyu2_train/dining_room_0013_out 70
 data/nyu2_train/dining_room_0013_out 60
+data/nyu2_train/dining_room_0013_out 283
 data/nyu2_train/dining_room_0013_out 282
 data/nyu2_train/dining_room_0013_out 255
 data/nyu2_train/dining_room_0013_out 132
@@ -14026,6 +14205,7 @@ data/nyu2_train/dining_room_0013_out 252
 data/nyu2_train/dining_room_0013_out 10
 data/nyu2_train/dining_room_0013_out 262
 data/nyu2_train/dining_room_0013_out 249
+data/nyu2_train/dining_room_0013_out 4
 data/nyu2_train/dining_room_0013_out 153
 data/nyu2_train/dining_room_0013_out 12
 data/nyu2_train/dining_room_0013_out 205
@@ -14204,6 +14384,7 @@ data/nyu2_train/dining_room_0013_out 109
 data/nyu2_train/dining_room_0013_out 90
 data/nyu2_train/living_room_0020_out 37
 data/nyu2_train/living_room_0020_out 234
+data/nyu2_train/living_room_0020_out 342
 data/nyu2_train/living_room_0020_out 115
 data/nyu2_train/living_room_0020_out 6
 data/nyu2_train/living_room_0020_out 200
@@ -14320,6 +14501,7 @@ data/nyu2_train/living_room_0020_out 10
 data/nyu2_train/living_room_0020_out 262
 data/nyu2_train/living_room_0020_out 287
 data/nyu2_train/living_room_0020_out 249
+data/nyu2_train/living_room_0020_out 4
 data/nyu2_train/living_room_0020_out 153
 data/nyu2_train/living_room_0020_out 304
 data/nyu2_train/living_room_0020_out 12
@@ -14568,6 +14750,7 @@ data/nyu2_train/furniture_store_0001a_out 70
 data/nyu2_train/furniture_store_0001a_out 60
 data/nyu2_train/furniture_store_0001a_out 54
 data/nyu2_train/furniture_store_0001a_out 10
+data/nyu2_train/furniture_store_0001a_out 4
 data/nyu2_train/furniture_store_0001a_out 12
 data/nyu2_train/furniture_store_0001a_out 64
 data/nyu2_train/furniture_store_0001a_out 67
@@ -14584,6 +14767,7 @@ data/nyu2_train/furniture_store_0001a_out 41
 data/nyu2_train/furniture_store_0001a_out 50
 data/nyu2_train/furniture_store_0001a_out 19
 data/nyu2_train/furniture_store_0001a_out 58
+data/nyu2_train/furniture_store_0001a_out 76
 data/nyu2_train/furniture_store_0001a_out 69
 data/nyu2_train/furniture_store_0001a_out 5
 data/nyu2_train/furniture_store_0001a_out 51
@@ -14665,6 +14849,7 @@ data/nyu2_train/bedroom_0069_out 121
 data/nyu2_train/bedroom_0069_out 122
 data/nyu2_train/bedroom_0069_out 130
 data/nyu2_train/bedroom_0069_out 10
+data/nyu2_train/bedroom_0069_out 4
 data/nyu2_train/bedroom_0069_out 153
 data/nyu2_train/bedroom_0069_out 12
 data/nyu2_train/bedroom_0069_out 163
@@ -14729,6 +14914,7 @@ data/nyu2_train/bedroom_0069_out 15
 data/nyu2_train/bedroom_0069_out 156
 data/nyu2_train/bedroom_0069_out 77
 data/nyu2_train/bedroom_0069_out 117
+data/nyu2_train/bedroom_0069_out 175
 data/nyu2_train/bedroom_0069_out 125
 data/nyu2_train/bedroom_0069_out 89
 data/nyu2_train/bedroom_0069_out 102
@@ -14817,6 +15003,7 @@ data/nyu2_train/kitchen_0060_out 57
 data/nyu2_train/kitchen_0060_out 34
 data/nyu2_train/kitchen_0060_out 118
 data/nyu2_train/kitchen_0060_out 53
+data/nyu2_train/kitchen_0060_out 254
 data/nyu2_train/kitchen_0060_out 11
 data/nyu2_train/kitchen_0060_out 46
 data/nyu2_train/kitchen_0060_out 203
@@ -14871,6 +15058,7 @@ data/nyu2_train/kitchen_0060_out 214
 data/nyu2_train/kitchen_0060_out 252
 data/nyu2_train/kitchen_0060_out 10
 data/nyu2_train/kitchen_0060_out 249
+data/nyu2_train/kitchen_0060_out 4
 data/nyu2_train/kitchen_0060_out 153
 data/nyu2_train/kitchen_0060_out 12
 data/nyu2_train/kitchen_0060_out 205
@@ -15133,6 +15321,7 @@ data/nyu2_train/kitchen_0045a_out 10
 data/nyu2_train/kitchen_0045a_out 262
 data/nyu2_train/kitchen_0045a_out 287
 data/nyu2_train/kitchen_0045a_out 249
+data/nyu2_train/kitchen_0045a_out 4
 data/nyu2_train/kitchen_0045a_out 153
 data/nyu2_train/kitchen_0045a_out 12
 data/nyu2_train/kitchen_0045a_out 205
@@ -15226,6 +15415,7 @@ data/nyu2_train/kitchen_0045a_out 267
 data/nyu2_train/kitchen_0045a_out 77
 data/nyu2_train/kitchen_0045a_out 117
 data/nyu2_train/kitchen_0045a_out 175
+data/nyu2_train/kitchen_0045a_out 288
 data/nyu2_train/kitchen_0045a_out 125
 data/nyu2_train/kitchen_0045a_out 89
 data/nyu2_train/kitchen_0045a_out 102
@@ -15335,9 +15525,11 @@ data/nyu2_train/computer_lab_0002_out 16
 data/nyu2_train/computer_lab_0002_out 62
 data/nyu2_train/computer_lab_0002_out 56
 data/nyu2_train/computer_lab_0002_out 42
+data/nyu2_train/computer_lab_0002_out 70
 data/nyu2_train/computer_lab_0002_out 60
 data/nyu2_train/computer_lab_0002_out 54
 data/nyu2_train/computer_lab_0002_out 10
+data/nyu2_train/computer_lab_0002_out 4
 data/nyu2_train/computer_lab_0002_out 12
 data/nyu2_train/computer_lab_0002_out 64
 data/nyu2_train/computer_lab_0002_out 67
@@ -15426,6 +15618,7 @@ data/nyu2_train/dining_room_0010_out 121
 data/nyu2_train/dining_room_0010_out 122
 data/nyu2_train/dining_room_0010_out 130
 data/nyu2_train/dining_room_0010_out 10
+data/nyu2_train/dining_room_0010_out 4
 data/nyu2_train/dining_room_0010_out 153
 data/nyu2_train/dining_room_0010_out 12
 data/nyu2_train/dining_room_0010_out 104
@@ -15481,6 +15674,7 @@ data/nyu2_train/dining_room_0010_out 51
 data/nyu2_train/dining_room_0010_out 7
 data/nyu2_train/dining_room_0010_out 97
 data/nyu2_train/dining_room_0010_out 15
+data/nyu2_train/dining_room_0010_out 156
 data/nyu2_train/dining_room_0010_out 77
 data/nyu2_train/dining_room_0010_out 117
 data/nyu2_train/dining_room_0010_out 125
@@ -15544,6 +15738,7 @@ data/nyu2_train/bedroom_0125a_out 30
 data/nyu2_train/bedroom_0125a_out 16
 data/nyu2_train/bedroom_0125a_out 42
 data/nyu2_train/bedroom_0125a_out 10
+data/nyu2_train/bedroom_0125a_out 4
 data/nyu2_train/bedroom_0125a_out 12
 data/nyu2_train/bedroom_0125a_out 8
 data/nyu2_train/bedroom_0125a_out 43
@@ -15561,6 +15756,7 @@ data/nyu2_train/bedroom_0125a_out 27
 data/nyu2_train/bedroom_0125a_out 38
 data/nyu2_train/bedroom_0125a_out 36
 data/nyu2_train/bedroom_0125a_out 20
+data/nyu2_train/bedroom_0125a_out 44
 data/nyu2_train/bedroom_0125a_out 32
 data/nyu2_train/bedroom_0125a_out 23
 data/nyu2_train/bedroom_0125a_out 24
@@ -15600,7 +15796,9 @@ data/nyu2_train/office_0021_out 70
 data/nyu2_train/office_0021_out 60
 data/nyu2_train/office_0021_out 54
 data/nyu2_train/office_0021_out 10
+data/nyu2_train/office_0021_out 4
 data/nyu2_train/office_0021_out 12
+data/nyu2_train/office_0021_out 100
 data/nyu2_train/office_0021_out 64
 data/nyu2_train/office_0021_out 67
 data/nyu2_train/office_0021_out 8
@@ -15696,6 +15894,7 @@ data/nyu2_train/bedroom_0028_out 70
 data/nyu2_train/bedroom_0028_out 60
 data/nyu2_train/bedroom_0028_out 54
 data/nyu2_train/bedroom_0028_out 10
+data/nyu2_train/bedroom_0028_out 4
 data/nyu2_train/bedroom_0028_out 12
 data/nyu2_train/bedroom_0028_out 104
 data/nyu2_train/bedroom_0028_out 100
@@ -15711,6 +15910,7 @@ data/nyu2_train/bedroom_0028_out 55
 data/nyu2_train/bedroom_0028_out 95
 data/nyu2_train/bedroom_0028_out 45
 data/nyu2_train/bedroom_0028_out 82
+data/nyu2_train/bedroom_0028_out 108
 data/nyu2_train/bedroom_0028_out 79
 data/nyu2_train/bedroom_0028_out 31
 data/nyu2_train/bedroom_0028_out 47
@@ -15795,6 +15995,7 @@ data/nyu2_train/bathroom_0033_out 70
 data/nyu2_train/bathroom_0033_out 60
 data/nyu2_train/bathroom_0033_out 54
 data/nyu2_train/bathroom_0033_out 10
+data/nyu2_train/bathroom_0033_out 4
 data/nyu2_train/bathroom_0033_out 12
 data/nyu2_train/bathroom_0033_out 64
 data/nyu2_train/bathroom_0033_out 67
@@ -15847,6 +16048,7 @@ data/nyu2_train/bathroom_0033_out 24
 data/nyu2_train/bathroom_0033_out 22
 data/nyu2_train/bathroom_0033_out 80
 data/nyu2_train/bathroom_0033_out 26
+data/nyu2_train/bathroom_0033_out 88
 data/nyu2_train/bathroom_0033_out 9
 data/nyu2_train/bedroom_0052_out 37
 data/nyu2_train/bedroom_0052_out 234
@@ -15956,6 +16158,7 @@ data/nyu2_train/bedroom_0052_out 10
 data/nyu2_train/bedroom_0052_out 262
 data/nyu2_train/bedroom_0052_out 287
 data/nyu2_train/bedroom_0052_out 249
+data/nyu2_train/bedroom_0052_out 4
 data/nyu2_train/bedroom_0052_out 153
 data/nyu2_train/bedroom_0052_out 304
 data/nyu2_train/bedroom_0052_out 12
@@ -16028,6 +16231,7 @@ data/nyu2_train/bedroom_0052_out 131
 data/nyu2_train/bedroom_0052_out 101
 data/nyu2_train/bedroom_0052_out 290
 data/nyu2_train/bedroom_0052_out 276
+data/nyu2_train/bedroom_0052_out 306
 data/nyu2_train/bedroom_0052_out 239
 data/nyu2_train/bedroom_0052_out 299
 data/nyu2_train/bedroom_0052_out 225
@@ -16197,6 +16401,7 @@ data/nyu2_train/classroom_0004_out 121
 data/nyu2_train/classroom_0004_out 122
 data/nyu2_train/classroom_0004_out 130
 data/nyu2_train/classroom_0004_out 10
+data/nyu2_train/classroom_0004_out 4
 data/nyu2_train/classroom_0004_out 12
 data/nyu2_train/classroom_0004_out 104
 data/nyu2_train/classroom_0004_out 134
@@ -16232,6 +16437,7 @@ data/nyu2_train/classroom_0004_out 98
 data/nyu2_train/classroom_0004_out 76
 data/nyu2_train/classroom_0004_out 124
 data/nyu2_train/classroom_0004_out 128
+data/nyu2_train/classroom_0004_out 149
 data/nyu2_train/classroom_0004_out 69
 data/nyu2_train/classroom_0004_out 5
 data/nyu2_train/classroom_0004_out 131
@@ -16357,6 +16563,7 @@ data/nyu2_train/living_room_0012_out 194
 data/nyu2_train/living_room_0012_out 113
 data/nyu2_train/living_room_0012_out 245
 data/nyu2_train/living_room_0012_out 241
+data/nyu2_train/living_room_0012_out 316
 data/nyu2_train/living_room_0012_out 138
 data/nyu2_train/living_room_0012_out 243
 data/nyu2_train/living_room_0012_out 30
@@ -16403,6 +16610,7 @@ data/nyu2_train/living_room_0012_out 10
 data/nyu2_train/living_room_0012_out 262
 data/nyu2_train/living_room_0012_out 287
 data/nyu2_train/living_room_0012_out 249
+data/nyu2_train/living_room_0012_out 4
 data/nyu2_train/living_room_0012_out 153
 data/nyu2_train/living_room_0012_out 304
 data/nyu2_train/living_room_0012_out 12
@@ -16709,6 +16917,7 @@ data/nyu2_train/classroom_0006_out 10
 data/nyu2_train/classroom_0006_out 262
 data/nyu2_train/classroom_0006_out 287
 data/nyu2_train/classroom_0006_out 249
+data/nyu2_train/classroom_0006_out 4
 data/nyu2_train/classroom_0006_out 153
 data/nyu2_train/classroom_0006_out 12
 data/nyu2_train/classroom_0006_out 205
@@ -16775,6 +16984,7 @@ data/nyu2_train/classroom_0006_out 155
 data/nyu2_train/classroom_0006_out 5
 data/nyu2_train/classroom_0006_out 131
 data/nyu2_train/classroom_0006_out 101
+data/nyu2_train/classroom_0006_out 290
 data/nyu2_train/classroom_0006_out 276
 data/nyu2_train/classroom_0006_out 239
 data/nyu2_train/classroom_0006_out 225
@@ -16906,6 +17116,7 @@ data/nyu2_train/bathroom_0057_out 30
 data/nyu2_train/bathroom_0057_out 16
 data/nyu2_train/bathroom_0057_out 42
 data/nyu2_train/bathroom_0057_out 10
+data/nyu2_train/bathroom_0057_out 4
 data/nyu2_train/bathroom_0057_out 12
 data/nyu2_train/bathroom_0057_out 8
 data/nyu2_train/bathroom_0057_out 43
@@ -16914,6 +17125,7 @@ data/nyu2_train/bathroom_0057_out 35
 data/nyu2_train/bathroom_0057_out 40
 data/nyu2_train/bathroom_0057_out 45
 data/nyu2_train/bathroom_0057_out 31
+data/nyu2_train/bathroom_0057_out 47
 data/nyu2_train/bathroom_0057_out 41
 data/nyu2_train/bathroom_0057_out 19
 data/nyu2_train/bathroom_0057_out 5
@@ -17006,6 +17218,7 @@ data/nyu2_train/playroom_0002_out 122
 data/nyu2_train/playroom_0002_out 130
 data/nyu2_train/playroom_0002_out 214
 data/nyu2_train/playroom_0002_out 10
+data/nyu2_train/playroom_0002_out 4
 data/nyu2_train/playroom_0002_out 153
 data/nyu2_train/playroom_0002_out 12
 data/nyu2_train/playroom_0002_out 205
@@ -17102,6 +17315,7 @@ data/nyu2_train/playroom_0002_out 202
 data/nyu2_train/playroom_0002_out 219
 data/nyu2_train/playroom_0002_out 154
 data/nyu2_train/playroom_0002_out 220
+data/nyu2_train/playroom_0002_out 224
 data/nyu2_train/playroom_0002_out 78
 data/nyu2_train/playroom_0002_out 73
 data/nyu2_train/playroom_0002_out 159
@@ -17275,6 +17489,7 @@ data/nyu2_train/kitchen_0053_out 10
 data/nyu2_train/kitchen_0053_out 262
 data/nyu2_train/kitchen_0053_out 287
 data/nyu2_train/kitchen_0053_out 249
+data/nyu2_train/kitchen_0053_out 4
 data/nyu2_train/kitchen_0053_out 153
 data/nyu2_train/kitchen_0053_out 304
 data/nyu2_train/kitchen_0053_out 344
@@ -17365,6 +17580,7 @@ data/nyu2_train/kitchen_0053_out 306
 data/nyu2_train/kitchen_0053_out 239
 data/nyu2_train/kitchen_0053_out 299
 data/nyu2_train/kitchen_0053_out 225
+data/nyu2_train/kitchen_0053_out 356
 data/nyu2_train/kitchen_0053_out 251
 data/nyu2_train/kitchen_0053_out 112
 data/nyu2_train/kitchen_0053_out 346
@@ -17520,6 +17736,7 @@ data/nyu2_train/bedroom_0090_out 30
 data/nyu2_train/bedroom_0090_out 16
 data/nyu2_train/bedroom_0090_out 42
 data/nyu2_train/bedroom_0090_out 10
+data/nyu2_train/bedroom_0090_out 4
 data/nyu2_train/bedroom_0090_out 12
 data/nyu2_train/bedroom_0090_out 8
 data/nyu2_train/bedroom_0090_out 43
@@ -17544,6 +17761,7 @@ data/nyu2_train/bedroom_0090_out 20
 data/nyu2_train/bedroom_0090_out 44
 data/nyu2_train/bedroom_0090_out 32
 data/nyu2_train/bedroom_0090_out 23
+data/nyu2_train/bedroom_0090_out 52
 data/nyu2_train/bedroom_0090_out 24
 data/nyu2_train/bedroom_0090_out 22
 data/nyu2_train/bedroom_0090_out 26
@@ -17582,6 +17800,7 @@ data/nyu2_train/classroom_0016_out 70
 data/nyu2_train/classroom_0016_out 60
 data/nyu2_train/classroom_0016_out 54
 data/nyu2_train/classroom_0016_out 10
+data/nyu2_train/classroom_0016_out 4
 data/nyu2_train/classroom_0016_out 12
 data/nyu2_train/classroom_0016_out 104
 data/nyu2_train/classroom_0016_out 100
@@ -17601,6 +17820,7 @@ data/nyu2_train/classroom_0016_out 108
 data/nyu2_train/classroom_0016_out 79
 data/nyu2_train/classroom_0016_out 31
 data/nyu2_train/classroom_0016_out 47
+data/nyu2_train/classroom_0016_out 111
 data/nyu2_train/classroom_0016_out 41
 data/nyu2_train/classroom_0016_out 50
 data/nyu2_train/classroom_0016_out 19
@@ -17655,6 +17875,8 @@ data/nyu2_train/classroom_0016_out 9
 data/nyu2_train/classroom_0016_out 109
 data/nyu2_train/classroom_0016_out 90
 data/nyu2_train/bedroom_0036_out 6
+data/nyu2_train/bedroom_0036_out 4
+data/nyu2_train/bedroom_0036_out 8
 data/nyu2_train/bedroom_0036_out 5
 data/nyu2_train/bedroom_0036_out 7
 data/nyu2_train/home_office_0008_out 37
@@ -17707,6 +17929,7 @@ data/nyu2_train/home_office_0008_out 29
 data/nyu2_train/home_office_0008_out 14
 data/nyu2_train/home_office_0008_out 194
 data/nyu2_train/home_office_0008_out 113
+data/nyu2_train/home_office_0008_out 245
 data/nyu2_train/home_office_0008_out 241
 data/nyu2_train/home_office_0008_out 138
 data/nyu2_train/home_office_0008_out 243
@@ -17742,6 +17965,7 @@ data/nyu2_train/home_office_0008_out 122
 data/nyu2_train/home_office_0008_out 130
 data/nyu2_train/home_office_0008_out 214
 data/nyu2_train/home_office_0008_out 10
+data/nyu2_train/home_office_0008_out 4
 data/nyu2_train/home_office_0008_out 153
 data/nyu2_train/home_office_0008_out 12
 data/nyu2_train/home_office_0008_out 205
@@ -17979,6 +18203,7 @@ data/nyu2_train/dining_room_0019_out 122
 data/nyu2_train/dining_room_0019_out 130
 data/nyu2_train/dining_room_0019_out 214
 data/nyu2_train/dining_room_0019_out 10
+data/nyu2_train/dining_room_0019_out 4
 data/nyu2_train/dining_room_0019_out 153
 data/nyu2_train/dining_room_0019_out 12
 data/nyu2_train/dining_room_0019_out 205
@@ -18109,6 +18334,7 @@ data/nyu2_train/dining_room_0019_out 196
 data/nyu2_train/dining_room_0019_out 116
 data/nyu2_train/dining_room_0019_out 61
 data/nyu2_train/dining_room_0019_out 32
+data/nyu2_train/dining_room_0019_out 240
 data/nyu2_train/dining_room_0019_out 123
 data/nyu2_train/dining_room_0019_out 23
 data/nyu2_train/dining_room_0019_out 199
@@ -18144,9 +18370,11 @@ data/nyu2_train/furniture_store_0001f_out 14
 data/nyu2_train/furniture_store_0001f_out 30
 data/nyu2_train/furniture_store_0001f_out 16
 data/nyu2_train/furniture_store_0001f_out 10
+data/nyu2_train/furniture_store_0001f_out 4
 data/nyu2_train/furniture_store_0001f_out 12
 data/nyu2_train/furniture_store_0001f_out 8
 data/nyu2_train/furniture_store_0001f_out 17
+data/nyu2_train/furniture_store_0001f_out 31
 data/nyu2_train/furniture_store_0001f_out 19
 data/nyu2_train/furniture_store_0001f_out 5
 data/nyu2_train/furniture_store_0001f_out 7
@@ -18294,6 +18522,7 @@ data/nyu2_train/bookstore_0001g_out 262
 data/nyu2_train/bookstore_0001g_out 287
 data/nyu2_train/bookstore_0001g_out 384
 data/nyu2_train/bookstore_0001g_out 249
+data/nyu2_train/bookstore_0001g_out 4
 data/nyu2_train/bookstore_0001g_out 153
 data/nyu2_train/bookstore_0001g_out 304
 data/nyu2_train/bookstore_0001g_out 344
@@ -18536,6 +18765,7 @@ data/nyu2_train/bookstore_0001g_out 269
 data/nyu2_train/bookstore_0001g_out 389
 data/nyu2_train/bookstore_0001g_out 310
 data/nyu2_train/bookstore_0001g_out 392
+data/nyu2_train/bookstore_0001g_out 393
 data/nyu2_train/bookstore_0001g_out 246
 data/nyu2_train/bookstore_0001g_out 204
 data/nyu2_train/bookstore_0001g_out 26
@@ -18555,6 +18785,7 @@ data/nyu2_train/living_room_0068_out 142
 data/nyu2_train/living_room_0068_out 94
 data/nyu2_train/living_room_0068_out 158
 data/nyu2_train/living_room_0068_out 18
+data/nyu2_train/living_room_0068_out 167
 data/nyu2_train/living_room_0068_out 21
 data/nyu2_train/living_room_0068_out 48
 data/nyu2_train/living_room_0068_out 75
@@ -18599,6 +18830,7 @@ data/nyu2_train/living_room_0068_out 121
 data/nyu2_train/living_room_0068_out 122
 data/nyu2_train/living_room_0068_out 130
 data/nyu2_train/living_room_0068_out 10
+data/nyu2_train/living_room_0068_out 4
 data/nyu2_train/living_room_0068_out 153
 data/nyu2_train/living_room_0068_out 12
 data/nyu2_train/living_room_0068_out 163
@@ -18749,7 +18981,9 @@ data/nyu2_train/study_room_0005b_out 60
 data/nyu2_train/study_room_0005b_out 54
 data/nyu2_train/study_room_0005b_out 121
 data/nyu2_train/study_room_0005b_out 122
+data/nyu2_train/study_room_0005b_out 130
 data/nyu2_train/study_room_0005b_out 10
+data/nyu2_train/study_room_0005b_out 4
 data/nyu2_train/study_room_0005b_out 12
 data/nyu2_train/study_room_0005b_out 104
 data/nyu2_train/study_room_0005b_out 100
@@ -18887,9 +19121,11 @@ data/nyu2_train/bedroom_0104_out 121
 data/nyu2_train/bedroom_0104_out 122
 data/nyu2_train/bedroom_0104_out 130
 data/nyu2_train/bedroom_0104_out 10
+data/nyu2_train/bedroom_0104_out 4
 data/nyu2_train/bedroom_0104_out 153
 data/nyu2_train/bedroom_0104_out 12
 data/nyu2_train/bedroom_0104_out 163
+data/nyu2_train/bedroom_0104_out 169
 data/nyu2_train/bedroom_0104_out 168
 data/nyu2_train/bedroom_0104_out 104
 data/nyu2_train/bedroom_0104_out 134
@@ -19111,6 +19347,7 @@ data/nyu2_train/kitchen_0049_out 10
 data/nyu2_train/kitchen_0049_out 262
 data/nyu2_train/kitchen_0049_out 287
 data/nyu2_train/kitchen_0049_out 249
+data/nyu2_train/kitchen_0049_out 4
 data/nyu2_train/kitchen_0049_out 153
 data/nyu2_train/kitchen_0049_out 304
 data/nyu2_train/kitchen_0049_out 12
@@ -19280,6 +19517,7 @@ data/nyu2_train/kitchen_0049_out 120
 data/nyu2_train/kitchen_0049_out 314
 data/nyu2_train/kitchen_0049_out 86
 data/nyu2_train/kitchen_0049_out 303
+data/nyu2_train/kitchen_0049_out 329
 data/nyu2_train/kitchen_0049_out 44
 data/nyu2_train/kitchen_0049_out 63
 data/nyu2_train/kitchen_0049_out 300
@@ -19355,6 +19593,7 @@ data/nyu2_train/furniture_store_0002c_out 70
 data/nyu2_train/furniture_store_0002c_out 60
 data/nyu2_train/furniture_store_0002c_out 54
 data/nyu2_train/furniture_store_0002c_out 10
+data/nyu2_train/furniture_store_0002c_out 4
 data/nyu2_train/furniture_store_0002c_out 12
 data/nyu2_train/furniture_store_0002c_out 104
 data/nyu2_train/furniture_store_0002c_out 100
@@ -19424,6 +19663,7 @@ data/nyu2_train/furniture_store_0002c_out 96
 data/nyu2_train/furniture_store_0002c_out 26
 data/nyu2_train/furniture_store_0002c_out 88
 data/nyu2_train/furniture_store_0002c_out 9
+data/nyu2_train/furniture_store_0002c_out 109
 data/nyu2_train/furniture_store_0002c_out 90
 data/nyu2_train/bedroom_0050_out 37
 data/nyu2_train/bedroom_0050_out 234
@@ -19521,6 +19761,7 @@ data/nyu2_train/bedroom_0050_out 252
 data/nyu2_train/bedroom_0050_out 10
 data/nyu2_train/bedroom_0050_out 262
 data/nyu2_train/bedroom_0050_out 249
+data/nyu2_train/bedroom_0050_out 4
 data/nyu2_train/bedroom_0050_out 153
 data/nyu2_train/bedroom_0050_out 12
 data/nyu2_train/bedroom_0050_out 205
@@ -19620,6 +19861,7 @@ data/nyu2_train/bedroom_0050_out 99
 data/nyu2_train/bedroom_0050_out 233
 data/nyu2_train/bedroom_0050_out 216
 data/nyu2_train/bedroom_0050_out 72
+data/nyu2_train/bedroom_0050_out 271
 data/nyu2_train/bedroom_0050_out 178
 data/nyu2_train/bedroom_0050_out 157
 data/nyu2_train/bedroom_0050_out 81
@@ -19766,6 +20008,7 @@ data/nyu2_train/kitchen_0045b_out 122
 data/nyu2_train/kitchen_0045b_out 130
 data/nyu2_train/kitchen_0045b_out 214
 data/nyu2_train/kitchen_0045b_out 10
+data/nyu2_train/kitchen_0045b_out 4
 data/nyu2_train/kitchen_0045b_out 153
 data/nyu2_train/kitchen_0045b_out 12
 data/nyu2_train/kitchen_0045b_out 205
@@ -19901,6 +20144,7 @@ data/nyu2_train/kitchen_0045b_out 24
 data/nyu2_train/kitchen_0045b_out 22
 data/nyu2_train/kitchen_0045b_out 192
 data/nyu2_train/kitchen_0045b_out 166
+data/nyu2_train/kitchen_0045b_out 223
 data/nyu2_train/kitchen_0045b_out 80
 data/nyu2_train/kitchen_0045b_out 96
 data/nyu2_train/kitchen_0045b_out 204
@@ -19983,6 +20227,7 @@ data/nyu2_train/student_lounge_0001_out 194
 data/nyu2_train/student_lounge_0001_out 113
 data/nyu2_train/student_lounge_0001_out 366
 data/nyu2_train/student_lounge_0001_out 245
+data/nyu2_train/student_lounge_0001_out 376
 data/nyu2_train/student_lounge_0001_out 241
 data/nyu2_train/student_lounge_0001_out 316
 data/nyu2_train/student_lounge_0001_out 138
@@ -20039,6 +20284,7 @@ data/nyu2_train/student_lounge_0001_out 10
 data/nyu2_train/student_lounge_0001_out 262
 data/nyu2_train/student_lounge_0001_out 287
 data/nyu2_train/student_lounge_0001_out 249
+data/nyu2_train/student_lounge_0001_out 4
 data/nyu2_train/student_lounge_0001_out 153
 data/nyu2_train/student_lounge_0001_out 304
 data/nyu2_train/student_lounge_0001_out 344
@@ -20328,6 +20574,7 @@ data/nyu2_train/bedroom_0138_out 121
 data/nyu2_train/bedroom_0138_out 122
 data/nyu2_train/bedroom_0138_out 130
 data/nyu2_train/bedroom_0138_out 10
+data/nyu2_train/bedroom_0138_out 4
 data/nyu2_train/bedroom_0138_out 12
 data/nyu2_train/bedroom_0138_out 104
 data/nyu2_train/bedroom_0138_out 134
@@ -20368,6 +20615,7 @@ data/nyu2_train/bedroom_0138_out 5
 data/nyu2_train/bedroom_0138_out 131
 data/nyu2_train/bedroom_0138_out 101
 data/nyu2_train/bedroom_0138_out 112
+data/nyu2_train/bedroom_0138_out 148
 data/nyu2_train/bedroom_0138_out 84
 data/nyu2_train/bedroom_0138_out 92
 data/nyu2_train/bedroom_0138_out 133
@@ -20556,6 +20804,7 @@ data/nyu2_train/kitchen_0051_out 348
 data/nyu2_train/kitchen_0051_out 338
 data/nyu2_train/kitchen_0051_out 160
 data/nyu2_train/kitchen_0051_out 398
+data/nyu2_train/kitchen_0051_out 503
 data/nyu2_train/kitchen_0051_out 126
 data/nyu2_train/kitchen_0051_out 91
 data/nyu2_train/kitchen_0051_out 279
@@ -20592,6 +20841,7 @@ data/nyu2_train/kitchen_0051_out 262
 data/nyu2_train/kitchen_0051_out 287
 data/nyu2_train/kitchen_0051_out 384
 data/nyu2_train/kitchen_0051_out 249
+data/nyu2_train/kitchen_0051_out 4
 data/nyu2_train/kitchen_0051_out 153
 data/nyu2_train/kitchen_0051_out 468
 data/nyu2_train/kitchen_0051_out 304
@@ -20969,11 +21219,13 @@ data/nyu2_train/bedroom_0015_out 121
 data/nyu2_train/bedroom_0015_out 122
 data/nyu2_train/bedroom_0015_out 130
 data/nyu2_train/bedroom_0015_out 10
+data/nyu2_train/bedroom_0015_out 4
 data/nyu2_train/bedroom_0015_out 12
 data/nyu2_train/bedroom_0015_out 104
 data/nyu2_train/bedroom_0015_out 134
 data/nyu2_train/bedroom_0015_out 100
 data/nyu2_train/bedroom_0015_out 64
+data/nyu2_train/bedroom_0015_out 147
 data/nyu2_train/bedroom_0015_out 103
 data/nyu2_train/bedroom_0015_out 67
 data/nyu2_train/bedroom_0015_out 114
@@ -21097,6 +21349,7 @@ data/nyu2_train/kitchen_0028b_out 70
 data/nyu2_train/kitchen_0028b_out 60
 data/nyu2_train/kitchen_0028b_out 54
 data/nyu2_train/kitchen_0028b_out 10
+data/nyu2_train/kitchen_0028b_out 4
 data/nyu2_train/kitchen_0028b_out 12
 data/nyu2_train/kitchen_0028b_out 104
 data/nyu2_train/kitchen_0028b_out 100
@@ -21116,6 +21369,7 @@ data/nyu2_train/kitchen_0028b_out 108
 data/nyu2_train/kitchen_0028b_out 79
 data/nyu2_train/kitchen_0028b_out 31
 data/nyu2_train/kitchen_0028b_out 47
+data/nyu2_train/kitchen_0028b_out 111
 data/nyu2_train/kitchen_0028b_out 41
 data/nyu2_train/kitchen_0028b_out 50
 data/nyu2_train/kitchen_0028b_out 19
@@ -21222,6 +21476,7 @@ data/nyu2_train/bedroom_0020_out 121
 data/nyu2_train/bedroom_0020_out 122
 data/nyu2_train/bedroom_0020_out 130
 data/nyu2_train/bedroom_0020_out 10
+data/nyu2_train/bedroom_0020_out 4
 data/nyu2_train/bedroom_0020_out 153
 data/nyu2_train/bedroom_0020_out 12
 data/nyu2_train/bedroom_0020_out 163
@@ -21323,6 +21578,7 @@ data/nyu2_train/bedroom_0020_out 52
 data/nyu2_train/bedroom_0020_out 66
 data/nyu2_train/bedroom_0020_out 24
 data/nyu2_train/bedroom_0020_out 22
+data/nyu2_train/bedroom_0020_out 166
 data/nyu2_train/bedroom_0020_out 80
 data/nyu2_train/bedroom_0020_out 96
 data/nyu2_train/bedroom_0020_out 26
@@ -21354,6 +21610,7 @@ data/nyu2_train/bedroom_0094_out 42
 data/nyu2_train/bedroom_0094_out 60
 data/nyu2_train/bedroom_0094_out 54
 data/nyu2_train/bedroom_0094_out 10
+data/nyu2_train/bedroom_0094_out 4
 data/nyu2_train/bedroom_0094_out 12
 data/nyu2_train/bedroom_0094_out 8
 data/nyu2_train/bedroom_0094_out 43
@@ -21379,6 +21636,7 @@ data/nyu2_train/bedroom_0094_out 59
 data/nyu2_train/bedroom_0094_out 36
 data/nyu2_train/bedroom_0094_out 20
 data/nyu2_train/bedroom_0094_out 44
+data/nyu2_train/bedroom_0094_out 61
 data/nyu2_train/bedroom_0094_out 32
 data/nyu2_train/bedroom_0094_out 23
 data/nyu2_train/bedroom_0094_out 52
@@ -21432,6 +21690,7 @@ data/nyu2_train/living_room_0067_out 121
 data/nyu2_train/living_room_0067_out 122
 data/nyu2_train/living_room_0067_out 130
 data/nyu2_train/living_room_0067_out 10
+data/nyu2_train/living_room_0067_out 4
 data/nyu2_train/living_room_0067_out 12
 data/nyu2_train/living_room_0067_out 104
 data/nyu2_train/living_room_0067_out 134
@@ -21458,6 +21717,7 @@ data/nyu2_train/living_room_0067_out 47
 data/nyu2_train/living_room_0067_out 111
 data/nyu2_train/living_room_0067_out 41
 data/nyu2_train/living_room_0067_out 50
+data/nyu2_train/living_room_0067_out 140
 data/nyu2_train/living_room_0067_out 19
 data/nyu2_train/living_room_0067_out 58
 data/nyu2_train/living_room_0067_out 98
@@ -21540,6 +21800,7 @@ data/nyu2_train/bedroom_0039_out 30
 data/nyu2_train/bedroom_0039_out 16
 data/nyu2_train/bedroom_0039_out 42
 data/nyu2_train/bedroom_0039_out 10
+data/nyu2_train/bedroom_0039_out 4
 data/nyu2_train/bedroom_0039_out 12
 data/nyu2_train/bedroom_0039_out 8
 data/nyu2_train/bedroom_0039_out 43
@@ -21553,6 +21814,7 @@ data/nyu2_train/bedroom_0039_out 41
 data/nyu2_train/bedroom_0039_out 50
 data/nyu2_train/bedroom_0039_out 19
 data/nyu2_train/bedroom_0039_out 5
+data/nyu2_train/bedroom_0039_out 51
 data/nyu2_train/bedroom_0039_out 7
 data/nyu2_train/bedroom_0039_out 15
 data/nyu2_train/bedroom_0039_out 33
@@ -21596,6 +21858,7 @@ data/nyu2_train/study_room_0005a_out 70
 data/nyu2_train/study_room_0005a_out 60
 data/nyu2_train/study_room_0005a_out 54
 data/nyu2_train/study_room_0005a_out 10
+data/nyu2_train/study_room_0005a_out 4
 data/nyu2_train/study_room_0005a_out 12
 data/nyu2_train/study_room_0005a_out 64
 data/nyu2_train/study_room_0005a_out 67
@@ -21628,6 +21891,7 @@ data/nyu2_train/study_room_0005a_out 27
 data/nyu2_train/study_room_0005a_out 38
 data/nyu2_train/study_room_0005a_out 78
 data/nyu2_train/study_room_0005a_out 73
+data/nyu2_train/study_room_0005a_out 83
 data/nyu2_train/study_room_0005a_out 59
 data/nyu2_train/study_room_0005a_out 36
 data/nyu2_train/study_room_0005a_out 20
@@ -21664,6 +21928,7 @@ data/nyu2_train/living_room_0042a_out 30
 data/nyu2_train/living_room_0042a_out 16
 data/nyu2_train/living_room_0042a_out 42
 data/nyu2_train/living_room_0042a_out 10
+data/nyu2_train/living_room_0042a_out 4
 data/nyu2_train/living_room_0042a_out 12
 data/nyu2_train/living_room_0042a_out 8
 data/nyu2_train/living_room_0042a_out 43
@@ -21688,6 +21953,7 @@ data/nyu2_train/living_room_0042a_out 20
 data/nyu2_train/living_room_0042a_out 44
 data/nyu2_train/living_room_0042a_out 32
 data/nyu2_train/living_room_0042a_out 23
+data/nyu2_train/living_room_0042a_out 52
 data/nyu2_train/living_room_0042a_out 24
 data/nyu2_train/living_room_0042a_out 22
 data/nyu2_train/living_room_0042a_out 26
@@ -21697,6 +21963,7 @@ data/nyu2_train/playroom_0004_out 115
 data/nyu2_train/playroom_0004_out 6
 data/nyu2_train/playroom_0004_out 49
 data/nyu2_train/playroom_0004_out 152
+data/nyu2_train/playroom_0004_out 182
 data/nyu2_train/playroom_0004_out 142
 data/nyu2_train/playroom_0004_out 179
 data/nyu2_train/playroom_0004_out 94
@@ -21749,6 +22016,7 @@ data/nyu2_train/playroom_0004_out 121
 data/nyu2_train/playroom_0004_out 122
 data/nyu2_train/playroom_0004_out 130
 data/nyu2_train/playroom_0004_out 10
+data/nyu2_train/playroom_0004_out 4
 data/nyu2_train/playroom_0004_out 153
 data/nyu2_train/playroom_0004_out 12
 data/nyu2_train/playroom_0004_out 163
@@ -21894,8 +22162,10 @@ data/nyu2_train/bathroom_0011_out 42
 data/nyu2_train/bathroom_0011_out 60
 data/nyu2_train/bathroom_0011_out 54
 data/nyu2_train/bathroom_0011_out 10
+data/nyu2_train/bathroom_0011_out 4
 data/nyu2_train/bathroom_0011_out 12
 data/nyu2_train/bathroom_0011_out 64
+data/nyu2_train/bathroom_0011_out 67
 data/nyu2_train/bathroom_0011_out 8
 data/nyu2_train/bathroom_0011_out 43
 data/nyu2_train/bathroom_0011_out 17
@@ -21956,6 +22226,7 @@ data/nyu2_train/indoor_balcony_0001_out 42
 data/nyu2_train/indoor_balcony_0001_out 60
 data/nyu2_train/indoor_balcony_0001_out 54
 data/nyu2_train/indoor_balcony_0001_out 10
+data/nyu2_train/indoor_balcony_0001_out 4
 data/nyu2_train/indoor_balcony_0001_out 12
 data/nyu2_train/indoor_balcony_0001_out 8
 data/nyu2_train/indoor_balcony_0001_out 43
@@ -21981,6 +22252,7 @@ data/nyu2_train/indoor_balcony_0001_out 59
 data/nyu2_train/indoor_balcony_0001_out 36
 data/nyu2_train/indoor_balcony_0001_out 20
 data/nyu2_train/indoor_balcony_0001_out 44
+data/nyu2_train/indoor_balcony_0001_out 63
 data/nyu2_train/indoor_balcony_0001_out 61
 data/nyu2_train/indoor_balcony_0001_out 32
 data/nyu2_train/indoor_balcony_0001_out 23
@@ -22039,6 +22311,7 @@ data/nyu2_train/living_room_0005_out 30
 data/nyu2_train/living_room_0005_out 183
 data/nyu2_train/living_room_0005_out 207
 data/nyu2_train/living_room_0005_out 16
+data/nyu2_train/living_room_0005_out 226
 data/nyu2_train/living_room_0005_out 105
 data/nyu2_train/living_room_0005_out 62
 data/nyu2_train/living_room_0005_out 56
@@ -22064,6 +22337,7 @@ data/nyu2_train/living_room_0005_out 122
 data/nyu2_train/living_room_0005_out 130
 data/nyu2_train/living_room_0005_out 214
 data/nyu2_train/living_room_0005_out 10
+data/nyu2_train/living_room_0005_out 4
 data/nyu2_train/living_room_0005_out 153
 data/nyu2_train/living_room_0005_out 12
 data/nyu2_train/living_room_0005_out 205
@@ -22221,6 +22495,7 @@ data/nyu2_train/bathroom_0055_out 25
 data/nyu2_train/bathroom_0055_out 13
 data/nyu2_train/bathroom_0055_out 68
 data/nyu2_train/bathroom_0055_out 28
+data/nyu2_train/bathroom_0055_out 85
 data/nyu2_train/bathroom_0055_out 57
 data/nyu2_train/bathroom_0055_out 34
 data/nyu2_train/bathroom_0055_out 53
@@ -22239,6 +22514,7 @@ data/nyu2_train/bathroom_0055_out 70
 data/nyu2_train/bathroom_0055_out 60
 data/nyu2_train/bathroom_0055_out 54
 data/nyu2_train/bathroom_0055_out 10
+data/nyu2_train/bathroom_0055_out 4
 data/nyu2_train/bathroom_0055_out 12
 data/nyu2_train/bathroom_0055_out 64
 data/nyu2_train/bathroom_0055_out 67
@@ -22386,6 +22662,7 @@ data/nyu2_train/living_room_0039_out 252
 data/nyu2_train/living_room_0039_out 10
 data/nyu2_train/living_room_0039_out 262
 data/nyu2_train/living_room_0039_out 249
+data/nyu2_train/living_room_0039_out 4
 data/nyu2_train/living_room_0039_out 153
 data/nyu2_train/living_room_0039_out 12
 data/nyu2_train/living_room_0039_out 205
@@ -22547,6 +22824,7 @@ data/nyu2_train/living_room_0039_out 80
 data/nyu2_train/living_room_0039_out 238
 data/nyu2_train/living_room_0039_out 237
 data/nyu2_train/living_room_0039_out 96
+data/nyu2_train/living_room_0039_out 269
 data/nyu2_train/living_room_0039_out 246
 data/nyu2_train/living_room_0039_out 204
 data/nyu2_train/living_room_0039_out 26
@@ -22577,6 +22855,7 @@ data/nyu2_train/living_room_0040_out 158
 data/nyu2_train/living_room_0040_out 402
 data/nyu2_train/living_room_0040_out 320
 data/nyu2_train/living_room_0040_out 18
+data/nyu2_train/living_room_0040_out 470
 data/nyu2_train/living_room_0040_out 167
 data/nyu2_train/living_room_0040_out 443
 data/nyu2_train/living_room_0040_out 21
@@ -22710,6 +22989,7 @@ data/nyu2_train/living_room_0040_out 262
 data/nyu2_train/living_room_0040_out 287
 data/nyu2_train/living_room_0040_out 384
 data/nyu2_train/living_room_0040_out 249
+data/nyu2_train/living_room_0040_out 4
 data/nyu2_train/living_room_0040_out 153
 data/nyu2_train/living_room_0040_out 468
 data/nyu2_train/living_room_0040_out 304
@@ -23048,6 +23328,7 @@ data/nyu2_train/kitchen_0035a_out 70
 data/nyu2_train/kitchen_0035a_out 60
 data/nyu2_train/kitchen_0035a_out 54
 data/nyu2_train/kitchen_0035a_out 10
+data/nyu2_train/kitchen_0035a_out 4
 data/nyu2_train/kitchen_0035a_out 12
 data/nyu2_train/kitchen_0035a_out 64
 data/nyu2_train/kitchen_0035a_out 67
@@ -23092,6 +23373,7 @@ data/nyu2_train/kitchen_0035a_out 52
 data/nyu2_train/kitchen_0035a_out 66
 data/nyu2_train/kitchen_0035a_out 24
 data/nyu2_train/kitchen_0035a_out 22
+data/nyu2_train/kitchen_0035a_out 80
 data/nyu2_train/kitchen_0035a_out 26
 data/nyu2_train/kitchen_0035a_out 9
 data/nyu2_train/bedroom_0056b_out 37
@@ -23119,8 +23401,10 @@ data/nyu2_train/bedroom_0056b_out 42
 data/nyu2_train/bedroom_0056b_out 60
 data/nyu2_train/bedroom_0056b_out 54
 data/nyu2_train/bedroom_0056b_out 10
+data/nyu2_train/bedroom_0056b_out 4
 data/nyu2_train/bedroom_0056b_out 12
 data/nyu2_train/bedroom_0056b_out 64
+data/nyu2_train/bedroom_0056b_out 67
 data/nyu2_train/bedroom_0056b_out 8
 data/nyu2_train/bedroom_0056b_out 43
 data/nyu2_train/bedroom_0056b_out 17
@@ -23228,6 +23512,7 @@ data/nyu2_train/bedroom_0026_out 122
 data/nyu2_train/bedroom_0026_out 130
 data/nyu2_train/bedroom_0026_out 214
 data/nyu2_train/bedroom_0026_out 10
+data/nyu2_train/bedroom_0026_out 4
 data/nyu2_train/bedroom_0026_out 153
 data/nyu2_train/bedroom_0026_out 12
 data/nyu2_train/bedroom_0026_out 205
@@ -23314,6 +23599,7 @@ data/nyu2_train/bedroom_0026_out 178
 data/nyu2_train/bedroom_0026_out 157
 data/nyu2_train/bedroom_0026_out 81
 data/nyu2_train/bedroom_0026_out 33
+data/nyu2_train/bedroom_0026_out 215
 data/nyu2_train/bedroom_0026_out 27
 data/nyu2_train/bedroom_0026_out 139
 data/nyu2_train/bedroom_0026_out 38
@@ -23391,6 +23677,7 @@ data/nyu2_train/bedroom_0067a_out 42
 data/nyu2_train/bedroom_0067a_out 60
 data/nyu2_train/bedroom_0067a_out 54
 data/nyu2_train/bedroom_0067a_out 10
+data/nyu2_train/bedroom_0067a_out 4
 data/nyu2_train/bedroom_0067a_out 12
 data/nyu2_train/bedroom_0067a_out 8
 data/nyu2_train/bedroom_0067a_out 43
@@ -23416,6 +23703,7 @@ data/nyu2_train/bedroom_0067a_out 59
 data/nyu2_train/bedroom_0067a_out 36
 data/nyu2_train/bedroom_0067a_out 20
 data/nyu2_train/bedroom_0067a_out 44
+data/nyu2_train/bedroom_0067a_out 63
 data/nyu2_train/bedroom_0067a_out 61
 data/nyu2_train/bedroom_0067a_out 32
 data/nyu2_train/bedroom_0067a_out 23
@@ -23467,6 +23755,7 @@ data/nyu2_train/kitchen_0059_out 121
 data/nyu2_train/kitchen_0059_out 122
 data/nyu2_train/kitchen_0059_out 130
 data/nyu2_train/kitchen_0059_out 10
+data/nyu2_train/kitchen_0059_out 4
 data/nyu2_train/kitchen_0059_out 12
 data/nyu2_train/kitchen_0059_out 104
 data/nyu2_train/kitchen_0059_out 100
@@ -23499,6 +23788,7 @@ data/nyu2_train/kitchen_0059_out 124
 data/nyu2_train/kitchen_0059_out 128
 data/nyu2_train/kitchen_0059_out 69
 data/nyu2_train/kitchen_0059_out 5
+data/nyu2_train/kitchen_0059_out 131
 data/nyu2_train/kitchen_0059_out 101
 data/nyu2_train/kitchen_0059_out 112
 data/nyu2_train/kitchen_0059_out 84
@@ -23573,9 +23863,11 @@ data/nyu2_train/kitchen_0041_out 16
 data/nyu2_train/kitchen_0041_out 62
 data/nyu2_train/kitchen_0041_out 56
 data/nyu2_train/kitchen_0041_out 42
+data/nyu2_train/kitchen_0041_out 70
 data/nyu2_train/kitchen_0041_out 60
 data/nyu2_train/kitchen_0041_out 54
 data/nyu2_train/kitchen_0041_out 10
+data/nyu2_train/kitchen_0041_out 4
 data/nyu2_train/kitchen_0041_out 12
 data/nyu2_train/kitchen_0041_out 64
 data/nyu2_train/kitchen_0041_out 67
@@ -23645,6 +23937,7 @@ data/nyu2_train/bathroom_0006_out 70
 data/nyu2_train/bathroom_0006_out 60
 data/nyu2_train/bathroom_0006_out 54
 data/nyu2_train/bathroom_0006_out 10
+data/nyu2_train/bathroom_0006_out 4
 data/nyu2_train/bathroom_0006_out 12
 data/nyu2_train/bathroom_0006_out 64
 data/nyu2_train/bathroom_0006_out 67
@@ -23679,6 +23972,7 @@ data/nyu2_train/bathroom_0006_out 38
 data/nyu2_train/bathroom_0006_out 78
 data/nyu2_train/bathroom_0006_out 73
 data/nyu2_train/bathroom_0006_out 83
+data/nyu2_train/bathroom_0006_out 87
 data/nyu2_train/bathroom_0006_out 59
 data/nyu2_train/bathroom_0006_out 36
 data/nyu2_train/bathroom_0006_out 20
@@ -23706,6 +24000,7 @@ data/nyu2_train/bedroom_0067b_out 13
 data/nyu2_train/bedroom_0067b_out 28
 data/nyu2_train/bedroom_0067b_out 34
 data/nyu2_train/bedroom_0067b_out 11
+data/nyu2_train/bedroom_0067b_out 46
 data/nyu2_train/bedroom_0067b_out 39
 data/nyu2_train/bedroom_0067b_out 29
 data/nyu2_train/bedroom_0067b_out 14
@@ -23713,6 +24008,7 @@ data/nyu2_train/bedroom_0067b_out 30
 data/nyu2_train/bedroom_0067b_out 16
 data/nyu2_train/bedroom_0067b_out 42
 data/nyu2_train/bedroom_0067b_out 10
+data/nyu2_train/bedroom_0067b_out 4
 data/nyu2_train/bedroom_0067b_out 12
 data/nyu2_train/bedroom_0067b_out 8
 data/nyu2_train/bedroom_0067b_out 43
@@ -23741,6 +24037,7 @@ data/nyu2_train/bedroom_0067b_out 9
 data/nyu2_train/office_kitchen_0001b_out 37
 data/nyu2_train/office_kitchen_0001b_out 6
 data/nyu2_train/office_kitchen_0001b_out 49
+data/nyu2_train/office_kitchen_0001b_out 94
 data/nyu2_train/office_kitchen_0001b_out 18
 data/nyu2_train/office_kitchen_0001b_out 21
 data/nyu2_train/office_kitchen_0001b_out 48
@@ -23770,6 +24067,7 @@ data/nyu2_train/office_kitchen_0001b_out 70
 data/nyu2_train/office_kitchen_0001b_out 60
 data/nyu2_train/office_kitchen_0001b_out 54
 data/nyu2_train/office_kitchen_0001b_out 10
+data/nyu2_train/office_kitchen_0001b_out 4
 data/nyu2_train/office_kitchen_0001b_out 12
 data/nyu2_train/office_kitchen_0001b_out 64
 data/nyu2_train/office_kitchen_0001b_out 67
@@ -23880,6 +24178,7 @@ data/nyu2_train/classroom_0022_out 121
 data/nyu2_train/classroom_0022_out 122
 data/nyu2_train/classroom_0022_out 130
 data/nyu2_train/classroom_0022_out 10
+data/nyu2_train/classroom_0022_out 4
 data/nyu2_train/classroom_0022_out 153
 data/nyu2_train/classroom_0022_out 12
 data/nyu2_train/classroom_0022_out 163
@@ -23981,6 +24280,7 @@ data/nyu2_train/classroom_0022_out 52
 data/nyu2_train/classroom_0022_out 66
 data/nyu2_train/classroom_0022_out 24
 data/nyu2_train/classroom_0022_out 22
+data/nyu2_train/classroom_0022_out 166
 data/nyu2_train/classroom_0022_out 80
 data/nyu2_train/classroom_0022_out 96
 data/nyu2_train/classroom_0022_out 26
@@ -24036,6 +24336,7 @@ data/nyu2_train/classroom_0003_out 121
 data/nyu2_train/classroom_0003_out 122
 data/nyu2_train/classroom_0003_out 130
 data/nyu2_train/classroom_0003_out 10
+data/nyu2_train/classroom_0003_out 4
 data/nyu2_train/classroom_0003_out 12
 data/nyu2_train/classroom_0003_out 104
 data/nyu2_train/classroom_0003_out 134
@@ -24076,6 +24377,7 @@ data/nyu2_train/classroom_0003_out 5
 data/nyu2_train/classroom_0003_out 131
 data/nyu2_train/classroom_0003_out 101
 data/nyu2_train/classroom_0003_out 112
+data/nyu2_train/classroom_0003_out 148
 data/nyu2_train/classroom_0003_out 84
 data/nyu2_train/classroom_0003_out 92
 data/nyu2_train/classroom_0003_out 133
@@ -24272,6 +24574,7 @@ data/nyu2_train/furniture_store_0001d_out 262
 data/nyu2_train/furniture_store_0001d_out 287
 data/nyu2_train/furniture_store_0001d_out 384
 data/nyu2_train/furniture_store_0001d_out 249
+data/nyu2_train/furniture_store_0001d_out 4
 data/nyu2_train/furniture_store_0001d_out 153
 data/nyu2_train/furniture_store_0001d_out 304
 data/nyu2_train/furniture_store_0001d_out 344
@@ -24329,6 +24632,7 @@ data/nyu2_train/furniture_store_0001d_out 45
 data/nyu2_train/furniture_store_0001d_out 174
 data/nyu2_train/furniture_store_0001d_out 363
 data/nyu2_train/furniture_store_0001d_out 313
+data/nyu2_train/furniture_store_0001d_out 405
 data/nyu2_train/furniture_store_0001d_out 82
 data/nyu2_train/furniture_store_0001d_out 108
 data/nyu2_train/furniture_store_0001d_out 297
@@ -24564,7 +24868,9 @@ data/nyu2_train/living_room_0033_out 70
 data/nyu2_train/living_room_0033_out 60
 data/nyu2_train/living_room_0033_out 54
 data/nyu2_train/living_room_0033_out 10
+data/nyu2_train/living_room_0033_out 4
 data/nyu2_train/living_room_0033_out 12
+data/nyu2_train/living_room_0033_out 100
 data/nyu2_train/living_room_0033_out 64
 data/nyu2_train/living_room_0033_out 67
 data/nyu2_train/living_room_0033_out 8
@@ -24660,6 +24966,7 @@ data/nyu2_train/bedroom_0041_out 70
 data/nyu2_train/bedroom_0041_out 60
 data/nyu2_train/bedroom_0041_out 54
 data/nyu2_train/bedroom_0041_out 10
+data/nyu2_train/bedroom_0041_out 4
 data/nyu2_train/bedroom_0041_out 12
 data/nyu2_train/bedroom_0041_out 104
 data/nyu2_train/bedroom_0041_out 100
@@ -24709,6 +25016,7 @@ data/nyu2_train/bedroom_0041_out 87
 data/nyu2_train/bedroom_0041_out 59
 data/nyu2_train/bedroom_0041_out 36
 data/nyu2_train/bedroom_0041_out 20
+data/nyu2_train/bedroom_0041_out 106
 data/nyu2_train/bedroom_0041_out 65
 data/nyu2_train/bedroom_0041_out 86
 data/nyu2_train/bedroom_0041_out 44
@@ -24763,6 +25071,7 @@ data/nyu2_train/office_kitchen_0003_out 14
 data/nyu2_train/office_kitchen_0003_out 113
 data/nyu2_train/office_kitchen_0003_out 138
 data/nyu2_train/office_kitchen_0003_out 30
+data/nyu2_train/office_kitchen_0003_out 183
 data/nyu2_train/office_kitchen_0003_out 16
 data/nyu2_train/office_kitchen_0003_out 105
 data/nyu2_train/office_kitchen_0003_out 62
@@ -24785,6 +25094,7 @@ data/nyu2_train/office_kitchen_0003_out 121
 data/nyu2_train/office_kitchen_0003_out 122
 data/nyu2_train/office_kitchen_0003_out 130
 data/nyu2_train/office_kitchen_0003_out 10
+data/nyu2_train/office_kitchen_0003_out 4
 data/nyu2_train/office_kitchen_0003_out 153
 data/nyu2_train/office_kitchen_0003_out 12
 data/nyu2_train/office_kitchen_0003_out 163
@@ -24924,11 +25234,13 @@ data/nyu2_train/bedroom_0065_out 29
 data/nyu2_train/bedroom_0065_out 14
 data/nyu2_train/bedroom_0065_out 30
 data/nyu2_train/bedroom_0065_out 16
+data/nyu2_train/bedroom_0065_out 62
 data/nyu2_train/bedroom_0065_out 56
 data/nyu2_train/bedroom_0065_out 42
 data/nyu2_train/bedroom_0065_out 60
 data/nyu2_train/bedroom_0065_out 54
 data/nyu2_train/bedroom_0065_out 10
+data/nyu2_train/bedroom_0065_out 4
 data/nyu2_train/bedroom_0065_out 12
 data/nyu2_train/bedroom_0065_out 8
 data/nyu2_train/bedroom_0065_out 43
@@ -24981,6 +25293,7 @@ data/nyu2_train/bedroom_0124_out 30
 data/nyu2_train/bedroom_0124_out 16
 data/nyu2_train/bedroom_0124_out 42
 data/nyu2_train/bedroom_0124_out 10
+data/nyu2_train/bedroom_0124_out 4
 data/nyu2_train/bedroom_0124_out 12
 data/nyu2_train/bedroom_0124_out 8
 data/nyu2_train/bedroom_0124_out 43
@@ -25005,6 +25318,7 @@ data/nyu2_train/bedroom_0124_out 20
 data/nyu2_train/bedroom_0124_out 44
 data/nyu2_train/bedroom_0124_out 32
 data/nyu2_train/bedroom_0124_out 23
+data/nyu2_train/bedroom_0124_out 52
 data/nyu2_train/bedroom_0124_out 24
 data/nyu2_train/bedroom_0124_out 22
 data/nyu2_train/bedroom_0124_out 26
@@ -25103,7 +25417,9 @@ data/nyu2_train/home_office_0006_out 130
 data/nyu2_train/home_office_0006_out 214
 data/nyu2_train/home_office_0006_out 252
 data/nyu2_train/home_office_0006_out 10
+data/nyu2_train/home_office_0006_out 262
 data/nyu2_train/home_office_0006_out 249
+data/nyu2_train/home_office_0006_out 4
 data/nyu2_train/home_office_0006_out 153
 data/nyu2_train/home_office_0006_out 12
 data/nyu2_train/home_office_0006_out 205
@@ -25318,6 +25634,7 @@ data/nyu2_train/reception_room_0002_out 194
 data/nyu2_train/reception_room_0002_out 113
 data/nyu2_train/reception_room_0002_out 241
 data/nyu2_train/reception_room_0002_out 138
+data/nyu2_train/reception_room_0002_out 243
 data/nyu2_train/reception_room_0002_out 30
 data/nyu2_train/reception_room_0002_out 183
 data/nyu2_train/reception_room_0002_out 207
@@ -25349,6 +25666,7 @@ data/nyu2_train/reception_room_0002_out 122
 data/nyu2_train/reception_room_0002_out 130
 data/nyu2_train/reception_room_0002_out 214
 data/nyu2_train/reception_room_0002_out 10
+data/nyu2_train/reception_room_0002_out 4
 data/nyu2_train/reception_room_0002_out 153
 data/nyu2_train/reception_room_0002_out 12
 data/nyu2_train/reception_room_0002_out 205
@@ -25612,6 +25930,7 @@ data/nyu2_train/kitchen_0050_out 10
 data/nyu2_train/kitchen_0050_out 262
 data/nyu2_train/kitchen_0050_out 287
 data/nyu2_train/kitchen_0050_out 249
+data/nyu2_train/kitchen_0050_out 4
 data/nyu2_train/kitchen_0050_out 153
 data/nyu2_train/kitchen_0050_out 304
 data/nyu2_train/kitchen_0050_out 12
@@ -25789,6 +26108,7 @@ data/nyu2_train/kitchen_0050_out 66
 data/nyu2_train/kitchen_0050_out 24
 data/nyu2_train/kitchen_0050_out 22
 data/nyu2_train/kitchen_0050_out 192
+data/nyu2_train/kitchen_0050_out 305
 data/nyu2_train/kitchen_0050_out 166
 data/nyu2_train/kitchen_0050_out 223
 data/nyu2_train/kitchen_0050_out 270
@@ -25810,8 +26130,10 @@ data/nyu2_train/bedroom_0116_out 11
 data/nyu2_train/bedroom_0116_out 14
 data/nyu2_train/bedroom_0116_out 16
 data/nyu2_train/bedroom_0116_out 10
+data/nyu2_train/bedroom_0116_out 4
 data/nyu2_train/bedroom_0116_out 12
 data/nyu2_train/bedroom_0116_out 8
+data/nyu2_train/bedroom_0116_out 17
 data/nyu2_train/bedroom_0116_out 5
 data/nyu2_train/bedroom_0116_out 7
 data/nyu2_train/bedroom_0116_out 15
@@ -25892,6 +26214,7 @@ data/nyu2_train/bedroom_0136_out 122
 data/nyu2_train/bedroom_0136_out 130
 data/nyu2_train/bedroom_0136_out 214
 data/nyu2_train/bedroom_0136_out 10
+data/nyu2_train/bedroom_0136_out 4
 data/nyu2_train/bedroom_0136_out 153
 data/nyu2_train/bedroom_0136_out 12
 data/nyu2_train/bedroom_0136_out 205
@@ -25905,6 +26228,7 @@ data/nyu2_train/bedroom_0136_out 188
 data/nyu2_train/bedroom_0136_out 100
 data/nyu2_train/bedroom_0136_out 209
 data/nyu2_train/bedroom_0136_out 64
+data/nyu2_train/bedroom_0136_out 227
 data/nyu2_train/bedroom_0136_out 147
 data/nyu2_train/bedroom_0136_out 103
 data/nyu2_train/bedroom_0136_out 67
@@ -26082,8 +26406,10 @@ data/nyu2_train/bedroom_0129_out 121
 data/nyu2_train/bedroom_0129_out 122
 data/nyu2_train/bedroom_0129_out 130
 data/nyu2_train/bedroom_0129_out 10
+data/nyu2_train/bedroom_0129_out 4
 data/nyu2_train/bedroom_0129_out 12
 data/nyu2_train/bedroom_0129_out 104
+data/nyu2_train/bedroom_0129_out 134
 data/nyu2_train/bedroom_0129_out 100
 data/nyu2_train/bedroom_0129_out 64
 data/nyu2_train/bedroom_0129_out 103
@@ -26199,6 +26525,7 @@ data/nyu2_train/bedroom_0040_out 62
 data/nyu2_train/bedroom_0040_out 56
 data/nyu2_train/bedroom_0040_out 119
 data/nyu2_train/bedroom_0040_out 42
+data/nyu2_train/bedroom_0040_out 126
 data/nyu2_train/bedroom_0040_out 91
 data/nyu2_train/bedroom_0040_out 93
 data/nyu2_train/bedroom_0040_out 70
@@ -26207,6 +26534,7 @@ data/nyu2_train/bedroom_0040_out 54
 data/nyu2_train/bedroom_0040_out 121
 data/nyu2_train/bedroom_0040_out 122
 data/nyu2_train/bedroom_0040_out 10
+data/nyu2_train/bedroom_0040_out 4
 data/nyu2_train/bedroom_0040_out 12
 data/nyu2_train/bedroom_0040_out 104
 data/nyu2_train/bedroom_0040_out 100
@@ -26496,6 +26824,7 @@ data/nyu2_train/nyu_office_0_out 536
 data/nyu2_train/nyu_office_0_out 287
 data/nyu2_train/nyu_office_0_out 384
 data/nyu2_train/nyu_office_0_out 249
+data/nyu2_train/nyu_office_0_out 4
 data/nyu2_train/nyu_office_0_out 153
 data/nyu2_train/nyu_office_0_out 468
 data/nyu2_train/nyu_office_0_out 574
@@ -26663,6 +26992,7 @@ data/nyu2_train/nyu_office_0_out 92
 data/nyu2_train/nyu_office_0_out 602
 data/nyu2_train/nyu_office_0_out 133
 data/nyu2_train/nyu_office_0_out 236
+data/nyu2_train/nyu_office_0_out 612
 data/nyu2_train/nyu_office_0_out 580
 data/nyu2_train/nyu_office_0_out 557
 data/nyu2_train/nyu_office_0_out 176
@@ -26991,6 +27321,7 @@ data/nyu2_train/office_0026_out 252
 data/nyu2_train/office_0026_out 10
 data/nyu2_train/office_0026_out 262
 data/nyu2_train/office_0026_out 249
+data/nyu2_train/office_0026_out 4
 data/nyu2_train/office_0026_out 153
 data/nyu2_train/office_0026_out 12
 data/nyu2_train/office_0026_out 205
@@ -27090,6 +27421,7 @@ data/nyu2_train/office_0026_out 99
 data/nyu2_train/office_0026_out 233
 data/nyu2_train/office_0026_out 216
 data/nyu2_train/office_0026_out 72
+data/nyu2_train/office_0026_out 271
 data/nyu2_train/office_0026_out 178
 data/nyu2_train/office_0026_out 157
 data/nyu2_train/office_0026_out 81
@@ -27190,6 +27522,7 @@ data/nyu2_train/bathroom_0010_out 70
 data/nyu2_train/bathroom_0010_out 60
 data/nyu2_train/bathroom_0010_out 54
 data/nyu2_train/bathroom_0010_out 10
+data/nyu2_train/bathroom_0010_out 4
 data/nyu2_train/bathroom_0010_out 12
 data/nyu2_train/bathroom_0010_out 64
 data/nyu2_train/bathroom_0010_out 67
@@ -27215,6 +27548,7 @@ data/nyu2_train/bathroom_0010_out 7
 data/nyu2_train/bathroom_0010_out 15
 data/nyu2_train/bathroom_0010_out 77
 data/nyu2_train/bathroom_0010_out 72
+data/nyu2_train/bathroom_0010_out 81
 data/nyu2_train/bathroom_0010_out 33
 data/nyu2_train/bathroom_0010_out 27
 data/nyu2_train/bathroom_0010_out 38
@@ -27292,6 +27626,7 @@ data/nyu2_train/bedroom_0010_out 121
 data/nyu2_train/bedroom_0010_out 122
 data/nyu2_train/bedroom_0010_out 130
 data/nyu2_train/bedroom_0010_out 10
+data/nyu2_train/bedroom_0010_out 4
 data/nyu2_train/bedroom_0010_out 153
 data/nyu2_train/bedroom_0010_out 12
 data/nyu2_train/bedroom_0010_out 163
@@ -27374,6 +27709,7 @@ data/nyu2_train/bedroom_0010_out 78
 data/nyu2_train/bedroom_0010_out 73
 data/nyu2_train/bedroom_0010_out 159
 data/nyu2_train/bedroom_0010_out 110
+data/nyu2_train/bedroom_0010_out 177
 data/nyu2_train/bedroom_0010_out 143
 data/nyu2_train/bedroom_0010_out 83
 data/nyu2_train/bedroom_0010_out 87
@@ -27437,6 +27773,7 @@ data/nyu2_train/kitchen_0008_out 70
 data/nyu2_train/kitchen_0008_out 60
 data/nyu2_train/kitchen_0008_out 54
 data/nyu2_train/kitchen_0008_out 10
+data/nyu2_train/kitchen_0008_out 4
 data/nyu2_train/kitchen_0008_out 12
 data/nyu2_train/kitchen_0008_out 64
 data/nyu2_train/kitchen_0008_out 67
@@ -27458,6 +27795,7 @@ data/nyu2_train/kitchen_0008_out 5
 data/nyu2_train/kitchen_0008_out 51
 data/nyu2_train/kitchen_0008_out 7
 data/nyu2_train/kitchen_0008_out 15
+data/nyu2_train/kitchen_0008_out 72
 data/nyu2_train/kitchen_0008_out 33
 data/nyu2_train/kitchen_0008_out 27
 data/nyu2_train/kitchen_0008_out 38
@@ -27516,6 +27854,7 @@ data/nyu2_train/office_0009_out 54
 data/nyu2_train/office_0009_out 121
 data/nyu2_train/office_0009_out 122
 data/nyu2_train/office_0009_out 10
+data/nyu2_train/office_0009_out 4
 data/nyu2_train/office_0009_out 12
 data/nyu2_train/office_0009_out 104
 data/nyu2_train/office_0009_out 100
@@ -27543,6 +27882,7 @@ data/nyu2_train/office_0009_out 19
 data/nyu2_train/office_0009_out 58
 data/nyu2_train/office_0009_out 98
 data/nyu2_train/office_0009_out 76
+data/nyu2_train/office_0009_out 124
 data/nyu2_train/office_0009_out 69
 data/nyu2_train/office_0009_out 5
 data/nyu2_train/office_0009_out 101
@@ -27643,6 +27983,7 @@ data/nyu2_train/office_0012_out 121
 data/nyu2_train/office_0012_out 122
 data/nyu2_train/office_0012_out 130
 data/nyu2_train/office_0012_out 10
+data/nyu2_train/office_0012_out 4
 data/nyu2_train/office_0012_out 12
 data/nyu2_train/office_0012_out 104
 data/nyu2_train/office_0012_out 134
@@ -27688,6 +28029,7 @@ data/nyu2_train/office_0012_out 148
 data/nyu2_train/office_0012_out 84
 data/nyu2_train/office_0012_out 92
 data/nyu2_train/office_0012_out 133
+data/nyu2_train/office_0012_out 150
 data/nyu2_train/office_0012_out 107
 data/nyu2_train/office_0012_out 136
 data/nyu2_train/office_0012_out 51
@@ -27795,6 +28137,7 @@ data/nyu2_train/dining_room_0004_out 121
 data/nyu2_train/dining_room_0004_out 122
 data/nyu2_train/dining_room_0004_out 130
 data/nyu2_train/dining_room_0004_out 10
+data/nyu2_train/dining_room_0004_out 4
 data/nyu2_train/dining_room_0004_out 153
 data/nyu2_train/dining_room_0004_out 12
 data/nyu2_train/dining_room_0004_out 163
@@ -27882,6 +28225,7 @@ data/nyu2_train/dining_room_0004_out 20
 data/nyu2_train/dining_room_0004_out 165
 data/nyu2_train/dining_room_0004_out 106
 data/nyu2_train/dining_room_0004_out 145
+data/nyu2_train/dining_room_0004_out 172
 data/nyu2_train/dining_room_0004_out 65
 data/nyu2_train/dining_room_0004_out 120
 data/nyu2_train/dining_room_0004_out 86
@@ -27930,6 +28274,7 @@ data/nyu2_train/bookstore_0001j_out 402
 data/nyu2_train/bookstore_0001j_out 320
 data/nyu2_train/bookstore_0001j_out 18
 data/nyu2_train/bookstore_0001j_out 167
+data/nyu2_train/bookstore_0001j_out 443
 data/nyu2_train/bookstore_0001j_out 21
 data/nyu2_train/bookstore_0001j_out 48
 data/nyu2_train/bookstore_0001j_out 75
@@ -28055,6 +28400,7 @@ data/nyu2_train/bookstore_0001j_out 262
 data/nyu2_train/bookstore_0001j_out 287
 data/nyu2_train/bookstore_0001j_out 384
 data/nyu2_train/bookstore_0001j_out 249
+data/nyu2_train/bookstore_0001j_out 4
 data/nyu2_train/bookstore_0001j_out 153
 data/nyu2_train/bookstore_0001j_out 304
 data/nyu2_train/bookstore_0001j_out 344
@@ -28399,9 +28745,11 @@ data/nyu2_train/kitchen_0016_out 121
 data/nyu2_train/kitchen_0016_out 122
 data/nyu2_train/kitchen_0016_out 130
 data/nyu2_train/kitchen_0016_out 10
+data/nyu2_train/kitchen_0016_out 4
 data/nyu2_train/kitchen_0016_out 153
 data/nyu2_train/kitchen_0016_out 12
 data/nyu2_train/kitchen_0016_out 163
+data/nyu2_train/kitchen_0016_out 169
 data/nyu2_train/kitchen_0016_out 168
 data/nyu2_train/kitchen_0016_out 104
 data/nyu2_train/kitchen_0016_out 134
@@ -28600,6 +28948,7 @@ data/nyu2_train/kitchen_0029c_out 214
 data/nyu2_train/kitchen_0029c_out 252
 data/nyu2_train/kitchen_0029c_out 10
 data/nyu2_train/kitchen_0029c_out 249
+data/nyu2_train/kitchen_0029c_out 4
 data/nyu2_train/kitchen_0029c_out 153
 data/nyu2_train/kitchen_0029c_out 12
 data/nyu2_train/kitchen_0029c_out 205
@@ -28620,6 +28969,7 @@ data/nyu2_train/kitchen_0029c_out 103
 data/nyu2_train/kitchen_0029c_out 67
 data/nyu2_train/kitchen_0029c_out 114
 data/nyu2_train/kitchen_0029c_out 8
+data/nyu2_train/kitchen_0029c_out 253
 data/nyu2_train/kitchen_0029c_out 127
 data/nyu2_train/kitchen_0029c_out 43
 data/nyu2_train/kitchen_0029c_out 212
@@ -28769,6 +29119,7 @@ data/nyu2_train/bedroom_0038_out 14
 data/nyu2_train/bedroom_0038_out 30
 data/nyu2_train/bedroom_0038_out 16
 data/nyu2_train/bedroom_0038_out 10
+data/nyu2_train/bedroom_0038_out 4
 data/nyu2_train/bedroom_0038_out 12
 data/nyu2_train/bedroom_0038_out 8
 data/nyu2_train/bedroom_0038_out 17
@@ -28777,6 +29128,7 @@ data/nyu2_train/bedroom_0038_out 19
 data/nyu2_train/bedroom_0038_out 5
 data/nyu2_train/bedroom_0038_out 7
 data/nyu2_train/bedroom_0038_out 15
+data/nyu2_train/bedroom_0038_out 33
 data/nyu2_train/bedroom_0038_out 27
 data/nyu2_train/bedroom_0038_out 20
 data/nyu2_train/bedroom_0038_out 32
@@ -28815,6 +29167,7 @@ data/nyu2_train/living_room_0069b_out 16
 data/nyu2_train/living_room_0069b_out 105
 data/nyu2_train/living_room_0069b_out 62
 data/nyu2_train/living_room_0069b_out 56
+data/nyu2_train/living_room_0069b_out 119
 data/nyu2_train/living_room_0069b_out 42
 data/nyu2_train/living_room_0069b_out 91
 data/nyu2_train/living_room_0069b_out 93
@@ -28822,6 +29175,7 @@ data/nyu2_train/living_room_0069b_out 70
 data/nyu2_train/living_room_0069b_out 60
 data/nyu2_train/living_room_0069b_out 54
 data/nyu2_train/living_room_0069b_out 10
+data/nyu2_train/living_room_0069b_out 4
 data/nyu2_train/living_room_0069b_out 12
 data/nyu2_train/living_room_0069b_out 104
 data/nyu2_train/living_room_0069b_out 100
@@ -28947,6 +29301,7 @@ data/nyu2_train/office_0004_out 121
 data/nyu2_train/office_0004_out 122
 data/nyu2_train/office_0004_out 130
 data/nyu2_train/office_0004_out 10
+data/nyu2_train/office_0004_out 4
 data/nyu2_train/office_0004_out 12
 data/nyu2_train/office_0004_out 104
 data/nyu2_train/office_0004_out 134
@@ -28961,6 +29316,7 @@ data/nyu2_train/office_0004_out 127
 data/nyu2_train/office_0004_out 43
 data/nyu2_train/office_0004_out 144
 data/nyu2_train/office_0004_out 17
+data/nyu2_train/office_0004_out 151
 data/nyu2_train/office_0004_out 35
 data/nyu2_train/office_0004_out 40
 data/nyu2_train/office_0004_out 55
@@ -29089,6 +29445,7 @@ data/nyu2_train/furniture_store_0001e_out 121
 data/nyu2_train/furniture_store_0001e_out 122
 data/nyu2_train/furniture_store_0001e_out 130
 data/nyu2_train/furniture_store_0001e_out 10
+data/nyu2_train/furniture_store_0001e_out 4
 data/nyu2_train/furniture_store_0001e_out 12
 data/nyu2_train/furniture_store_0001e_out 104
 data/nyu2_train/furniture_store_0001e_out 100
@@ -29126,6 +29483,7 @@ data/nyu2_train/furniture_store_0001e_out 101
 data/nyu2_train/furniture_store_0001e_out 112
 data/nyu2_train/furniture_store_0001e_out 84
 data/nyu2_train/furniture_store_0001e_out 92
+data/nyu2_train/furniture_store_0001e_out 133
 data/nyu2_train/furniture_store_0001e_out 107
 data/nyu2_train/furniture_store_0001e_out 51
 data/nyu2_train/furniture_store_0001e_out 7
@@ -29228,6 +29586,7 @@ data/nyu2_train/reception_room_0001b_out 121
 data/nyu2_train/reception_room_0001b_out 122
 data/nyu2_train/reception_room_0001b_out 130
 data/nyu2_train/reception_room_0001b_out 10
+data/nyu2_train/reception_room_0001b_out 4
 data/nyu2_train/reception_room_0001b_out 153
 data/nyu2_train/reception_room_0001b_out 12
 data/nyu2_train/reception_room_0001b_out 163
@@ -29282,6 +29641,7 @@ data/nyu2_train/reception_room_0001b_out 173
 data/nyu2_train/reception_room_0001b_out 84
 data/nyu2_train/reception_room_0001b_out 92
 data/nyu2_train/reception_room_0001b_out 133
+data/nyu2_train/reception_room_0001b_out 176
 data/nyu2_train/reception_room_0001b_out 150
 data/nyu2_train/reception_room_0001b_out 107
 data/nyu2_train/reception_room_0001b_out 136
@@ -29378,6 +29738,7 @@ data/nyu2_train/bedroom_0098_out 70
 data/nyu2_train/bedroom_0098_out 60
 data/nyu2_train/bedroom_0098_out 54
 data/nyu2_train/bedroom_0098_out 10
+data/nyu2_train/bedroom_0098_out 4
 data/nyu2_train/bedroom_0098_out 12
 data/nyu2_train/bedroom_0098_out 104
 data/nyu2_train/bedroom_0098_out 100
@@ -29447,13 +29808,16 @@ data/nyu2_train/bedroom_0098_out 96
 data/nyu2_train/bedroom_0098_out 26
 data/nyu2_train/bedroom_0098_out 88
 data/nyu2_train/bedroom_0098_out 9
+data/nyu2_train/bedroom_0098_out 109
 data/nyu2_train/bedroom_0098_out 90
 data/nyu2_train/bathroom_0050_out 6
+data/nyu2_train/bathroom_0050_out 18
 data/nyu2_train/bathroom_0050_out 13
 data/nyu2_train/bathroom_0050_out 11
 data/nyu2_train/bathroom_0050_out 14
 data/nyu2_train/bathroom_0050_out 16
 data/nyu2_train/bathroom_0050_out 10
+data/nyu2_train/bathroom_0050_out 4
 data/nyu2_train/bathroom_0050_out 12
 data/nyu2_train/bathroom_0050_out 8
 data/nyu2_train/bathroom_0050_out 17
@@ -29535,6 +29899,7 @@ data/nyu2_train/bedroom_0025_out 122
 data/nyu2_train/bedroom_0025_out 130
 data/nyu2_train/bedroom_0025_out 214
 data/nyu2_train/bedroom_0025_out 10
+data/nyu2_train/bedroom_0025_out 4
 data/nyu2_train/bedroom_0025_out 153
 data/nyu2_train/bedroom_0025_out 12
 data/nyu2_train/bedroom_0025_out 205
@@ -29629,6 +29994,7 @@ data/nyu2_train/bedroom_0025_out 38
 data/nyu2_train/bedroom_0025_out 202
 data/nyu2_train/bedroom_0025_out 219
 data/nyu2_train/bedroom_0025_out 154
+data/nyu2_train/bedroom_0025_out 220
 data/nyu2_train/bedroom_0025_out 78
 data/nyu2_train/bedroom_0025_out 73
 data/nyu2_train/bedroom_0025_out 159
@@ -29784,6 +30150,7 @@ data/nyu2_train/living_room_0058_out 129
 data/nyu2_train/living_room_0058_out 348
 data/nyu2_train/living_room_0058_out 338
 data/nyu2_train/living_room_0058_out 160
+data/nyu2_train/living_room_0058_out 398
 data/nyu2_train/living_room_0058_out 126
 data/nyu2_train/living_room_0058_out 91
 data/nyu2_train/living_room_0058_out 279
@@ -29815,6 +30182,7 @@ data/nyu2_train/living_room_0058_out 262
 data/nyu2_train/living_room_0058_out 287
 data/nyu2_train/living_room_0058_out 384
 data/nyu2_train/living_room_0058_out 249
+data/nyu2_train/living_room_0058_out 4
 data/nyu2_train/living_room_0058_out 153
 data/nyu2_train/living_room_0058_out 304
 data/nyu2_train/living_room_0058_out 344
@@ -30178,6 +30546,7 @@ data/nyu2_train/living_room_0062_out 10
 data/nyu2_train/living_room_0062_out 262
 data/nyu2_train/living_room_0062_out 287
 data/nyu2_train/living_room_0062_out 249
+data/nyu2_train/living_room_0062_out 4
 data/nyu2_train/living_room_0062_out 153
 data/nyu2_train/living_room_0062_out 304
 data/nyu2_train/living_room_0062_out 12
@@ -30246,6 +30615,7 @@ data/nyu2_train/living_room_0062_out 149
 data/nyu2_train/living_room_0062_out 69
 data/nyu2_train/living_room_0062_out 155
 data/nyu2_train/living_room_0062_out 5
+data/nyu2_train/living_room_0062_out 311
 data/nyu2_train/living_room_0062_out 131
 data/nyu2_train/living_room_0062_out 101
 data/nyu2_train/living_room_0062_out 290
@@ -30383,6 +30753,7 @@ data/nyu2_train/bedroom_0081_out 21
 data/nyu2_train/bedroom_0081_out 48
 data/nyu2_train/bedroom_0081_out 25
 data/nyu2_train/bedroom_0081_out 13
+data/nyu2_train/bedroom_0081_out 68
 data/nyu2_train/bedroom_0081_out 28
 data/nyu2_train/bedroom_0081_out 57
 data/nyu2_train/bedroom_0081_out 34
@@ -30400,6 +30771,7 @@ data/nyu2_train/bedroom_0081_out 42
 data/nyu2_train/bedroom_0081_out 60
 data/nyu2_train/bedroom_0081_out 54
 data/nyu2_train/bedroom_0081_out 10
+data/nyu2_train/bedroom_0081_out 4
 data/nyu2_train/bedroom_0081_out 12
 data/nyu2_train/bedroom_0081_out 64
 data/nyu2_train/bedroom_0081_out 67
@@ -30478,6 +30850,7 @@ data/nyu2_train/home_office_0013_out 54
 data/nyu2_train/home_office_0013_out 121
 data/nyu2_train/home_office_0013_out 122
 data/nyu2_train/home_office_0013_out 10
+data/nyu2_train/home_office_0013_out 4
 data/nyu2_train/home_office_0013_out 12
 data/nyu2_train/home_office_0013_out 104
 data/nyu2_train/home_office_0013_out 100
@@ -30505,6 +30878,7 @@ data/nyu2_train/home_office_0013_out 19
 data/nyu2_train/home_office_0013_out 58
 data/nyu2_train/home_office_0013_out 98
 data/nyu2_train/home_office_0013_out 76
+data/nyu2_train/home_office_0013_out 124
 data/nyu2_train/home_office_0013_out 69
 data/nyu2_train/home_office_0013_out 5
 data/nyu2_train/home_office_0013_out 101
@@ -30651,6 +31025,7 @@ data/nyu2_train/bedroom_0072_out 214
 data/nyu2_train/bedroom_0072_out 252
 data/nyu2_train/bedroom_0072_out 10
 data/nyu2_train/bedroom_0072_out 249
+data/nyu2_train/bedroom_0072_out 4
 data/nyu2_train/bedroom_0072_out 153
 data/nyu2_train/bedroom_0072_out 12
 data/nyu2_train/bedroom_0072_out 205
@@ -30774,6 +31149,7 @@ data/nyu2_train/bedroom_0072_out 106
 data/nyu2_train/bedroom_0072_out 145
 data/nyu2_train/bedroom_0072_out 190
 data/nyu2_train/bedroom_0072_out 172
+data/nyu2_train/bedroom_0072_out 257
 data/nyu2_train/bedroom_0072_out 65
 data/nyu2_train/bedroom_0072_out 206
 data/nyu2_train/bedroom_0072_out 120
@@ -30842,6 +31218,7 @@ data/nyu2_train/cafe_0001b_out 70
 data/nyu2_train/cafe_0001b_out 60
 data/nyu2_train/cafe_0001b_out 54
 data/nyu2_train/cafe_0001b_out 10
+data/nyu2_train/cafe_0001b_out 4
 data/nyu2_train/cafe_0001b_out 12
 data/nyu2_train/cafe_0001b_out 100
 data/nyu2_train/cafe_0001b_out 64
@@ -30866,6 +31243,7 @@ data/nyu2_train/cafe_0001b_out 98
 data/nyu2_train/cafe_0001b_out 76
 data/nyu2_train/cafe_0001b_out 69
 data/nyu2_train/cafe_0001b_out 5
+data/nyu2_train/cafe_0001b_out 101
 data/nyu2_train/cafe_0001b_out 84
 data/nyu2_train/cafe_0001b_out 92
 data/nyu2_train/cafe_0001b_out 51
@@ -31066,6 +31444,7 @@ data/nyu2_train/furniture_store_0002a_out 338
 data/nyu2_train/furniture_store_0002a_out 160
 data/nyu2_train/furniture_store_0002a_out 398
 data/nyu2_train/furniture_store_0002a_out 503
+data/nyu2_train/furniture_store_0002a_out 589
 data/nyu2_train/furniture_store_0002a_out 126
 data/nyu2_train/furniture_store_0002a_out 581
 data/nyu2_train/furniture_store_0002a_out 91
@@ -31107,6 +31486,7 @@ data/nyu2_train/furniture_store_0002a_out 536
 data/nyu2_train/furniture_store_0002a_out 287
 data/nyu2_train/furniture_store_0002a_out 384
 data/nyu2_train/furniture_store_0002a_out 249
+data/nyu2_train/furniture_store_0002a_out 4
 data/nyu2_train/furniture_store_0002a_out 153
 data/nyu2_train/furniture_store_0002a_out 468
 data/nyu2_train/furniture_store_0002a_out 574
@@ -31525,6 +31905,7 @@ data/nyu2_train/bedroom_0017_out 46
 data/nyu2_train/bedroom_0017_out 203
 data/nyu2_train/bedroom_0017_out 135
 data/nyu2_train/bedroom_0017_out 39
+data/nyu2_train/bedroom_0017_out 217
 data/nyu2_train/bedroom_0017_out 208
 data/nyu2_train/bedroom_0017_out 71
 data/nyu2_train/bedroom_0017_out 29
@@ -31561,6 +31942,7 @@ data/nyu2_train/bedroom_0017_out 122
 data/nyu2_train/bedroom_0017_out 130
 data/nyu2_train/bedroom_0017_out 214
 data/nyu2_train/bedroom_0017_out 10
+data/nyu2_train/bedroom_0017_out 4
 data/nyu2_train/bedroom_0017_out 153
 data/nyu2_train/bedroom_0017_out 12
 data/nyu2_train/bedroom_0017_out 205
@@ -31809,6 +32191,7 @@ data/nyu2_train/dining_room_0016_out 10
 data/nyu2_train/dining_room_0016_out 262
 data/nyu2_train/dining_room_0016_out 287
 data/nyu2_train/dining_room_0016_out 249
+data/nyu2_train/dining_room_0016_out 4
 data/nyu2_train/dining_room_0016_out 153
 data/nyu2_train/dining_room_0016_out 12
 data/nyu2_train/dining_room_0016_out 205
@@ -31961,6 +32344,7 @@ data/nyu2_train/dining_room_0016_out 302
 data/nyu2_train/dining_room_0016_out 206
 data/nyu2_train/dining_room_0016_out 120
 data/nyu2_train/dining_room_0016_out 86
+data/nyu2_train/dining_room_0016_out 303
 data/nyu2_train/dining_room_0016_out 44
 data/nyu2_train/dining_room_0016_out 63
 data/nyu2_train/dining_room_0016_out 300
@@ -32071,6 +32455,7 @@ data/nyu2_train/kitchen_0047_out 122
 data/nyu2_train/kitchen_0047_out 130
 data/nyu2_train/kitchen_0047_out 214
 data/nyu2_train/kitchen_0047_out 10
+data/nyu2_train/kitchen_0047_out 4
 data/nyu2_train/kitchen_0047_out 153
 data/nyu2_train/kitchen_0047_out 12
 data/nyu2_train/kitchen_0047_out 205
@@ -32157,6 +32542,7 @@ data/nyu2_train/kitchen_0047_out 178
 data/nyu2_train/kitchen_0047_out 157
 data/nyu2_train/kitchen_0047_out 81
 data/nyu2_train/kitchen_0047_out 33
+data/nyu2_train/kitchen_0047_out 215
 data/nyu2_train/kitchen_0047_out 27
 data/nyu2_train/kitchen_0047_out 139
 data/nyu2_train/kitchen_0047_out 38
@@ -32228,11 +32614,13 @@ data/nyu2_train/office_0025_out 29
 data/nyu2_train/office_0025_out 14
 data/nyu2_train/office_0025_out 30
 data/nyu2_train/office_0025_out 16
+data/nyu2_train/office_0025_out 62
 data/nyu2_train/office_0025_out 56
 data/nyu2_train/office_0025_out 42
 data/nyu2_train/office_0025_out 60
 data/nyu2_train/office_0025_out 54
 data/nyu2_train/office_0025_out 10
+data/nyu2_train/office_0025_out 4
 data/nyu2_train/office_0025_out 12
 data/nyu2_train/office_0025_out 8
 data/nyu2_train/office_0025_out 43
@@ -32299,6 +32687,7 @@ data/nyu2_train/office_0003_out 70
 data/nyu2_train/office_0003_out 60
 data/nyu2_train/office_0003_out 54
 data/nyu2_train/office_0003_out 10
+data/nyu2_train/office_0003_out 4
 data/nyu2_train/office_0003_out 12
 data/nyu2_train/office_0003_out 64
 data/nyu2_train/office_0003_out 67
@@ -32325,6 +32714,7 @@ data/nyu2_train/office_0003_out 84
 data/nyu2_train/office_0003_out 92
 data/nyu2_train/office_0003_out 51
 data/nyu2_train/office_0003_out 7
+data/nyu2_train/office_0003_out 97
 data/nyu2_train/office_0003_out 15
 data/nyu2_train/office_0003_out 77
 data/nyu2_train/office_0003_out 89
@@ -32406,11 +32796,13 @@ data/nyu2_train/nyu_office_1_out 121
 data/nyu2_train/nyu_office_1_out 122
 data/nyu2_train/nyu_office_1_out 130
 data/nyu2_train/nyu_office_1_out 10
+data/nyu2_train/nyu_office_1_out 4
 data/nyu2_train/nyu_office_1_out 12
 data/nyu2_train/nyu_office_1_out 104
 data/nyu2_train/nyu_office_1_out 134
 data/nyu2_train/nyu_office_1_out 100
 data/nyu2_train/nyu_office_1_out 64
+data/nyu2_train/nyu_office_1_out 147
 data/nyu2_train/nyu_office_1_out 103
 data/nyu2_train/nyu_office_1_out 67
 data/nyu2_train/nyu_office_1_out 114
@@ -32519,6 +32911,7 @@ data/nyu2_train/bathroom_0016_out 30
 data/nyu2_train/bathroom_0016_out 16
 data/nyu2_train/bathroom_0016_out 42
 data/nyu2_train/bathroom_0016_out 10
+data/nyu2_train/bathroom_0016_out 4
 data/nyu2_train/bathroom_0016_out 12
 data/nyu2_train/bathroom_0016_out 8
 data/nyu2_train/bathroom_0016_out 43
@@ -32532,6 +32925,7 @@ data/nyu2_train/bathroom_0016_out 41
 data/nyu2_train/bathroom_0016_out 50
 data/nyu2_train/bathroom_0016_out 19
 data/nyu2_train/bathroom_0016_out 5
+data/nyu2_train/bathroom_0016_out 51
 data/nyu2_train/bathroom_0016_out 7
 data/nyu2_train/bathroom_0016_out 15
 data/nyu2_train/bathroom_0016_out 33
@@ -32628,6 +33022,7 @@ data/nyu2_train/bedroom_0078_out 122
 data/nyu2_train/bedroom_0078_out 130
 data/nyu2_train/bedroom_0078_out 214
 data/nyu2_train/bedroom_0078_out 10
+data/nyu2_train/bedroom_0078_out 4
 data/nyu2_train/bedroom_0078_out 153
 data/nyu2_train/bedroom_0078_out 12
 data/nyu2_train/bedroom_0078_out 205
@@ -32771,6 +33166,7 @@ data/nyu2_train/bedroom_0078_out 192
 data/nyu2_train/bedroom_0078_out 166
 data/nyu2_train/bedroom_0078_out 223
 data/nyu2_train/bedroom_0078_out 80
+data/nyu2_train/bedroom_0078_out 237
 data/nyu2_train/bedroom_0078_out 96
 data/nyu2_train/bedroom_0078_out 204
 data/nyu2_train/bedroom_0078_out 26
@@ -32819,6 +33215,7 @@ data/nyu2_train/bedroom_0120_out 54
 data/nyu2_train/bedroom_0120_out 121
 data/nyu2_train/bedroom_0120_out 122
 data/nyu2_train/bedroom_0120_out 10
+data/nyu2_train/bedroom_0120_out 4
 data/nyu2_train/bedroom_0120_out 12
 data/nyu2_train/bedroom_0120_out 104
 data/nyu2_train/bedroom_0120_out 100
@@ -32848,6 +33245,7 @@ data/nyu2_train/bedroom_0120_out 58
 data/nyu2_train/bedroom_0120_out 98
 data/nyu2_train/bedroom_0120_out 76
 data/nyu2_train/bedroom_0120_out 124
+data/nyu2_train/bedroom_0120_out 128
 data/nyu2_train/bedroom_0120_out 69
 data/nyu2_train/bedroom_0120_out 5
 data/nyu2_train/bedroom_0120_out 101
@@ -32927,10 +33325,12 @@ data/nyu2_train/living_room_0037_out 16
 data/nyu2_train/living_room_0037_out 62
 data/nyu2_train/living_room_0037_out 56
 data/nyu2_train/living_room_0037_out 42
+data/nyu2_train/living_room_0037_out 91
 data/nyu2_train/living_room_0037_out 70
 data/nyu2_train/living_room_0037_out 60
 data/nyu2_train/living_room_0037_out 54
 data/nyu2_train/living_room_0037_out 10
+data/nyu2_train/living_room_0037_out 4
 data/nyu2_train/living_room_0037_out 12
 data/nyu2_train/living_room_0037_out 64
 data/nyu2_train/living_room_0037_out 67
@@ -33020,6 +33420,7 @@ data/nyu2_train/living_room_0047a_out 70
 data/nyu2_train/living_room_0047a_out 60
 data/nyu2_train/living_room_0047a_out 54
 data/nyu2_train/living_room_0047a_out 10
+data/nyu2_train/living_room_0047a_out 4
 data/nyu2_train/living_room_0047a_out 12
 data/nyu2_train/living_room_0047a_out 64
 data/nyu2_train/living_room_0047a_out 67
@@ -33029,6 +33430,7 @@ data/nyu2_train/living_room_0047a_out 17
 data/nyu2_train/living_room_0047a_out 35
 data/nyu2_train/living_room_0047a_out 40
 data/nyu2_train/living_room_0047a_out 55
+data/nyu2_train/living_room_0047a_out 95
 data/nyu2_train/living_room_0047a_out 45
 data/nyu2_train/living_room_0047a_out 82
 data/nyu2_train/living_room_0047a_out 79
@@ -33124,6 +33526,7 @@ data/nyu2_train/living_room_0046a_out 121
 data/nyu2_train/living_room_0046a_out 122
 data/nyu2_train/living_room_0046a_out 130
 data/nyu2_train/living_room_0046a_out 10
+data/nyu2_train/living_room_0046a_out 4
 data/nyu2_train/living_room_0046a_out 12
 data/nyu2_train/living_room_0046a_out 104
 data/nyu2_train/living_room_0046a_out 134
@@ -33135,6 +33538,7 @@ data/nyu2_train/living_room_0046a_out 114
 data/nyu2_train/living_room_0046a_out 8
 data/nyu2_train/living_room_0046a_out 127
 data/nyu2_train/living_room_0046a_out 43
+data/nyu2_train/living_room_0046a_out 144
 data/nyu2_train/living_room_0046a_out 17
 data/nyu2_train/living_room_0046a_out 35
 data/nyu2_train/living_room_0046a_out 40
@@ -33245,6 +33649,7 @@ data/nyu2_train/office_0019_out 70
 data/nyu2_train/office_0019_out 60
 data/nyu2_train/office_0019_out 54
 data/nyu2_train/office_0019_out 10
+data/nyu2_train/office_0019_out 4
 data/nyu2_train/office_0019_out 12
 data/nyu2_train/office_0019_out 64
 data/nyu2_train/office_0019_out 67
@@ -33266,6 +33671,7 @@ data/nyu2_train/office_0019_out 58
 data/nyu2_train/office_0019_out 76
 data/nyu2_train/office_0019_out 69
 data/nyu2_train/office_0019_out 5
+data/nyu2_train/office_0019_out 84
 data/nyu2_train/office_0019_out 51
 data/nyu2_train/office_0019_out 7
 data/nyu2_train/office_0019_out 15
@@ -33304,8 +33710,10 @@ data/nyu2_train/bedroom_0045_out 28
 data/nyu2_train/bedroom_0045_out 11
 data/nyu2_train/bedroom_0045_out 29
 data/nyu2_train/bedroom_0045_out 14
+data/nyu2_train/bedroom_0045_out 30
 data/nyu2_train/bedroom_0045_out 16
 data/nyu2_train/bedroom_0045_out 10
+data/nyu2_train/bedroom_0045_out 4
 data/nyu2_train/bedroom_0045_out 12
 data/nyu2_train/bedroom_0045_out 8
 data/nyu2_train/bedroom_0045_out 17
@@ -33336,6 +33744,7 @@ data/nyu2_train/bedroom_0031_out 53
 data/nyu2_train/bedroom_0031_out 11
 data/nyu2_train/bedroom_0031_out 46
 data/nyu2_train/bedroom_0031_out 39
+data/nyu2_train/bedroom_0031_out 71
 data/nyu2_train/bedroom_0031_out 29
 data/nyu2_train/bedroom_0031_out 14
 data/nyu2_train/bedroom_0031_out 30
@@ -33347,6 +33756,7 @@ data/nyu2_train/bedroom_0031_out 70
 data/nyu2_train/bedroom_0031_out 60
 data/nyu2_train/bedroom_0031_out 54
 data/nyu2_train/bedroom_0031_out 10
+data/nyu2_train/bedroom_0031_out 4
 data/nyu2_train/bedroom_0031_out 12
 data/nyu2_train/bedroom_0031_out 64
 data/nyu2_train/bedroom_0031_out 67
@@ -33440,9 +33850,11 @@ data/nyu2_train/study_0003_out 121
 data/nyu2_train/study_0003_out 122
 data/nyu2_train/study_0003_out 130
 data/nyu2_train/study_0003_out 10
+data/nyu2_train/study_0003_out 4
 data/nyu2_train/study_0003_out 153
 data/nyu2_train/study_0003_out 12
 data/nyu2_train/study_0003_out 163
+data/nyu2_train/study_0003_out 168
 data/nyu2_train/study_0003_out 104
 data/nyu2_train/study_0003_out 134
 data/nyu2_train/study_0003_out 100
@@ -33598,6 +34010,7 @@ data/nyu2_train/living_room_0070_out 121
 data/nyu2_train/living_room_0070_out 122
 data/nyu2_train/living_room_0070_out 130
 data/nyu2_train/living_room_0070_out 10
+data/nyu2_train/living_room_0070_out 4
 data/nyu2_train/living_room_0070_out 153
 data/nyu2_train/living_room_0070_out 12
 data/nyu2_train/living_room_0070_out 104
@@ -33637,6 +34050,7 @@ data/nyu2_train/living_room_0070_out 124
 data/nyu2_train/living_room_0070_out 128
 data/nyu2_train/living_room_0070_out 149
 data/nyu2_train/living_room_0070_out 69
+data/nyu2_train/living_room_0070_out 155
 data/nyu2_train/living_room_0070_out 5
 data/nyu2_train/living_room_0070_out 131
 data/nyu2_train/living_room_0070_out 101
@@ -33729,6 +34143,7 @@ data/nyu2_train/bathroom_0045a_out 70
 data/nyu2_train/bathroom_0045a_out 60
 data/nyu2_train/bathroom_0045a_out 54
 data/nyu2_train/bathroom_0045a_out 10
+data/nyu2_train/bathroom_0045a_out 4
 data/nyu2_train/bathroom_0045a_out 12
 data/nyu2_train/bathroom_0045a_out 64
 data/nyu2_train/bathroom_0045a_out 67
@@ -33781,6 +34196,7 @@ data/nyu2_train/bathroom_0045a_out 24
 data/nyu2_train/bathroom_0045a_out 22
 data/nyu2_train/bathroom_0045a_out 80
 data/nyu2_train/bathroom_0045a_out 26
+data/nyu2_train/bathroom_0045a_out 88
 data/nyu2_train/bathroom_0045a_out 9
 data/nyu2_train/bedroom_0118_out 37
 data/nyu2_train/bedroom_0118_out 6
@@ -33797,12 +34213,14 @@ data/nyu2_train/bedroom_0118_out 14
 data/nyu2_train/bedroom_0118_out 30
 data/nyu2_train/bedroom_0118_out 16
 data/nyu2_train/bedroom_0118_out 10
+data/nyu2_train/bedroom_0118_out 4
 data/nyu2_train/bedroom_0118_out 12
 data/nyu2_train/bedroom_0118_out 8
 data/nyu2_train/bedroom_0118_out 17
 data/nyu2_train/bedroom_0118_out 35
 data/nyu2_train/bedroom_0118_out 40
 data/nyu2_train/bedroom_0118_out 31
+data/nyu2_train/bedroom_0118_out 41
 data/nyu2_train/bedroom_0118_out 19
 data/nyu2_train/bedroom_0118_out 5
 data/nyu2_train/bedroom_0118_out 7
@@ -33933,6 +34351,7 @@ data/nyu2_train/dining_room_0007_out 10
 data/nyu2_train/dining_room_0007_out 262
 data/nyu2_train/dining_room_0007_out 287
 data/nyu2_train/dining_room_0007_out 249
+data/nyu2_train/dining_room_0007_out 4
 data/nyu2_train/dining_room_0007_out 153
 data/nyu2_train/dining_room_0007_out 304
 data/nyu2_train/dining_room_0007_out 12
@@ -34070,6 +34489,7 @@ data/nyu2_train/dining_room_0007_out 281
 data/nyu2_train/dining_room_0007_out 202
 data/nyu2_train/dining_room_0007_out 219
 data/nyu2_train/dining_room_0007_out 154
+data/nyu2_train/dining_room_0007_out 331
 data/nyu2_train/dining_room_0007_out 220
 data/nyu2_train/dining_room_0007_out 224
 data/nyu2_train/dining_room_0007_out 78
@@ -34200,6 +34620,7 @@ data/nyu2_train/bookstore_0001d_out 197
 data/nyu2_train/bookstore_0001d_out 274
 data/nyu2_train/bookstore_0001d_out 232
 data/nyu2_train/bookstore_0001d_out 161
+data/nyu2_train/bookstore_0001d_out 506
 data/nyu2_train/bookstore_0001d_out 498
 data/nyu2_train/bookstore_0001d_out 85
 data/nyu2_train/bookstore_0001d_out 57
@@ -34314,6 +34735,7 @@ data/nyu2_train/bookstore_0001d_out 262
 data/nyu2_train/bookstore_0001d_out 287
 data/nyu2_train/bookstore_0001d_out 384
 data/nyu2_train/bookstore_0001d_out 249
+data/nyu2_train/bookstore_0001d_out 4
 data/nyu2_train/bookstore_0001d_out 153
 data/nyu2_train/bookstore_0001d_out 468
 data/nyu2_train/bookstore_0001d_out 304
@@ -34673,6 +35095,7 @@ data/nyu2_train/office_0018_out 70
 data/nyu2_train/office_0018_out 60
 data/nyu2_train/office_0018_out 54
 data/nyu2_train/office_0018_out 10
+data/nyu2_train/office_0018_out 4
 data/nyu2_train/office_0018_out 12
 data/nyu2_train/office_0018_out 64
 data/nyu2_train/office_0018_out 67
@@ -34698,6 +35121,7 @@ data/nyu2_train/office_0018_out 72
 data/nyu2_train/office_0018_out 33
 data/nyu2_train/office_0018_out 27
 data/nyu2_train/office_0018_out 38
+data/nyu2_train/office_0018_out 73
 data/nyu2_train/office_0018_out 59
 data/nyu2_train/office_0018_out 36
 data/nyu2_train/office_0018_out 20
@@ -34814,6 +35238,7 @@ data/nyu2_train/dining_room_0008_out 252
 data/nyu2_train/dining_room_0008_out 10
 data/nyu2_train/dining_room_0008_out 262
 data/nyu2_train/dining_room_0008_out 249
+data/nyu2_train/dining_room_0008_out 4
 data/nyu2_train/dining_room_0008_out 153
 data/nyu2_train/dining_room_0008_out 12
 data/nyu2_train/dining_room_0008_out 205
@@ -34925,6 +35350,7 @@ data/nyu2_train/dining_room_0008_out 215
 data/nyu2_train/dining_room_0008_out 27
 data/nyu2_train/dining_room_0008_out 139
 data/nyu2_train/dining_room_0008_out 38
+data/nyu2_train/dining_room_0008_out 281
 data/nyu2_train/dining_room_0008_out 202
 data/nyu2_train/dining_room_0008_out 219
 data/nyu2_train/dining_room_0008_out 154
@@ -35023,6 +35449,7 @@ data/nyu2_train/bedroom_0012_out 70
 data/nyu2_train/bedroom_0012_out 60
 data/nyu2_train/bedroom_0012_out 54
 data/nyu2_train/bedroom_0012_out 10
+data/nyu2_train/bedroom_0012_out 4
 data/nyu2_train/bedroom_0012_out 12
 data/nyu2_train/bedroom_0012_out 104
 data/nyu2_train/bedroom_0012_out 100
@@ -35069,6 +35496,7 @@ data/nyu2_train/bedroom_0012_out 27
 data/nyu2_train/bedroom_0012_out 38
 data/nyu2_train/bedroom_0012_out 78
 data/nyu2_train/bedroom_0012_out 73
+data/nyu2_train/bedroom_0012_out 110
 data/nyu2_train/bedroom_0012_out 83
 data/nyu2_train/bedroom_0012_out 87
 data/nyu2_train/bedroom_0012_out 59
@@ -35139,6 +35567,7 @@ data/nyu2_train/bedroom_0130_out 121
 data/nyu2_train/bedroom_0130_out 122
 data/nyu2_train/bedroom_0130_out 130
 data/nyu2_train/bedroom_0130_out 10
+data/nyu2_train/bedroom_0130_out 4
 data/nyu2_train/bedroom_0130_out 12
 data/nyu2_train/bedroom_0130_out 104
 data/nyu2_train/bedroom_0130_out 134
@@ -35179,6 +35608,7 @@ data/nyu2_train/bedroom_0130_out 84
 data/nyu2_train/bedroom_0130_out 92
 data/nyu2_train/bedroom_0130_out 133
 data/nyu2_train/bedroom_0130_out 107
+data/nyu2_train/bedroom_0130_out 136
 data/nyu2_train/bedroom_0130_out 51
 data/nyu2_train/bedroom_0130_out 7
 data/nyu2_train/bedroom_0130_out 97
@@ -35250,6 +35680,7 @@ data/nyu2_train/classroom_0005_out 42
 data/nyu2_train/classroom_0005_out 60
 data/nyu2_train/classroom_0005_out 54
 data/nyu2_train/classroom_0005_out 10
+data/nyu2_train/classroom_0005_out 4
 data/nyu2_train/classroom_0005_out 12
 data/nyu2_train/classroom_0005_out 64
 data/nyu2_train/classroom_0005_out 8
@@ -35275,6 +35706,7 @@ data/nyu2_train/classroom_0005_out 38
 data/nyu2_train/classroom_0005_out 59
 data/nyu2_train/classroom_0005_out 36
 data/nyu2_train/classroom_0005_out 20
+data/nyu2_train/classroom_0005_out 65
 data/nyu2_train/classroom_0005_out 44
 data/nyu2_train/classroom_0005_out 63
 data/nyu2_train/classroom_0005_out 61
@@ -35301,6 +35733,7 @@ data/nyu2_train/foyer_0002_out 53
 data/nyu2_train/foyer_0002_out 11
 data/nyu2_train/foyer_0002_out 46
 data/nyu2_train/foyer_0002_out 39
+data/nyu2_train/foyer_0002_out 71
 data/nyu2_train/foyer_0002_out 29
 data/nyu2_train/foyer_0002_out 14
 data/nyu2_train/foyer_0002_out 30
@@ -35312,6 +35745,7 @@ data/nyu2_train/foyer_0002_out 70
 data/nyu2_train/foyer_0002_out 60
 data/nyu2_train/foyer_0002_out 54
 data/nyu2_train/foyer_0002_out 10
+data/nyu2_train/foyer_0002_out 4
 data/nyu2_train/foyer_0002_out 12
 data/nyu2_train/foyer_0002_out 64
 data/nyu2_train/foyer_0002_out 67
@@ -35378,6 +35812,7 @@ data/nyu2_train/kitchen_0003_out 218
 data/nyu2_train/kitchen_0003_out 13
 data/nyu2_train/kitchen_0003_out 247
 data/nyu2_train/kitchen_0003_out 68
+data/nyu2_train/kitchen_0003_out 250
 data/nyu2_train/kitchen_0003_out 28
 data/nyu2_train/kitchen_0003_out 197
 data/nyu2_train/kitchen_0003_out 232
@@ -35440,6 +35875,7 @@ data/nyu2_train/kitchen_0003_out 130
 data/nyu2_train/kitchen_0003_out 214
 data/nyu2_train/kitchen_0003_out 10
 data/nyu2_train/kitchen_0003_out 249
+data/nyu2_train/kitchen_0003_out 4
 data/nyu2_train/kitchen_0003_out 153
 data/nyu2_train/kitchen_0003_out 12
 data/nyu2_train/kitchen_0003_out 205
@@ -35646,6 +36082,7 @@ data/nyu2_train/bookstore_0001h_out 29
 data/nyu2_train/bookstore_0001h_out 14
 data/nyu2_train/bookstore_0001h_out 194
 data/nyu2_train/bookstore_0001h_out 113
+data/nyu2_train/bookstore_0001h_out 245
 data/nyu2_train/bookstore_0001h_out 241
 data/nyu2_train/bookstore_0001h_out 138
 data/nyu2_train/bookstore_0001h_out 243
@@ -35681,6 +36118,7 @@ data/nyu2_train/bookstore_0001h_out 122
 data/nyu2_train/bookstore_0001h_out 130
 data/nyu2_train/bookstore_0001h_out 214
 data/nyu2_train/bookstore_0001h_out 10
+data/nyu2_train/bookstore_0001h_out 4
 data/nyu2_train/bookstore_0001h_out 153
 data/nyu2_train/bookstore_0001h_out 12
 data/nyu2_train/bookstore_0001h_out 205
@@ -35839,6 +36277,7 @@ data/nyu2_train/bookstore_0001h_out 90
 data/nyu2_train/kitchen_0011a_out 37
 data/nyu2_train/kitchen_0011a_out 115
 data/nyu2_train/kitchen_0011a_out 6
+data/nyu2_train/kitchen_0011a_out 200
 data/nyu2_train/kitchen_0011a_out 49
 data/nyu2_train/kitchen_0011a_out 152
 data/nyu2_train/kitchen_0011a_out 182
@@ -35901,6 +36340,7 @@ data/nyu2_train/kitchen_0011a_out 121
 data/nyu2_train/kitchen_0011a_out 122
 data/nyu2_train/kitchen_0011a_out 130
 data/nyu2_train/kitchen_0011a_out 10
+data/nyu2_train/kitchen_0011a_out 4
 data/nyu2_train/kitchen_0011a_out 153
 data/nyu2_train/kitchen_0011a_out 12
 data/nyu2_train/kitchen_0011a_out 163
@@ -36127,6 +36567,7 @@ data/nyu2_train/bedroom_0071_out 252
 data/nyu2_train/bedroom_0071_out 10
 data/nyu2_train/bedroom_0071_out 262
 data/nyu2_train/bedroom_0071_out 249
+data/nyu2_train/bedroom_0071_out 4
 data/nyu2_train/bedroom_0071_out 153
 data/nyu2_train/bedroom_0071_out 12
 data/nyu2_train/bedroom_0071_out 205
@@ -36157,6 +36598,7 @@ data/nyu2_train/bedroom_0071_out 144
 data/nyu2_train/bedroom_0071_out 17
 data/nyu2_train/bedroom_0071_out 151
 data/nyu2_train/bedroom_0071_out 185
+data/nyu2_train/bedroom_0071_out 265
 data/nyu2_train/bedroom_0071_out 242
 data/nyu2_train/bedroom_0071_out 35
 data/nyu2_train/bedroom_0071_out 201
@@ -36399,6 +36841,7 @@ data/nyu2_train/playroom_0003_out 10
 data/nyu2_train/playroom_0003_out 262
 data/nyu2_train/playroom_0003_out 287
 data/nyu2_train/playroom_0003_out 249
+data/nyu2_train/playroom_0003_out 4
 data/nyu2_train/playroom_0003_out 153
 data/nyu2_train/playroom_0003_out 12
 data/nyu2_train/playroom_0003_out 205
@@ -36498,6 +36941,7 @@ data/nyu2_train/playroom_0003_out 77
 data/nyu2_train/playroom_0003_out 117
 data/nyu2_train/playroom_0003_out 175
 data/nyu2_train/playroom_0003_out 288
+data/nyu2_train/playroom_0003_out 301
 data/nyu2_train/playroom_0003_out 125
 data/nyu2_train/playroom_0003_out 89
 data/nyu2_train/playroom_0003_out 102
@@ -36642,6 +37086,7 @@ data/nyu2_train/living_room_0069a_out 121
 data/nyu2_train/living_room_0069a_out 122
 data/nyu2_train/living_room_0069a_out 130
 data/nyu2_train/living_room_0069a_out 10
+data/nyu2_train/living_room_0069a_out 4
 data/nyu2_train/living_room_0069a_out 153
 data/nyu2_train/living_room_0069a_out 12
 data/nyu2_train/living_room_0069a_out 163
@@ -36729,6 +37174,7 @@ data/nyu2_train/living_room_0069a_out 20
 data/nyu2_train/living_room_0069a_out 165
 data/nyu2_train/living_room_0069a_out 106
 data/nyu2_train/living_room_0069a_out 145
+data/nyu2_train/living_room_0069a_out 172
 data/nyu2_train/living_room_0069a_out 65
 data/nyu2_train/living_room_0069a_out 120
 data/nyu2_train/living_room_0069a_out 86
@@ -36790,6 +37236,7 @@ data/nyu2_train/bedroom_0086_out 14
 data/nyu2_train/bedroom_0086_out 113
 data/nyu2_train/bedroom_0086_out 138
 data/nyu2_train/bedroom_0086_out 30
+data/nyu2_train/bedroom_0086_out 183
 data/nyu2_train/bedroom_0086_out 16
 data/nyu2_train/bedroom_0086_out 105
 data/nyu2_train/bedroom_0086_out 62
@@ -36812,6 +37259,7 @@ data/nyu2_train/bedroom_0086_out 121
 data/nyu2_train/bedroom_0086_out 122
 data/nyu2_train/bedroom_0086_out 130
 data/nyu2_train/bedroom_0086_out 10
+data/nyu2_train/bedroom_0086_out 4
 data/nyu2_train/bedroom_0086_out 153
 data/nyu2_train/bedroom_0086_out 12
 data/nyu2_train/bedroom_0086_out 163
@@ -37076,6 +37524,7 @@ data/nyu2_train/kitchen_0019a_out 262
 data/nyu2_train/kitchen_0019a_out 287
 data/nyu2_train/kitchen_0019a_out 384
 data/nyu2_train/kitchen_0019a_out 249
+data/nyu2_train/kitchen_0019a_out 4
 data/nyu2_train/kitchen_0019a_out 153
 data/nyu2_train/kitchen_0019a_out 304
 data/nyu2_train/kitchen_0019a_out 344
@@ -37174,6 +37623,7 @@ data/nyu2_train/kitchen_0019a_out 155
 data/nyu2_train/kitchen_0019a_out 5
 data/nyu2_train/kitchen_0019a_out 311
 data/nyu2_train/kitchen_0019a_out 131
+data/nyu2_train/kitchen_0019a_out 425
 data/nyu2_train/kitchen_0019a_out 101
 data/nyu2_train/kitchen_0019a_out 290
 data/nyu2_train/kitchen_0019a_out 276
@@ -37399,6 +37849,7 @@ data/nyu2_train/bathroom_0048_out 121
 data/nyu2_train/bathroom_0048_out 122
 data/nyu2_train/bathroom_0048_out 130
 data/nyu2_train/bathroom_0048_out 10
+data/nyu2_train/bathroom_0048_out 4
 data/nyu2_train/bathroom_0048_out 12
 data/nyu2_train/bathroom_0048_out 104
 data/nyu2_train/bathroom_0048_out 134
@@ -37469,6 +37920,7 @@ data/nyu2_train/bathroom_0048_out 59
 data/nyu2_train/bathroom_0048_out 36
 data/nyu2_train/bathroom_0048_out 20
 data/nyu2_train/bathroom_0048_out 106
+data/nyu2_train/bathroom_0048_out 145
 data/nyu2_train/bathroom_0048_out 65
 data/nyu2_train/bathroom_0048_out 120
 data/nyu2_train/bathroom_0048_out 86
@@ -37610,6 +38062,7 @@ data/nyu2_train/living_room_0019_out 10
 data/nyu2_train/living_room_0019_out 262
 data/nyu2_train/living_room_0019_out 287
 data/nyu2_train/living_room_0019_out 249
+data/nyu2_train/living_room_0019_out 4
 data/nyu2_train/living_room_0019_out 153
 data/nyu2_train/living_room_0019_out 304
 data/nyu2_train/living_room_0019_out 12
@@ -37632,6 +38085,7 @@ data/nyu2_train/living_room_0019_out 64
 data/nyu2_train/living_room_0019_out 227
 data/nyu2_train/living_room_0019_out 291
 data/nyu2_train/living_room_0019_out 327
+data/nyu2_train/living_room_0019_out 340
 data/nyu2_train/living_room_0019_out 147
 data/nyu2_train/living_room_0019_out 264
 data/nyu2_train/living_room_0019_out 103
@@ -37926,9 +38380,11 @@ data/nyu2_train/dining_room_0033_out 252
 data/nyu2_train/dining_room_0033_out 10
 data/nyu2_train/dining_room_0033_out 262
 data/nyu2_train/dining_room_0033_out 249
+data/nyu2_train/dining_room_0033_out 4
 data/nyu2_train/dining_room_0033_out 153
 data/nyu2_train/dining_room_0033_out 12
 data/nyu2_train/dining_room_0033_out 205
+data/nyu2_train/dining_room_0033_out 275
 data/nyu2_train/dining_room_0033_out 163
 data/nyu2_train/dining_room_0033_out 268
 data/nyu2_train/dining_room_0033_out 229
@@ -38125,6 +38581,7 @@ data/nyu2_train/classroom_0018_out 70
 data/nyu2_train/classroom_0018_out 60
 data/nyu2_train/classroom_0018_out 54
 data/nyu2_train/classroom_0018_out 10
+data/nyu2_train/classroom_0018_out 4
 data/nyu2_train/classroom_0018_out 12
 data/nyu2_train/classroom_0018_out 64
 data/nyu2_train/classroom_0018_out 67
@@ -38160,6 +38617,7 @@ data/nyu2_train/classroom_0018_out 63
 data/nyu2_train/classroom_0018_out 61
 data/nyu2_train/classroom_0018_out 32
 data/nyu2_train/classroom_0018_out 23
+data/nyu2_train/classroom_0018_out 74
 data/nyu2_train/classroom_0018_out 52
 data/nyu2_train/classroom_0018_out 66
 data/nyu2_train/classroom_0018_out 24
@@ -38232,6 +38690,7 @@ data/nyu2_train/living_room_0055_out 121
 data/nyu2_train/living_room_0055_out 122
 data/nyu2_train/living_room_0055_out 130
 data/nyu2_train/living_room_0055_out 10
+data/nyu2_train/living_room_0055_out 4
 data/nyu2_train/living_room_0055_out 153
 data/nyu2_train/living_room_0055_out 12
 data/nyu2_train/living_room_0055_out 163
@@ -38317,6 +38776,7 @@ data/nyu2_train/living_room_0055_out 33
 data/nyu2_train/living_room_0055_out 27
 data/nyu2_train/living_room_0055_out 139
 data/nyu2_train/living_room_0055_out 38
+data/nyu2_train/living_room_0055_out 202
 data/nyu2_train/living_room_0055_out 154
 data/nyu2_train/living_room_0055_out 78
 data/nyu2_train/living_room_0055_out 73
@@ -38498,6 +38958,7 @@ data/nyu2_train/furniture_store_0002b_out 262
 data/nyu2_train/furniture_store_0002b_out 287
 data/nyu2_train/furniture_store_0002b_out 384
 data/nyu2_train/furniture_store_0002b_out 249
+data/nyu2_train/furniture_store_0002b_out 4
 data/nyu2_train/furniture_store_0002b_out 153
 data/nyu2_train/furniture_store_0002b_out 304
 data/nyu2_train/furniture_store_0002b_out 344
@@ -38659,6 +39120,7 @@ data/nyu2_train/furniture_store_0002b_out 202
 data/nyu2_train/furniture_store_0002b_out 219
 data/nyu2_train/furniture_store_0002b_out 154
 data/nyu2_train/furniture_store_0002b_out 331
+data/nyu2_train/furniture_store_0002b_out 388
 data/nyu2_train/furniture_store_0002b_out 220
 data/nyu2_train/furniture_store_0002b_out 224
 data/nyu2_train/furniture_store_0002b_out 78
@@ -38766,6 +39228,7 @@ data/nyu2_train/living_room_0042b_out 118
 data/nyu2_train/living_room_0042b_out 53
 data/nyu2_train/living_room_0042b_out 11
 data/nyu2_train/living_room_0042b_out 46
+data/nyu2_train/living_room_0042b_out 135
 data/nyu2_train/living_room_0042b_out 39
 data/nyu2_train/living_room_0042b_out 71
 data/nyu2_train/living_room_0042b_out 29
@@ -38790,6 +39253,7 @@ data/nyu2_train/living_room_0042b_out 121
 data/nyu2_train/living_room_0042b_out 122
 data/nyu2_train/living_room_0042b_out 130
 data/nyu2_train/living_room_0042b_out 10
+data/nyu2_train/living_room_0042b_out 4
 data/nyu2_train/living_room_0042b_out 12
 data/nyu2_train/living_room_0042b_out 104
 data/nyu2_train/living_room_0042b_out 134
@@ -38886,6 +39350,7 @@ data/nyu2_train/bathroom_0035_out 25
 data/nyu2_train/bathroom_0035_out 13
 data/nyu2_train/bathroom_0035_out 28
 data/nyu2_train/bathroom_0035_out 34
+data/nyu2_train/bathroom_0035_out 53
 data/nyu2_train/bathroom_0035_out 11
 data/nyu2_train/bathroom_0035_out 46
 data/nyu2_train/bathroom_0035_out 39
@@ -38895,6 +39360,7 @@ data/nyu2_train/bathroom_0035_out 30
 data/nyu2_train/bathroom_0035_out 16
 data/nyu2_train/bathroom_0035_out 42
 data/nyu2_train/bathroom_0035_out 10
+data/nyu2_train/bathroom_0035_out 4
 data/nyu2_train/bathroom_0035_out 12
 data/nyu2_train/bathroom_0035_out 8
 data/nyu2_train/bathroom_0035_out 43
@@ -38955,6 +39421,7 @@ data/nyu2_train/laundry_room_0001_out 70
 data/nyu2_train/laundry_room_0001_out 60
 data/nyu2_train/laundry_room_0001_out 54
 data/nyu2_train/laundry_room_0001_out 10
+data/nyu2_train/laundry_room_0001_out 4
 data/nyu2_train/laundry_room_0001_out 12
 data/nyu2_train/laundry_room_0001_out 64
 data/nyu2_train/laundry_room_0001_out 67
@@ -38977,6 +39444,7 @@ data/nyu2_train/laundry_room_0001_out 76
 data/nyu2_train/laundry_room_0001_out 69
 data/nyu2_train/laundry_room_0001_out 5
 data/nyu2_train/laundry_room_0001_out 84
+data/nyu2_train/laundry_room_0001_out 92
 data/nyu2_train/laundry_room_0001_out 51
 data/nyu2_train/laundry_room_0001_out 7
 data/nyu2_train/laundry_room_0001_out 15
@@ -39044,6 +39512,7 @@ data/nyu2_train/classroom_0011_out 70
 data/nyu2_train/classroom_0011_out 60
 data/nyu2_train/classroom_0011_out 54
 data/nyu2_train/classroom_0011_out 10
+data/nyu2_train/classroom_0011_out 4
 data/nyu2_train/classroom_0011_out 12
 data/nyu2_train/classroom_0011_out 100
 data/nyu2_train/classroom_0011_out 64
@@ -39077,6 +39546,7 @@ data/nyu2_train/classroom_0011_out 97
 data/nyu2_train/classroom_0011_out 15
 data/nyu2_train/classroom_0011_out 77
 data/nyu2_train/classroom_0011_out 89
+data/nyu2_train/classroom_0011_out 102
 data/nyu2_train/classroom_0011_out 99
 data/nyu2_train/classroom_0011_out 72
 data/nyu2_train/classroom_0011_out 81
@@ -39145,7 +39615,9 @@ data/nyu2_train/study_0004_out 93
 data/nyu2_train/study_0004_out 70
 data/nyu2_train/study_0004_out 60
 data/nyu2_train/study_0004_out 54
+data/nyu2_train/study_0004_out 121
 data/nyu2_train/study_0004_out 10
+data/nyu2_train/study_0004_out 4
 data/nyu2_train/study_0004_out 12
 data/nyu2_train/study_0004_out 104
 data/nyu2_train/study_0004_out 100
@@ -39278,6 +39750,7 @@ data/nyu2_train/living_room_0029_out 121
 data/nyu2_train/living_room_0029_out 122
 data/nyu2_train/living_room_0029_out 130
 data/nyu2_train/living_room_0029_out 10
+data/nyu2_train/living_room_0029_out 4
 data/nyu2_train/living_room_0029_out 153
 data/nyu2_train/living_room_0029_out 12
 data/nyu2_train/living_room_0029_out 163
@@ -39318,6 +39791,7 @@ data/nyu2_train/living_room_0029_out 98
 data/nyu2_train/living_room_0029_out 76
 data/nyu2_train/living_room_0029_out 124
 data/nyu2_train/living_room_0029_out 128
+data/nyu2_train/living_room_0029_out 170
 data/nyu2_train/living_room_0029_out 149
 data/nyu2_train/living_room_0029_out 69
 data/nyu2_train/living_room_0029_out 155
@@ -39438,6 +39912,7 @@ data/nyu2_train/bedroom_0056a_out 121
 data/nyu2_train/bedroom_0056a_out 122
 data/nyu2_train/bedroom_0056a_out 130
 data/nyu2_train/bedroom_0056a_out 10
+data/nyu2_train/bedroom_0056a_out 4
 data/nyu2_train/bedroom_0056a_out 153
 data/nyu2_train/bedroom_0056a_out 12
 data/nyu2_train/bedroom_0056a_out 104
@@ -39501,6 +39976,7 @@ data/nyu2_train/bedroom_0056a_out 89
 data/nyu2_train/bedroom_0056a_out 102
 data/nyu2_train/bedroom_0056a_out 99
 data/nyu2_train/bedroom_0056a_out 72
+data/nyu2_train/bedroom_0056a_out 157
 data/nyu2_train/bedroom_0056a_out 81
 data/nyu2_train/bedroom_0056a_out 33
 data/nyu2_train/bedroom_0056a_out 27
@@ -39750,6 +40226,8 @@ data/nyu2_train/living_room_0022_out 536
 data/nyu2_train/living_room_0022_out 287
 data/nyu2_train/living_room_0022_out 384
 data/nyu2_train/living_room_0022_out 249
+data/nyu2_train/living_room_0022_out 4
+data/nyu2_train/living_room_0022_out 618
 data/nyu2_train/living_room_0022_out 153
 data/nyu2_train/living_room_0022_out 468
 data/nyu2_train/living_room_0022_out 574
@@ -40187,6 +40665,7 @@ data/nyu2_train/bedroom_0100_out 70
 data/nyu2_train/bedroom_0100_out 60
 data/nyu2_train/bedroom_0100_out 54
 data/nyu2_train/bedroom_0100_out 10
+data/nyu2_train/bedroom_0100_out 4
 data/nyu2_train/bedroom_0100_out 12
 data/nyu2_train/bedroom_0100_out 100
 data/nyu2_train/bedroom_0100_out 64
@@ -40220,6 +40699,7 @@ data/nyu2_train/bedroom_0100_out 97
 data/nyu2_train/bedroom_0100_out 15
 data/nyu2_train/bedroom_0100_out 77
 data/nyu2_train/bedroom_0100_out 89
+data/nyu2_train/bedroom_0100_out 102
 data/nyu2_train/bedroom_0100_out 99
 data/nyu2_train/bedroom_0100_out 72
 data/nyu2_train/bedroom_0100_out 81
@@ -40285,6 +40765,7 @@ data/nyu2_train/classroom_0010_out 70
 data/nyu2_train/classroom_0010_out 60
 data/nyu2_train/classroom_0010_out 54
 data/nyu2_train/classroom_0010_out 10
+data/nyu2_train/classroom_0010_out 4
 data/nyu2_train/classroom_0010_out 12
 data/nyu2_train/classroom_0010_out 104
 data/nyu2_train/classroom_0010_out 100
@@ -40334,6 +40815,7 @@ data/nyu2_train/classroom_0010_out 87
 data/nyu2_train/classroom_0010_out 59
 data/nyu2_train/classroom_0010_out 36
 data/nyu2_train/classroom_0010_out 20
+data/nyu2_train/classroom_0010_out 106
 data/nyu2_train/classroom_0010_out 65
 data/nyu2_train/classroom_0010_out 86
 data/nyu2_train/classroom_0010_out 44
@@ -40389,6 +40871,7 @@ data/nyu2_train/kitchen_0052_out 57
 data/nyu2_train/kitchen_0052_out 34
 data/nyu2_train/kitchen_0052_out 118
 data/nyu2_train/kitchen_0052_out 53
+data/nyu2_train/kitchen_0052_out 254
 data/nyu2_train/kitchen_0052_out 11
 data/nyu2_train/kitchen_0052_out 46
 data/nyu2_train/kitchen_0052_out 203
@@ -40443,6 +40926,7 @@ data/nyu2_train/kitchen_0052_out 214
 data/nyu2_train/kitchen_0052_out 252
 data/nyu2_train/kitchen_0052_out 10
 data/nyu2_train/kitchen_0052_out 249
+data/nyu2_train/kitchen_0052_out 4
 data/nyu2_train/kitchen_0052_out 153
 data/nyu2_train/kitchen_0052_out 12
 data/nyu2_train/kitchen_0052_out 205
@@ -40630,6 +41114,7 @@ data/nyu2_train/study_0008_out 70
 data/nyu2_train/study_0008_out 60
 data/nyu2_train/study_0008_out 54
 data/nyu2_train/study_0008_out 10
+data/nyu2_train/study_0008_out 4
 data/nyu2_train/study_0008_out 12
 data/nyu2_train/study_0008_out 64
 data/nyu2_train/study_0008_out 67
@@ -40674,6 +41159,7 @@ data/nyu2_train/study_0008_out 52
 data/nyu2_train/study_0008_out 66
 data/nyu2_train/study_0008_out 24
 data/nyu2_train/study_0008_out 22
+data/nyu2_train/study_0008_out 80
 data/nyu2_train/study_0008_out 26
 data/nyu2_train/study_0008_out 9
 data/nyu2_train/bathroom_0028_out 37
@@ -40762,6 +41248,7 @@ data/nyu2_train/bathroom_0028_out 122
 data/nyu2_train/bathroom_0028_out 130
 data/nyu2_train/bathroom_0028_out 214
 data/nyu2_train/bathroom_0028_out 10
+data/nyu2_train/bathroom_0028_out 4
 data/nyu2_train/bathroom_0028_out 153
 data/nyu2_train/bathroom_0028_out 12
 data/nyu2_train/bathroom_0028_out 205
@@ -40911,6 +41398,7 @@ data/nyu2_train/bathroom_0028_out 80
 data/nyu2_train/bathroom_0028_out 238
 data/nyu2_train/bathroom_0028_out 237
 data/nyu2_train/bathroom_0028_out 96
+data/nyu2_train/bathroom_0028_out 246
 data/nyu2_train/bathroom_0028_out 204
 data/nyu2_train/bathroom_0028_out 26
 data/nyu2_train/bathroom_0028_out 88
@@ -40946,6 +41434,7 @@ data/nyu2_train/bedroom_0079_out 70
 data/nyu2_train/bedroom_0079_out 60
 data/nyu2_train/bedroom_0079_out 54
 data/nyu2_train/bedroom_0079_out 10
+data/nyu2_train/bedroom_0079_out 4
 data/nyu2_train/bedroom_0079_out 12
 data/nyu2_train/bedroom_0079_out 64
 data/nyu2_train/bedroom_0079_out 67
@@ -40967,6 +41456,7 @@ data/nyu2_train/bedroom_0079_out 58
 data/nyu2_train/bedroom_0079_out 76
 data/nyu2_train/bedroom_0079_out 69
 data/nyu2_train/bedroom_0079_out 5
+data/nyu2_train/bedroom_0079_out 84
 data/nyu2_train/bedroom_0079_out 51
 data/nyu2_train/bedroom_0079_out 7
 data/nyu2_train/bedroom_0079_out 15
@@ -41097,6 +41587,7 @@ data/nyu2_train/kitchen_0035b_out 16
 data/nyu2_train/kitchen_0035b_out 226
 data/nyu2_train/kitchen_0035b_out 105
 data/nyu2_train/kitchen_0035b_out 62
+data/nyu2_train/kitchen_0035b_out 458
 data/nyu2_train/kitchen_0035b_out 435
 data/nyu2_train/kitchen_0035b_out 411
 data/nyu2_train/kitchen_0035b_out 56
@@ -41149,6 +41640,7 @@ data/nyu2_train/kitchen_0035b_out 262
 data/nyu2_train/kitchen_0035b_out 287
 data/nyu2_train/kitchen_0035b_out 384
 data/nyu2_train/kitchen_0035b_out 249
+data/nyu2_train/kitchen_0035b_out 4
 data/nyu2_train/kitchen_0035b_out 153
 data/nyu2_train/kitchen_0035b_out 304
 data/nyu2_train/kitchen_0035b_out 344
@@ -41502,6 +41994,7 @@ data/nyu2_train/kitchen_0037_out 121
 data/nyu2_train/kitchen_0037_out 122
 data/nyu2_train/kitchen_0037_out 130
 data/nyu2_train/kitchen_0037_out 10
+data/nyu2_train/kitchen_0037_out 4
 data/nyu2_train/kitchen_0037_out 153
 data/nyu2_train/kitchen_0037_out 12
 data/nyu2_train/kitchen_0037_out 163
@@ -41603,6 +42096,7 @@ data/nyu2_train/kitchen_0037_out 52
 data/nyu2_train/kitchen_0037_out 66
 data/nyu2_train/kitchen_0037_out 24
 data/nyu2_train/kitchen_0037_out 22
+data/nyu2_train/kitchen_0037_out 166
 data/nyu2_train/kitchen_0037_out 80
 data/nyu2_train/kitchen_0037_out 96
 data/nyu2_train/kitchen_0037_out 26
@@ -41644,6 +42138,7 @@ data/nyu2_train/bedroom_0029_out 70
 data/nyu2_train/bedroom_0029_out 60
 data/nyu2_train/bedroom_0029_out 54
 data/nyu2_train/bedroom_0029_out 10
+data/nyu2_train/bedroom_0029_out 4
 data/nyu2_train/bedroom_0029_out 12
 data/nyu2_train/bedroom_0029_out 104
 data/nyu2_train/bedroom_0029_out 100
@@ -41693,6 +42188,7 @@ data/nyu2_train/bedroom_0029_out 87
 data/nyu2_train/bedroom_0029_out 59
 data/nyu2_train/bedroom_0029_out 36
 data/nyu2_train/bedroom_0029_out 20
+data/nyu2_train/bedroom_0029_out 106
 data/nyu2_train/bedroom_0029_out 65
 data/nyu2_train/bedroom_0029_out 86
 data/nyu2_train/bedroom_0029_out 44
@@ -41798,6 +42294,7 @@ data/nyu2_train/living_room_0047b_out 162
 data/nyu2_train/living_room_0047b_out 93
 data/nyu2_train/living_room_0047b_out 70
 data/nyu2_train/living_room_0047b_out 60
+data/nyu2_train/living_room_0047b_out 282
 data/nyu2_train/living_room_0047b_out 255
 data/nyu2_train/living_room_0047b_out 132
 data/nyu2_train/living_room_0047b_out 54
@@ -41812,6 +42309,7 @@ data/nyu2_train/living_room_0047b_out 252
 data/nyu2_train/living_room_0047b_out 10
 data/nyu2_train/living_room_0047b_out 262
 data/nyu2_train/living_room_0047b_out 249
+data/nyu2_train/living_room_0047b_out 4
 data/nyu2_train/living_room_0047b_out 153
 data/nyu2_train/living_room_0047b_out 12
 data/nyu2_train/living_room_0047b_out 205
@@ -42018,6 +42516,7 @@ data/nyu2_train/bedroom_0082_out 70
 data/nyu2_train/bedroom_0082_out 60
 data/nyu2_train/bedroom_0082_out 54
 data/nyu2_train/bedroom_0082_out 10
+data/nyu2_train/bedroom_0082_out 4
 data/nyu2_train/bedroom_0082_out 12
 data/nyu2_train/bedroom_0082_out 64
 data/nyu2_train/bedroom_0082_out 67
@@ -42056,6 +42555,7 @@ data/nyu2_train/bedroom_0082_out 59
 data/nyu2_train/bedroom_0082_out 36
 data/nyu2_train/bedroom_0082_out 20
 data/nyu2_train/bedroom_0082_out 65
+data/nyu2_train/bedroom_0082_out 86
 data/nyu2_train/bedroom_0082_out 44
 data/nyu2_train/bedroom_0082_out 63
 data/nyu2_train/bedroom_0082_out 61
@@ -42117,11 +42617,13 @@ data/nyu2_train/dinette_0001_out 121
 data/nyu2_train/dinette_0001_out 122
 data/nyu2_train/dinette_0001_out 130
 data/nyu2_train/dinette_0001_out 10
+data/nyu2_train/dinette_0001_out 4
 data/nyu2_train/dinette_0001_out 12
 data/nyu2_train/dinette_0001_out 104
 data/nyu2_train/dinette_0001_out 134
 data/nyu2_train/dinette_0001_out 100
 data/nyu2_train/dinette_0001_out 64
+data/nyu2_train/dinette_0001_out 147
 data/nyu2_train/dinette_0001_out 103
 data/nyu2_train/dinette_0001_out 67
 data/nyu2_train/dinette_0001_out 114
@@ -42236,6 +42738,7 @@ data/nyu2_train/dining_room_0037_out 235
 data/nyu2_train/dining_room_0037_out 25
 data/nyu2_train/dining_room_0037_out 218
 data/nyu2_train/dining_room_0037_out 13
+data/nyu2_train/dining_room_0037_out 247
 data/nyu2_train/dining_room_0037_out 68
 data/nyu2_train/dining_room_0037_out 28
 data/nyu2_train/dining_room_0037_out 197
@@ -42297,6 +42800,7 @@ data/nyu2_train/dining_room_0037_out 122
 data/nyu2_train/dining_room_0037_out 130
 data/nyu2_train/dining_room_0037_out 214
 data/nyu2_train/dining_room_0037_out 10
+data/nyu2_train/dining_room_0037_out 4
 data/nyu2_train/dining_room_0037_out 153
 data/nyu2_train/dining_room_0037_out 12
 data/nyu2_train/dining_room_0037_out 205
@@ -42527,6 +43031,7 @@ data/nyu2_train/home_storage_0001_out 122
 data/nyu2_train/home_storage_0001_out 130
 data/nyu2_train/home_storage_0001_out 214
 data/nyu2_train/home_storage_0001_out 10
+data/nyu2_train/home_storage_0001_out 4
 data/nyu2_train/home_storage_0001_out 153
 data/nyu2_train/home_storage_0001_out 12
 data/nyu2_train/home_storage_0001_out 205
@@ -42607,6 +43112,7 @@ data/nyu2_train/home_storage_0001_out 125
 data/nyu2_train/home_storage_0001_out 89
 data/nyu2_train/home_storage_0001_out 102
 data/nyu2_train/home_storage_0001_out 181
+data/nyu2_train/home_storage_0001_out 221
 data/nyu2_train/home_storage_0001_out 99
 data/nyu2_train/home_storage_0001_out 216
 data/nyu2_train/home_storage_0001_out 72
@@ -42702,6 +43208,7 @@ data/nyu2_train/bedroom_0126_out 70
 data/nyu2_train/bedroom_0126_out 60
 data/nyu2_train/bedroom_0126_out 54
 data/nyu2_train/bedroom_0126_out 10
+data/nyu2_train/bedroom_0126_out 4
 data/nyu2_train/bedroom_0126_out 12
 data/nyu2_train/bedroom_0126_out 64
 data/nyu2_train/bedroom_0126_out 67
@@ -42728,6 +43235,7 @@ data/nyu2_train/bedroom_0126_out 84
 data/nyu2_train/bedroom_0126_out 92
 data/nyu2_train/bedroom_0126_out 51
 data/nyu2_train/bedroom_0126_out 7
+data/nyu2_train/bedroom_0126_out 97
 data/nyu2_train/bedroom_0126_out 15
 data/nyu2_train/bedroom_0126_out 77
 data/nyu2_train/bedroom_0126_out 89
@@ -42816,6 +43324,7 @@ data/nyu2_train/excercise_room_0001_out 121
 data/nyu2_train/excercise_room_0001_out 122
 data/nyu2_train/excercise_room_0001_out 130
 data/nyu2_train/excercise_room_0001_out 10
+data/nyu2_train/excercise_room_0001_out 4
 data/nyu2_train/excercise_room_0001_out 153
 data/nyu2_train/excercise_room_0001_out 12
 data/nyu2_train/excercise_room_0001_out 163
@@ -42887,6 +43396,7 @@ data/nyu2_train/excercise_room_0001_out 89
 data/nyu2_train/excercise_room_0001_out 102
 data/nyu2_train/excercise_room_0001_out 99
 data/nyu2_train/excercise_room_0001_out 72
+data/nyu2_train/excercise_room_0001_out 178
 data/nyu2_train/excercise_room_0001_out 157
 data/nyu2_train/excercise_room_0001_out 81
 data/nyu2_train/excercise_room_0001_out 33
@@ -42988,9 +43498,11 @@ data/nyu2_train/reception_room_0001a_out 121
 data/nyu2_train/reception_room_0001a_out 122
 data/nyu2_train/reception_room_0001a_out 130
 data/nyu2_train/reception_room_0001a_out 10
+data/nyu2_train/reception_room_0001a_out 4
 data/nyu2_train/reception_room_0001a_out 153
 data/nyu2_train/reception_room_0001a_out 12
 data/nyu2_train/reception_room_0001a_out 163
+data/nyu2_train/reception_room_0001a_out 169
 data/nyu2_train/reception_room_0001a_out 168
 data/nyu2_train/reception_room_0001a_out 104
 data/nyu2_train/reception_room_0001a_out 134
@@ -43147,6 +43659,8 @@ data/nyu2_train/bedroom_0053_out 121
 data/nyu2_train/bedroom_0053_out 122
 data/nyu2_train/bedroom_0053_out 130
 data/nyu2_train/bedroom_0053_out 10
+data/nyu2_train/bedroom_0053_out 4
+data/nyu2_train/bedroom_0053_out 153
 data/nyu2_train/bedroom_0053_out 12
 data/nyu2_train/bedroom_0053_out 104
 data/nyu2_train/bedroom_0053_out 134
@@ -43281,6 +43795,7 @@ data/nyu2_train/living_room_0078_out 46
 data/nyu2_train/living_room_0078_out 203
 data/nyu2_train/living_room_0078_out 135
 data/nyu2_train/living_room_0078_out 39
+data/nyu2_train/living_room_0078_out 208
 data/nyu2_train/living_room_0078_out 71
 data/nyu2_train/living_room_0078_out 29
 data/nyu2_train/living_room_0078_out 14
@@ -43314,6 +43829,7 @@ data/nyu2_train/living_room_0078_out 121
 data/nyu2_train/living_room_0078_out 122
 data/nyu2_train/living_room_0078_out 130
 data/nyu2_train/living_room_0078_out 10
+data/nyu2_train/living_room_0078_out 4
 data/nyu2_train/living_room_0078_out 153
 data/nyu2_train/living_room_0078_out 12
 data/nyu2_train/living_room_0078_out 205
@@ -43539,6 +44055,7 @@ data/nyu2_train/bedroom_0140_out 130
 data/nyu2_train/bedroom_0140_out 214
 data/nyu2_train/bedroom_0140_out 10
 data/nyu2_train/bedroom_0140_out 249
+data/nyu2_train/bedroom_0140_out 4
 data/nyu2_train/bedroom_0140_out 153
 data/nyu2_train/bedroom_0140_out 12
 data/nyu2_train/bedroom_0140_out 205
@@ -43600,6 +44117,7 @@ data/nyu2_train/bedroom_0140_out 131
 data/nyu2_train/bedroom_0140_out 101
 data/nyu2_train/bedroom_0140_out 239
 data/nyu2_train/bedroom_0140_out 225
+data/nyu2_train/bedroom_0140_out 251
 data/nyu2_train/bedroom_0140_out 112
 data/nyu2_train/bedroom_0140_out 213
 data/nyu2_train/bedroom_0140_out 148
@@ -43803,6 +44321,7 @@ data/nyu2_train/living_room_0018_out 10
 data/nyu2_train/living_room_0018_out 262
 data/nyu2_train/living_room_0018_out 287
 data/nyu2_train/living_room_0018_out 249
+data/nyu2_train/living_room_0018_out 4
 data/nyu2_train/living_room_0018_out 153
 data/nyu2_train/living_room_0018_out 304
 data/nyu2_train/living_room_0018_out 12
@@ -43980,6 +44499,7 @@ data/nyu2_train/living_room_0018_out 66
 data/nyu2_train/living_room_0018_out 24
 data/nyu2_train/living_room_0018_out 22
 data/nyu2_train/living_room_0018_out 192
+data/nyu2_train/living_room_0018_out 305
 data/nyu2_train/living_room_0018_out 166
 data/nyu2_train/living_room_0018_out 223
 data/nyu2_train/living_room_0018_out 270
@@ -44008,6 +44528,7 @@ data/nyu2_train/bathroom_0007_out 167
 data/nyu2_train/bathroom_0007_out 21
 data/nyu2_train/bathroom_0007_out 48
 data/nyu2_train/bathroom_0007_out 75
+data/nyu2_train/bathroom_0007_out 171
 data/nyu2_train/bathroom_0007_out 25
 data/nyu2_train/bathroom_0007_out 13
 data/nyu2_train/bathroom_0007_out 68
@@ -44049,6 +44570,7 @@ data/nyu2_train/bathroom_0007_out 121
 data/nyu2_train/bathroom_0007_out 122
 data/nyu2_train/bathroom_0007_out 130
 data/nyu2_train/bathroom_0007_out 10
+data/nyu2_train/bathroom_0007_out 4
 data/nyu2_train/bathroom_0007_out 153
 data/nyu2_train/bathroom_0007_out 12
 data/nyu2_train/bathroom_0007_out 163
@@ -44207,6 +44729,7 @@ data/nyu2_train/home_office_0011_out 121
 data/nyu2_train/home_office_0011_out 122
 data/nyu2_train/home_office_0011_out 130
 data/nyu2_train/home_office_0011_out 10
+data/nyu2_train/home_office_0011_out 4
 data/nyu2_train/home_office_0011_out 12
 data/nyu2_train/home_office_0011_out 104
 data/nyu2_train/home_office_0011_out 134
@@ -44233,6 +44756,7 @@ data/nyu2_train/home_office_0011_out 47
 data/nyu2_train/home_office_0011_out 111
 data/nyu2_train/home_office_0011_out 41
 data/nyu2_train/home_office_0011_out 50
+data/nyu2_train/home_office_0011_out 140
 data/nyu2_train/home_office_0011_out 19
 data/nyu2_train/home_office_0011_out 58
 data/nyu2_train/home_office_0011_out 98
@@ -44302,6 +44826,7 @@ data/nyu2_train/bedroom_0034_out 6
 data/nyu2_train/bedroom_0034_out 49
 data/nyu2_train/bedroom_0034_out 152
 data/nyu2_train/bedroom_0034_out 142
+data/nyu2_train/bedroom_0034_out 179
 data/nyu2_train/bedroom_0034_out 94
 data/nyu2_train/bedroom_0034_out 158
 data/nyu2_train/bedroom_0034_out 18
@@ -44351,6 +44876,7 @@ data/nyu2_train/bedroom_0034_out 121
 data/nyu2_train/bedroom_0034_out 122
 data/nyu2_train/bedroom_0034_out 130
 data/nyu2_train/bedroom_0034_out 10
+data/nyu2_train/bedroom_0034_out 4
 data/nyu2_train/bedroom_0034_out 153
 data/nyu2_train/bedroom_0034_out 12
 data/nyu2_train/bedroom_0034_out 163
@@ -44489,6 +45015,7 @@ data/nyu2_train/bedroom_0035_out 30
 data/nyu2_train/bedroom_0035_out 16
 data/nyu2_train/bedroom_0035_out 42
 data/nyu2_train/bedroom_0035_out 10
+data/nyu2_train/bedroom_0035_out 4
 data/nyu2_train/bedroom_0035_out 12
 data/nyu2_train/bedroom_0035_out 8
 data/nyu2_train/bedroom_0035_out 43
@@ -44499,6 +45026,7 @@ data/nyu2_train/bedroom_0035_out 45
 data/nyu2_train/bedroom_0035_out 31
 data/nyu2_train/bedroom_0035_out 47
 data/nyu2_train/bedroom_0035_out 41
+data/nyu2_train/bedroom_0035_out 50
 data/nyu2_train/bedroom_0035_out 19
 data/nyu2_train/bedroom_0035_out 5
 data/nyu2_train/bedroom_0035_out 7
@@ -44553,11 +45081,13 @@ data/nyu2_train/bedroom_0096_out 91
 data/nyu2_train/bedroom_0096_out 93
 data/nyu2_train/bedroom_0096_out 70
 data/nyu2_train/bedroom_0096_out 60
+data/nyu2_train/bedroom_0096_out 132
 data/nyu2_train/bedroom_0096_out 54
 data/nyu2_train/bedroom_0096_out 121
 data/nyu2_train/bedroom_0096_out 122
 data/nyu2_train/bedroom_0096_out 130
 data/nyu2_train/bedroom_0096_out 10
+data/nyu2_train/bedroom_0096_out 4
 data/nyu2_train/bedroom_0096_out 12
 data/nyu2_train/bedroom_0096_out 104
 data/nyu2_train/bedroom_0096_out 100
@@ -44674,6 +45204,7 @@ data/nyu2_train/bedroom_0076a_out 118
 data/nyu2_train/bedroom_0076a_out 53
 data/nyu2_train/bedroom_0076a_out 11
 data/nyu2_train/bedroom_0076a_out 46
+data/nyu2_train/bedroom_0076a_out 203
 data/nyu2_train/bedroom_0076a_out 135
 data/nyu2_train/bedroom_0076a_out 39
 data/nyu2_train/bedroom_0076a_out 71
@@ -44708,6 +45239,7 @@ data/nyu2_train/bedroom_0076a_out 121
 data/nyu2_train/bedroom_0076a_out 122
 data/nyu2_train/bedroom_0076a_out 130
 data/nyu2_train/bedroom_0076a_out 10
+data/nyu2_train/bedroom_0076a_out 4
 data/nyu2_train/bedroom_0076a_out 153
 data/nyu2_train/bedroom_0076a_out 12
 data/nyu2_train/bedroom_0076a_out 163
@@ -44851,6 +45383,7 @@ data/nyu2_train/kitchen_0029b_out 25
 data/nyu2_train/kitchen_0029b_out 13
 data/nyu2_train/kitchen_0029b_out 68
 data/nyu2_train/kitchen_0029b_out 28
+data/nyu2_train/kitchen_0029b_out 85
 data/nyu2_train/kitchen_0029b_out 57
 data/nyu2_train/kitchen_0029b_out 34
 data/nyu2_train/kitchen_0029b_out 53
@@ -44869,6 +45402,7 @@ data/nyu2_train/kitchen_0029b_out 70
 data/nyu2_train/kitchen_0029b_out 60
 data/nyu2_train/kitchen_0029b_out 54
 data/nyu2_train/kitchen_0029b_out 10
+data/nyu2_train/kitchen_0029b_out 4
 data/nyu2_train/kitchen_0029b_out 12
 data/nyu2_train/kitchen_0029b_out 64
 data/nyu2_train/kitchen_0029b_out 67
@@ -45014,6 +45548,7 @@ data/nyu2_train/dining_room_0023_out 214
 data/nyu2_train/dining_room_0023_out 252
 data/nyu2_train/dining_room_0023_out 10
 data/nyu2_train/dining_room_0023_out 249
+data/nyu2_train/dining_room_0023_out 4
 data/nyu2_train/dining_room_0023_out 153
 data/nyu2_train/dining_room_0023_out 12
 data/nyu2_train/dining_room_0023_out 205
@@ -45132,6 +45667,7 @@ data/nyu2_train/dining_room_0023_out 186
 data/nyu2_train/dining_room_0023_out 59
 data/nyu2_train/dining_room_0023_out 36
 data/nyu2_train/dining_room_0023_out 20
+data/nyu2_train/dining_room_0023_out 258
 data/nyu2_train/dining_room_0023_out 165
 data/nyu2_train/dining_room_0023_out 106
 data/nyu2_train/dining_room_0023_out 145
@@ -45227,6 +45763,7 @@ data/nyu2_train/playroom_0006_out 119
 data/nyu2_train/playroom_0006_out 42
 data/nyu2_train/playroom_0006_out 180
 data/nyu2_train/playroom_0006_out 193
+data/nyu2_train/playroom_0006_out 210
 data/nyu2_train/playroom_0006_out 129
 data/nyu2_train/playroom_0006_out 160
 data/nyu2_train/playroom_0006_out 126
@@ -45242,6 +45779,7 @@ data/nyu2_train/playroom_0006_out 121
 data/nyu2_train/playroom_0006_out 122
 data/nyu2_train/playroom_0006_out 130
 data/nyu2_train/playroom_0006_out 10
+data/nyu2_train/playroom_0006_out 4
 data/nyu2_train/playroom_0006_out 153
 data/nyu2_train/playroom_0006_out 12
 data/nyu2_train/playroom_0006_out 205
@@ -45407,6 +45945,7 @@ data/nyu2_train/bedroom_0042_out 70
 data/nyu2_train/bedroom_0042_out 60
 data/nyu2_train/bedroom_0042_out 54
 data/nyu2_train/bedroom_0042_out 10
+data/nyu2_train/bedroom_0042_out 4
 data/nyu2_train/bedroom_0042_out 12
 data/nyu2_train/bedroom_0042_out 64
 data/nyu2_train/bedroom_0042_out 67
@@ -45439,6 +45978,7 @@ data/nyu2_train/bedroom_0042_out 27
 data/nyu2_train/bedroom_0042_out 38
 data/nyu2_train/bedroom_0042_out 78
 data/nyu2_train/bedroom_0042_out 73
+data/nyu2_train/bedroom_0042_out 83
 data/nyu2_train/bedroom_0042_out 59
 data/nyu2_train/bedroom_0042_out 36
 data/nyu2_train/bedroom_0042_out 20
@@ -45486,6 +46026,7 @@ data/nyu2_train/bathroom_0049_out 70
 data/nyu2_train/bathroom_0049_out 60
 data/nyu2_train/bathroom_0049_out 54
 data/nyu2_train/bathroom_0049_out 10
+data/nyu2_train/bathroom_0049_out 4
 data/nyu2_train/bathroom_0049_out 12
 data/nyu2_train/bathroom_0049_out 64
 data/nyu2_train/bathroom_0049_out 67
@@ -45520,6 +46061,7 @@ data/nyu2_train/bathroom_0049_out 38
 data/nyu2_train/bathroom_0049_out 78
 data/nyu2_train/bathroom_0049_out 73
 data/nyu2_train/bathroom_0049_out 83
+data/nyu2_train/bathroom_0049_out 87
 data/nyu2_train/bathroom_0049_out 59
 data/nyu2_train/bathroom_0049_out 36
 data/nyu2_train/bathroom_0049_out 20
@@ -45566,6 +46108,7 @@ data/nyu2_train/bathroom_0056_out 70
 data/nyu2_train/bathroom_0056_out 60
 data/nyu2_train/bathroom_0056_out 54
 data/nyu2_train/bathroom_0056_out 10
+data/nyu2_train/bathroom_0056_out 4
 data/nyu2_train/bathroom_0056_out 12
 data/nyu2_train/bathroom_0056_out 64
 data/nyu2_train/bathroom_0056_out 67
@@ -45601,6 +46144,7 @@ data/nyu2_train/bathroom_0056_out 63
 data/nyu2_train/bathroom_0056_out 61
 data/nyu2_train/bathroom_0056_out 32
 data/nyu2_train/bathroom_0056_out 23
+data/nyu2_train/bathroom_0056_out 74
 data/nyu2_train/bathroom_0056_out 52
 data/nyu2_train/bathroom_0056_out 66
 data/nyu2_train/bathroom_0056_out 24
@@ -45636,6 +46180,7 @@ data/nyu2_train/bathroom_0030_out 70
 data/nyu2_train/bathroom_0030_out 60
 data/nyu2_train/bathroom_0030_out 54
 data/nyu2_train/bathroom_0030_out 10
+data/nyu2_train/bathroom_0030_out 4
 data/nyu2_train/bathroom_0030_out 12
 data/nyu2_train/bathroom_0030_out 64
 data/nyu2_train/bathroom_0030_out 67
@@ -45652,6 +46197,7 @@ data/nyu2_train/bathroom_0030_out 41
 data/nyu2_train/bathroom_0030_out 50
 data/nyu2_train/bathroom_0030_out 19
 data/nyu2_train/bathroom_0030_out 58
+data/nyu2_train/bathroom_0030_out 76
 data/nyu2_train/bathroom_0030_out 69
 data/nyu2_train/bathroom_0030_out 5
 data/nyu2_train/bathroom_0030_out 51
@@ -45727,6 +46273,7 @@ data/nyu2_train/bedroom_0051_out 46
 data/nyu2_train/bedroom_0051_out 259
 data/nyu2_train/bedroom_0051_out 203
 data/nyu2_train/bedroom_0051_out 298
+data/nyu2_train/bedroom_0051_out 312
 data/nyu2_train/bedroom_0051_out 230
 data/nyu2_train/bedroom_0051_out 135
 data/nyu2_train/bedroom_0051_out 39
@@ -45787,6 +46334,7 @@ data/nyu2_train/bedroom_0051_out 10
 data/nyu2_train/bedroom_0051_out 262
 data/nyu2_train/bedroom_0051_out 287
 data/nyu2_train/bedroom_0051_out 249
+data/nyu2_train/bedroom_0051_out 4
 data/nyu2_train/bedroom_0051_out 153
 data/nyu2_train/bedroom_0051_out 304
 data/nyu2_train/bedroom_0051_out 12
@@ -46073,8 +46621,10 @@ data/nyu2_train/living_room_0004_out 121
 data/nyu2_train/living_room_0004_out 122
 data/nyu2_train/living_room_0004_out 130
 data/nyu2_train/living_room_0004_out 214
+data/nyu2_train/living_room_0004_out 252
 data/nyu2_train/living_room_0004_out 10
 data/nyu2_train/living_room_0004_out 249
+data/nyu2_train/living_room_0004_out 4
 data/nyu2_train/living_room_0004_out 153
 data/nyu2_train/living_room_0004_out 12
 data/nyu2_train/living_room_0004_out 205
@@ -46235,6 +46785,7 @@ data/nyu2_train/living_room_0004_out 90
 data/nyu2_train/living_room_0082_out 37
 data/nyu2_train/living_room_0082_out 6
 data/nyu2_train/living_room_0082_out 49
+data/nyu2_train/living_room_0082_out 94
 data/nyu2_train/living_room_0082_out 18
 data/nyu2_train/living_room_0082_out 21
 data/nyu2_train/living_room_0082_out 48
@@ -46264,6 +46815,7 @@ data/nyu2_train/living_room_0082_out 70
 data/nyu2_train/living_room_0082_out 60
 data/nyu2_train/living_room_0082_out 54
 data/nyu2_train/living_room_0082_out 10
+data/nyu2_train/living_room_0082_out 4
 data/nyu2_train/living_room_0082_out 12
 data/nyu2_train/living_room_0082_out 64
 data/nyu2_train/living_room_0082_out 67
@@ -46342,12 +46894,14 @@ data/nyu2_train/study_0006_out 16
 data/nyu2_train/study_0006_out 42
 data/nyu2_train/study_0006_out 54
 data/nyu2_train/study_0006_out 10
+data/nyu2_train/study_0006_out 4
 data/nyu2_train/study_0006_out 12
 data/nyu2_train/study_0006_out 8
 data/nyu2_train/study_0006_out 43
 data/nyu2_train/study_0006_out 17
 data/nyu2_train/study_0006_out 35
 data/nyu2_train/study_0006_out 40
+data/nyu2_train/study_0006_out 55
 data/nyu2_train/study_0006_out 45
 data/nyu2_train/study_0006_out 31
 data/nyu2_train/study_0006_out 47
@@ -46512,6 +47066,7 @@ data/nyu2_train/living_room_0050_out 262
 data/nyu2_train/living_room_0050_out 287
 data/nyu2_train/living_room_0050_out 384
 data/nyu2_train/living_room_0050_out 249
+data/nyu2_train/living_room_0050_out 4
 data/nyu2_train/living_room_0050_out 153
 data/nyu2_train/living_room_0050_out 304
 data/nyu2_train/living_room_0050_out 344
@@ -46672,6 +47227,7 @@ data/nyu2_train/living_room_0050_out 139
 data/nyu2_train/living_room_0050_out 391
 data/nyu2_train/living_room_0050_out 38
 data/nyu2_train/living_room_0050_out 281
+data/nyu2_train/living_room_0050_out 404
 data/nyu2_train/living_room_0050_out 202
 data/nyu2_train/living_room_0050_out 219
 data/nyu2_train/living_room_0050_out 154
@@ -46869,6 +47425,7 @@ data/nyu2_train/basement_0001a_out 252
 data/nyu2_train/basement_0001a_out 10
 data/nyu2_train/basement_0001a_out 262
 data/nyu2_train/basement_0001a_out 249
+data/nyu2_train/basement_0001a_out 4
 data/nyu2_train/basement_0001a_out 153
 data/nyu2_train/basement_0001a_out 12
 data/nyu2_train/basement_0001a_out 205
@@ -46998,6 +47555,7 @@ data/nyu2_train/basement_0001a_out 59
 data/nyu2_train/basement_0001a_out 36
 data/nyu2_train/basement_0001a_out 20
 data/nyu2_train/basement_0001a_out 258
+data/nyu2_train/basement_0001a_out 278
 data/nyu2_train/basement_0001a_out 165
 data/nyu2_train/basement_0001a_out 106
 data/nyu2_train/basement_0001a_out 145
@@ -47067,6 +47625,7 @@ data/nyu2_train/living_room_0032_out 42
 data/nyu2_train/living_room_0032_out 60
 data/nyu2_train/living_room_0032_out 54
 data/nyu2_train/living_room_0032_out 10
+data/nyu2_train/living_room_0032_out 4
 data/nyu2_train/living_room_0032_out 12
 data/nyu2_train/living_room_0032_out 8
 data/nyu2_train/living_room_0032_out 43
@@ -47092,6 +47651,7 @@ data/nyu2_train/living_room_0032_out 59
 data/nyu2_train/living_room_0032_out 36
 data/nyu2_train/living_room_0032_out 20
 data/nyu2_train/living_room_0032_out 44
+data/nyu2_train/living_room_0032_out 61
 data/nyu2_train/living_room_0032_out 32
 data/nyu2_train/living_room_0032_out 23
 data/nyu2_train/living_room_0032_out 52
@@ -47136,7 +47696,9 @@ data/nyu2_train/bathroom_0041_out 93
 data/nyu2_train/bathroom_0041_out 70
 data/nyu2_train/bathroom_0041_out 60
 data/nyu2_train/bathroom_0041_out 54
+data/nyu2_train/bathroom_0041_out 121
 data/nyu2_train/bathroom_0041_out 10
+data/nyu2_train/bathroom_0041_out 4
 data/nyu2_train/bathroom_0041_out 12
 data/nyu2_train/bathroom_0041_out 104
 data/nyu2_train/bathroom_0041_out 100
@@ -47355,6 +47917,7 @@ data/nyu2_train/dining_room_0015_out 262
 data/nyu2_train/dining_room_0015_out 287
 data/nyu2_train/dining_room_0015_out 384
 data/nyu2_train/dining_room_0015_out 249
+data/nyu2_train/dining_room_0015_out 4
 data/nyu2_train/dining_room_0015_out 153
 data/nyu2_train/dining_room_0015_out 304
 data/nyu2_train/dining_room_0015_out 344
@@ -47609,6 +48172,7 @@ data/nyu2_train/dining_room_0015_out 9
 data/nyu2_train/dining_room_0015_out 109
 data/nyu2_train/dining_room_0015_out 347
 data/nyu2_train/dining_room_0015_out 375
+data/nyu2_train/dining_room_0015_out 401
 data/nyu2_train/dining_room_0015_out 365
 data/nyu2_train/dining_room_0015_out 90
 data/nyu2_train/office_0011_out 37
@@ -47693,6 +48257,7 @@ data/nyu2_train/office_0011_out 122
 data/nyu2_train/office_0011_out 130
 data/nyu2_train/office_0011_out 214
 data/nyu2_train/office_0011_out 10
+data/nyu2_train/office_0011_out 4
 data/nyu2_train/office_0011_out 153
 data/nyu2_train/office_0011_out 12
 data/nyu2_train/office_0011_out 205
@@ -47823,6 +48388,7 @@ data/nyu2_train/office_0011_out 196
 data/nyu2_train/office_0011_out 116
 data/nyu2_train/office_0011_out 61
 data/nyu2_train/office_0011_out 32
+data/nyu2_train/office_0011_out 240
 data/nyu2_train/office_0011_out 123
 data/nyu2_train/office_0011_out 23
 data/nyu2_train/office_0011_out 199
@@ -48015,6 +48581,7 @@ data/nyu2_train/dining_room_0031_out 390
 data/nyu2_train/dining_room_0031_out 93
 data/nyu2_train/dining_room_0031_out 70
 data/nyu2_train/dining_room_0031_out 60
+data/nyu2_train/dining_room_0031_out 573
 data/nyu2_train/dining_room_0031_out 283
 data/nyu2_train/dining_room_0031_out 397
 data/nyu2_train/dining_room_0031_out 394
@@ -48042,6 +48609,7 @@ data/nyu2_train/dining_room_0031_out 536
 data/nyu2_train/dining_room_0031_out 287
 data/nyu2_train/dining_room_0031_out 384
 data/nyu2_train/dining_room_0031_out 249
+data/nyu2_train/dining_room_0031_out 4
 data/nyu2_train/dining_room_0031_out 153
 data/nyu2_train/dining_room_0031_out 468
 data/nyu2_train/dining_room_0031_out 304
