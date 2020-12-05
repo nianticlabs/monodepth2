@@ -39,7 +39,7 @@ class NYUDataset(MonoDataset):
         """Returns the path string of the image corresponding to the frame_index
         in the specified folder.
         """
-        image_path = os.path.join(self.data_path, folder, str(frame_index), ".jpg")
+        image_path = os.path.join(self.data_path, folder, str(frame_index), self.img_ext)
         return image_path
 
     def get_depth(self, folder, frame_index, side, do_flip):

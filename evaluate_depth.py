@@ -56,6 +56,136 @@ def batch_post_process_disparity(l_disp, r_disp):
     return r_mask * l_disp + l_mask * r_disp + (1.0 - l_mask - r_mask) * m_disp
 
 
+def evaluate_nyu(opt):
+    """Evaluates a pretrained model using the NYU Depth test set
+    """
+    MIN_DEPTH = 1e-3
+    MAX_DEPTH = 10
+
+    if opt.ext_disp_to_eval is None:
+
+        opt.load_weights_folder = os.path.expanduser(opt.load_weights_folder)
+
+        assert os.path.isdir(opt.load_weights_folder), \
+            "Cannot find a folder at {}".format(opt.load_weights_folder)
+
+        print("-> Loading weights from {}".format(opt.load_weights_folder))
+
+        filenames = readlines(os.path.join(splits_dir, opt.eval_split, "test_files.txt"))
+        encoder_path = os.path.join(opt.load_weights_folder, "encoder.pth")
+        decoder_path = os.path.join(opt.load_weights_folder, "depth.pth")
+
+        encoder_dict = torch.load(encoder_path)
+
+        dataset = datasets.NYUDataset(opt.data_path, filenames,
+                                      encoder_dict['height'], encoder_dict['width'],
+                                      [0], 4, is_train=False, img_ext='.png')
+        dataloader = DataLoader(dataset, 16, shuffle=False, num_workers=opt.num_workers,
+                                pin_memory=True, drop_last=False)
+
+        encoder = networks.ResnetEncoder(opt.num_layers, False)
+        depth_decoder = networks.DepthDecoder(encoder.num_ch_enc)
+
+        model_dict = encoder.state_dict()
+        encoder.load_state_dict({k: v for k, v in encoder_dict.items() if k in model_dict})
+        depth_decoder.load_state_dict(torch.load(decoder_path))
+
+        encoder.cuda()
+        encoder.eval()
+        depth_decoder.cuda()
+        depth_decoder.eval()
+
+        pred_disps = []
+
+        print("-> Computing predictions with size {}x{}".format(
+            encoder_dict['width'], encoder_dict['height']))
+
+        with torch.no_grad():
+            for data in dataloader:
+                input_color = data[("color", 0, 0)].cuda()
+
+                if opt.post_process:
+                    # Post-processed results require each image to have two forward passes
+                    input_color = torch.cat((input_color, torch.flip(input_color, [3])), 0)
+
+                output = depth_decoder(encoder(input_color))
+
+                pred_disp, _ = disp_to_depth(output[("disp", 0)], opt.min_depth, opt.max_depth)
+                pred_disp = pred_disp.cpu()[:, 0].numpy()
+
+                if opt.post_process:
+                    N = pred_disp.shape[0] // 2
+                    pred_disp = batch_post_process_disparity(pred_disp[:N], pred_disp[N:, :, ::-1])
+
+                pred_disps.append(pred_disp)
+
+        pred_disps = np.concatenate(pred_disps)
+
+    else:
+        # Load predictions from file
+        print("-> Loading predictions from {}".format(opt.ext_disp_to_eval))
+        pred_disps = np.load(opt.ext_disp_to_eval)
+
+    if opt.save_pred_disps:
+        output_path = os.path.join(
+            opt.load_weights_folder, "disps_{}_split.npy".format(opt.eval_split))
+        print("-> Saving predicted disparities to ", output_path)
+        np.save(output_path, pred_disps)
+
+    if opt.no_eval:
+        print("-> Evaluation disabled. Done.")
+        quit()
+
+    gt_path = os.path.join(splits_dir, opt.eval_split, "eigen_test_depth.npy")
+    gt_depths = np.load(gt_path)
+
+    print("-> Evaluating")
+
+    print("   Mono evaluation - using median scaling")
+
+    errors = []
+    ratios = []
+
+    for i in range(pred_disps.shape[0]):
+
+        gt_depth = gt_depths[i]
+        gt_height, gt_width = gt_depth.shape[:2]
+
+        pred_disp = pred_disps[i]
+        pred_disp = cv2.resize(pred_disp, (gt_width, gt_height))
+        pred_depth = 1 / pred_disp
+
+        mask = np.logical_and(gt_depth > MIN_DEPTH, gt_depth < MAX_DEPTH)
+        crop_mask = np.zeros(mask.shape)
+        crop_mask[20:459, 24:615] = 1
+        mask = np.logical_and(mask, crop_mask)
+
+        pred_depth = pred_depth[mask]
+        gt_depth = gt_depth[mask]
+
+        pred_depth *= opt.pred_depth_scale_factor
+        if not opt.disable_median_scaling:
+            ratio = np.median(gt_depth) / np.median(pred_depth)
+            ratios.append(ratio)
+            pred_depth *= ratio
+
+        pred_depth[pred_depth < MIN_DEPTH] = MIN_DEPTH
+        pred_depth[pred_depth > MAX_DEPTH] = MAX_DEPTH
+
+        errors.append(compute_errors(gt_depth, pred_depth))
+
+    if not opt.disable_median_scaling:
+        ratios = np.array(ratios)
+        med = np.median(ratios)
+        print(" Scaling ratios | med: {:0.3f} | std: {:0.3f}".format(med, np.std(ratios / med)))
+
+    mean_errors = np.array(errors).mean(0)
+
+    print("\n  " + ("{:>8} | " * 7).format("abs_rel", "sq_rel", "rmse", "rmse_log", "a1", "a2", "a3"))
+    print(("&{: 8.3f}  " * 7).format(*mean_errors.tolist()) + "\\\\")
+    print("\n-> Done!")
+
+
 def evaluate(opt):
     """Evaluates a pretrained model using a specified test set
     """
@@ -64,6 +194,10 @@ def evaluate(opt):
 
     assert sum((opt.eval_mono, opt.eval_stereo)) == 1, \
         "Please choose mono or stereo evaluation by setting either --eval_mono or --eval_stereo"
+
+    if opt.eval_split == "nyu":
+        evaluate_nyu(opt)
+        quit()
 
     if opt.ext_disp_to_eval is None:
 
