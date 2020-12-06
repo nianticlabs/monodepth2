@@ -1,1 +1,2 @@
-from .kitti_dataset import KITTIRAWDataset, KITTIOdomDataset, KITTIDepthDataset, NYUDataset
+from .kitti_dataset import KITTIRAWDataset, KITTIOdomDataset, KITTIDepthDataset
+from nyu_dataset import NYUDataset
