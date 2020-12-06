@@ -1,654 +1,654 @@
-data/nyu_test 1
-data/nyu_test 2
-data/nyu_test 3
-data/nyu_test 4
-data/nyu_test 5
-data/nyu_test 6
-data/nyu_test 7
-data/nyu_test 8
-data/nyu_test 9
-data/nyu_test 10
-data/nyu_test 11
-data/nyu_test 12
-data/nyu_test 13
-data/nyu_test 14
-data/nyu_test 15
-data/nyu_test 16
-data/nyu_test 17
-data/nyu_test 18
-data/nyu_test 19
-data/nyu_test 20
-data/nyu_test 21
-data/nyu_test 22
-data/nyu_test 23
-data/nyu_test 24
-data/nyu_test 25
-data/nyu_test 26
-data/nyu_test 27
-data/nyu_test 28
-data/nyu_test 29
-data/nyu_test 30
-data/nyu_test 31
-data/nyu_test 32
-data/nyu_test 33
-data/nyu_test 34
-data/nyu_test 35
-data/nyu_test 36
-data/nyu_test 37
-data/nyu_test 38
-data/nyu_test 39
-data/nyu_test 40
-data/nyu_test 41
-data/nyu_test 42
-data/nyu_test 43
-data/nyu_test 44
-data/nyu_test 45
-data/nyu_test 46
-data/nyu_test 47
-data/nyu_test 48
-data/nyu_test 49
-data/nyu_test 50
-data/nyu_test 51
-data/nyu_test 52
-data/nyu_test 53
-data/nyu_test 54
-data/nyu_test 55
-data/nyu_test 56
-data/nyu_test 57
-data/nyu_test 58
-data/nyu_test 59
-data/nyu_test 60
-data/nyu_test 61
-data/nyu_test 62
-data/nyu_test 63
-data/nyu_test 64
-data/nyu_test 65
-data/nyu_test 66
-data/nyu_test 67
-data/nyu_test 68
-data/nyu_test 69
-data/nyu_test 70
-data/nyu_test 71
-data/nyu_test 72
-data/nyu_test 73
-data/nyu_test 74
-data/nyu_test 75
-data/nyu_test 76
-data/nyu_test 77
-data/nyu_test 78
-data/nyu_test 79
-data/nyu_test 80
-data/nyu_test 81
-data/nyu_test 82
-data/nyu_test 83
-data/nyu_test 84
-data/nyu_test 85
-data/nyu_test 86
-data/nyu_test 87
-data/nyu_test 88
-data/nyu_test 89
-data/nyu_test 90
-data/nyu_test 91
-data/nyu_test 92
-data/nyu_test 93
-data/nyu_test 94
-data/nyu_test 95
-data/nyu_test 96
-data/nyu_test 97
-data/nyu_test 98
-data/nyu_test 99
-data/nyu_test 100
-data/nyu_test 101
-data/nyu_test 102
-data/nyu_test 103
-data/nyu_test 104
-data/nyu_test 105
-data/nyu_test 106
-data/nyu_test 107
-data/nyu_test 108
-data/nyu_test 109
-data/nyu_test 110
-data/nyu_test 111
-data/nyu_test 112
-data/nyu_test 113
-data/nyu_test 114
-data/nyu_test 115
-data/nyu_test 116
-data/nyu_test 117
-data/nyu_test 118
-data/nyu_test 119
-data/nyu_test 120
-data/nyu_test 121
-data/nyu_test 122
-data/nyu_test 123
-data/nyu_test 124
-data/nyu_test 125
-data/nyu_test 126
-data/nyu_test 127
-data/nyu_test 128
-data/nyu_test 129
-data/nyu_test 130
-data/nyu_test 131
-data/nyu_test 132
-data/nyu_test 133
-data/nyu_test 134
-data/nyu_test 135
-data/nyu_test 136
-data/nyu_test 137
-data/nyu_test 138
-data/nyu_test 139
-data/nyu_test 140
-data/nyu_test 141
-data/nyu_test 142
-data/nyu_test 143
-data/nyu_test 144
-data/nyu_test 145
-data/nyu_test 146
-data/nyu_test 147
-data/nyu_test 148
-data/nyu_test 149
-data/nyu_test 150
-data/nyu_test 151
-data/nyu_test 152
-data/nyu_test 153
-data/nyu_test 154
-data/nyu_test 155
-data/nyu_test 156
-data/nyu_test 157
-data/nyu_test 158
-data/nyu_test 159
-data/nyu_test 160
-data/nyu_test 161
-data/nyu_test 162
-data/nyu_test 163
-data/nyu_test 164
-data/nyu_test 165
-data/nyu_test 166
-data/nyu_test 167
-data/nyu_test 168
-data/nyu_test 169
-data/nyu_test 170
-data/nyu_test 171
-data/nyu_test 172
-data/nyu_test 173
-data/nyu_test 174
-data/nyu_test 175
-data/nyu_test 176
-data/nyu_test 177
-data/nyu_test 178
-data/nyu_test 179
-data/nyu_test 180
-data/nyu_test 181
-data/nyu_test 182
-data/nyu_test 183
-data/nyu_test 184
-data/nyu_test 185
-data/nyu_test 186
-data/nyu_test 187
-data/nyu_test 188
-data/nyu_test 189
-data/nyu_test 190
-data/nyu_test 191
-data/nyu_test 192
-data/nyu_test 193
-data/nyu_test 194
-data/nyu_test 195
-data/nyu_test 196
-data/nyu_test 197
-data/nyu_test 198
-data/nyu_test 199
-data/nyu_test 200
-data/nyu_test 201
-data/nyu_test 202
-data/nyu_test 203
-data/nyu_test 204
-data/nyu_test 205
-data/nyu_test 206
-data/nyu_test 207
-data/nyu_test 208
-data/nyu_test 209
-data/nyu_test 210
-data/nyu_test 211
-data/nyu_test 212
-data/nyu_test 213
-data/nyu_test 214
-data/nyu_test 215
-data/nyu_test 216
-data/nyu_test 217
-data/nyu_test 218
-data/nyu_test 219
-data/nyu_test 220
-data/nyu_test 221
-data/nyu_test 222
-data/nyu_test 223
-data/nyu_test 224
-data/nyu_test 225
-data/nyu_test 226
-data/nyu_test 227
-data/nyu_test 228
-data/nyu_test 229
-data/nyu_test 230
-data/nyu_test 231
-data/nyu_test 232
-data/nyu_test 233
-data/nyu_test 234
-data/nyu_test 235
-data/nyu_test 236
-data/nyu_test 237
-data/nyu_test 238
-data/nyu_test 239
-data/nyu_test 240
-data/nyu_test 241
-data/nyu_test 242
-data/nyu_test 243
-data/nyu_test 244
-data/nyu_test 245
-data/nyu_test 246
-data/nyu_test 247
-data/nyu_test 248
-data/nyu_test 249
-data/nyu_test 250
-data/nyu_test 251
-data/nyu_test 252
-data/nyu_test 253
-data/nyu_test 254
-data/nyu_test 255
-data/nyu_test 256
-data/nyu_test 257
-data/nyu_test 258
-data/nyu_test 259
-data/nyu_test 260
-data/nyu_test 261
-data/nyu_test 262
-data/nyu_test 263
-data/nyu_test 264
-data/nyu_test 265
-data/nyu_test 266
-data/nyu_test 267
-data/nyu_test 268
-data/nyu_test 269
-data/nyu_test 270
-data/nyu_test 271
-data/nyu_test 272
-data/nyu_test 273
-data/nyu_test 274
-data/nyu_test 275
-data/nyu_test 276
-data/nyu_test 277
-data/nyu_test 278
-data/nyu_test 279
-data/nyu_test 280
-data/nyu_test 281
-data/nyu_test 282
-data/nyu_test 283
-data/nyu_test 284
-data/nyu_test 285
-data/nyu_test 286
-data/nyu_test 287
-data/nyu_test 288
-data/nyu_test 289
-data/nyu_test 290
-data/nyu_test 291
-data/nyu_test 292
-data/nyu_test 293
-data/nyu_test 294
-data/nyu_test 295
-data/nyu_test 296
-data/nyu_test 297
-data/nyu_test 298
-data/nyu_test 299
-data/nyu_test 300
-data/nyu_test 301
-data/nyu_test 302
-data/nyu_test 303
-data/nyu_test 304
-data/nyu_test 305
-data/nyu_test 306
-data/nyu_test 307
-data/nyu_test 308
-data/nyu_test 309
-data/nyu_test 310
-data/nyu_test 311
-data/nyu_test 312
-data/nyu_test 313
-data/nyu_test 314
-data/nyu_test 315
-data/nyu_test 316
-data/nyu_test 317
-data/nyu_test 318
-data/nyu_test 319
-data/nyu_test 320
-data/nyu_test 321
-data/nyu_test 322
-data/nyu_test 323
-data/nyu_test 324
-data/nyu_test 325
-data/nyu_test 326
-data/nyu_test 327
-data/nyu_test 328
-data/nyu_test 329
-data/nyu_test 330
-data/nyu_test 331
-data/nyu_test 332
-data/nyu_test 333
-data/nyu_test 334
-data/nyu_test 335
-data/nyu_test 336
-data/nyu_test 337
-data/nyu_test 338
-data/nyu_test 339
-data/nyu_test 340
-data/nyu_test 341
-data/nyu_test 342
-data/nyu_test 343
-data/nyu_test 344
-data/nyu_test 345
-data/nyu_test 346
-data/nyu_test 347
-data/nyu_test 348
-data/nyu_test 349
-data/nyu_test 350
-data/nyu_test 351
-data/nyu_test 352
-data/nyu_test 353
-data/nyu_test 354
-data/nyu_test 355
-data/nyu_test 356
-data/nyu_test 357
-data/nyu_test 358
-data/nyu_test 359
-data/nyu_test 360
-data/nyu_test 361
-data/nyu_test 362
-data/nyu_test 363
-data/nyu_test 364
-data/nyu_test 365
-data/nyu_test 366
-data/nyu_test 367
-data/nyu_test 368
-data/nyu_test 369
-data/nyu_test 370
-data/nyu_test 371
-data/nyu_test 372
-data/nyu_test 373
-data/nyu_test 374
-data/nyu_test 375
-data/nyu_test 376
-data/nyu_test 377
-data/nyu_test 378
-data/nyu_test 379
-data/nyu_test 380
-data/nyu_test 381
-data/nyu_test 382
-data/nyu_test 383
-data/nyu_test 384
-data/nyu_test 385
-data/nyu_test 386
-data/nyu_test 387
-data/nyu_test 388
-data/nyu_test 389
-data/nyu_test 390
-data/nyu_test 391
-data/nyu_test 392
-data/nyu_test 393
-data/nyu_test 394
-data/nyu_test 395
-data/nyu_test 396
-data/nyu_test 397
-data/nyu_test 398
-data/nyu_test 399
-data/nyu_test 400
-data/nyu_test 401
-data/nyu_test 402
-data/nyu_test 403
-data/nyu_test 404
-data/nyu_test 405
-data/nyu_test 406
-data/nyu_test 407
-data/nyu_test 408
-data/nyu_test 409
-data/nyu_test 410
-data/nyu_test 411
-data/nyu_test 412
-data/nyu_test 413
-data/nyu_test 414
-data/nyu_test 415
-data/nyu_test 416
-data/nyu_test 417
-data/nyu_test 418
-data/nyu_test 419
-data/nyu_test 420
-data/nyu_test 421
-data/nyu_test 422
-data/nyu_test 423
-data/nyu_test 424
-data/nyu_test 425
-data/nyu_test 426
-data/nyu_test 427
-data/nyu_test 428
-data/nyu_test 429
-data/nyu_test 430
-data/nyu_test 431
-data/nyu_test 432
-data/nyu_test 433
-data/nyu_test 434
-data/nyu_test 435
-data/nyu_test 436
-data/nyu_test 437
-data/nyu_test 438
-data/nyu_test 439
-data/nyu_test 440
-data/nyu_test 441
-data/nyu_test 442
-data/nyu_test 443
-data/nyu_test 444
-data/nyu_test 445
-data/nyu_test 446
-data/nyu_test 447
-data/nyu_test 448
-data/nyu_test 449
-data/nyu_test 450
-data/nyu_test 451
-data/nyu_test 452
-data/nyu_test 453
-data/nyu_test 454
-data/nyu_test 455
-data/nyu_test 456
-data/nyu_test 457
-data/nyu_test 458
-data/nyu_test 459
-data/nyu_test 460
-data/nyu_test 461
-data/nyu_test 462
-data/nyu_test 463
-data/nyu_test 464
-data/nyu_test 465
-data/nyu_test 466
-data/nyu_test 467
-data/nyu_test 468
-data/nyu_test 469
-data/nyu_test 470
-data/nyu_test 471
-data/nyu_test 472
-data/nyu_test 473
-data/nyu_test 474
-data/nyu_test 475
-data/nyu_test 476
-data/nyu_test 477
-data/nyu_test 478
-data/nyu_test 479
-data/nyu_test 480
-data/nyu_test 481
-data/nyu_test 482
-data/nyu_test 483
-data/nyu_test 484
-data/nyu_test 485
-data/nyu_test 486
-data/nyu_test 487
-data/nyu_test 488
-data/nyu_test 489
-data/nyu_test 490
-data/nyu_test 491
-data/nyu_test 492
-data/nyu_test 493
-data/nyu_test 494
-data/nyu_test 495
-data/nyu_test 496
-data/nyu_test 497
-data/nyu_test 498
-data/nyu_test 499
-data/nyu_test 500
-data/nyu_test 501
-data/nyu_test 502
-data/nyu_test 503
-data/nyu_test 504
-data/nyu_test 505
-data/nyu_test 506
-data/nyu_test 507
-data/nyu_test 508
-data/nyu_test 509
-data/nyu_test 510
-data/nyu_test 511
-data/nyu_test 512
-data/nyu_test 513
-data/nyu_test 514
-data/nyu_test 515
-data/nyu_test 516
-data/nyu_test 517
-data/nyu_test 518
-data/nyu_test 519
-data/nyu_test 520
-data/nyu_test 521
-data/nyu_test 522
-data/nyu_test 523
-data/nyu_test 524
-data/nyu_test 525
-data/nyu_test 526
-data/nyu_test 527
-data/nyu_test 528
-data/nyu_test 529
-data/nyu_test 530
-data/nyu_test 531
-data/nyu_test 532
-data/nyu_test 533
-data/nyu_test 534
-data/nyu_test 535
-data/nyu_test 536
-data/nyu_test 537
-data/nyu_test 538
-data/nyu_test 539
-data/nyu_test 540
-data/nyu_test 541
-data/nyu_test 542
-data/nyu_test 543
-data/nyu_test 544
-data/nyu_test 545
-data/nyu_test 546
-data/nyu_test 547
-data/nyu_test 548
-data/nyu_test 549
-data/nyu_test 550
-data/nyu_test 551
-data/nyu_test 552
-data/nyu_test 553
-data/nyu_test 554
-data/nyu_test 555
-data/nyu_test 556
-data/nyu_test 557
-data/nyu_test 558
-data/nyu_test 559
-data/nyu_test 560
-data/nyu_test 561
-data/nyu_test 562
-data/nyu_test 563
-data/nyu_test 564
-data/nyu_test 565
-data/nyu_test 566
-data/nyu_test 567
-data/nyu_test 568
-data/nyu_test 569
-data/nyu_test 570
-data/nyu_test 571
-data/nyu_test 572
-data/nyu_test 573
-data/nyu_test 574
-data/nyu_test 575
-data/nyu_test 576
-data/nyu_test 577
-data/nyu_test 578
-data/nyu_test 579
-data/nyu_test 580
-data/nyu_test 581
-data/nyu_test 582
-data/nyu_test 583
-data/nyu_test 584
-data/nyu_test 585
-data/nyu_test 586
-data/nyu_test 587
-data/nyu_test 588
-data/nyu_test 589
-data/nyu_test 590
-data/nyu_test 591
-data/nyu_test 592
-data/nyu_test 593
-data/nyu_test 594
-data/nyu_test 595
-data/nyu_test 596
-data/nyu_test 597
-data/nyu_test 598
-data/nyu_test 599
-data/nyu_test 600
-data/nyu_test 601
-data/nyu_test 602
-data/nyu_test 603
-data/nyu_test 604
-data/nyu_test 605
-data/nyu_test 606
-data/nyu_test 607
-data/nyu_test 608
-data/nyu_test 609
-data/nyu_test 610
-data/nyu_test 611
-data/nyu_test 612
-data/nyu_test 613
-data/nyu_test 614
-data/nyu_test 615
-data/nyu_test 616
-data/nyu_test 617
-data/nyu_test 618
-data/nyu_test 619
-data/nyu_test 620
-data/nyu_test 621
-data/nyu_test 622
-data/nyu_test 623
-data/nyu_test 624
-data/nyu_test 625
-data/nyu_test 626
-data/nyu_test 627
-data/nyu_test 628
-data/nyu_test 629
-data/nyu_test 630
-data/nyu_test 631
-data/nyu_test 632
-data/nyu_test 633
-data/nyu_test 634
-data/nyu_test 635
-data/nyu_test 636
-data/nyu_test 637
-data/nyu_test 638
-data/nyu_test 639
-data/nyu_test 640
-data/nyu_test 641
-data/nyu_test 642
-data/nyu_test 643
-data/nyu_test 644
-data/nyu_test 645
-data/nyu_test 646
-data/nyu_test 647
-data/nyu_test 648
-data/nyu_test 649
-data/nyu_test 650
-data/nyu_test 651
-data/nyu_test 652
-data/nyu_test 653
-data/nyu_test 654
+data/nyu_test 1 l
+data/nyu_test 2 l
+data/nyu_test 3 l
+data/nyu_test 4 l
+data/nyu_test 5 l
+data/nyu_test 6 l
+data/nyu_test 7 l
+data/nyu_test 8 l
+data/nyu_test 9 l
+data/nyu_test 10 l
+data/nyu_test 11 l
+data/nyu_test 12 l
+data/nyu_test 13 l
+data/nyu_test 14 l
+data/nyu_test 15 l
+data/nyu_test 16 l
+data/nyu_test 17 l
+data/nyu_test 18 l
+data/nyu_test 19 l
+data/nyu_test 20 l
+data/nyu_test 21 l
+data/nyu_test 22 l
+data/nyu_test 23 l
+data/nyu_test 24 l
+data/nyu_test 25 l
+data/nyu_test 26 l
+data/nyu_test 27 l
+data/nyu_test 28 l
+data/nyu_test 29 l
+data/nyu_test 30 l
+data/nyu_test 31 l
+data/nyu_test 32 l
+data/nyu_test 33 l
+data/nyu_test 34 l
+data/nyu_test 35 l
+data/nyu_test 36 l
+data/nyu_test 37 l
+data/nyu_test 38 l
+data/nyu_test 39 l
+data/nyu_test 40 l
+data/nyu_test 41 l
+data/nyu_test 42 l
+data/nyu_test 43 l
+data/nyu_test 44 l
+data/nyu_test 45 l
+data/nyu_test 46 l
+data/nyu_test 47 l
+data/nyu_test 48 l
+data/nyu_test 49 l
+data/nyu_test 50 l
+data/nyu_test 51 l
+data/nyu_test 52 l
+data/nyu_test 53 l
+data/nyu_test 54 l
+data/nyu_test 55 l
+data/nyu_test 56 l
+data/nyu_test 57 l
+data/nyu_test 58 l
+data/nyu_test 59 l
+data/nyu_test 60 l
+data/nyu_test 61 l
+data/nyu_test 62 l
+data/nyu_test 63 l
+data/nyu_test 64 l
+data/nyu_test 65 l
+data/nyu_test 66 l
+data/nyu_test 67 l
+data/nyu_test 68 l
+data/nyu_test 69 l
+data/nyu_test 70 l
+data/nyu_test 71 l
+data/nyu_test 72 l
+data/nyu_test 73 l
+data/nyu_test 74 l
+data/nyu_test 75 l
+data/nyu_test 76 l
+data/nyu_test 77 l
+data/nyu_test 78 l
+data/nyu_test 79 l
+data/nyu_test 80 l
+data/nyu_test 81 l
+data/nyu_test 82 l
+data/nyu_test 83 l
+data/nyu_test 84 l
+data/nyu_test 85 l
+data/nyu_test 86 l
+data/nyu_test 87 l
+data/nyu_test 88 l
+data/nyu_test 89 l
+data/nyu_test 90 l
+data/nyu_test 91 l
+data/nyu_test 92 l
+data/nyu_test 93 l
+data/nyu_test 94 l
+data/nyu_test 95 l
+data/nyu_test 96 l
+data/nyu_test 97 l
+data/nyu_test 98 l
+data/nyu_test 99 l
+data/nyu_test 100 l
+data/nyu_test 101 l
+data/nyu_test 102 l
+data/nyu_test 103 l
+data/nyu_test 104 l
+data/nyu_test 105 l
+data/nyu_test 106 l
+data/nyu_test 107 l
+data/nyu_test 108 l
+data/nyu_test 109 l
+data/nyu_test 110 l
+data/nyu_test 111 l
+data/nyu_test 112 l
+data/nyu_test 113 l
+data/nyu_test 114 l
+data/nyu_test 115 l
+data/nyu_test 116 l
+data/nyu_test 117 l
+data/nyu_test 118 l
+data/nyu_test 119 l
+data/nyu_test 120 l
+data/nyu_test 121 l
+data/nyu_test 122 l
+data/nyu_test 123 l
+data/nyu_test 124 l
+data/nyu_test 125 l
+data/nyu_test 126 l
+data/nyu_test 127 l
+data/nyu_test 128 l
+data/nyu_test 129 l
+data/nyu_test 130 l
+data/nyu_test 131 l
+data/nyu_test 132 l
+data/nyu_test 133 l
+data/nyu_test 134 l
+data/nyu_test 135 l
+data/nyu_test 136 l
+data/nyu_test 137 l
+data/nyu_test 138 l
+data/nyu_test 139 l
+data/nyu_test 140 l
+data/nyu_test 141 l
+data/nyu_test 142 l
+data/nyu_test 143 l
+data/nyu_test 144 l
+data/nyu_test 145 l
+data/nyu_test 146 l
+data/nyu_test 147 l
+data/nyu_test 148 l
+data/nyu_test 149 l
+data/nyu_test 150 l
+data/nyu_test 151 l
+data/nyu_test 152 l
+data/nyu_test 153 l
+data/nyu_test 154 l
+data/nyu_test 155 l
+data/nyu_test 156 l
+data/nyu_test 157 l
+data/nyu_test 158 l
+data/nyu_test 159 l
+data/nyu_test 160 l
+data/nyu_test 161 l
+data/nyu_test 162 l
+data/nyu_test 163 l
+data/nyu_test 164 l
+data/nyu_test 165 l
+data/nyu_test 166 l
+data/nyu_test 167 l
+data/nyu_test 168 l
+data/nyu_test 169 l
+data/nyu_test 170 l
+data/nyu_test 171 l
+data/nyu_test 172 l
+data/nyu_test 173 l
+data/nyu_test 174 l
+data/nyu_test 175 l
+data/nyu_test 176 l
+data/nyu_test 177 l
+data/nyu_test 178 l
+data/nyu_test 179 l
+data/nyu_test 180 l
+data/nyu_test 181 l
+data/nyu_test 182 l
+data/nyu_test 183 l
+data/nyu_test 184 l
+data/nyu_test 185 l
+data/nyu_test 186 l
+data/nyu_test 187 l
+data/nyu_test 188 l
+data/nyu_test 189 l
+data/nyu_test 190 l
+data/nyu_test 191 l
+data/nyu_test 192 l
+data/nyu_test 193 l
+data/nyu_test 194 l
+data/nyu_test 195 l
+data/nyu_test 196 l
+data/nyu_test 197 l
+data/nyu_test 198 l
+data/nyu_test 199 l
+data/nyu_test 200 l
+data/nyu_test 201 l
+data/nyu_test 202 l
+data/nyu_test 203 l
+data/nyu_test 204 l
+data/nyu_test 205 l
+data/nyu_test 206 l
+data/nyu_test 207 l
+data/nyu_test 208 l
+data/nyu_test 209 l
+data/nyu_test 210 l
+data/nyu_test 211 l
+data/nyu_test 212 l
+data/nyu_test 213 l
+data/nyu_test 214 l
+data/nyu_test 215 l
+data/nyu_test 216 l
+data/nyu_test 217 l
+data/nyu_test 218 l
+data/nyu_test 219 l
+data/nyu_test 220 l
+data/nyu_test 221 l
+data/nyu_test 222 l
+data/nyu_test 223 l
+data/nyu_test 224 l
+data/nyu_test 225 l
+data/nyu_test 226 l
+data/nyu_test 227 l
+data/nyu_test 228 l
+data/nyu_test 229 l
+data/nyu_test 230 l
+data/nyu_test 231 l
+data/nyu_test 232 l
+data/nyu_test 233 l
+data/nyu_test 234 l
+data/nyu_test 235 l
+data/nyu_test 236 l
+data/nyu_test 237 l
+data/nyu_test 238 l
+data/nyu_test 239 l
+data/nyu_test 240 l
+data/nyu_test 241 l
+data/nyu_test 242 l
+data/nyu_test 243 l
+data/nyu_test 244 l
+data/nyu_test 245 l
+data/nyu_test 246 l
+data/nyu_test 247 l
+data/nyu_test 248 l
+data/nyu_test 249 l
+data/nyu_test 250 l
+data/nyu_test 251 l
+data/nyu_test 252 l
+data/nyu_test 253 l
+data/nyu_test 254 l
+data/nyu_test 255 l
+data/nyu_test 256 l
+data/nyu_test 257 l
+data/nyu_test 258 l
+data/nyu_test 259 l
+data/nyu_test 260 l
+data/nyu_test 261 l
+data/nyu_test 262 l
+data/nyu_test 263 l
+data/nyu_test 264 l
+data/nyu_test 265 l
+data/nyu_test 266 l
+data/nyu_test 267 l
+data/nyu_test 268 l
+data/nyu_test 269 l
+data/nyu_test 270 l
+data/nyu_test 271 l
+data/nyu_test 272 l
+data/nyu_test 273 l
+data/nyu_test 274 l
+data/nyu_test 275 l
+data/nyu_test 276 l
+data/nyu_test 277 l
+data/nyu_test 278 l
+data/nyu_test 279 l
+data/nyu_test 280 l
+data/nyu_test 281 l
+data/nyu_test 282 l
+data/nyu_test 283 l
+data/nyu_test 284 l
+data/nyu_test 285 l
+data/nyu_test 286 l
+data/nyu_test 287 l
+data/nyu_test 288 l
+data/nyu_test 289 l
+data/nyu_test 290 l
+data/nyu_test 291 l
+data/nyu_test 292 l
+data/nyu_test 293 l
+data/nyu_test 294 l
+data/nyu_test 295 l
+data/nyu_test 296 l
+data/nyu_test 297 l
+data/nyu_test 298 l
+data/nyu_test 299 l
+data/nyu_test 300 l
+data/nyu_test 301 l
+data/nyu_test 302 l
+data/nyu_test 303 l
+data/nyu_test 304 l
+data/nyu_test 305 l
+data/nyu_test 306 l
+data/nyu_test 307 l
+data/nyu_test 308 l
+data/nyu_test 309 l
+data/nyu_test 310 l
+data/nyu_test 311 l
+data/nyu_test 312 l
+data/nyu_test 313 l
+data/nyu_test 314 l
+data/nyu_test 315 l
+data/nyu_test 316 l
+data/nyu_test 317 l
+data/nyu_test 318 l
+data/nyu_test 319 l
+data/nyu_test 320 l
+data/nyu_test 321 l
+data/nyu_test 322 l
+data/nyu_test 323 l
+data/nyu_test 324 l
+data/nyu_test 325 l
+data/nyu_test 326 l
+data/nyu_test 327 l
+data/nyu_test 328 l
+data/nyu_test 329 l
+data/nyu_test 330 l
+data/nyu_test 331 l
+data/nyu_test 332 l
+data/nyu_test 333 l
+data/nyu_test 334 l
+data/nyu_test 335 l
+data/nyu_test 336 l
+data/nyu_test 337 l
+data/nyu_test 338 l
+data/nyu_test 339 l
+data/nyu_test 340 l
+data/nyu_test 341 l
+data/nyu_test 342 l
+data/nyu_test 343 l
+data/nyu_test 344 l
+data/nyu_test 345 l
+data/nyu_test 346 l
+data/nyu_test 347 l
+data/nyu_test 348 l
+data/nyu_test 349 l
+data/nyu_test 350 l
+data/nyu_test 351 l
+data/nyu_test 352 l
+data/nyu_test 353 l
+data/nyu_test 354 l
+data/nyu_test 355 l
+data/nyu_test 356 l
+data/nyu_test 357 l
+data/nyu_test 358 l
+data/nyu_test 359 l
+data/nyu_test 360 l
+data/nyu_test 361 l
+data/nyu_test 362 l
+data/nyu_test 363 l
+data/nyu_test 364 l
+data/nyu_test 365 l
+data/nyu_test 366 l
+data/nyu_test 367 l
+data/nyu_test 368 l
+data/nyu_test 369 l
+data/nyu_test 370 l
+data/nyu_test 371 l
+data/nyu_test 372 l
+data/nyu_test 373 l
+data/nyu_test 374 l
+data/nyu_test 375 l
+data/nyu_test 376 l
+data/nyu_test 377 l
+data/nyu_test 378 l
+data/nyu_test 379 l
+data/nyu_test 380 l
+data/nyu_test 381 l
+data/nyu_test 382 l
+data/nyu_test 383 l
+data/nyu_test 384 l
+data/nyu_test 385 l
+data/nyu_test 386 l
+data/nyu_test 387 l
+data/nyu_test 388 l
+data/nyu_test 389 l
+data/nyu_test 390 l
+data/nyu_test 391 l
+data/nyu_test 392 l
+data/nyu_test 393 l
+data/nyu_test 394 l
+data/nyu_test 395 l
+data/nyu_test 396 l
+data/nyu_test 397 l
+data/nyu_test 398 l
+data/nyu_test 399 l
+data/nyu_test 400 l
+data/nyu_test 401 l
+data/nyu_test 402 l
+data/nyu_test 403 l
+data/nyu_test 404 l
+data/nyu_test 405 l
+data/nyu_test 406 l
+data/nyu_test 407 l
+data/nyu_test 408 l
+data/nyu_test 409 l
+data/nyu_test 410 l
+data/nyu_test 411 l
+data/nyu_test 412 l
+data/nyu_test 413 l
+data/nyu_test 414 l
+data/nyu_test 415 l
+data/nyu_test 416 l
+data/nyu_test 417 l
+data/nyu_test 418 l
+data/nyu_test 419 l
+data/nyu_test 420 l
+data/nyu_test 421 l
+data/nyu_test 422 l
+data/nyu_test 423 l
+data/nyu_test 424 l
+data/nyu_test 425 l
+data/nyu_test 426 l
+data/nyu_test 427 l
+data/nyu_test 428 l
+data/nyu_test 429 l
+data/nyu_test 430 l
+data/nyu_test 431 l
+data/nyu_test 432 l
+data/nyu_test 433 l
+data/nyu_test 434 l
+data/nyu_test 435 l
+data/nyu_test 436 l
+data/nyu_test 437 l
+data/nyu_test 438 l
+data/nyu_test 439 l
+data/nyu_test 440 l
+data/nyu_test 441 l
+data/nyu_test 442 l
+data/nyu_test 443 l
+data/nyu_test 444 l
+data/nyu_test 445 l
+data/nyu_test 446 l
+data/nyu_test 447 l
+data/nyu_test 448 l
+data/nyu_test 449 l
+data/nyu_test 450 l
+data/nyu_test 451 l
+data/nyu_test 452 l
+data/nyu_test 453 l
+data/nyu_test 454 l
+data/nyu_test 455 l
+data/nyu_test 456 l
+data/nyu_test 457 l
+data/nyu_test 458 l
+data/nyu_test 459 l
+data/nyu_test 460 l
+data/nyu_test 461 l
+data/nyu_test 462 l
+data/nyu_test 463 l
+data/nyu_test 464 l
+data/nyu_test 465 l
+data/nyu_test 466 l
+data/nyu_test 467 l
+data/nyu_test 468 l
+data/nyu_test 469 l
+data/nyu_test 470 l
+data/nyu_test 471 l
+data/nyu_test 472 l
+data/nyu_test 473 l
+data/nyu_test 474 l
+data/nyu_test 475 l
+data/nyu_test 476 l
+data/nyu_test 477 l
+data/nyu_test 478 l
+data/nyu_test 479 l
+data/nyu_test 480 l
+data/nyu_test 481 l
+data/nyu_test 482 l
+data/nyu_test 483 l
+data/nyu_test 484 l
+data/nyu_test 485 l
+data/nyu_test 486 l
+data/nyu_test 487 l
+data/nyu_test 488 l
+data/nyu_test 489 l
+data/nyu_test 490 l
+data/nyu_test 491 l
+data/nyu_test 492 l
+data/nyu_test 493 l
+data/nyu_test 494 l
+data/nyu_test 495 l
+data/nyu_test 496 l
+data/nyu_test 497 l
+data/nyu_test 498 l
+data/nyu_test 499 l
+data/nyu_test 500 l
+data/nyu_test 501 l
+data/nyu_test 502 l
+data/nyu_test 503 l
+data/nyu_test 504 l
+data/nyu_test 505 l
+data/nyu_test 506 l
+data/nyu_test 507 l
+data/nyu_test 508 l
+data/nyu_test 509 l
+data/nyu_test 510 l
+data/nyu_test 511 l
+data/nyu_test 512 l
+data/nyu_test 513 l
+data/nyu_test 514 l
+data/nyu_test 515 l
+data/nyu_test 516 l
+data/nyu_test 517 l
+data/nyu_test 518 l
+data/nyu_test 519 l
+data/nyu_test 520 l
+data/nyu_test 521 l
+data/nyu_test 522 l
+data/nyu_test 523 l
+data/nyu_test 524 l
+data/nyu_test 525 l
+data/nyu_test 526 l
+data/nyu_test 527 l
+data/nyu_test 528 l
+data/nyu_test 529 l
+data/nyu_test 530 l
+data/nyu_test 531 l
+data/nyu_test 532 l
+data/nyu_test 533 l
+data/nyu_test 534 l
+data/nyu_test 535 l
+data/nyu_test 536 l
+data/nyu_test 537 l
+data/nyu_test 538 l
+data/nyu_test 539 l
+data/nyu_test 540 l
+data/nyu_test 541 l
+data/nyu_test 542 l
+data/nyu_test 543 l
+data/nyu_test 544 l
+data/nyu_test 545 l
+data/nyu_test 546 l
+data/nyu_test 547 l
+data/nyu_test 548 l
+data/nyu_test 549 l
+data/nyu_test 550 l
+data/nyu_test 551 l
+data/nyu_test 552 l
+data/nyu_test 553 l
+data/nyu_test 554 l
+data/nyu_test 555 l
+data/nyu_test 556 l
+data/nyu_test 557 l
+data/nyu_test 558 l
+data/nyu_test 559 l
+data/nyu_test 560 l
+data/nyu_test 561 l
+data/nyu_test 562 l
+data/nyu_test 563 l
+data/nyu_test 564 l
+data/nyu_test 565 l
+data/nyu_test 566 l
+data/nyu_test 567 l
+data/nyu_test 568 l
+data/nyu_test 569 l
+data/nyu_test 570 l
+data/nyu_test 571 l
+data/nyu_test 572 l
+data/nyu_test 573 l
+data/nyu_test 574 l
+data/nyu_test 575 l
+data/nyu_test 576 l
+data/nyu_test 577 l
+data/nyu_test 578 l
+data/nyu_test 579 l
+data/nyu_test 580 l
+data/nyu_test 581 l
+data/nyu_test 582 l
+data/nyu_test 583 l
+data/nyu_test 584 l
+data/nyu_test 585 l
+data/nyu_test 586 l
+data/nyu_test 587 l
+data/nyu_test 588 l
+data/nyu_test 589 l
+data/nyu_test 590 l
+data/nyu_test 591 l
+data/nyu_test 592 l
+data/nyu_test 593 l
+data/nyu_test 594 l
+data/nyu_test 595 l
+data/nyu_test 596 l
+data/nyu_test 597 l
+data/nyu_test 598 l
+data/nyu_test 599 l
+data/nyu_test 600 l
+data/nyu_test 601 l
+data/nyu_test 602 l
+data/nyu_test 603 l
+data/nyu_test 604 l
+data/nyu_test 605 l
+data/nyu_test 606 l
+data/nyu_test 607 l
+data/nyu_test 608 l
+data/nyu_test 609 l
+data/nyu_test 610 l
+data/nyu_test 611 l
+data/nyu_test 612 l
+data/nyu_test 613 l
+data/nyu_test 614 l
+data/nyu_test 615 l
+data/nyu_test 616 l
+data/nyu_test 617 l
+data/nyu_test 618 l
+data/nyu_test 619 l
+data/nyu_test 620 l
+data/nyu_test 621 l
+data/nyu_test 622 l
+data/nyu_test 623 l
+data/nyu_test 624 l
+data/nyu_test 625 l
+data/nyu_test 626 l
+data/nyu_test 627 l
+data/nyu_test 628 l
+data/nyu_test 629 l
+data/nyu_test 630 l
+data/nyu_test 631 l
+data/nyu_test 632 l
+data/nyu_test 633 l
+data/nyu_test 634 l
+data/nyu_test 635 l
+data/nyu_test 636 l
+data/nyu_test 637 l
+data/nyu_test 638 l
+data/nyu_test 639 l
+data/nyu_test 640 l
+data/nyu_test 641 l
+data/nyu_test 642 l
+data/nyu_test 643 l
+data/nyu_test 644 l
+data/nyu_test 645 l
+data/nyu_test 646 l
+data/nyu_test 647 l
+data/nyu_test 648 l
+data/nyu_test 649 l
+data/nyu_test 650 l
+data/nyu_test 651 l
+data/nyu_test 652 l
+data/nyu_test 653 l
+data/nyu_test 654 l
