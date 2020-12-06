@@ -508,7 +508,7 @@ class Trainer:
                 depth_pred, [375, 1242], mode="bilinear", align_corners=False), 1e-3, 80)
         else:
             depth_pred = depth_pred = torch.clamp(F.interpolate(
-                depth_pred, [480, 640], mode="bilinear", align_corners=False), 1e-3, 10)
+                depth_pred, [448, 608], mode="bilinear", align_corners=False), 1e-3, 10)
         depth_pred = depth_pred.detach()
 
         depth_gt = inputs["depth_gt"]
