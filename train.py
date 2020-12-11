@@ -1,3 +1,5 @@
+#!/opt/conda/envs/monodepth2/bin/python
+
 # Copyright Niantic 2019. Patent Pending. All rights reserved.
 #
 # This software is licensed under the terms of the Monodepth2 licence
