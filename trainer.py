@@ -112,7 +112,6 @@ class Trainer:
 
         # data
         datasets_dict = {"kitti": datasets.KITTIRAWDataset,
-                         "kitti_odom": datasets.KITTIOdomDataset,
                          "nyu": datasets.NYUDataset}
         self.dataset = datasets_dict[self.opt.dataset]
 
