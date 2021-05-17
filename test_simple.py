@@ -21,6 +21,7 @@ from torchvision import transforms, datasets
 import networks
 from layers import disp_to_depth
 from utils import download_model_if_doesnt_exist
+from evaluate_depth import STEREO_SCALE_FACTOR
 
 
 def parse_args():
@@ -46,6 +47,10 @@ def parse_args():
     parser.add_argument("--no_cuda",
                         help='if set, disables CUDA',
                         action='store_true')
+    parser.add_argument("--pred_depth",
+                        help='if set, predicts metric depth instead of disparity. (This only '
+                             'makes sense for stereo-trained models).',
+                        action='store_true')
 
     return parser.parse_args()
 
@@ -60,6 +65,10 @@ def test_simple(args):
         device = torch.device("cuda")
     else:
         device = torch.device("cpu")
+
+    if args.pred_depth and "stereo" not in args.model_name:
+        print("Warning: The --pred_depth flag only makes sense for stereo-trained models. "
+              "For mono-trained models, output depths will not in metric space.")
 
     download_model_if_doesnt_exist(args.model_name)
     model_path = os.path.join("models", args.model_name)
@@ -129,9 +138,13 @@ def test_simple(args):
 
             # Saving numpy file
             output_name = os.path.splitext(os.path.basename(image_path))[0]
-            name_dest_npy = os.path.join(output_directory, "{}_disp.npy".format(output_name))
-            scaled_disp, _ = disp_to_depth(disp, 0.1, 100)
-            np.save(name_dest_npy, scaled_disp.cpu().numpy())
+            scaled_disp, depth = disp_to_depth(disp, 0.1, 100)
+            if args.pred_depth:
+                name_dest_npy = os.path.join(output_directory, "{}_depth.npy".format(output_name))
+                np.save(name_dest_npy, STEREO_SCALE_FACTOR * depth.cpu().numpy())
+            else:
+                name_dest_npy = os.path.join(output_directory, "{}_disp.npy".format(output_name))
+                np.save(name_dest_npy, scaled_disp.cpu().numpy())
 
             # Saving colormapped depth image
             disp_resized_np = disp_resized.squeeze().cpu().numpy()
@@ -144,8 +157,10 @@ def test_simple(args):
             name_dest_im = os.path.join(output_directory, "{}_disp.jpeg".format(output_name))
             im.save(name_dest_im)
 
-            print("   Processed {:d} of {:d} images - saved prediction to {}".format(
-                idx + 1, len(paths), name_dest_im))
+            print("   Processed {:d} of {:d} images - saved predictions to:".format(
+                idx + 1, len(paths)))
+            print("   - {}".format(name_dest_im))
+            print("   - {}".format(name_dest_npy))
 
     print('-> Done!')
 
