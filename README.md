@@ -4,7 +4,7 @@ This is the reference PyTorch implementation for training and testing depth esti
 
 > **Digging into Self-Supervised Monocular Depth Prediction**
 >
-> [Clément Godard](http://www0.cs.ucl.ac.uk/staff/C.Godard/), [Oisin Mac Aodha](http://vision.caltech.edu/~macaodha/), [Michael Firman](http://www.michaelfirman.co.uk) and [Gabriel J. Brostow](http://www0.cs.ucl.ac.uk/staff/g.brostow/)  
+> [Clément Godard](http://www0.cs.ucl.ac.uk/staff/C.Godard/), [Oisin Mac Aodha](http://vision.caltech.edu/~macaodha/), [Michael Firman](http://www.michaelfirman.co.uk) and [Gabriel J. Brostow](http://www0.cs.ucl.ac.uk/staff/g.brostow/)
 >
 > [ICCV 2019 (arXiv pdf)](https://arxiv.org/abs/1806.01260)
 
@@ -49,14 +49,20 @@ We also recommend using `pillow-simd` instead of `pillow` for faster image prepr
 
 ## 🖼️ Prediction for a single image
 
-You can predict depth for a single image with:
+You can predict scaled disparity for a single image with:
+
 ```shell
 python test_simple.py --image_path assets/test_image.jpg --model_name mono+stereo_640x192
 ```
 
-On its first run this will download the `mono+stereo_640x192` pretrained model (99MB) into the `models/` folder.
-We provide the following  options for `--model_name`:
+or, if you are using a stereo-trained model, you can estimate metric depth with
 
+```shell
+python test_simple.py --image_path assets/test_image.jpg --model_name mono+stereo_640x192 --pred_metric_depth
+```
+
+On its first run either of these commands will download the `mono+stereo_640x192` pretrained model (99MB) into the `models/` folder.
+We provide the following  options for `--model_name`:
 
 | `--model_name`          | Training modality | Imagenet pretrained? | Model resolution  | KITTI abs. rel. error |  delta < 1.25  |
 |-------------------------|-------------------|--------------------------|-----------------|------|----------------|
@@ -72,7 +78,7 @@ We provide the following  options for `--model_name`:
 
 You can also download models trained on the odometry split with [monocular](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono_odom_640x192.zip) and [mono+stereo](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono%2Bstereo_odom_640x192.zip) training modalities.
 
-Finally, we provide resnet 50 depth estimation models trained with [ImageNet pretrained weights](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono_resnet50_640x192.zip) and [trained from scratch](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono_resnet50_no_pt_640x192.zip). 
+Finally, we provide resnet 50 depth estimation models trained with [ImageNet pretrained weights](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono_resnet50_640x192.zip) and [trained from scratch](https://storage.googleapis.com/niantic-lon-static/research/monodepth2/mono_resnet50_no_pt_640x192.zip).
 Make sure to set `--num_layers 50` if using these.
 
 ## 💾 KITTI training data

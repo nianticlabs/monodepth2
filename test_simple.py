@@ -47,9 +47,9 @@ def parse_args():
     parser.add_argument("--no_cuda",
                         help='if set, disables CUDA',
                         action='store_true')
-    parser.add_argument("--pred_depth",
+    parser.add_argument("--pred_metric_depth",
                         help='if set, predicts metric depth instead of disparity. (This only '
-                             'makes sense for stereo-trained models).',
+                             'makes sense for stereo-trained KITTI models).',
                         action='store_true')
 
     return parser.parse_args()
@@ -66,9 +66,9 @@ def test_simple(args):
     else:
         device = torch.device("cpu")
 
-    if args.pred_depth and "stereo" not in args.model_name:
-        print("Warning: The --pred_depth flag only makes sense for stereo-trained models. "
-              "For mono-trained models, output depths will not in metric space.")
+    if args.pred_metric_depth and "stereo" not in args.model_name:
+        print("Warning: The --pred_metric_depth flag only makes sense for stereo-trained KITTI "
+              "models. For mono-trained models, output depths will not in metric space.")
 
     download_model_if_doesnt_exist(args.model_name)
     model_path = os.path.join("models", args.model_name)
@@ -139,9 +139,10 @@ def test_simple(args):
             # Saving numpy file
             output_name = os.path.splitext(os.path.basename(image_path))[0]
             scaled_disp, depth = disp_to_depth(disp, 0.1, 100)
-            if args.pred_depth:
+            if args.pred_metric_depth:
                 name_dest_npy = os.path.join(output_directory, "{}_depth.npy".format(output_name))
-                np.save(name_dest_npy, STEREO_SCALE_FACTOR * depth.cpu().numpy())
+                metric_depth = STEREO_SCALE_FACTOR * depth.cpu().numpy()
+                np.save(name_dest_npy, metric_depth)
             else:
                 name_dest_npy = os.path.join(output_directory, "{}_disp.npy".format(output_name))
                 np.save(name_dest_npy, scaled_disp.cpu().numpy())
