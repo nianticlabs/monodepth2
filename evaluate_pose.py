@@ -8,7 +8,7 @@ from __future__ import absolute_import, division, print_function
 
 import os
 import numpy as np
-
+import matplotlib.pyplot as plt
 import torch
 from torch.utils.data import DataLoader
 
@@ -43,7 +43,7 @@ def compute_ate(gtruth_xyz, pred_xyz_o):
     scale = np.sum(gtruth_xyz * pred_xyz) / np.sum(pred_xyz ** 2)
     alignment_error = pred_xyz * scale - gtruth_xyz
     rmse = np.sqrt(np.sum(alignment_error ** 2)) / gtruth_xyz.shape[0]
-    return rmse
+    return rmse, scale
 
 
 def evaluate(opt):
@@ -59,7 +59,7 @@ def evaluate(opt):
 
     filenames = readlines(
         os.path.join(os.path.dirname(__file__), "splits", "odom",
-                     "test_files_{:02d}.txt".format(sequence_id)))
+                     "test_files_{:02d}.txt".format(sequence_id)))[:100]
 
     dataset = KITTIOdomDataset(opt.data_path, filenames, opt.height, opt.width,
                                [0, 1], 4, is_train=False)
@@ -82,6 +82,9 @@ def evaluate(opt):
 
     pred_poses = []
 
+    figure_savedir = "pose_figures/{}".format(opt.eval_split)
+    os.makedirs(figure_savedir, exist_ok=True)
+
     print("-> Computing pose predictions")
 
     opt.frame_ids = [0, 1]  # pose network only takes two frames as input
@@ -99,8 +102,10 @@ def evaluate(opt):
             pred_poses.append(
                 transformation_from_parameters(axisangle[:, 0], translation[:, 0]).cpu().numpy())
 
+    # this stores each frame-to-frame pose from from t to frame t+1
     pred_poses = np.concatenate(pred_poses)
 
+    # load the ground truth poses and do array manipulation to convert to right shape
     gt_poses_path = os.path.join(opt.data_path, "poses", "{:02d}.txt".format(sequence_id))
     gt_global_poses = np.loadtxt(gt_poses_path).reshape(-1, 3, 4)
     gt_global_poses = np.concatenate(
@@ -108,19 +113,31 @@ def evaluate(opt):
     gt_global_poses[:, 3, 3] = 1
     gt_xyzs = gt_global_poses[:, :3, 3]
 
+    # compute each relative ground truth pose between frame t and t+1
     gt_local_poses = []
     for i in range(1, len(gt_global_poses)):
         gt_local_poses.append(
             np.linalg.inv(np.dot(np.linalg.inv(gt_global_poses[i - 1]), gt_global_poses[i])))
 
+    # create locally-aligned tracks of ground truth and predicted poses
     ates = []
     num_frames = gt_xyzs.shape[0]
     track_length = 5
     for i in range(0, num_frames - 1):
+        print("Done", i)
         local_xyzs = np.array(dump_xyz(pred_poses[i:i + track_length - 1]))
         gt_local_xyzs = np.array(dump_xyz(gt_local_poses[i:i + track_length - 1]))
+        error, scale = compute_ate(gt_local_xyzs, local_xyzs)
+        ates.append(error)
 
-        ates.append(compute_ate(gt_local_xyzs, local_xyzs))
+        if i < 100:
+            plt.figure()
+            plt.plot(scale * local_xyzs[:, 0], scale * local_xyzs[:, 1], label="Predicted")
+            plt.plot(gt_local_xyzs[:, 0], gt_local_xyzs[:, 1], label="Ground truth")
+            plt.axis('equal')
+            plt.legend()
+            plt.savefig("{}/{:05d}.png".format(figure_savedir, i))
+            plt.close()
 
     print("\n   Trajectory error: {:0.3f}, std: {:0.3f}\n".format(np.mean(ates), np.std(ates)))
 
