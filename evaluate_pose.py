@@ -59,7 +59,7 @@ def evaluate(opt):
 
     filenames = readlines(
         os.path.join(os.path.dirname(__file__), "splits", "odom",
-                     "test_files_{:02d}.txt".format(sequence_id)))[:100]
+                     "test_files_{:02d}.txt".format(sequence_id)))
 
     dataset = KITTIOdomDataset(opt.data_path, filenames, opt.height, opt.width,
                                [0, 1], 4, is_train=False)
