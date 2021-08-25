@@ -20,7 +20,7 @@ from torchvision import transforms, datasets
 
 import networks
 from layers import disp_to_depth
-from utils import download_model_if_doesnt_exist
+from utils import download_model_if_doesnt_exist, monodepth2_models_path
 from evaluate_depth import STEREO_SCALE_FACTOR
 
 
@@ -71,7 +71,7 @@ def test_simple(args):
               "models. For mono-trained models, output depths will not in metric space.")
 
     download_model_if_doesnt_exist(args.model_name)
-    model_path = os.path.join("models", args.model_name)
+    model_path = os.path.join(monodepth2_models_path, args.model_name)
     print("-> Loading model from ", model_path)
     encoder_path = os.path.join(model_path, "encoder.pth")
     depth_decoder_path = os.path.join(model_path, "depth.pth")

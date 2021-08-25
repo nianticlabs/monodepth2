@@ -47,6 +47,7 @@ def sec_to_hm_str(t):
     h, m, s = sec_to_hm(t)
     return "{:02d}h{:02d}m{:02d}s".format(h, m, s)
 
+monodepth2_models_path = os.path.join(os.path.expanduser('~'), '.monodepth2_models')
 
 def download_model_if_doesnt_exist(model_name):
     """If pretrained kitti model doesn't exist, download and unzip it
@@ -82,10 +83,10 @@ def download_model_if_doesnt_exist(model_name):
              "cdc5fc9b23513c07d5b19235d9ef08f7"),
         }
 
-    if not os.path.exists("models"):
-        os.makedirs("models")
+    if not os.path.exists(monodepth2_models_path):
+        os.makedirs(monodepth2_models_path)
 
-    model_path = os.path.join("models", model_name)
+    model_path = os.path.join(monodepth2_models_path, model_name)
 
     def check_file_matches_md5(checksum, fpath):
         if not os.path.exists(fpath):
