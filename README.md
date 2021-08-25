@@ -29,6 +29,25 @@ year = {2019}
 }
 ```
 
+## pip install
+
+Monodepth2 can be installed through pip 
+```bash
+pip install git+https://github.com/AdityaNG/monodepth2@pip-module
+```
+
+Run the webcam demo with :
+```bash
+python -m monodepth2
+```
+
+To use the class to create a monodepth2 object as follows : 
+```python
+from monodepth2  import monodepth2
+md = monodepth2()
+# Load in a frame
+depth = md.eval(frame)
+```
 
 
 ## ⚙️ Setup
