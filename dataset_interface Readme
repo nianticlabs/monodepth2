@@ -1,0 +1,12 @@
+In order to use dataset_interface you may have to conda install pillow,
+
+other than that the method should be fairly self contained and when initializing the data set
+pass either "train", "test", or "eval" in order to switch between the different data sets
+otherwise should be good
+
+the get item function returns:
+tensor of left img (3, height, width)
+tensor of right img (3, height, width)
+tensor of left depth map (height, width)
+tensor of right depth map (height, width)
+tensor of disparity transformation from left to righ  (3,4)
