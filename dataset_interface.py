@@ -18,13 +18,12 @@ def read_calib_file(path):
             if float_chars.issuperset(value):
                 # try to cast to float array
                 try:
-                    print(list(float(value.split(' '))))
-                    data[key] = np.array(map(float, value.split(' ')))
+                    data[key] = np.array([float(num) for num in value.split(' ')])
                 except ValueError:
                     pass  # casting error: data[key] already eq. value, so pass
     return data
 
-class MyDataset(torch.Dataset):
+class MyDataset(torch.utils.data.Dataset):
     def __init__(self, type : str):
         if type == "train":
             drive = "0001"
@@ -36,7 +35,7 @@ class MyDataset(torch.Dataset):
         date = '2011_09_26'
         #path to drive for data
         self.calibDir = os.path.join(basedir, date)
-        drivepath = os.path.join(calibDir, f"{date}_drive_{drive}_sync")
+        drivepath = os.path.join(self.calibDir, f"{date}_drive_{drive}_sync")
         #paths to data
         cam2DirPath = os.path.join(os.path.join(drivepath, 'image_02'), 'data')
         cam3DirPath = os.path.join(os.path.join(drivepath, 'image_03'), 'data')
@@ -47,7 +46,7 @@ class MyDataset(torch.Dataset):
         self.veloFiles = [os.path.join(veloDirPath, file) for file in os.listdir(veloDirPath)]
 
         #retrive calibration data
-        cam2cam = read_calib_file(os.path.join(self.calibdir, "calib_cam_to_cam.txt"))
+        cam2cam = read_calib_file(os.path.join(self.calibDir, "calib_cam_to_cam.txt"))
         P_rectL = cam2cam['P_rect_02'].reshape(3,4)
         P_rectR = cam2cam['P_rect_03'].reshape(3, 4)
         P0, P1, P2 = P_rectL
@@ -61,7 +60,7 @@ class MyDataset(torch.Dataset):
     def __len__(self):
         return len(self.cam2Files)
     
-    def __getitem__(self, index) -> Tuple(torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor):
+    def __getitem__(self, index) -> tuple: #(torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor):
         """
         cam 2 = left cam color
         cam 3 = right cam color
@@ -76,8 +75,8 @@ class MyDataset(torch.Dataset):
         imgR : torch.Tensor = convert_tensor(imgR)     #tensor
 
         #retrieve depth data
-        depth_gtL = generate_depth_map(self.calibdir, velo_filename=self.veloFiles[index], cam = 2)
-        depth_gtR = generate_depth_map(self.calibdir, velo_filename=self.veloFiles[index], cam = 3)
+        depth_gtL = generate_depth_map(self.calibDir, velo_filename=self.veloFiles[index], cam = 2)
+        depth_gtR = generate_depth_map(self.calibDir, velo_filename=self.veloFiles[index], cam = 3)
         
         #convert to tensor
         depth_gtL : torch.Tensor = convert_tensor(depth_gtL)
