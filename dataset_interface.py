@@ -51,15 +51,14 @@ class MyDataset(torch.utils.data.Dataset):
         P_rectR = cam2cam['P_rect_03'].reshape(3, 4)
         P0, P1, P2 = P_rectL
         Q0, Q1, Q2 = P_rectR
-        
+
         # create disp transform
-        T = np.array([P0, P1, P0 - Q0, P2])
-        convert_tensor = transforms.ToTensor()
-        self.dispTranformation : torch.Tensor = convert_tensor(T.T)
+        transformMat = np.array([P0, P1, P0 - Q0, P2]).T
+        self.dispTranformation : torch.Tensor = torch.tensor(transformMat)
 
     def __len__(self):
         return len(self.cam2Files)
-    
+
     def __getitem__(self, index) -> tuple: #(torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor):
         """
         cam 2 = left cam color
@@ -68,7 +67,7 @@ class MyDataset(torch.utils.data.Dataset):
         #get images
         imgL : Image = Image.open(self.cam2Files[index])
         imgR : Image = Image.open(self.cam3Files[index])
-        
+
         #conversion
         convert_tensor = transforms.ToTensor()
         imgL : torch.Tensor = convert_tensor(imgL)     #tensor
@@ -77,14 +76,13 @@ class MyDataset(torch.utils.data.Dataset):
         #retrieve depth data
         depth_gtL = generate_depth_map(self.calibDir, velo_filename=self.veloFiles[index], cam = 2)
         depth_gtR = generate_depth_map(self.calibDir, velo_filename=self.veloFiles[index], cam = 3)
-        
-        #convert to tensor
-        depth_gtL : torch.Tensor = convert_tensor(depth_gtL)
-        depth_gtR : torch.Tensor = convert_tensor(depth_gtR)
 
+        #convert to tensor
+        depth_gtL : torch.Tensor = torch.Tensor(depth_gtL)
+        depth_gtR : torch.Tensor = torch.Tensor(depth_gtR)
+               
         dispTransformation = self.dispTranformation
 
         return (imgL, imgR, depth_gtL, depth_gtR, dispTransformation)
-        
                 
         
