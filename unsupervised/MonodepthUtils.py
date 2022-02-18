@@ -20,32 +20,20 @@ def reconstruct_input_from_disp_maps(
     :return: a tuple of reconstructions, left image then right image
     """
 
-    batch_size, height, width = disp_maps[0].shape
-
-    # disp maps only provide horizontal disparities since images are rectified, but
-    # F.grid_sample expects x and y disparities, so we need to add an axis to the disp maps
-    left_to_right_disp = torch.zeros((batch_size, height, width, 2))
-    right_to_left_disp = torch.zeros_like(left_to_right_disp)  # left and right disp maps should have the same shape
-
-    # copy disparities into x position
-    left_to_right_disp[:, :, :, 0] = disp_maps[0]
-    right_to_left_disp[:, :, :, 0] = disp_maps[1]
-
-    # set y position disparities to values that do not cause any transformation of the input image
-    # if the use of 'torch.linspace()' is confusing, check out the documentation for torch.functional.grid_sample()
-    left_to_right_disp[:, :, :, 1] = torch.linspace(-1, 1, height).reshape((1, height, 1))
-    right_to_left_disp[:, :, :, 1] = torch.linspace(-1, 1, height).reshape((1, height, 1))
-
     left_image, right_image = stereo_pair
+    left_to_right_disp, right_to_left_disp = disp_maps
+
+    right_to_left_grid = disp_to_grid(right_to_left_disp, False)
+    left_to_right_grid = disp_to_grid(left_to_right_disp, True)
 
     # use F.grid_sample() to reconstruct left and right images from disparities
-    left_reconstruction = F.grid_sample(right_image, right_to_left_disp)
-    right_reconstruction = F.grid_sample(left_image, left_to_right_disp)
+    left_reconstruction = F.grid_sample(right_image, right_to_left_grid)
+    right_reconstruction = F.grid_sample(left_image, left_to_right_grid)
 
     return left_reconstruction, right_reconstruction
 
 
-def loss(
+def unsupervised_loss(
         stereo_pair: Tuple[torch.Tensor, torch.Tensor],
         predicted_disparities: Tuple[torch.Tensor, torch.Tensor],
         reconstructions: Tuple[torch.Tensor, torch.Tensor],
@@ -79,8 +67,8 @@ def loss(
     loss += disp_smoothness_weight * disp_smoothness_term
 
     # left-right disparity consistency loss
-    lr_disp_consistency_term = lr_disp_consistency_loss(left_to_right_disp, right_to_left_disp) +\
-        lr_disp_consistency_loss(right_to_left_disp, left_to_right_disp)
+    lr_disp_consistency_term = lr_disp_consistency_loss(left_to_right_disp, right_to_left_disp, True) +\
+        lr_disp_consistency_loss(right_to_left_disp, left_to_right_disp, False)
     loss += lr_disp_consistency_weight * lr_disp_consistency_term
 
     # TODO: experiment with adding a supervised loss term as well
@@ -110,9 +98,11 @@ def disp_smoothness_loss(img: torch.Tensor,
     return loss
 
 
-def lr_disp_consistency_loss(disp1: torch.Tensor, disp2: torch.Tensor):
+def lr_disp_consistency_loss(disp1: torch.Tensor, disp2: torch.Tensor, left_to_right: bool):
     """
-    Takes opposite disparity maps as input
+    Takes opposite disparity maps as input.
+
+    left_to_right argument should be True if 'disp1' is the left-to-right disparity map.
     """
     # the following pseudocode uses the more traditional convention for
     # disparity maps (disparity of an image to itself is zero), but
@@ -126,15 +116,11 @@ def lr_disp_consistency_loss(disp1: torch.Tensor, disp2: torch.Tensor):
     #
     # loss /= N
 
-    batch_size, height, width = disp1.shape
+    # need to provide y disparity for grid_sample
+    grid = disp_to_grid(disp1, left_to_right)
 
     disp1 = disp1.unsqueeze(dim=1)
     disp2 = disp2.unsqueeze(dim=1)
-
-    # need to provide y disparity for grid_sample
-    grid = torch.zeros((batch_size, height, width, 2))
-    grid[:, :, :, 0] = disp1
-    grid[:, :, :, 1] = torch.linspace(-1, 1, height).reshape((1, height, 1))
 
     # we have to use grid_sample because indexing like this is not differentiable
     projected_disp2 = F.grid_sample(disp2, grid)
@@ -142,3 +128,26 @@ def lr_disp_consistency_loss(disp1: torch.Tensor, disp2: torch.Tensor):
     loss = torch.abs(disp1 - projected_disp2)
     loss = torch.sum(torch.mean(loss, dim=0))
     return loss
+
+
+def disp_to_grid(disp: torch.Tensor, left_to_right: bool):
+    batch_size, height, width = disp.shape
+
+    disp = disp.unsqueeze(dim=1)
+
+    disp_direction_multiplier = 1  # should be 1 if changing views moves pixels right, else -1 b/c changing views moves pixels left
+    if left_to_right:
+        disp_direction_multiplier = -1
+
+    # disp maps only provide horizontal disparities since images are rectified, but
+    # F.grid_sample expects x and y disparities, so we need to add an axis to the disp maps
+    grid = torch.zeros((batch_size, height, width, 2))
+
+    # copy disparities into x position, add natural offset in x direction
+    grid[:, :, :, 0] = torch.linspace(-1, 1, width).reshape((1, 1, width)) + disp_direction_multiplier * 2 * disp
+
+    # set y position disparities to values that do not cause any transformation of the input image
+    # if the use of 'torch.linspace()' is confusing, check out the documentation for torch.functional.grid_sample()
+    grid[:, :, :, 1] = torch.linspace(-1, 1, height).reshape((1, height, 1))
+
+    return grid
