@@ -15,9 +15,7 @@ class EncDecNet(nn.Module):
     def __init__(self):
         super(EncDecNet, self).__init__()
 
-        internal_blocks = []
-        skip_down_blocks = []
-        skip_up_blocks = []
+        self._init_model()
 
         # start with 3 x 375 x 1242
         # first, get down to a reasonable resolution
@@ -52,7 +50,12 @@ class EncDecNet(nn.Module):
             x = module(x + skip)
 
         # TODO: can modify this to obtain multiple scales of depth
-        return MAX_DISP_FRAC * F.sigmoid(x)
+        disp_maps = MAX_DISP_FRAC * F.sigmoid(x)
+
+        left_to_right_disp = disp_maps[:, 0, :, :]
+        right_to_left_disp = disp_maps[:, 1, :, :]
+
+        return left_to_right_disp, right_to_left_disp
 
     def _init_model(self):
         self.skip_down_blocks = nn.ModuleList([
@@ -67,15 +70,16 @@ class EncDecNet(nn.Module):
         ])
         self.skip_up_blocks = nn.ModuleList([
             UpConvElu(4, 32, (3, 7), 1, 0, 0),
-            UpConvElu(32, 16, (3, 7), 1, 0, 0),
+            UpConvElu(32, 16, (3, 7), 2, 0, 0),
             UpConvElu(16, 8, (3, 7), (2, 3), 0, 1),
             UpConvElu(8, 4, 5, 2, 0, (0, 1)),
             UpConvElu(4, 4, 5, 2, 0, (1, 0)),
-            UpConvElu(4, 1, 5, 2, 0, (0, 1), activation=False)
+            UpConvElu(4, 2, 5, 2, 0, (0, 1), activation=False)
         ])
         self.internal_blocks = nn.ModuleList([
             nn.Flatten(),
             nn.Linear(512, 128),
+            # TODO: weird issue when using batchnorm during training: fails when batch size is 1, can happen due to imperfect divisiblity of train set size
             nn.BatchNorm1d(128),
             nn.ELU(),
             nn.Linear(128, 128),

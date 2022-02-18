@@ -10,6 +10,9 @@ from kornia.losses.ssim import ssim_loss
 from unsupervised.SpatialGradientApproximation import compute_appx_spatial_gradients
 
 
+DEVICE = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+
+
 def reconstruct_input_from_disp_maps(
         stereo_pair: Tuple[torch.Tensor, torch.Tensor],
         disp_maps: Tuple[torch.Tensor, torch.Tensor]) -> Tuple[torch.Tensor, torch.Tensor]:
@@ -33,7 +36,8 @@ def reconstruct_input_from_disp_maps(
     return left_reconstruction, right_reconstruction
 
 
-def unsupervised_loss(
+# TODO: return sum but also individual components for tensorboard visualization? Can help understand training
+def unsupervised_monodepth_loss(
         stereo_pair: Tuple[torch.Tensor, torch.Tensor],
         predicted_disparities: Tuple[torch.Tensor, torch.Tensor],
         reconstructions: Tuple[torch.Tensor, torch.Tensor],
@@ -133,21 +137,19 @@ def lr_disp_consistency_loss(disp1: torch.Tensor, disp2: torch.Tensor, left_to_r
 def disp_to_grid(disp: torch.Tensor, left_to_right: bool):
     batch_size, height, width = disp.shape
 
-    disp = disp.unsqueeze(dim=1)
-
     disp_direction_multiplier = 1  # should be 1 if changing views moves pixels right, else -1 b/c changing views moves pixels left
     if left_to_right:
         disp_direction_multiplier = -1
 
     # disp maps only provide horizontal disparities since images are rectified, but
     # F.grid_sample expects x and y disparities, so we need to add an axis to the disp maps
-    grid = torch.zeros((batch_size, height, width, 2))
+    grid = torch.zeros((batch_size, height, width, 2)).to(DEVICE)
 
     # copy disparities into x position, add natural offset in x direction
-    grid[:, :, :, 0] = torch.linspace(-1, 1, width).reshape((1, 1, width)) + disp_direction_multiplier * 2 * disp
+    grid[:, :, :, 0] = torch.linspace(-1, 1, width).reshape((1, 1, width)).to(DEVICE) + disp_direction_multiplier * 2 * disp
 
     # set y position disparities to values that do not cause any transformation of the input image
     # if the use of 'torch.linspace()' is confusing, check out the documentation for torch.functional.grid_sample()
-    grid[:, :, :, 1] = torch.linspace(-1, 1, height).reshape((1, height, 1))
+    grid[:, :, :, 1] = torch.linspace(-1, 1, height).reshape((1, height, 1)).to(DEVICE)
 
     return grid

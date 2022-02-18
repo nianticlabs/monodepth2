@@ -103,7 +103,7 @@ def visualize_spatial_gradients():
     display_arr(circle)
 
     # re-format 'circle' into correct dims
-    circle = torch.tensor(circle).permute((2, 0, 1)).unsqueeze(dim=0)
+    circle = torch.tensor(circle).permute((2, 0, 1)).float().unsqueeze(dim=0)
 
     grad_x, grad_y = compute_appx_spatial_gradients(circle)
 

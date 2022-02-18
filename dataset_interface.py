@@ -38,7 +38,7 @@ class MyDataset(torch.utils.data.Dataset):
         elif type == "test":
             drive = "0002"
         elif type == "eval":
-            drive = "0003"
+            drive = "0005"
         basedir = 'kitti_data'
         date = '2011_09_26'
         #path to drive for data
@@ -96,8 +96,8 @@ class MyDataset(torch.utils.data.Dataset):
 
         #conversion
         convert_tensor = transforms.ToTensor()
-        imgL : torch.Tensor = convert_tensor(imgL)     #tensor
-        imgR : torch.Tensor = convert_tensor(imgR)     #tensor
+        imgL : torch.Tensor = convert_tensor(imgL).float()     #tensor
+        imgR : torch.Tensor = convert_tensor(imgR).float()     #tensor
 
         #retrieve depth data
         depth_gtL = generate_depth_map(self.calibDir, velo_filename=self.veloFiles[index], cam = 2)

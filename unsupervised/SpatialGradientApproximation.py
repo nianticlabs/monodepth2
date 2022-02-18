@@ -2,8 +2,9 @@ import torch
 import torch.nn.functional as F
 from typing import Tuple
 
-SOBEL_Y = torch.Tensor([[-1, -2, -1], [0, 0, 0], [1, 2, 1]]).double().reshape((1, 1, 3, 3))
-SOBEL_X = torch.Tensor([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]]).double().reshape((1, 1, 3, 3))
+DEVICE = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+SOBEL_Y = torch.Tensor([[-1, -2, -1], [0, 0, 0], [1, 2, 1]]).to(DEVICE).float().reshape((1, 1, 3, 3))
+SOBEL_X = torch.Tensor([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]]).to(DEVICE).float().reshape((1, 1, 3, 3))
 
 # we won't ever change these so we don't need to compute gradients for them
 SOBEL_X.requires_grad = False
@@ -27,7 +28,7 @@ def compute_appx_spatial_gradients(input: torch.Tensor) -> Tuple[torch.Tensor, t
     sobel_x = SOBEL_X.expand(channels, 1, 3, 3)
     sobel_y = SOBEL_Y.expand(channels, 1, 3, 3)
 
-    grad_x = F.conv2d(input, SOBEL_X, padding="valid", groups=channels)
-    grad_y = F.conv2d(input, SOBEL_Y, padding="valid", groups=channels)
+    grad_x = F.conv2d(input, sobel_x, padding="valid", groups=channels)
+    grad_y = F.conv2d(input, sobel_y, padding="valid", groups=channels)
 
     return grad_x, grad_y
