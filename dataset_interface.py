@@ -6,6 +6,14 @@ import os
 import numpy as np
 from kitti_utils import generate_depth_map
 
+def to_depth(disparity : torch.Tensor, baseline : torch.Tensor, focalLength : torch.Tensor) -> torch.Tensor:
+    depth = (baseline * focalLength)/disparity
+    return depth
+
+def to_disparity(depth : torch.Tensor, baseline : torch.Tensor, focalLength : torch.Tensor) -> torch.Tensor:
+    disparity = (baseline * focalLength)/depth
+    return disparity
+
 def read_calib_file(path):
     float_chars = set("0123456789.e+- ")
 
@@ -47,14 +55,32 @@ class MyDataset(torch.utils.data.Dataset):
 
         #retrive calibration data
         cam2cam = read_calib_file(os.path.join(self.calibDir, "calib_cam_to_cam.txt"))
-        P_rectL = cam2cam['P_rect_02'].reshape(3,4)
+        P_rectL = cam2cam['P_rect_02'].reshape(3, 4)
         P_rectR = cam2cam['P_rect_03'].reshape(3, 4)
-        P0, P1, P2 = P_rectL
-        Q0, Q1, Q2 = P_rectR
+        self.L_Kmat = torch.Tensor(cam2cam['K_02'].reshape(3,3))
+        self.R_Kmat = torch.Tensor(cam2cam['K_03'].reshape(3,3))
+        self.focalLength = torch.Tensor(self.L_Kmat[0, 0])
 
-        # create disp transform
-        transformMat = np.array([P0, P1, P0 - Q0, P2]).T
-        self.dispTranformation : torch.Tensor = torch.tensor(transformMat)
+
+        # Compute the rectified extrinsics from cam0 to camN
+        T2 = np.eye(4)
+        T2[0, 3] = P_rectL[0, 3] / P_rectL[0, 0]
+        T3 = np.eye(4)
+        T3[0, 3] = P_rectR[0, 3] / P_rectR[0, 0]
+
+        # Compute the velodyne to rectified camera coordinate transforms
+        velo2cam = read_calib_file(os.path.join(self.calibDir, 'calib_velo_to_cam.txt'))
+        velo2cam = np.hstack((velo2cam['R'].reshape(3, 3), velo2cam['T'][..., np.newaxis]))
+        T_cam0_velo = np.vstack((velo2cam, np.array([0, 0, 0, 1.0])))
+        T_cam2_velo = T2.dot(T_cam0_velo)
+        T_cam3_velo = T3.dot(T_cam0_velo)
+
+        p_cam = np.array([0, 0, 0, 1])
+        p_velo2 = np.linalg.inv(T_cam2_velo).dot(p_cam)
+        p_velo3 = np.linalg.inv(T_cam3_velo).dot(p_cam)
+        self.baseline = torch.Tensor([np.linalg.norm(p_velo3 - p_velo2)])   # rgb baseline
+
+        
 
     def __len__(self):
         return len(self.cam2Files)
@@ -81,8 +107,8 @@ class MyDataset(torch.utils.data.Dataset):
         depth_gtL : torch.Tensor = torch.Tensor(depth_gtL)
         depth_gtR : torch.Tensor = torch.Tensor(depth_gtR)
                
-        dispTransformation = self.dispTranformation
+        
 
-        return (imgL, imgR, depth_gtL, depth_gtR, dispTransformation)
+        return (imgL, imgR, depth_gtL, depth_gtR)
                 
         
