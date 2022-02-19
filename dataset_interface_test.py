@@ -8,7 +8,7 @@ from dataset_interface import MyDataset, to_depth, to_disparity
 
 
 def main():
-    dataset = MyDataset("test")
+    dataset = MyDataset("train")
 
     loader = torch.utils.data.DataLoader(dataset=dataset, batch_size=1, shuffle=False)
     depth = to_depth(1, dataset.baseline, dataset.focalLength)
