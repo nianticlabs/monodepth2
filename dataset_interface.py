@@ -40,7 +40,7 @@ class MyDataset(torch.utils.data.Dataset):
         driveFiles = [f.path  for f in os.scandir(self.calibDir) if f.is_dir()]
         numDrives = len(driveFiles)
         #percentage splits of train, test, eval
-        splits = [7/10, 1.5/10, 1.5/10]
+        splits = [9/10, 1/20, 1/20]
         assert sum(splits) == 1
         #physical numbers
         numTrain : int  = int(splits[0]*numDrives)
@@ -51,26 +51,28 @@ class MyDataset(torch.utils.data.Dataset):
         elif type == "test":
             driveDirs = driveFiles[numTrain:numTrain+numTest]
         elif type == "eval":
-            evalFiles = driveFiles[numTrain+numTest:]
+            driveDirs = driveFiles[numTrain+numTest:]
         
         #paths to data
         cam2DirPaths = [os.path.join(os.path.join(drivepath, 'image_02'), 'data') for drivepath in driveDirs]
         cam3DirPaths = [os.path.join(os.path.join(drivepath, 'image_03'), 'data') for drivepath in driveDirs]
         veloDirPaths = [os.path.join(os.path.join(drivepath, 'velodyne_points'), 'data') for drivepath in driveDirs]
         
+        print(f"cam2dirpaths len {len(cam2DirPaths)} cam 3 paths len {len(cam3DirPaths)} velo paths len {len(veloDirPaths)} ")
+
         #file name lists
         self.cam2Files = []
-        for cam2DirPath in cam2DirPaths:
-            self.cam2Files += [file.path for file in os.scandir(cam2DirPath)]
         self.cam3Files = []
-        for cam3DirPath in cam3DirPaths:
-            self.cam3Files += [file.path for file in os.scandir(cam3DirPath)]
-        
         self.veloFiles = []
-        for veloFile in veloDirPaths:
-            self.veloFiles += [file.path for file in os.scandir(veloFile)]
-
-        print(f"loaded {len(self.cam2Files)} images for {type}")
+        for index in range(0, len(cam2DirPaths)):
+            curr2Dir = [file.path for file in os.scandir(cam2DirPaths[index])]
+            curr3Dir = [file.path for file in os.scandir(cam3DirPaths[index])]
+            currVDir = [file.path for file in os.scandir(veloDirPaths[index])]
+            if len(curr2Dir) == (len(currVDir)) and len(curr3Dir) == (len(currVDir)):
+                self.cam2Files += curr2Dir
+                self.cam3Files += curr3Dir
+                self.veloFiles += currVDir
+        print(f"loaded {len(self.cam2Files)}, {len(self.cam3Files)}, {len(self.veloFiles)} images for {type}")
         #retrive calibration data
         cam2cam = read_calib_file(os.path.join(self.calibDir, "calib_cam_to_cam.txt"))
         P_rectL = cam2cam['P_rect_02'].reshape(3, 4)
