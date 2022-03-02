@@ -160,6 +160,7 @@ class MyDataset(torch.utils.data.Dataset):
                             errorFilesR += [f"{RFront}{num}.png"]
                     print(errorFilesR)
                 
+                print(LImages)
                 for L, R in zip(errorFilesL, errorFilesR):
                     LImages.remove(L)
                     RImages.remove(R)
