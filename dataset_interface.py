@@ -146,10 +146,12 @@ class MyDataset(torch.utils.data.Dataset):
                 veloNums = []
                 for path in veloDatas:
                     veloNums += [path[-14:-4]]
+                
+                errorFilesL = []
+                errorFilesR = []
 
                 if len(veloDatas) < len(LImages) and len(veloDatas) < len(RImages) and len(RImages) == len(LImages):
-                    errorFilesL = []
-                    errorFilesR = []
+                    
                     for i, num in enumerate(LimageNums):
                         if num not in veloNums and num in RimageNums:
                             print("error")
@@ -157,9 +159,12 @@ class MyDataset(torch.utils.data.Dataset):
                             errorFilesL += [f"{LFront}{num}.png"]
                             errorFilesR += [f"{RFront}{num}.png"]
                     print(errorFilesR)
-                        
+                
+                for L, R in zip(errorFilesL, errorFilesR):
+                    LImages.remove(L)
+                    RImages.remove(R)
 
-                            
+                print(f"{len(LImages)} : {len(RImages)} : {len(veloDatas)}")
                     
                 raise
             for i, (Lcam, Rcam, velo) in enumerate(zip(LImages, RImages, veloDatas)):
