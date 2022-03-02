@@ -135,6 +135,8 @@ class MyDataset(torch.utils.data.Dataset):
                 print("unequal fixing errors")
                 for path in LImages:
                     print(path[-14:-4])
+                LimageNums = [path[-14:4] for path in LImages]
+                print(LimageNums)
                 raise
             for i, (Lcam, Rcam, velo) in enumerate(zip(LImages, RImages, veloDatas)):
                 #print(f"{i} with {Lcam} and {Rcam} and {velo}")
