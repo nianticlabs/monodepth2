@@ -99,7 +99,7 @@ class MyDataset(torch.utils.data.Dataset):
         focalLengths = []
         for calibDir in calibDirs:
             #retrive calibration data
-            cam2cam = read_calib_file(os.path.join(self.calibDir, "calib_cam_to_cam.txt"))
+            cam2cam = read_calib_file(os.path.join(calibDir, "calib_cam_to_cam.txt"))
             P_rectL = cam2cam['P_rect_02'].reshape(3, 4)
             P_rectR = cam2cam['P_rect_03'].reshape(3, 4)
             self.L_Kmat = torch.Tensor(cam2cam['K_02'].reshape(3,3))
@@ -114,7 +114,7 @@ class MyDataset(torch.utils.data.Dataset):
             T3[0, 3] = P_rectR[0, 3] / P_rectR[0, 0]
 
             # Compute the velodyne to rectified camera coordinate transforms
-            velo2cam = read_calib_file(os.path.join(self.calibDir, 'calib_velo_to_cam.txt'))
+            velo2cam = read_calib_file(os.path.join(calibDir, 'calib_velo_to_cam.txt'))
             velo2cam = np.hstack((velo2cam['R'].reshape(3, 3), velo2cam['T'][..., np.newaxis]))
             T_cam0_velo = np.vstack((velo2cam, np.array([0, 0, 0, 1.0])))
             T_cam2_velo = T2.dot(T_cam0_velo)
