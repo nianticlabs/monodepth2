@@ -131,10 +131,14 @@ class MyDataset(torch.utils.data.Dataset):
             veloDatas = sorted([f.path for f in os.scandir(os.path.join(driveFolder, veloPath))])
             print(len(veloDatas))
             #make tuples with coresponding images
+            if not(len(LImages) == len(RImages) and len(LImages) == len(veloDatas)):
+                print("unequal fixing errors")
+                LImage_num = [path[-14:4] for path in LImages]
+                print(LImage_num)
             for i, (Lcam, Rcam, velo) in enumerate(zip(LImages, RImages, veloDatas)):
                 #print(f"{i} with {Lcam} and {Rcam} and {velo}")
                 if Lcam[-14:-4] == Rcam[-14:-4] and Lcam[-14:-4] == velo[-14:-4] and Rcam[-14:-4] == velo[-14:-4]:
-                    print(f"{driveFolder} with {Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]}")
+                    #print(f"{driveFolder} with {Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]}")
                     totalImages += [(Lcam, Rcam, velo, calibDir)]
                 else:
                     print(f"{driveFolder} with {Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]} error")
