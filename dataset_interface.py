@@ -142,6 +142,7 @@ class MyDataset(torch.utils.data.Dataset):
                 errorList += [driveFolder, errorsFound]
 
         print("errors found: ")
+        print(errorList)
         for ex in errorList:
             print(f"{ex[0]} has {ex[1]} errors")
         print(len(totalImages))
