@@ -50,8 +50,6 @@ class MyDataset(torch.utils.data.Dataset):
         elif type == "eval":
             self.dataPathTuples = allImagePaths[numTrain+numTest:]
         print(f"retrieved {numImages} image/velo tuples using {len(self.dataPathTuples)} for {type}")
-
-        self.getCalibInfo()
         raise
         #file name lists
         self.cam2Files = []
@@ -93,43 +91,34 @@ class MyDataset(torch.utils.data.Dataset):
         p_velo3 = np.linalg.inv(T_cam3_velo).dot(p_cam)
         self.baseline = torch.Tensor([np.linalg.norm(p_velo3 - p_velo2)])   # rgb baseline
 
-    def getCalibInfo(self):
-        calibDirs = [f.path  for f in os.scandir(self.basedir) if f.is_dir()]
-        baselines = []
-        focalLengths = []
-        for calibDir in calibDirs:
-            #retrive calibration data
-            cam2cam = read_calib_file(os.path.join(calibDir, "calib_cam_to_cam.txt"))
-            P_rectL = cam2cam['P_rect_02'].reshape(3, 4)
-            P_rectR = cam2cam['P_rect_03'].reshape(3, 4)
-            self.L_Kmat = torch.Tensor(cam2cam['K_02'].reshape(3,3))
-            self.R_Kmat = torch.Tensor(cam2cam['K_03'].reshape(3,3))
-            focalLengths += [self.L_Kmat[0, 0]]
+    def getCalibInfo(self, calibDir):
+        #retrive calibration data
+        cam2cam = read_calib_file(os.path.join(calibDir, "calib_cam_to_cam.txt"))
+        P_rectL = cam2cam['P_rect_02'].reshape(3, 4)
+        P_rectR = cam2cam['P_rect_03'].reshape(3, 4)
+        self.L_Kmat = torch.Tensor(cam2cam['K_02'].reshape(3,3))
+        self.R_Kmat = torch.Tensor(cam2cam['K_03'].reshape(3,3))
+        focalLength = torch.Tensor(self.L_Kmat[0, 0])
 
+        # Compute the rectified extrinsics from cam0 to camN
+        T2 = np.eye(4)
+        T2[0, 3] = P_rectL[0, 3] / P_rectL[0, 0]
+        T3 = np.eye(4)
+        T3[0, 3] = P_rectR[0, 3] / P_rectR[0, 0]
 
-            # Compute the rectified extrinsics from cam0 to camN
-            T2 = np.eye(4)
-            T2[0, 3] = P_rectL[0, 3] / P_rectL[0, 0]
-            T3 = np.eye(4)
-            T3[0, 3] = P_rectR[0, 3] / P_rectR[0, 0]
+        # Compute the velodyne to rectified camera coordinate transforms
+        velo2cam = read_calib_file(os.path.join(calibDir, 'calib_velo_to_cam.txt'))
+        velo2cam = np.hstack((velo2cam['R'].reshape(3, 3), velo2cam['T'][..., np.newaxis]))
+        T_cam0_velo = np.vstack((velo2cam, np.array([0, 0, 0, 1.0])))
+        T_cam2_velo = T2.dot(T_cam0_velo)
+        T_cam3_velo = T3.dot(T_cam0_velo)
+        p_cam = np.array([0, 0, 0, 1])
+        p_velo2 = np.linalg.inv(T_cam2_velo).dot(p_cam)
+        p_velo3 = np.linalg.inv(T_cam3_velo).dot(p_cam)
+        
+        baseline = torch.Tensor([np.linalg.norm(p_velo3 - p_velo2)])   # rgb baseline
 
-            # Compute the velodyne to rectified camera coordinate transforms
-            velo2cam = read_calib_file(os.path.join(calibDir, 'calib_velo_to_cam.txt'))
-            velo2cam = np.hstack((velo2cam['R'].reshape(3, 3), velo2cam['T'][..., np.newaxis]))
-            T_cam0_velo = np.vstack((velo2cam, np.array([0, 0, 0, 1.0])))
-            T_cam2_velo = T2.dot(T_cam0_velo)
-            T_cam3_velo = T3.dot(T_cam0_velo)
-
-            p_cam = np.array([0, 0, 0, 1])
-            p_velo2 = np.linalg.inv(T_cam2_velo).dot(p_cam)
-            p_velo3 = np.linalg.inv(T_cam3_velo).dot(p_cam)
-            baselines += [np.linalg.norm(p_velo3 - p_velo2)]   # rgb baseline
-        print("baselines:")
-        for bl in baselines:
-            print(bl)
-        print("\nfocal lengths: ")
-        for fl in focalLengths:
-            print(fl)
+        return focalLength, baseline
 
     def getAllImages(self):
         #path to drive for data
@@ -145,6 +134,9 @@ class MyDataset(torch.utils.data.Dataset):
         for driveFolder in driveFolders:
             calibDir = driveFolder.split("/")[1]
             calibDir = os.path.join(self.basedir, calibDir)
+
+            focalLength, baseline = self.getCalibInfo(calibDir) 
+            
             #find 02 images
             LImages = sorted([f.path for f in os.scandir(os.path.join(driveFolder, LcamPath))])
             #find 03 images
@@ -196,10 +188,10 @@ class MyDataset(torch.utils.data.Dataset):
                 #print(f"{i} with {Lcam} and {Rcam} and {velo}")
                 if Lcam[-14:-4] == Rcam[-14:-4] and Lcam[-14:-4] == velo[-14:-4] and Rcam[-14:-4] == velo[-14:-4]:
                     #print(f"{driveFolder} with {Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]}")
-                    totalImages += [(Lcam, Rcam, velo, calibDir)]
+                    totalImages += [(Lcam, Rcam, velo, focalLength, baseline)]
                 else:
                     print(f"{driveFolder} with {Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]} error")
-
+        print(totalImages[-1])
         return totalImages
 
     def __len__(self):
