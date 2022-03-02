@@ -154,8 +154,8 @@ class MyDataset(torch.utils.data.Dataset):
                         if num not in veloNums and num in RimageNums:
                             print("error")
                             print(i, num)
-                            errorFilesL += [LFront + num + ".png"]
-                            errorFilesR += [RFront + num + ".png"]
+                            errorFilesL += [f"{LFront}{num}.png"]
+                            errorFilesR += [f"{RFront}{num}.png"]
                     print(errorFilesR)
                         
 
