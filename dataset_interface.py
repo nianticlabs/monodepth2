@@ -133,8 +133,8 @@ class MyDataset(torch.utils.data.Dataset):
             #make tuples with coresponding images
             if not(len(LImages) == len(RImages) and len(LImages) == len(veloDatas)):
                 print("unequal fixing errors")
-                LFront = [LImages[0][:-14]]
-                RFront = [RImages[0][:-14]]
+                LFront = LImages[0][:-14]
+                RFront = RImages[0][:-14]
                 LimageNums = []
                 for path in LImages:
                     LimageNums += [path[-14:-4]]
