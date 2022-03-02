@@ -42,14 +42,16 @@ class MyDataset(torch.utils.data.Dataset):
         numTrain : int  = int(splits[0]*numImages)
         numTest : int   = int(splits[1]*numImages)
         numEval : int   = numImages - numTrain - numTest
-        imageTuples = []
+        self.dataPathTuples = []     #list of (Limg, Rimg, velo, camDir)
         if type == "train":
-            imageTuples = allImagePaths[0:numTrain]
+            self.dataPathTuples = allImagePaths[0:numTrain]
         elif type == "test":
-            imageTuples = allImagePaths[numTrain:numTrain+numTest]
+            self.dataPathTuples = allImagePaths[numTrain:numTrain+numTest]
         elif type == "eval":
-            imageTuples = allImagePaths[numTrain+numTest:]
-        print(f"retrieved {numImages} image/velo tuples using {len(imageTuples)} for {type}")
+            self.dataPathTuples = allImagePaths[numTrain+numTest:]
+        print(f"retrieved {numImages} image/velo tuples using {len(dataPathTuples)} for {type}")
+
+        self.getCalibInfo()
         raise
         #file name lists
         self.cam2Files = []
@@ -91,14 +93,50 @@ class MyDataset(torch.utils.data.Dataset):
         p_velo3 = np.linalg.inv(T_cam3_velo).dot(p_cam)
         self.baseline = torch.Tensor([np.linalg.norm(p_velo3 - p_velo2)])   # rgb baseline
 
+    def getCalibInfo(self):
+        calibDirs = [f.path  for f in os.scandir(self.basedir) if f.is_dir()]
+        baselines = []
+        focalLengths = []
+        for calibDir in calibDirs:
+            #retrive calibration data
+            cam2cam = read_calib_file(os.path.join(self.calibDir, "calib_cam_to_cam.txt"))
+            P_rectL = cam2cam['P_rect_02'].reshape(3, 4)
+            P_rectR = cam2cam['P_rect_03'].reshape(3, 4)
+            self.L_Kmat = torch.Tensor(cam2cam['K_02'].reshape(3,3))
+            self.R_Kmat = torch.Tensor(cam2cam['K_03'].reshape(3,3))
+            focalLengths += [torch.Tensor(self.L_Kmat[0, 0])]
+
+
+            # Compute the rectified extrinsics from cam0 to camN
+            T2 = np.eye(4)
+            T2[0, 3] = P_rectL[0, 3] / P_rectL[0, 0]
+            T3 = np.eye(4)
+            T3[0, 3] = P_rectR[0, 3] / P_rectR[0, 0]
+
+            # Compute the velodyne to rectified camera coordinate transforms
+            velo2cam = read_calib_file(os.path.join(self.calibDir, 'calib_velo_to_cam.txt'))
+            velo2cam = np.hstack((velo2cam['R'].reshape(3, 3), velo2cam['T'][..., np.newaxis]))
+            T_cam0_velo = np.vstack((velo2cam, np.array([0, 0, 0, 1.0])))
+            T_cam2_velo = T2.dot(T_cam0_velo)
+            T_cam3_velo = T3.dot(T_cam0_velo)
+
+            p_cam = np.array([0, 0, 0, 1])
+            p_velo2 = np.linalg.inv(T_cam2_velo).dot(p_cam)
+            p_velo3 = np.linalg.inv(T_cam3_velo).dot(p_cam)
+            baselines += [torch.Tensor([np.linalg.norm(p_velo3 - p_velo2)])]   # rgb baseline
+        print("baselines:")
+        for bl in baselines:
+            print(bl)
+        print("\nfocal lengths: ")
+        for fl in focalLengths:
+            print(fl)
+
     def getAllImages(self):
         #path to drive for data
         calibDirs = [f.path  for f in os.scandir(self.basedir) if f.is_dir()]
-        print(calibDirs)
         driveFolders = []
         for calibDir in calibDirs:
             driveFolders += [f.path  for f in os.scandir(calibDir) if f.is_dir()]
-        print(driveFolders)
         
         LcamPath = os.path.join("image_02", "data")
         RcamPath = os.path.join("image_03", "data")
@@ -172,9 +210,11 @@ class MyDataset(torch.utils.data.Dataset):
         cam 2 = left cam color
         cam 3 = right cam color
         """
+        (L_imgPath, R_imgPath, veloPath, calibPath) = self.dataPathTuples[index]
+
         #get images
-        imgL : Image = Image.open(self.cam2Files[index])
-        imgR : Image = Image.open(self.cam3Files[index])
+        imgL : Image = Image.open(L_imgPath)
+        imgR : Image = Image.open(R_imgPath)
 
         #conversion
         convert_tensor = transforms.ToTensor()
@@ -182,8 +222,8 @@ class MyDataset(torch.utils.data.Dataset):
         imgR : torch.Tensor = convert_tensor(imgR).float()     #tensor
 
         #retrieve depth data
-        depth_gtL = generate_depth_map(self.calibDir, velo_filename=self.veloFiles[index], cam = 2)
-        depth_gtR = generate_depth_map(self.calibDir, velo_filename=self.veloFiles[index], cam = 3)
+        depth_gtL = generate_depth_map(self.calibDir, velo_filename=veloPath, cam = 2)
+        depth_gtR = generate_depth_map(self.calibDir, velo_filename=veloPath, cam = 3)
 
         #convert to tensor
         depth_gtL : torch.Tensor = torch.Tensor(depth_gtL)
