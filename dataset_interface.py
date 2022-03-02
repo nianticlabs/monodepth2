@@ -35,8 +35,21 @@ class MyDataset(torch.utils.data.Dataset):
     def __init__(self, type : str):
         self.basedir = 'kitti_data'
         allImagePaths = self.getAllImages()
-
-        print(allImagePaths[-1])
+        numImages = len(allImagePaths)
+        splits = [9/10, 1/20, 1/20]
+        assert sum(splits) == 1
+        #physical numbers
+        numTrain : int  = int(splits[0]*numImages)
+        numTest : int   = int(splits[1]*numImages)
+        numEval : int   = numImages - numTrain - numTest
+        imageTuples = []
+        if type == "train":
+            imageTuples = allImagePaths[0:numTrain]
+        elif type == "test":
+            imageTuples = allImagePaths[numTrain:numTrain+numTest]
+        elif type == "eval":
+            imageTuples = allImagePaths[numTrain+numTest:]
+        print(f"retrieved {numImages} image/velo tuples using {len(imageTuples)} for {type}")
         raise
         #file name lists
         self.cam2Files = []
@@ -91,24 +104,18 @@ class MyDataset(torch.utils.data.Dataset):
         RcamPath = os.path.join("image_03", "data")
         veloPath = os.path.join("velodyne_points", "data")
         totalImages = []
-        errorList = []
         for driveFolder in driveFolders:
-            print("\n\n newdrive")
-            errorsFound = 0
             calibDir = driveFolder.split("/")[1]
             calibDir = os.path.join(self.basedir, calibDir)
             #find 02 images
             LImages = sorted([f.path for f in os.scandir(os.path.join(driveFolder, LcamPath))])
-            print(len(LImages))
             #find 03 images
             RImages = sorted([f.path for f in os.scandir(os.path.join(driveFolder, RcamPath))])
-            print(len(RImages))
             #find velodyne images
             veloDatas = sorted([f.path for f in os.scandir(os.path.join(driveFolder, veloPath))])
-            print(len(veloDatas))
             #make tuples with coresponding images
             if not(len(LImages) == len(RImages) and len(LImages) == len(veloDatas)):
-                print("unequal fixing errors")
+                print("unequal lengths in data fixing errors")
                 LFront = LImages[0][:-14]
                 RFront = RImages[0][:-14]
                 LimageNums = []
@@ -155,10 +162,7 @@ class MyDataset(torch.utils.data.Dataset):
                     totalImages += [(Lcam, Rcam, velo, calibDir)]
                 else:
                     print(f"{driveFolder} with {Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]} error")
-                    errorsFound += 1
-            if errorsFound > 0:
-                errorList += [driveFolder, errorsFound]
-                print(errorsFound)
+
         return totalImages
 
     def __len__(self):
