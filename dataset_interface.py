@@ -60,7 +60,6 @@ class MyDataset(torch.utils.data.Dataset):
         
         # print(f"cam2dirpaths len {len(cam2DirPaths)} cam 3 paths len {len(cam3DirPaths)} velo paths len {len(veloDirPaths)} ")
         self.getAllImages()
-        print("got all images")
         raise
         #file name lists
         self.cam2Files = []
@@ -117,7 +116,7 @@ class MyDataset(torch.utils.data.Dataset):
         veloPath = os.path.join("velodyne_points", "data")
         totalImages = []
         for driveFolder in driveFolders:
-            calibDir = driveFolder.split("\\")[1]
+            calibDir = driveFolder.split("/")[1]
             calibDir = os.path.join(basedir, calibDir)
             #find 02 images
             LImages = [f.path for f in os.scandir(os.path.join(driveFolder, LcamPath))]
