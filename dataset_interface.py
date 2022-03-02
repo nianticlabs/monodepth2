@@ -94,8 +94,6 @@ class MyDataset(torch.utils.data.Dataset):
         for driveFolder in driveFolders:
             calibDir = driveFolder.split("/")[1]
             calibDir = os.path.join(self.basedir, calibDir)
-
-            focalLength, baseline = self.getCalibInfo(calibDir) 
             
             #find 02 images
             LImages = sorted([f.path for f in os.scandir(os.path.join(driveFolder, LcamPath))])
@@ -148,7 +146,7 @@ class MyDataset(torch.utils.data.Dataset):
                 #print(f"{i} with {Lcam} and {Rcam} and {velo}")
                 if Lcam[-14:-4] == Rcam[-14:-4] and Lcam[-14:-4] == velo[-14:-4] and Rcam[-14:-4] == velo[-14:-4]:
                     #print(f"{driveFolder} with {Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]}")
-                    totalImages += [(Lcam, Rcam, velo, focalLength, baseline)]
+                    totalImages += [(Lcam, Rcam, velo, calibDir)]
                 else:
                     print(f"{driveFolder} with {Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]} error")
         print(totalImages[-1])
@@ -162,7 +160,10 @@ class MyDataset(torch.utils.data.Dataset):
         cam 2 = left cam color
         cam 3 = right cam color
         """
-        (L_imgPath, R_imgPath, veloPath, focalLength, baseline) = self.dataPathTuples[index]
+        (L_imgPath, R_imgPath, veloPath, calibDir) = self.dataPathTuples[index]
+
+        #Get focalLength and baseline
+        focalLength, baseline = self.getCalibInfo(calibDir)
 
         #get images
         imgL : Image = Image.open(L_imgPath)
@@ -174,8 +175,8 @@ class MyDataset(torch.utils.data.Dataset):
         imgR : torch.Tensor = convert_tensor(imgR).float()     #tensor
 
         #retrieve depth data
-        depth_gtL = generate_depth_map(self.calibDir, velo_filename=veloPath, cam = 2)
-        depth_gtR = generate_depth_map(self.calibDir, velo_filename=veloPath, cam = 3)
+        depth_gtL = generate_depth_map(calibDir, velo_filename=veloPath, cam = 2)
+        depth_gtR = generate_depth_map(calibDir, velo_filename=veloPath, cam = 3)
 
         #convert to tensor
         depth_gtL : torch.Tensor = torch.Tensor(depth_gtL)
