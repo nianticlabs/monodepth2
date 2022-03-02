@@ -145,9 +145,10 @@ class MyDataset(torch.utils.data.Dataset):
                 for path in veloDatas:
                     veloNums += [path[-14:-4]]
                 print("before if")
-                if len(veloDatas) < len(LImages) and len(veloDatas) < len(RImages):
-                    for i, num in enumerate(veloNums):
-                        if num not in LimageNums and num not in RimageNums:
+                if len(veloDatas) < len(LImages) and len(veloDatas) < len(RImages) and len(RImages) == len(LImages):
+                    for i, num in enumerate(LimageNums):
+                        if num not in veloNums and num in RimageNums:
+                            print("error")
                             print(i, num)
                 raise
             for i, (Lcam, Rcam, velo) in enumerate(zip(LImages, RImages, veloDatas)):
