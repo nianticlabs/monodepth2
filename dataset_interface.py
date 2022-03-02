@@ -131,7 +131,7 @@ class MyDataset(torch.utils.data.Dataset):
             for i, (Lcam, Rcam, velo) in enumerate(zip(LImages, RImages, veloDatas)):
                 #print(f"{i} with {Lcam} and {Rcam} and {velo}")
                 if Lcam[-14:-4] == Rcam[-14:-4] and Lcam[-14:-4] == velo[-14:-4] and Rcam[-14:-4] == velo[-14:-4]:
-                    print(f"{Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]}")
+                    #print(f"{Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]}")
                     totalImages += [(Lcam, Rcam, velo, calibDir)]
                 else:
                     print(f"{driveFolder} with {Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]}")
