@@ -159,21 +159,19 @@ class MyDataset(torch.utils.data.Dataset):
                             errorFilesL += [f"{LFront}{num}.jpg"]
                             errorFilesR += [f"{RFront}{num}.jpg"]
                     
+                # for image in LImages:
+                #     print(image)
                 
-                for image in LImages:
-                    print(image)
-                
-                print("\nerror files: ")
-                for image in errorFilesL:
-                    print(image)
+                # print("\nerror files: ")
+                # for image in errorFilesL:
+                #     print(image)
 
                 for L, R in zip(errorFilesL, errorFilesR):
                     LImages.remove(L)
                     RImages.remove(R)
 
-                print(f"{len(LImages)} : {len(RImages)} : {len(veloDatas)}")
+                #print(f"{len(LImages)} : {len(RImages)} : {len(veloDatas)}")
                     
-                raise
             for i, (Lcam, Rcam, velo) in enumerate(zip(LImages, RImages, veloDatas)):
                 #print(f"{i} with {Lcam} and {Rcam} and {velo}")
                 if Lcam[-14:-4] == Rcam[-14:-4] and Lcam[-14:-4] == velo[-14:-4] and Rcam[-14:-4] == velo[-14:-4]:
