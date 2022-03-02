@@ -115,7 +115,9 @@ class MyDataset(torch.utils.data.Dataset):
         RcamPath = os.path.join("image_03", "data")
         veloPath = os.path.join("velodyne_points", "data")
         totalImages = []
+        
         for driveFolder in driveFolders:
+            errorsFound = 0
             calibDir = driveFolder.split("/")[1]
             calibDir = os.path.join(basedir, calibDir)
             #find 02 images
@@ -135,9 +137,10 @@ class MyDataset(torch.utils.data.Dataset):
                     totalImages += [(Lcam, Rcam, velo, calibDir)]
                 else:
                     print(f"{driveFolder} with {Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]}")
-                    raise
+                    errorsFound += 1
+
+        print("num errors found ", errorsFound)
         print(len(totalImages))
-        print(totalImages[-1])
         # numDrives = len(driveFiles)
         # #percentage splits of train, test, eval
         # splits = [9/10, 1/20, 1/20]
