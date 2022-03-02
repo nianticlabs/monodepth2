@@ -33,33 +33,34 @@ def read_calib_file(path):
 
 class MyDataset(torch.utils.data.Dataset):
     def __init__(self, type : str):
-        #path to drive for data
-        basedir = 'kitti_data'
-        date = '2011_09_26'
-        self.calibDir = os.path.join(basedir, date)
-        driveFiles = [f.path  for f in os.scandir(self.calibDir) if f.is_dir()]
-        numDrives = len(driveFiles)
-        #percentage splits of train, test, eval
-        splits = [9/10, 1/20, 1/20]
-        assert sum(splits) == 1
-        #physical numbers
-        numTrain : int  = int(splits[0]*numDrives)
-        numTest : int   = int(splits[1]*numDrives)
-        numEval : int   = numDrives - numTrain - numTest
-        if type == "train":
-            driveDirs = driveFiles[0:numTrain]
-        elif type == "test":
-            driveDirs = driveFiles[numTrain:numTrain+numTest]
-        elif type == "eval":
-            driveDirs = driveFiles[numTrain+numTest:]
+        # #path to drive for data
+        # basedir = 'kitti_data'
+        # date = '2011_09_26'
+        # self.calibDir = os.path.join(basedir, date)
+        # driveFiles = [f.path  for f in os.scandir(self.calibDir) if f.is_dir()]
+        # numDrives = len(driveFiles)
+        # #percentage splits of train, test, eval
+        # splits = [9/10, 1/20, 1/20]
+        # assert sum(splits) == 1
+        # #physical numbers
+        # numTrain : int  = int(splits[0]*numDrives)
+        # numTest : int   = int(splits[1]*numDrives)
+        # numEval : int   = numDrives - numTrain - numTest
+        # if type == "train":
+        #     driveDirs = driveFiles[0:numTrain]
+        # elif type == "test":
+        #     driveDirs = driveFiles[numTrain:numTrain+numTest]
+        # elif type == "eval":
+        #     driveDirs = driveFiles[numTrain+numTest:]
         
-        #paths to data
-        cam2DirPaths = [os.path.join(os.path.join(drivepath, 'image_02'), 'data') for drivepath in driveDirs]
-        cam3DirPaths = [os.path.join(os.path.join(drivepath, 'image_03'), 'data') for drivepath in driveDirs]
-        veloDirPaths = [os.path.join(os.path.join(drivepath, 'velodyne_points'), 'data') for drivepath in driveDirs]
+        # #paths to data
+        # cam2DirPaths = [os.path.join(os.path.join(drivepath, 'image_02'), 'data') for drivepath in driveDirs]
+        # cam3DirPaths = [os.path.join(os.path.join(drivepath, 'image_03'), 'data') for drivepath in driveDirs]
+        # veloDirPaths = [os.path.join(os.path.join(drivepath, 'velodyne_points'), 'data') for drivepath in driveDirs]
         
-        print(f"cam2dirpaths len {len(cam2DirPaths)} cam 3 paths len {len(cam3DirPaths)} velo paths len {len(veloDirPaths)} ")
-
+        # print(f"cam2dirpaths len {len(cam2DirPaths)} cam 3 paths len {len(cam3DirPaths)} velo paths len {len(veloDirPaths)} ")
+        self.getAllImages()
+        raise
         #file name lists
         self.cam2Files = []
         self.cam3Files = []
@@ -100,7 +101,57 @@ class MyDataset(torch.utils.data.Dataset):
         p_velo3 = np.linalg.inv(T_cam3_velo).dot(p_cam)
         self.baseline = torch.Tensor([np.linalg.norm(p_velo3 - p_velo2)])   # rgb baseline
 
+    def getAllImages(self):
+        #path to drive for data
+        basedir = 'kitti_data'
+        calibDirs = [f.path  for f in os.scandir(basedir) if f.is_dir()]
+        print(calibDirs)
+        driveFolders = []
+        for calibDir in calibDirs:
+            driveFolders += [f.path  for f in os.scandir(calibDir) if f.is_dir()]
+        print(driveFolders)
         
+        LcamPath = os.path.join("image_02", "data")
+        RcamPath = os.path.join("image_03", "data")
+        veloPath = os.path.join("velodyne_points", "data")
+        totalImages = []
+        for driveFolder in driveFolders:
+            calibDir = driveFolder.split("\\")[1]
+            calibDir = os.path.join(basedir, calibDir)
+            #find 02 images
+            LImages = [f.path for f in os.scandir(os.path.join(driveFolder, LcamPath))]
+            print(len(LImages))
+            #find 03 images
+            RImages = [f.path for f in os.scandir(os.path.join(driveFolder, RcamPath))]
+            print(len(RImages))
+            #find velodyne images
+            veloDatas = [f.path for f in os.scandir(os.path.join(driveFolder, veloPath))]
+            print(len(veloDatas))
+            #make tuples with coresponding images
+            for i, (Lcam, Rcam, velo) in enumerate(zip(LImages, RImages, veloDatas)):
+                #print(f"{i} with {Lcam} and {Rcam} and {velo}")
+                #print(f"{Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]}")
+                if Lcam[-14:-4] == Rcam[-14:-4] and Lcam[-14:-4] == velo[-14:-4] and Rcam[-14:-4] == velo[-14:-4]:
+                    totalImages += [(Lcam, Rcam, velo, calibDir)]
+                else:
+                    print(f"{Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]}")
+                    raise
+        print(len(totalImages))
+        print(totalImages[-1])
+        # numDrives = len(driveFiles)
+        # #percentage splits of train, test, eval
+        # splits = [9/10, 1/20, 1/20]
+        # assert sum(splits) == 1
+        # #physical numbers
+        # numTrain : int  = int(splits[0]*numDrives)
+        # numTest : int   = int(splits[1]*numDrives)
+        # numEval : int   = numDrives - numTrain - numTest
+        # if type == "train":
+        #     driveDirs = driveFiles[0:numTrain]
+        # elif type == "test":
+        #     driveDirs = driveFiles[numTrain:numTrain+numTest]
+        # elif type == "eval":
+        #     driveDirs = driveFiles[numTrain+numTest:]
 
     def __len__(self):
         return len(self.cam2Files)
