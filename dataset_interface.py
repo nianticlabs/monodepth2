@@ -49,7 +49,7 @@ class MyDataset(torch.utils.data.Dataset):
             self.dataPathTuples = allImagePaths[numTrain:numTrain+numTest]
         elif type == "eval":
             self.dataPathTuples = allImagePaths[numTrain+numTest:]
-        print(f"retrieved {numImages} image/velo tuples using {len(dataPathTuples)} for {type}")
+        print(f"retrieved {numImages} image/velo tuples using {len(self.dataPathTuples)} for {type}")
 
         self.getCalibInfo()
         raise
