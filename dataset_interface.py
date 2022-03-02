@@ -130,11 +130,11 @@ class MyDataset(torch.utils.data.Dataset):
             #make tuples with coresponding images
             for i, (Lcam, Rcam, velo) in enumerate(zip(LImages, RImages, veloDatas)):
                 #print(f"{i} with {Lcam} and {Rcam} and {velo}")
-                #print(f"{Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]}")
                 if Lcam[-14:-4] == Rcam[-14:-4] and Lcam[-14:-4] == velo[-14:-4] and Rcam[-14:-4] == velo[-14:-4]:
+                    print(f"{Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]}")
                     totalImages += [(Lcam, Rcam, velo, calibDir)]
                 else:
-                    print(f"{Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]}")
+                    print(f"{driveFolder} with {Lcam[-14:-4]} : {Rcam[-14:-4]} : {velo[-14:-4]}")
                     raise
         print(len(totalImages))
         print(totalImages[-1])
