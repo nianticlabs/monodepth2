@@ -137,8 +137,7 @@ class MyDataset(torch.utils.data.Dataset):
                     
                     for i, num in enumerate(LimageNums):
                         if num not in veloNums and num in RimageNums:
-                            print("error")
-                            print(i, num)
+                            print(f"fixing error in image/velo corresponding to {num}")
                             errorFilesL += [f"{LFront}{num}.jpg"]
                             errorFilesR += [f"{RFront}{num}.jpg"]
                     
