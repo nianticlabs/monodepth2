@@ -60,6 +60,7 @@ class MyDataset(torch.utils.data.Dataset):
         
         # print(f"cam2dirpaths len {len(cam2DirPaths)} cam 3 paths len {len(cam3DirPaths)} velo paths len {len(veloDirPaths)} ")
         self.getAllImages()
+        print("got all images")
         raise
         #file name lists
         self.cam2Files = []
