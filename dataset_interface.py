@@ -119,13 +119,13 @@ class MyDataset(torch.utils.data.Dataset):
             calibDir = driveFolder.split("/")[1]
             calibDir = os.path.join(basedir, calibDir)
             #find 02 images
-            LImages = [f.path for f in os.scandir(os.path.join(driveFolder, LcamPath))]
+            LImages = sorted([f.path for f in os.scandir(os.path.join(driveFolder, LcamPath))])
             print(len(LImages))
             #find 03 images
-            RImages = [f.path for f in os.scandir(os.path.join(driveFolder, RcamPath))]
+            RImages = sorted([f.path for f in os.scandir(os.path.join(driveFolder, RcamPath))])
             print(len(RImages))
             #find velodyne images
-            veloDatas = [f.path for f in os.scandir(os.path.join(driveFolder, veloPath))]
+            veloDatas = sorted([f.path for f in os.scandir(os.path.join(driveFolder, veloPath))])
             print(len(veloDatas))
             #make tuples with coresponding images
             for i, (Lcam, Rcam, velo) in enumerate(zip(LImages, RImages, veloDatas)):
