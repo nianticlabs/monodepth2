@@ -140,6 +140,8 @@ class MyDataset(torch.utils.data.Dataset):
                     errorsFound += 1
             if errorsFound > 0:
                 errorList += [driveFolder, errorsFound]
+                print(errorsFound)
+                raise
 
         print("errors found: ")
         print(errorList)
