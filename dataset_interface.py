@@ -32,6 +32,7 @@ def read_calib_file(path):
     return data
 
 class MyDataset(torch.utils.data.Dataset):
+    
     def __init__(self, type : str):
         self.basedir = 'kitti_data'
         allImagePaths = self.getAllImages()
