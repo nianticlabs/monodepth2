@@ -14,7 +14,7 @@ def main():
     i = 0
     for tup in loader:
         i+=1
-        print(f"I have completed {i} iterations")
+        print(f"I have completed {i} iterations out of {len(loader)}")
     
 
 
