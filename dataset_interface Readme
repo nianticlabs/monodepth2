@@ -1,12 +1,19 @@
-In order to use dataset_interface you may have to conda install pillow,
+To use the dataset that contains all of the drive data from kitti_data
 
-other than that the method should be fairly self contained and when initializing the data set
-pass either "train", "test", or "eval" in order to switch between the different data sets
-otherwise should be good
+make sure you are in the monodepth2 folder with kitti_data as a dir
+
+mydataset also has a to_depth and to_disparity functions that given focalLength and baseline will compute depth from disparity 
+vice versa
+
+example usage for data set to make data loader: 
+train_loader = DataLoader(dataset=MyDataset("train"), batch_size=args.batch_size)
 
 the get item function returns:
 tensor of left img (3, height, width)
 tensor of right img (3, height, width)
 tensor of left depth map (height, width)
 tensor of right depth map (height, width)
-tensor of disparity transformation from left to righ  (3,4)
+a float with the focal length in pixels for this camera pair
+a float with the baseline in pixels for this camera pair
+
+returned schema: imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline
