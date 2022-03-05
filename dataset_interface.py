@@ -55,7 +55,7 @@ def custom_collate(data):
 class Data_Tuple():
     #basically a struct
     def __init__(self, imgL : torch.Tensor, imgR : torch.Tensor, depth_gtL : torch.Tensor, depth_gtR : torch.Tensor, focalLength : torch.Tensor, baseline : torch.Tensor) -> None:
-        self.imgL = imgL
+        self.imgL = torch.Tensor(imgL)
         self.imgR = imgR
         self.depthL = depth_gtL
         self.depthR = depth_gtR
