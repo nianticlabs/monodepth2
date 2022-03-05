@@ -33,8 +33,11 @@ def read_calib_file(path):
 
 def custom_collate(data):
     print("data len", len(data))
-    (imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline) = data[0]
-    return Data_Tuple(imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline)
+    toReturn = []
+    for currData in data:
+        (imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline) = currData
+        toReturn.append(Data_Tuple(imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline))
+    return toReturn
 
 class Data_Tuple():
     #basically a struct
