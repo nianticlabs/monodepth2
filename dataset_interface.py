@@ -6,6 +6,8 @@ import os
 import numpy as np
 from kitti_utils import generate_depth_map
 
+import pdb
+
 def to_depth(disparity : torch.Tensor, baseline : torch.Tensor, focalLength : torch.Tensor) -> torch.Tensor:
     depth = (baseline * focalLength)/disparity
     return depth
@@ -33,14 +35,14 @@ def read_calib_file(path):
 
 def custom_collate(data):
     print("data len", len(data))
-    print(type(data[0][0]))
-    raise
-    imgLlist = []
-    imgRlist = []
-    depthLList = []
-    depthRList = []
-    focalList = []
-    baselineList = []
+    #print(type(data[0][0]))
+    pdb.set_trace()
+    imgLlist = data[0][0]
+    imgRlist = data[0][1]
+    depthLList = data[0][2]
+    depthRList = data[0][3]
+    focalList = data[0][4]
+    baselineList = data[0][5]
 
     for currData in data:
         (imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline) = currData
