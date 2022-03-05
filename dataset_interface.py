@@ -49,12 +49,7 @@ def custom_collate(data):
         focalList.append(focalLength)
         baselineList.append(baseline)
 
-    toReturn = Data_Tuple(torch.Tensor(imgLlist), 
-                            torch.Tensor(imgRlist), 
-                            torch.Tensor(depthLList), 
-                            torch.Tensor(depthRList), 
-                            torch.Tensor(focalList), 
-                            torch.Tensor(baselineList))
+    toReturn = Data_Tuple(torch.Tensor(imgLlist), torch.Tensor(imgRlist), torch.Tensor(depthLList), torch.Tensor(depthRList), torch.Tensor(focalList), torch.Tensor(baselineList))
     return toReturn
 
 class Data_Tuple():
