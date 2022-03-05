@@ -32,6 +32,7 @@ def read_calib_file(path):
     return data
 
 def custom_collate(data):
+    print("data len", len(data))
     (imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline) = data[0]
     return Data_Tuple(imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline)
 
