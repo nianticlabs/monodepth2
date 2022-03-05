@@ -31,8 +31,18 @@ def read_calib_file(path):
                     pass  # casting error: data[key] already eq. value, so pass
     return data
 
+class Data_Tuple():
+    #basically a struct
+    def __init__(self, imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline) -> None:
+        self.imgL = imgL
+        self.imgR = imgR
+        self.depthL = depth_gtL
+        self.depthR = depth_gtR
+        self.focalLength = focalLength
+        self.baseline = baseline
+
 class MyDataset(torch.utils.data.Dataset):
-    
+
     def __init__(self, type : str):
         self.basedir = 'kitti_data'
         allImagePaths = self.getAllImages()
@@ -183,8 +193,8 @@ class MyDataset(torch.utils.data.Dataset):
         depth_gtL : torch.Tensor = torch.Tensor(depth_gtL)
         depth_gtR : torch.Tensor = torch.Tensor(depth_gtR)
                
-        
+        data_tuple : Data_Tuple = Data_Tuple(imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline)
 
-        return (imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline)
+        return data_tuple
                 
         

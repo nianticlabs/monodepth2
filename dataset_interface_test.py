@@ -5,7 +5,8 @@ import torch
 
 from dataset_interface import MyDataset, to_depth, to_disparity
 
-
+class batchData:
+    imgL : torch.tensor
 
 def main():
     dataset = MyDataset("train")
@@ -13,6 +14,8 @@ def main():
     loader = torch.utils.data.DataLoader(dataset=dataset, batch_size=1, shuffle=False)
     i = 0
     for tup in loader:
+        print(tup.baseline)
+        print(tup.imgR)
         i+=1
         print(f"I have completed {i} iterations out of {len(loader)}")
     
