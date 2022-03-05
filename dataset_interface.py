@@ -93,7 +93,7 @@ class MyDataset(torch.utils.data.Dataset):
         P_rectR = cam2cam['P_rect_03'].reshape(3, 4)
         L_Kmat = cam2cam['K_02'].reshape(3,3)
         R_Kmat = cam2cam['K_03'].reshape(3,3)
-        focalLength : torch.Tensor = torch.Tensor(L_Kmat[0, 0])
+        focalLength : torch.Tensor = torch.Tensor([L_Kmat[0, 0]])
 
         # Compute the rectified extrinsics from cam0 to camN
         T2 = np.eye(4)
@@ -111,7 +111,7 @@ class MyDataset(torch.utils.data.Dataset):
         p_velo2 = np.linalg.inv(T_cam2_velo).dot(p_cam)
         p_velo3 = np.linalg.inv(T_cam3_velo).dot(p_cam)
         
-        baseline : torch.Tensor = torch.Tensor(np.linalg.norm(p_velo3 - p_velo2))   # rgb baseline
+        baseline : torch.Tensor = torch.Tensor([np.linalg.norm(p_velo3 - p_velo2)])   # rgb baseline
 
         return focalLength, baseline
 
