@@ -36,6 +36,7 @@ def read_calib_file(path):
 def custom_collate(data):
     print("data len", len(data))
     #print(type(data[0][0]))
+    out = tuple(map(torch.stack, zip(*data)))
     pdb.set_trace()
     imgLlist = data[0][0]
     imgRlist = data[0][1]
