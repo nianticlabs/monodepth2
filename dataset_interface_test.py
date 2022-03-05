@@ -13,10 +13,10 @@ class batchData:
 def main():
     #dataset = MyDataset("train")
     dataset = MyDataset("test")
-    loader = torch.utils.data.DataLoader(dataset=dataset, batch_size=8, shuffle=False)#, collate_fn = custom_collate)
+    loader = torch.utils.data.DataLoader(dataset=dataset, batch_size=8, shuffle=False, collate_fn = custom_collate)
     i = 0
     for tup in loader:
-        print(tup)
+        print(len(tup))
         pdb.set_trace()
         i+=1
         print(f"I have completed {i} iterations out of {len(loader)}")
