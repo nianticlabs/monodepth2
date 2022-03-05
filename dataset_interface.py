@@ -31,6 +31,10 @@ def read_calib_file(path):
                     pass  # casting error: data[key] already eq. value, so pass
     return data
 
+def custom_collate(data):
+    (imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline) = data[0]
+    return Data_Tuple(imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline)
+
 class Data_Tuple():
     #basically a struct
     def __init__(self, imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline) -> None:
@@ -42,7 +46,6 @@ class Data_Tuple():
         self.baseline = baseline
 
 class MyDataset(torch.utils.data.Dataset):
-
     def __init__(self, type : str):
         self.basedir = 'kitti_data'
         allImagePaths = self.getAllImages()

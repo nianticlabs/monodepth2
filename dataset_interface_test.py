@@ -3,15 +3,12 @@ import pdb
 import torch
 
 
-from dataset_interface import MyDataset, to_depth, to_disparity
+from dataset_interface import MyDataset, to_depth, to_disparity, custom_collate
 
 class batchData:
     imgL : torch.tensor
 
-def custom_collate(data):
-    print("data length: ", len(data))
-    (imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline) = data[0]
-    return dataset_interface.Data_Tuple(imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline)
+
 
 def main():
     dataset = MyDataset("train")
