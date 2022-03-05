@@ -6,8 +6,6 @@ import os
 import numpy as np
 from kitti_utils import generate_depth_map
 
-import pdb
-
 def to_depth(disparity : torch.Tensor, baseline : torch.Tensor, focalLength : torch.Tensor) -> torch.Tensor:
     depth = (baseline * focalLength)/disparity
     return depth
