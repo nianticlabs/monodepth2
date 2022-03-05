@@ -8,10 +8,13 @@ from dataset_interface import MyDataset, to_depth, to_disparity
 class batchData:
     imgL : torch.tensor
 
+def custom_collate(tup):
+    return dataset_interface.Data_Tuple(tup)
+
 def main():
     dataset = MyDataset("train")
 
-    loader = torch.utils.data.DataLoader(dataset=dataset, batch_size=1, shuffle=False)
+    loader = torch.utils.data.DataLoader(dataset=dataset, batch_size=1, shuffle=False, collate_fn = custom_collate)
     i = 0
     for tup in loader:
         print(tup.baseline)
