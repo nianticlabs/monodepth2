@@ -16,8 +16,8 @@ def main():
     loader = torch.utils.data.DataLoader(dataset=dataset, batch_size=8, shuffle=True, collate_fn = custom_collate)
     i = 0
     for tup in loader:
-        print(tup.baseline)
-        print(tup.imgR)
+        print(tup)
+        pdb.set_trace()
         i+=1
         print(f"I have completed {i} iterations out of {len(loader)}")
     

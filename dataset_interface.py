@@ -37,6 +37,7 @@ def custom_collate(data):
     for currData in data:
         (imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline) = currData
         toReturn.append(Data_Tuple(imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline))
+    print(len(toReturn))
     return toReturn
 
 class Data_Tuple():
