@@ -37,8 +37,7 @@ def custom_collate(data):
     imgRlist = []
     depthLList = []
     depthRList = []
-    focalList = [data[4::6]]
-    print(focalList)
+    focalList = []
     baselineList = []
 
     for currData in data:
