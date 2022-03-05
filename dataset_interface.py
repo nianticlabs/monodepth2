@@ -33,6 +33,8 @@ def read_calib_file(path):
 
 def custom_collate(data):
     print("data len", len(data))
+    print(type(data[0][0]))
+    raise
     imgLlist = []
     imgRlist = []
     depthLList = []
@@ -55,7 +57,7 @@ def custom_collate(data):
 class Data_Tuple():
     #basically a struct
     def __init__(self, imgL : torch.Tensor, imgR : torch.Tensor, depth_gtL : torch.Tensor, depth_gtR : torch.Tensor, focalLength : torch.Tensor, baseline : torch.Tensor) -> None:
-        self.imgL = torch.Tensor(imgL).float()
+        self.imgL = torch.FloatTensor(imgL)
         self.imgR = imgR
         self.depthL = depth_gtL
         self.depthR = depth_gtR
