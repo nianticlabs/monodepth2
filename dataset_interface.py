@@ -37,7 +37,8 @@ def custom_collate(data):
     imgRlist = []
     depthLList = []
     depthRList = []
-    focalList = []
+    focalList = [data[4::6]]
+    print(focalList)
     baselineList = []
 
     for currData in data:
@@ -49,7 +50,7 @@ def custom_collate(data):
         focalList.append(focalLength)
         baselineList.append(baseline)
 
-    toReturn = Data_Tuple(torch.Tensor(imgLlist), torch.Tensor(imgRlist), torch.Tensor(depthLList), torch.Tensor(depthRList), torch.Tensor(focalList), torch.Tensor(baselineList))
+    toReturn = Data_Tuple(imgLlist, imgRlist, depthLList, depthRList, focalList, baselineList)
     return toReturn
 
 class Data_Tuple():
