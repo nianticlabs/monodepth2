@@ -9,7 +9,7 @@ class batchData:
     imgL : torch.tensor
 
 def custom_collate(data):
-    print(data.shape)
+    print(data)
     (imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline) = data
     return dataset_interface.Data_Tuple(imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline)
 

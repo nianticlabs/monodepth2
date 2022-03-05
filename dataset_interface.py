@@ -195,6 +195,6 @@ class MyDataset(torch.utils.data.Dataset):
                
         #data_tuple : Data_Tuple = Data_Tuple(imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline)
 
-        return imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline
+        return (imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline)
                 
         
