@@ -11,8 +11,8 @@ class batchData:
 
 
 def main():
-    dataset = MyDataset("train")
-
+    #dataset = MyDataset("train")
+    dataset = MyDataset("test")
     loader = torch.utils.data.DataLoader(dataset=dataset, batch_size=8, shuffle=False, collate_fn = custom_collate)
     i = 0
     for tup in loader:
