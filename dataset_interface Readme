@@ -6,14 +6,17 @@ mydataset also has a to_depth and to_disparity functions that given focalLength 
 vice versa
 
 example usage for data set to make data loader: 
-train_loader = DataLoader(dataset=MyDataset("train"), batch_size=args.batch_size)
+loader = get_dataloader(args)
+where args is: type, batch_size, shuffle
+type = "train" | "test" | "eval"
+batch_size = int
+shuffle = bool
 
-the get item function returns:
-tensor of left img (3, height, width)
-tensor of right img (3, height, width)
-tensor of left depth map (height, width)
-tensor of right depth map (height, width)
-a float with the focal length in pixels for this camera pair
-a float with the baseline in pixels for this camera pair
-
-returned schema: imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline
+the get item function returns a data class that has 6 attributes:
+ex: for obj in loader:
+obj.imgL = tensor of (tensor of left img (3, height, width))                        #batchsize x 3 x height x width
+obj.imgR = tensor of right img (3, height, width)                                   #batchsize x 3 x height x width
+obj.depthL = tensor of left depth map (height, width)                               #batchsize x height x width
+obj.depthR = tensor of right depth map (height, width)                              #batchsize x height x width
+obj.focalLength = tensor of (a float with the focal length in pixels for this camera pair)  #batchsize x 1
+obj.baseline = tensor of (a float with the baseline in pixels for this camera pair)         #batchsize x 1
