@@ -14,15 +14,14 @@ def main():
     #dataset = MyDataset("train")
     #dataset = MyDataset("test")
     
-    #loader = torch.utils.data.DataLoader(dataset=dataset, batch_size=1, shuffle=False, collate_fn = custom_collate)
-    type = "train"
-    batch_size = 1
-    shuffle = False
+    type = "test"
+    batch_size = 3
+    shuffle = True
     loader = get_dataloader(type, batch_size, shuffle)
     i = 0
     for tup in loader:
         print(tup.focalLength)
-        pdb.set_trace()
+        print(tup.imgR)
         i+=1
         print(f"I have completed {i} iterations out of {len(loader)}")
     
