@@ -36,25 +36,9 @@ def read_calib_file(path):
 def custom_collate(data):
     print("data len", len(data))
     #print(type(data[0][0]))
-    out = tuple(map(torch.stack, zip(*data)))
-    pdb.set_trace()
-    imgLlist = data[0][0]
-    imgRlist = data[0][1]
-    depthLList = data[0][2]
-    depthRList = data[0][3]
-    focalList = data[0][4]
-    baselineList = data[0][5]
+    out = tuple(map(torch.stack, zip(*data))) #map ith in each tuple to their own tensor
 
-    for currData in data:
-        (imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline) = currData
-        imgLlist.append(imgL)
-        imgRlist.append(imgR)
-        depthLList.append(depth_gtL)
-        depthRList.append(depth_gtR)
-        focalList.append(focalLength)
-        baselineList.append(baseline)
-
-    toReturn = Data_Tuple(imgLlist, imgRlist, depthLList, depthRList, focalList, baselineList)
+    toReturn = Data_Tuple(imgL=out[0], imgR=out[1], depth_gtL=out[2], depth_gtR=out[3], focalLength=out[4], baseline=out[5])
     return toReturn
 
 class Data_Tuple():
