@@ -8,8 +8,8 @@ from dataset_interface import MyDataset, to_depth, to_disparity
 class batchData:
     imgL : torch.tensor
 
-def custom_collate(tup):
-    return dataset_interface.Data_Tuple(tup)
+def custom_collate(imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline):
+    return dataset_interface.Data_Tuple(imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline)
 
 def main():
     dataset = MyDataset("train")
