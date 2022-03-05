@@ -193,8 +193,8 @@ class MyDataset(torch.utils.data.Dataset):
         depth_gtL : torch.Tensor = torch.Tensor(depth_gtL)
         depth_gtR : torch.Tensor = torch.Tensor(depth_gtR)
                
-        data_tuple : Data_Tuple = Data_Tuple(imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline)
+        #data_tuple : Data_Tuple = Data_Tuple(imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline)
 
-        return data_tuple
+        return imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline
                 
         
