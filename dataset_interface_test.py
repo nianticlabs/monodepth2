@@ -10,7 +10,7 @@ class batchData:
 
 def custom_collate(data):
     print(data)
-    imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline = data
+    (imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline) = data
     return dataset_interface.Data_Tuple(imgL, imgR, depth_gtL, depth_gtR, focalLength, baseline)
 
 def main():
