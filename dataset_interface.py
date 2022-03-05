@@ -33,11 +33,15 @@ def read_calib_file(path):
                     pass  # casting error: data[key] already eq. value, so pass
     return data
 
-def custom_collate(data):
-    print("data len", len(data))
-    #print(type(data[0][0]))
-    out = tuple(map(torch.stack, zip(*data))) #map ith in each tuple to their own tensor
+def get_dataloader(*args):
+    #arg 0 = type "train, test, eval"
+    #arg 1 = batch size
+    #arg 2 = shuffle : Bool
+    dataset = MyDataset(args[0])
+    loader = torch.utils.data.DataLoader(dataset=dataset, batch_size=args[1], shuffle=args[2], collate_fn = custom_collate)
 
+def custom_collate(data):
+    out = tuple(map(torch.stack, zip(*data))) #map ith in each tuple to their own tensor
     toReturn = Data_Tuple(imgL=out[0], imgR=out[1], depth_gtL=out[2], depth_gtR=out[3], focalLength=out[4], baseline=out[5])
     return toReturn
 
