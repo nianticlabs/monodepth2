@@ -39,6 +39,7 @@ def get_dataloader(*args):
     #arg 2 = shuffle : Bool
     dataset = MyDataset(args[0])
     loader = torch.utils.data.DataLoader(dataset=dataset, batch_size=args[1], shuffle=args[2], collate_fn = custom_collate)
+    return loader
 
 def custom_collate(data):
     out = tuple(map(torch.stack, zip(*data))) #map ith in each tuple to their own tensor
