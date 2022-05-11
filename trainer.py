@@ -152,10 +152,10 @@ class Trainer:
             h = self.opt.height // (2 ** scale)
             w = self.opt.width // (2 ** scale)
 
-            self.backproject_depth[scale] = BackprojectDepth(self.opt.batch_size, h, w)
+            self.backproject_depth[scale] = BackprojectDepth(h, w)
             self.backproject_depth[scale].to(self.device)
 
-            self.project_3d[scale] = Project3D(self.opt.batch_size, h, w)
+            self.project_3d[scale] = Project3D(h, w)
             self.project_3d[scale].to(self.device)
 
         self.depth_metric_names = [
