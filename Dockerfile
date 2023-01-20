@@ -23,4 +23,5 @@ RUN mkdir /images
 
 # then, inside docker container:
 # source activate py36
+# cd monodepth2
 # python test_simple.py --image_path ../images/your_image.jpg --model_name mono+stereo_640x192
