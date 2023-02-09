@@ -20,11 +20,17 @@ class MonodepthOptions:
         self.parser.add_argument("--data_path",
                                  type=str,
                                  help="path to the training data",
-                                 default=os.path.join(file_dir, "kitti_data"))
+                                 # default=os.path.join(file_dir, "kitti_data")
+                                 default='/mnt/study/depth/Datasets/kitti_data')
         self.parser.add_argument("--log_dir",
                                  type=str,
                                  help="log directory",
                                  default=os.path.join(os.path.expanduser("~"), "tmp"))
+
+        self.parser.add_argument("--path_for_continue",
+                                 type=str,
+                                 help= "weight directory"
+                                 )
 
         # TRAINING options
         self.parser.add_argument("--model_name",
@@ -82,12 +88,19 @@ class MonodepthOptions:
                                  type=int,
                                  help="frames to load",
                                  default=[0, -1, 1])
+        self.parser.add_argument("--cont",
+                                 help="if set, continue from the stored weight",
+                                 action="store_true")
+        self.parser.add_argument("--start_epoch",
+                                 type=int,
+                                 help="set epoch when the model stopped"
+                                 )
 
         # OPTIMIZATION options
         self.parser.add_argument("--batch_size",
                                  type=int,
                                  help="batch size",
-                                 default=12)
+                                 default=8)
         self.parser.add_argument("--learning_rate",
                                  type=float,
                                  help="learning rate",
