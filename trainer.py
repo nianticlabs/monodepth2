@@ -23,6 +23,8 @@ from layers import *
 
 import datasets
 import networks
+import panoptic_decoder
+import json
 from IPython import embed
 
 
@@ -38,7 +40,7 @@ class Trainer:
         self.models = {}
         self.parameters_to_train = []
 
-        self.device = torch.device("cpu" if self.opt.no_cuda else "cuda")
+        self.device = torch.device("cpu" if self.opt.no_cuda else f"cuda:{self.opt.gpu_num}")
 
         self.num_scales = len(self.opt.scales)
         self.num_input_frames = len(self.opt.frame_ids)
@@ -56,8 +58,18 @@ class Trainer:
         self.models["encoder"].to(self.device)
         self.parameters_to_train += list(self.models["encoder"].parameters())
 
-        self.models["depth"] = networks.DepthDecoder(
-            self.models["encoder"].num_ch_enc, self.opt.scales)
+        if self.opt.panoptic_decoder:
+            with open(self.opt.panoptic_option_pth) as f:
+                panoptic_opt=json.load(f)
+
+            self.models["depth"]=panoptic_decoder.SinglePanopticDeepLabDecoder_bj(
+                **panoptic_opt
+            )
+
+        else:
+            self.models["depth"] = networks.DepthDecoder(
+                self.models["encoder"].num_ch_enc, self.opt.scales)
+
         self.models["depth"].to(self.device)
         self.parameters_to_train += list(self.models["depth"].parameters())
 
@@ -119,6 +131,11 @@ class Trainer:
 
         train_filenames = readlines(fpath.format("train"))
         val_filenames = readlines(fpath.format("val"))
+
+        if self.opt.debug:
+            train_filenames=train_filenames[:10]
+            val_filenames=val_filenames[:10]
+
         img_ext = '.png' if self.opt.png else '.jpg'
 
         num_train_samples = len(train_filenames)

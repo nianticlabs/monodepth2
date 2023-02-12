@@ -16,6 +16,11 @@ class MonodepthOptions:
     def __init__(self):
         self.parser = argparse.ArgumentParser(description="Monodepthv2 options")
 
+        # DEBUG
+        self.parser.add_argument("--debug",
+                                 help="if set, debug",
+                                 action="store_true"
+                                 )
         # PATHS
         self.parser.add_argument("--data_path",
                                  type=str,
@@ -94,6 +99,19 @@ class MonodepthOptions:
         self.parser.add_argument("--start_epoch",
                                  type=int,
                                  help="set epoch when the model stopped"
+                                 )
+        self.parser.add_argument("--panoptic_decoder",
+                                 help="if set, use panoptic decoder",
+                                 action="store_true"
+                                 )
+        self.parser.add_argument("--panoptic_option_pth",
+                                 type=str,
+                                 help="path to panoptic option json file",
+                                 # default=os.path.join(file_dir, "kitti_data")
+                                 default='/mnt/study/depth/monodepth2/panoptic_decoder/panoptic_option_bj.json')
+        self.parser.add_argument("--gpu_num",
+                                 help="gpu number",
+                                 default=1
                                  )
 
         # OPTIMIZATION options

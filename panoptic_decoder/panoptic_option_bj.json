@@ -1,0 +1,28 @@
+{
+    "in_channels": 512,
+    "feature_key": 4,
+    "low_level_channels": [
+        256,
+        128,
+        64,
+        64
+    ],
+    "low_level_key": [
+        3,
+        2,
+        1,
+        0
+    ],
+    "low_level_channels_project": [
+        128,
+        64,
+        32,
+        16
+    ],
+    "decoder_channels": 256,
+    "atrous_rates": [
+        3,
+        6,
+        9
+    ]
+}

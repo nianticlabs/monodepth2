@@ -12,6 +12,8 @@ from utils import readlines
 from options import MonodepthOptions
 import datasets
 import networks
+import json
+import panoptic_decoder
 
 cv2.setNumThreads(0)  # This speeds up evaluation 5x on our unix systems (OpenCV 3.3.1)
 
@@ -87,7 +89,17 @@ def evaluate(opt):
                                 pin_memory=True, drop_last=False)
 
         encoder = networks.ResnetEncoder(opt.num_layers, False)
-        depth_decoder = networks.DepthDecoder(encoder.num_ch_enc)
+
+        if opt.panoptic_decoder:
+            with open(opt.panoptic_option_pth) as f:
+                panoptic_opt=json.load(f)
+
+            depth_decoder=panoptic_decoder.SinglePanopticDeepLabDecoder_bj(
+                **panoptic_opt
+            )
+
+        else:
+            depth_decoder = networks.DepthDecoder(encoder.num_ch_enc)
 
         model_dict = encoder.state_dict()
         encoder.load_state_dict({k: v for k, v in encoder_dict.items() if k in model_dict})
@@ -114,6 +126,7 @@ def evaluate(opt):
                 output = depth_decoder(encoder(input_color))
 
                 pred_disp, _ = disp_to_depth(output[("disp", 0)], opt.min_depth, opt.max_depth)
+                # pred_disp = output[("disp", 0)]
                 pred_disp = pred_disp.cpu()[:, 0].numpy()
 
                 if opt.post_process:
@@ -163,7 +176,7 @@ def evaluate(opt):
         quit()
 
     gt_path = os.path.join(splits_dir, opt.eval_split, "gt_depths.npz")
-    gt_depths = np.load(gt_path, fix_imports=True, encoding='latin1')["data"]
+    gt_depths = np.load(gt_path, fix_imports=True, encoding='latin1',allow_pickle=True)["data"]
 
     print("-> Evaluating")
 
