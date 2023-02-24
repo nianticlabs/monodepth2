@@ -7,3 +7,5 @@ kitti_data
 models
 .idea/
 Test_results/
+dgp/
+packnet_sfm

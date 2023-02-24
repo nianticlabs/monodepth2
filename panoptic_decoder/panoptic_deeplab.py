@@ -118,7 +118,7 @@ class SinglePanopticDeepLabDecoder_bj(nn.Module):
                 )
             )
             depth.append(
-                nn.Conv2d(decoder_channels, out_channels=1, kernel_size=1, padding_mode='reflect')
+                nn.Conv2d(decoder_channels, out_channels=1, kernel_size=1, padding_mode='zeros')
             )
         self.project = nn.ModuleList(project)
         self.fuse = nn.ModuleList(fuse)
@@ -126,7 +126,7 @@ class SinglePanopticDeepLabDecoder_bj(nn.Module):
         self.final_depth=nn.Sequential(
             fuse_conv(decoder_channels,64),
             fuse_conv(64,32),
-            nn.Conv2d(32, out_channels=1, kernel_size=1, padding_mode='reflect')
+            nn.Conv2d(32, out_channels=1, kernel_size=1, padding_mode='zeros')
         )
 
     def set_image_pooling(self, pool_size):
