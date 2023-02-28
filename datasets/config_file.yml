@@ -1,0 +1,155 @@
+arch:
+  max_epochs: 50
+  min_epochs: 1
+  seed: 42
+  validate_first: false
+checkpoint:
+  filepath: ''
+  mode: auto
+  monitor: loss
+  monitor_index: 0
+  s3_frequency: 1
+  s3_path: ''
+  s3_url: ''
+  save_top_k: 5
+config: configs/train_ddad.yaml
+datasets:
+  augmentation:
+    crop_eval_borders: []
+    crop_train_borders: []
+    image_shape:
+    - 384
+    - 640
+    jittering:
+    - 0.2
+    - 0.2
+    - 0.2
+    - 0.05
+  test:
+    back_context: 0
+    batch_size: 1
+    cameras:
+    - - camera_01
+    dataset:
+    - DGP
+    depth_type:
+    - lidar
+    forward_context: 0
+    input_depth_type:
+    - ''
+    num_logs: 5
+    num_workers: 8
+    path:
+    - /mnt/study/depth/DDAD/ddad_train_val/ddad.json
+    split:
+    - val
+  train:
+    back_context: 1
+    batch_size: 2
+    cameras:
+    - - camera_01
+    dataset:
+    - DGP
+    depth_type:
+    - lidar
+    forward_context: 1
+    input_depth_type:
+    - ''
+    num_logs: 5
+    num_workers: 8
+    path:
+    - /mnt/study/depth/DDAD/ddad_train_val/ddad.json
+    repeat:
+    - 5
+    split:
+    - train
+  validation:
+    back_context: 0
+    batch_size: 1
+    cameras:
+    - - camera_01
+    dataset:
+    - DGP
+    depth_type:
+    - lidar
+    forward_context: 0
+    input_depth_type:
+    - ''
+    num_logs: 5
+    num_workers: 8
+    path:
+    - /mnt/study/depth/DDAD/ddad_train_val/ddad.json
+    split:
+    - val
+debug: false
+default: configs/default_config
+model:
+  checkpoint_path: ''
+  depth_net:
+    checkpoint_path: ''
+    dropout: 0.0
+    name: PackNet01
+    version: 1A
+  loss:
+    C1: 0.0001
+    C2: 0.0009
+    automask_loss: true
+    clip_loss: 0.0
+    disp_norm: true
+    flip_lr_prob: 0.5
+    num_scales: 4
+    occ_reg_weight: 0.1
+    padding_mode: zeros
+    photometric_reduce_op: min
+    progressive_scaling: 0.0
+    rotation_mode: euler
+    smooth_loss_weight: 0.001
+    ssim_loss_weight: 0.85
+    supervised_loss_weight: 0.9
+    supervised_method: sparse-l1
+    supervised_num_scales: 4
+    upsample_depth_maps: true
+    velocity_loss_weight: 0.1
+  name: SelfSupModel
+  optimizer:
+    depth:
+      lr: 9.0e-05
+      weight_decay: 0.0
+    name: Adam
+    pose:
+      lr: 9.0e-05
+      weight_decay: 0.0
+  params:
+    crop: ''
+    max_depth: 200.0
+    min_depth: 0.0
+    scale_output: resize
+  pose_net:
+    checkpoint_path: ''
+    dropout: 0.0
+    name: PoseNet
+    version: ''
+  scheduler:
+    T_max: 20
+    gamma: 0.5
+    name: StepLR
+    step_size: 30
+name: default_config-train_ddad-2023.02.24-17h55m26s
+prepared: true
+save:
+  depth:
+    npz: true
+    png: true
+    rgb: true
+    viz: true
+  folder: ''
+  pretrained: ''
+wandb:
+  dir: ''
+  dry_run: true
+  entity: ''
+  name: ''
+  project: ''
+  tags: []
+  url: ''
+

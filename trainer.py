@@ -123,37 +123,61 @@ class Trainer:
         print("Training is using:\n  ", self.device)
 
         # data
-        datasets_dict = {"kitti": datasets.KITTIRAWDataset,
-                         "kitti_odom": datasets.KITTIOdomDataset}
-        self.dataset = datasets_dict[self.opt.dataset]
+        if self.opt.ddad:
 
-        fpath = os.path.join(os.path.dirname(__file__), "splits", self.opt.split, "{}_files.txt")
+            self.dataset=datasets.DGPDataset
+            train_dataset=self.dataset(data_path=self.opt.json_path, split='train',
+                                       height=self.opt.height, width=self.opt.width,
+                                       frame_idxs=self.opt.frame_ids, num_scales=4, datum_names=['CAMERA_01'],
+                                       back_context=1,forward_context=1)
+            self.train_loader = DataLoader(
+                train_dataset, self.opt.batch_size, True,
+                num_workers=self.opt.num_workers, pin_memory=True, drop_last=True)
 
-        train_filenames = readlines(fpath.format("train"))
-        val_filenames = readlines(fpath.format("val"))
+            val_dataset = self.dataset(data_path=self.opt.json_path, split='val',
+                                       height=self.opt.height, width=self.opt.width,
+                                       frame_idxs=self.opt.frame_ids, num_scales=4, datum_names=['lidar','CAMERA_01'],
+                                       back_context=1, forward_context=1)
+            self.val_loader = DataLoader(
+                val_dataset, self.opt.batch_size, True,
+                num_workers=self.opt.num_workers, pin_memory=True, drop_last=True)
 
-        if self.opt.debug:
-            train_filenames=train_filenames[:10]
-            val_filenames=val_filenames[:10]
+            num_train_samples = len(train_dataset)
+            self.num_total_steps = num_train_samples // self.opt.batch_size * self.opt.num_epochs
+            self.val_iter = iter(self.val_loader)
 
-        img_ext = '.png' if self.opt.png else '.jpg'
+        else:
+            datasets_dict = {"kitti": datasets.KITTIRAWDataset,
+                             "kitti_odom": datasets.KITTIOdomDataset}
+            self.dataset = datasets_dict[self.opt.dataset]
 
-        num_train_samples = len(train_filenames)
-        self.num_total_steps = num_train_samples // self.opt.batch_size * self.opt.num_epochs
+            fpath = os.path.join(os.path.dirname(__file__), "splits", self.opt.split, "{}_files.txt")
 
-        train_dataset = self.dataset(
-            self.opt.data_path, train_filenames, self.opt.height, self.opt.width,
-            self.opt.frame_ids, 4, is_train=True, img_ext=img_ext)
-        self.train_loader = DataLoader(
-            train_dataset, self.opt.batch_size, True,
-            num_workers=self.opt.num_workers, pin_memory=True, drop_last=True)
-        val_dataset = self.dataset(
-            self.opt.data_path, val_filenames, self.opt.height, self.opt.width,
-            self.opt.frame_ids, 4, is_train=False, img_ext=img_ext)
-        self.val_loader = DataLoader(
-            val_dataset, self.opt.batch_size, True,
-            num_workers=self.opt.num_workers, pin_memory=True, drop_last=True)
-        self.val_iter = iter(self.val_loader)
+            train_filenames = readlines(fpath.format("train"))
+            val_filenames = readlines(fpath.format("val"))
+
+            if self.opt.debug:
+                train_filenames=train_filenames[:10]
+                val_filenames=val_filenames[:10]
+
+            img_ext = '.png' if self.opt.png else '.jpg'
+
+            num_train_samples = len(train_filenames)
+            self.num_total_steps = num_train_samples // self.opt.batch_size * self.opt.num_epochs
+
+            train_dataset = self.dataset(
+                self.opt.data_path, train_filenames, self.opt.height, self.opt.width,
+                self.opt.frame_ids, 4, is_train=True, img_ext=img_ext)
+            self.train_loader = DataLoader(
+                train_dataset, self.opt.batch_size, True,
+                num_workers=self.opt.num_workers, pin_memory=True, drop_last=True)
+            val_dataset = self.dataset(
+                self.opt.data_path, val_filenames, self.opt.height, self.opt.width,
+                self.opt.frame_ids, 4, is_train=False, img_ext=img_ext)
+            self.val_loader = DataLoader(
+                val_dataset, self.opt.batch_size, True,
+                num_workers=self.opt.num_workers, pin_memory=True, drop_last=True)
+            self.val_iter = iter(self.val_loader)
 
         self.writers = {}
         for mode in ["train", "val"]:
@@ -339,10 +363,12 @@ class Trainer:
         """
         self.set_eval()
         try:
-            inputs = self.val_iter.next()
+            # inputs = self.val_iter.next()
+            inputs = next(self.val_iter)
         except StopIteration:
             self.val_iter = iter(self.val_loader)
-            inputs = self.val_iter.next()
+            # inputs = self.val_iter.next()
+            inputs = next(self.val_iter)
 
         with torch.no_grad():
             outputs, losses = self.process_batch(inputs)

@@ -21,6 +21,15 @@ class MonodepthOptions:
                                  help="if set, debug",
                                  action="store_true"
                                  )
+        # I add
+        self.parser.add_argument("--ddad",
+                                 help='if set, use ddad dataset',
+                                 action="store_true"
+                                 )
+        self.parser.add_argument("--json_path",
+                                 type=str,
+                                 help="path to the yaml file which is needed for getting ddad dataset",
+                                 default='/mnt/study/depth/DDAD/ddad_train_val/ddad.json')
         # PATHS
         self.parser.add_argument("--data_path",
                                  type=str,

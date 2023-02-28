@@ -1,0 +1,48 @@
+model:
+    name: 'SelfSupModel'
+    optimizer:
+        name: 'Adam'
+        depth:
+            lr: 0.00009
+        pose:
+            lr: 0.00009
+    scheduler:
+        name: 'StepLR'
+        step_size: 30
+        gamma: 0.5
+    depth_net:
+        name: 'PackNet01'
+        version: '1A'
+    pose_net:
+        name: 'PoseNet'
+        version: ''
+    params:
+        crop: ''
+        min_depth: 0.0
+        max_depth: 200.0
+datasets:
+    augmentation:
+        image_shape: (384, 640)
+    train:
+        batch_size: 2
+        num_workers: 8
+        dataset: ['DGP']
+        path: ['/mnt/study/depth/DDAD/ddad_train_val/ddad.json']
+        split: ['train']
+        depth_type: ['lidar']
+        cameras: [['camera_01']]
+        repeat: [5]
+    validation:
+        num_workers: 8
+        dataset: ['DGP']
+        path: ['/mnt/study/depth/DDAD/ddad_train_val/ddad.json']
+        split: ['val']
+        depth_type: ['lidar']
+        cameras: [['camera_01']]
+    test:
+        num_workers: 8
+        dataset: ['DGP']
+        path: ['/mnt/study/depth/DDAD/ddad_train_val/ddad.json']
+        split: ['val']
+        depth_type: ['lidar']
+        cameras: [['camera_01']]
