@@ -14,6 +14,8 @@ def parse_args():
 
     parser.add_argument('--model_type', type=str,
                         help='model_type', default='original')
+    parser.add_argument('--gt_pth',type=str,
+                        default='./splits/eigen/gt_depths.npz')
 
     return parser.parse_args()
 
@@ -29,8 +31,14 @@ def npy_to_jpg(args):
         img=pil.fromarray((depth_color*255).astype(np.uint8))
         img.save(os.path.join(args.output_pth, args.model_type, f'disp_{i}.jpg'))
 
+def gt_to_jpg(args):
+    npy_list=np.load(args.gt_pth, fix_imports=True, encoding='latin1',allow_pickle=True)['data']
+    gt_depth=npy_list[0]
+    depth_color = _DEPTH_COLORMAP(npy_list[0])[..., :3]
+    img = pil.fromarray((depth_color * 255).astype(np.uint8))
+    img.save(os.path.join(args.output_pth, 'gt_test', 'depth_0.jpg'))
 
 if __name__ == '__main__':
     args=parse_args()
-    npy_to_jpg(args)
-
+    # npy_to_jpg(args)
+    gt_to_jpg(args)

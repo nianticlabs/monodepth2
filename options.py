@@ -30,6 +30,10 @@ class MonodepthOptions:
                                  type=str,
                                  help="path to the yaml file which is needed for getting ddad dataset",
                                  default='/mnt/study/depth/DDAD/ddad_train_val/ddad.json')
+        self.parser.add_argument("--ddad_gt_path",
+                                 type=str,
+                                 help="path to the npz file which is needed for gt",
+                                 default='/mnt/study/depth/DDAD/gt_val/gt_depths.npz')
         # PATHS
         self.parser.add_argument("--data_path",
                                  type=str,

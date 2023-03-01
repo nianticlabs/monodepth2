@@ -61,8 +61,12 @@ def batch_post_process_disparity(l_disp, r_disp):
 def evaluate(opt):
     """Evaluates a pretrained model using a specified test set
     """
-    MIN_DEPTH = 1e-3
-    MAX_DEPTH = 80
+    if opt.ddad:
+        MIN_DEPTH = 1e-3
+        MAX_DEPTH = 200
+    else:
+        MIN_DEPTH = 1e-3
+        MAX_DEPTH = 80
 
     assert sum((opt.eval_mono, opt.eval_stereo)) == 1, \
         "Please choose mono or stereo evaluation by setting either --eval_mono or --eval_stereo"
@@ -82,9 +86,15 @@ def evaluate(opt):
 
         encoder_dict = torch.load(encoder_path)
 
-        dataset = datasets.KITTIRAWDataset(opt.data_path, filenames,
-                                           encoder_dict['height'], encoder_dict['width'],
-                                           [0], 4, is_train=False)
+        if opt.ddad:
+            dataset=datasets.DGPDataset(data_path=opt.json_path, split='val',
+                                        height=opt.height, width=opt.width,
+                                        frame_idxs=opt.frame_ids, num_scales=4, datum_names=['lidar','CAMERA_01'],
+                                        back_context=1, forward_context=1)
+        else:
+            dataset = datasets.KITTIRAWDataset(opt.data_path, filenames,
+                                               encoder_dict['height'], encoder_dict['width'],
+                                               [0], 4, is_train=False)
         dataloader = DataLoader(dataset, 16, shuffle=False, num_workers=opt.num_workers,
                                 pin_memory=True, drop_last=False)
 
@@ -174,9 +184,12 @@ def evaluate(opt):
 
         print("-> No ground truth is available for the KITTI benchmark, so not evaluating. Done.")
         quit()
-
-    gt_path = os.path.join(splits_dir, opt.eval_split, "gt_depths.npz")
-    gt_depths = np.load(gt_path, fix_imports=True, encoding='latin1',allow_pickle=True)["data"]
+    if opt.ddad:
+        gt_path=op.ddad_gt_path
+        gt_depths = np.load(gt_path, fix_imports=True, encoding='latin1', allow_pickle=True)["data"]
+    else:
+        gt_path = os.path.join(splits_dir, opt.eval_split, "gt_depths.npz")
+        gt_depths = np.load(gt_path, fix_imports=True, encoding='latin1',allow_pickle=True)["data"]
 
     print("-> Evaluating")
 
@@ -201,13 +214,17 @@ def evaluate(opt):
         pred_depth = 1 / pred_disp
 
         if opt.eval_split == "eigen":
-            mask = np.logical_and(gt_depth > MIN_DEPTH, gt_depth < MAX_DEPTH)
+            if not opt.ddad:
+                mask = np.logical_and(gt_depth > MIN_DEPTH, gt_depth < MAX_DEPTH)
 
-            crop = np.array([0.40810811 * gt_height, 0.99189189 * gt_height,
-                             0.03594771 * gt_width,  0.96405229 * gt_width]).astype(np.int32)
-            crop_mask = np.zeros(mask.shape)
-            crop_mask[crop[0]:crop[1], crop[2]:crop[3]] = 1
-            mask = np.logical_and(mask, crop_mask)
+                crop = np.array([0.40810811 * gt_height, 0.99189189 * gt_height,
+                                 0.03594771 * gt_width,  0.96405229 * gt_width]).astype(np.int32)
+                crop_mask = np.zeros(mask.shape)
+                crop_mask[crop[0]:crop[1], crop[2]:crop[3]] = 1
+                mask = np.logical_and(mask, crop_mask)
+
+            else:
+                mask=gt_depth>0
 
         else:
             mask = gt_depth > 0

@@ -15,11 +15,14 @@ import PIL.Image as pil
 from utils import readlines
 from kitti_utils import generate_depth_map
 
-
-def export_gt_depths_kitti():
-
+def export_gt_depths_options():
     parser = argparse.ArgumentParser(description='export_gt_depth')
 
+    parser.add_argument('--dataset',
+                        type=str,
+                        help='which dataset to export gt',
+                        required=True,
+                        choices=['kitti','ddad'])
     parser.add_argument('--data_path',
                         type=str,
                         help='path to the root of the KITTI data',
@@ -29,7 +32,23 @@ def export_gt_depths_kitti():
                         help='which split to export gt from',
                         required=True,
                         choices=["eigen", "eigen_benchmark"])
-    opt = parser.parse_args()
+
+    return parser.parse_args()
+
+def export_gt_depths_kitti(opt):
+
+    # parser = argparse.ArgumentParser(description='export_gt_depth')
+    #
+    # parser.add_argument('--data_path',
+    #                     type=str,
+    #                     help='path to the root of the KITTI data',
+    #                     required=True)
+    # parser.add_argument('--split',
+    #                     type=str,
+    #                     help='which split to export gt from',
+    #                     required=True,
+    #                     choices=["eigen", "eigen_benchmark"])
+    # opt = parser.parse_args()
 
     split_folder = os.path.join(os.path.dirname(__file__), "splits", opt.split)
     lines = readlines(os.path.join(split_folder, "test_files.txt"))
@@ -61,5 +80,34 @@ def export_gt_depths_kitti():
     np.savez_compressed(output_path, data=np.array(gt_depths))
 
 
+def export_gt_depths_ddad():
+
+    print("Exporting ground truth depths for DDAD")
+
+    gt_depths = []
+    file_list=os.listdir(opt.data_path)
+    gt_list=[file for file in file_list if file.endswith('_gt.png')]
+    data_len=len(gt_list)
+    for gt_id in range(data_len):
+
+        gt_id = int(gt_id)
+
+        gt_depth_path = os.path.join(opt.data_path, 'val_{:010d}_gt.png'.format(gt_id))
+        gt_depth = np.array(pil.open(gt_depth_path)).astype(np.float32) / 256
+
+        gt_depths.append(gt_depth.astype(np.float32))
+
+    output_path = os.path.join(opt.data_path, "gt_depths.npz")
+
+    print("Saving to {}".format(output_path))
+
+    np.savez_compressed(output_path, data=np.array(gt_depths))
+
+
 if __name__ == "__main__":
-    export_gt_depths_kitti()
+    opt=export_gt_depths_options()
+    if opt.dataset=='kitti':
+        export_gt_depths_kitti()
+
+    else:
+        export_gt_depths_ddad()
