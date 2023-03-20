@@ -59,7 +59,7 @@ class Trainer:
             self.models["encoder"].to(self.device)
             self.parameters_to_train += list(self.models["encoder"].parameters())
 
-            self.models["depth"] = networks.DepthDecoder(
+            self.models["depth"] = networks_lite.DepthDecoder(
                 self.models["encoder"].num_ch_enc, self.opt.scales)
 
             self.models["depth"].to(self.device)
@@ -313,9 +313,13 @@ class Trainer:
 
             outputs = self.models["depth"](features[0])
         else:
-            # Otherwise, we only feed the image with frame_id 0 through the depth encoder
-            features = self.models["encoder"](inputs["color_aug", 0, 0])
-            outputs = self.models["depth"](features)
+            if self.opt.lite:
+                features = self.models["encoder"](inputs["color_aug", 0, 0])
+                outputs, _ = self.models["depth"](features)
+            else:
+                # Otherwise, we only feed the image with frame_id 0 through the depth encoder
+                features = self.models["encoder"](inputs["color_aug", 0, 0])
+                outputs = self.models["depth"](features)
 
         if self.opt.predictive_mask:
             outputs["predictive_mask"] = self.models["predictive_mask"](features)
