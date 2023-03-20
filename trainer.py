@@ -23,6 +23,7 @@ from layers import *
 
 import datasets
 import networks
+import networks_lite
 import panoptic_decoder
 import json
 from IPython import embed
@@ -53,40 +54,67 @@ class Trainer:
         if self.opt.use_stereo:
             self.opt.frame_ids.append("s")
 
-        self.models["encoder"] = networks.ResnetEncoder(
-            self.opt.num_layers, self.opt.weights_init == "pretrained")
-        self.models["encoder"].to(self.device)
-        self.parameters_to_train += list(self.models["encoder"].parameters())
+        if self.opt.lite:
+            self.models["encoder"] = networks_lite.LiteMono()
+            self.models["encoder"].to(self.device)
+            self.parameters_to_train += list(self.models["encoder"].parameters())
 
-        if self.opt.panoptic_decoder:
-            with open(self.opt.panoptic_option_pth) as f:
-                panoptic_opt=json.load(f)
-
-            self.models["depth"]=panoptic_decoder.SinglePanopticDeepLabDecoder_bj(
-                **panoptic_opt
-            )
-
-        else:
             self.models["depth"] = networks.DepthDecoder(
                 self.models["encoder"].num_ch_enc, self.opt.scales)
 
-        self.models["depth"].to(self.device)
-        self.parameters_to_train += list(self.models["depth"].parameters())
+            self.models["depth"].to(self.device)
+            self.parameters_to_train += list(self.models["depth"].parameters())
+
+        else:
+            self.models["encoder"] = networks.ResnetEncoder(
+                self.opt.num_layers, self.opt.weights_init == "pretrained")
+            self.models["encoder"].to(self.device)
+            self.parameters_to_train += list(self.models["encoder"].parameters())
+
+            if self.opt.panoptic_decoder:
+                with open(self.opt.panoptic_option_pth) as f:
+                    panoptic_opt=json.load(f)
+
+                self.models["depth"]=panoptic_decoder.SinglePanopticDeepLabDecoder_bj(
+                    **panoptic_opt
+                )
+
+            else:
+                self.models["depth"] = networks.DepthDecoder(
+                    self.models["encoder"].num_ch_enc, self.opt.scales)
+
+            self.models["depth"].to(self.device)
+            self.parameters_to_train += list(self.models["depth"].parameters())
 
         if self.use_pose_net:
             if self.opt.pose_model_type == "separate_resnet":
-                self.models["pose_encoder"] = networks.ResnetEncoder(
-                    self.opt.num_layers,
-                    self.opt.weights_init == "pretrained",
-                    num_input_images=self.num_pose_frames)
+                if self.opt.lite:
+                    self.models["pose_encoder"] = networks_lite.ResnetEncoder(
+                        self.opt.num_layers,
+                        self.opt.weights_init == "pretrained",
+                        num_input_images=self.num_pose_frames)
 
-                self.models["pose_encoder"].to(self.device)
-                self.parameters_to_train += list(self.models["pose_encoder"].parameters())
+                    self.models["pose_encoder"].to(self.device)
+                    self.parameters_to_train += list(self.models["pose_encoder"].parameters())
 
-                self.models["pose"] = networks.PoseDecoder(
-                    self.models["pose_encoder"].num_ch_enc,
-                    num_input_features=1,
-                    num_frames_to_predict_for=2)
+                    self.models["pose"] = networks_lite.PoseDecoder(
+                        self.models["pose_encoder"].num_ch_enc,
+                        num_input_features=1,
+                        num_frames_to_predict_for=2)
+
+                else:
+                    self.models["pose_encoder"] = networks.ResnetEncoder(
+                        self.opt.num_layers,
+                        self.opt.weights_init == "pretrained",
+                        num_input_images=self.num_pose_frames)
+
+                    self.models["pose_encoder"].to(self.device)
+                    self.parameters_to_train += list(self.models["pose_encoder"].parameters())
+
+                    self.models["pose"] = networks.PoseDecoder(
+                        self.models["pose_encoder"].num_ch_enc,
+                        num_input_features=1,
+                        num_frames_to_predict_for=2)
 
             elif self.opt.pose_model_type == "shared":
                 self.models["pose"] = networks.PoseDecoder(

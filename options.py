@@ -22,6 +22,9 @@ class MonodepthOptions:
                                  action="store_true"
                                  )
         # I add
+        self.parser.add_argument("--lite",
+                                 help='if set, use the encoders and decoders from mono-lite',
+                                 action='store_true')
         self.parser.add_argument("--ddad",
                                  help='if set, use ddad dataset',
                                  action="store_true"
