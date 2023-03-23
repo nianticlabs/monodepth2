@@ -14,6 +14,7 @@ import datasets
 import networks
 import json
 import panoptic_decoder
+import networks_lite
 
 cv2.setNumThreads(0)  # This speeds up evaluation 5x on our unix systems (OpenCV 3.3.1)
 
@@ -98,7 +99,10 @@ def evaluate(opt):
         dataloader = DataLoader(dataset, 16, shuffle=False, num_workers=opt.num_workers,
                                 pin_memory=True, drop_last=False)
 
-        encoder = networks.ResnetEncoder(opt.num_layers, False)
+        if opt.lite:
+            encoder = networks_lite.LiteMono()
+        else:
+            encoder = networks.ResnetEncoder(opt.num_layers, False)
 
         if opt.panoptic_decoder:
             with open(opt.panoptic_option_pth) as f:
@@ -107,6 +111,8 @@ def evaluate(opt):
             depth_decoder=panoptic_decoder.SinglePanopticDeepLabDecoder_bj(
                 **panoptic_opt
             )
+        elif opt.lite:
+            depth_decoder=networks_lite.DepthDecoder(encoder.num_ch_enc, [0,1,2])
 
         else:
             depth_decoder = networks.DepthDecoder(encoder.num_ch_enc)
@@ -133,7 +139,10 @@ def evaluate(opt):
                     # Post-processed results require each image to have two forward passes
                     input_color = torch.cat((input_color, torch.flip(input_color, [3])), 0)
 
-                output = depth_decoder(encoder(input_color))
+                if opt.lite:
+                    output,_ = depth_decoder(encoder(input_color))
+                else:
+                    output = depth_decoder(encoder(input_color))
 
                 pred_disp, _ = disp_to_depth(output[("disp", 0)], opt.min_depth, opt.max_depth)
                 # pred_disp = output[("disp", 0)]
@@ -185,7 +194,7 @@ def evaluate(opt):
         print("-> No ground truth is available for the KITTI benchmark, so not evaluating. Done.")
         quit()
     if opt.ddad:
-        gt_path=op.ddad_gt_path
+        gt_path=opt.ddad_gt_path
         gt_depths = np.load(gt_path, fix_imports=True, encoding='latin1', allow_pickle=True)["data"]
     else:
         gt_path = os.path.join(splits_dir, opt.eval_split, "gt_depths.npz")
