@@ -55,7 +55,7 @@ class Trainer:
             self.opt.frame_ids.append("s")
 
         if self.opt.lite:
-            self.models["encoder"] = networks_lite.LiteMono()
+            self.models["encoder"] = networks_lite.LiteMono(global_block_type=[self.opt.global_block_type for i in range(3)])
             self.models["encoder"].to(self.device)
             self.parameters_to_train += list(self.models["encoder"].parameters())
 

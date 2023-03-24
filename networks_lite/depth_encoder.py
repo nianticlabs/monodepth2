@@ -5,6 +5,7 @@ import torch.nn.functional as F
 from timm.models.layers import DropPath
 import math
 import torch.cuda
+from maxim_pytorch import ResidualSplitHeadMultiAxisGmlpLayer
 
 
 class PositionalEncodingFourier(nn.Module):
@@ -276,6 +277,25 @@ class LGFI(nn.Module):
 
         return x
 
+class MAB(nn.Module):
+    def __init__(self, block_size=(2,2), grid_size=(2,2), num_channels):
+        super().__init__()
+        self.block_size=block_size
+        self.grid_size=grid_size
+        self.num_channels=num_channels
+
+        self.mab=ResidualSplitHeadMultiAxisGmlpLayer(self.block_size, self.grid_size, self.num_channels)
+
+    def forward(self, x):
+        input_= x
+
+        x.permute(0,2,3,1)  # (N, C, H, W) -> (N, H, W, C)
+        x= self.mab(x)
+        x.permute(0,3,1,2)
+
+        x= input_ + x
+
+
 
 class AvgPool(nn.Module):
     def __init__(self, ratio):
@@ -339,7 +359,7 @@ class LiteMono(nn.Module):
                 self.dilation = [[1, 2, 3], [1, 2, 3], [1, 2, 3, 2, 4, 6]]
 
         for g in global_block_type:
-            assert g in ['None', 'LGFI']
+            assert g in ['None', 'LGFI', 'MAB']
 
         self.downsample_layers = nn.ModuleList()  # stem and 3 intermediate downsampling conv layers
         stem1 = nn.Sequential(
@@ -377,6 +397,8 @@ class LiteMono(nn.Module):
                                                  use_pos_emb=use_pos_embd_xca[i], num_heads=heads[i],
                                                  layer_scale_init_value=layer_scale_init_value,
                                                  ))
+                    elif global_block_type[i] == 'MAB':
+                        stage_blocks.append(MAB(num_channels=self.dims[i]))
 
                     else:
                         raise NotImplementedError

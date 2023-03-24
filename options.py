@@ -37,6 +37,10 @@ class MonodepthOptions:
                                  type=str,
                                  help="path to the npz file which is needed for gt",
                                  default='/mnt/study/depth/DDAD/gt_val/gt_depths.npz')
+        self.parser.add_argument("--global_block_type",
+                                 type="str",
+                                 help='LGFI or MAB',
+                                 default='MAB')
         # PATHS
         self.parser.add_argument("--data_path",
                                  type=str,
