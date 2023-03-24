@@ -278,23 +278,26 @@ class LGFI(nn.Module):
         return x
 
 class MAB(nn.Module):
-    def __init__(self, block_size=(2,2), grid_size=(2,2), num_channels):
+    def __init__(self, num_channels, residual, block_size=(2,2), grid_size=(2,2) ):
         super().__init__()
         self.block_size=block_size
         self.grid_size=grid_size
         self.num_channels=num_channels
+        self.residual=residual
 
         self.mab=ResidualSplitHeadMultiAxisGmlpLayer(self.block_size, self.grid_size, self.num_channels)
 
     def forward(self, x):
         input_= x
 
-        x.permute(0,2,3,1)  # (N, C, H, W) -> (N, H, W, C)
+        x= x.permute(0,2,3,1)  # (N, C, H, W) -> (N, H, W, C)
         x= self.mab(x)
-        x.permute(0,3,1,2)
+        x= x.permute(0,3,1,2)
 
-        x= input_ + x
+        if self.residual:
+            x= input_ + x
 
+        return x
 
 
 class AvgPool(nn.Module):
@@ -315,12 +318,13 @@ class LiteMono(nn.Module):
     """
     Lite-Mono
     """
-    def __init__(self, in_chans=3, model='lite-mono', height=192, width=640,
+    def __init__(self, residual, in_chans=3, model='lite-mono', height=192, width=640,
                  global_block=[1, 1, 1], global_block_type=['LGFI', 'LGFI', 'LGFI'],
                  drop_path_rate=0.2, layer_scale_init_value=1e-6, expan_ratio=6,
                  heads=[8, 8, 8], use_pos_embd_xca=[True, False, False], **kwargs):
 
         super().__init__()
+        self.residual=residual
 
         if model == 'lite-mono':
             self.num_ch_enc = np.array([48, 80, 128])
@@ -398,7 +402,7 @@ class LiteMono(nn.Module):
                                                  layer_scale_init_value=layer_scale_init_value,
                                                  ))
                     elif global_block_type[i] == 'MAB':
-                        stage_blocks.append(MAB(num_channels=self.dims[i]))
+                        stage_blocks.append(MAB(num_channels=self.dims[i],residual=self.residual))
 
                     else:
                         raise NotImplementedError
