@@ -1,5 +1,4 @@
-# Copyright Niantic 2019. Patent Pending. All rights reserved.
-#
+# Adapted from MonoDepth2 (Niantic)
 # This software is licensed under the terms of the Monodepth2 licence
 # which allows for non-commercial use only, the full terms of which are made
 # available in the LICENSE file.
@@ -105,6 +104,9 @@ class MonodepthOptions:
         self.parser.add_argument("--v1_multiscale",
                                  help="if set, uses monodepth v1 multiscale",
                                  action="store_true")
+        self.parser.add_argument("--g2s",
+                                 help="use g2s loss",
+                                 action="store_true")
         self.parser.add_argument("--avg_reprojection",
                                  help="if set, uses average reprojection loss",
                                  action="store_true")
@@ -205,4 +207,6 @@ class MonodepthOptions:
 
     def parse(self):
         self.options = self.parser.parse_args()
+        if self.options.g2s and (self.options.frame_ids != [0, -1, 1] or self.options.split != "eigen_zhou"):
+            raise NotImplementedError("Only added for KITTI Eigen Zhou with three pre-curr-next frames")
         return self.options
