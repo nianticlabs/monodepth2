@@ -8,7 +8,7 @@ This is a reference implementation for using G2S loss described in the [ICRA 202
 
 in the Monodepth2 repository for KITTI Eigen Zhou split.
 
-The official code is available [here](https://github.com/NeurAI-Lab/G2S)
+The official code is available [here](https://github.com/NeurAI-Lab/G2S).
 
 This code is for non-commercial use following the original license from Monodepth2; please see the [license file](LICENSE) for terms.
 
