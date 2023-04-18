@@ -1,5 +1,4 @@
-# Copyright Niantic 2019. Patent Pending. All rights reserved.
-#
+# Adapted from MonoDepth2 (Niantic)
 # This software is licensed under the terms of the Monodepth2 licence
 # which allows for non-commercial use only, the full terms of which are made
 # available in the LICENSE file.
@@ -25,6 +24,28 @@ def pil_loader(path):
             return img.convert('RGB')
 
 
+def txt_reader_eigen(path, frame_index):
+    with open(path, 'r') as f:
+        poses = f.readlines()
+        translations = []
+        for pose in poses[frame_index - 1: frame_index + 2]:
+            pose = pose.rstrip()
+            translation = [
+                float(pose.split(" ")[3]),
+                float(pose.split(" ")[7]),
+                float(pose.split(" ")[11])
+            ]
+            translations.append(translation)
+        return translations
+
+
+def norm(t1, t2):
+    diff = 0
+    for c1, c2 in zip(t1, t2):
+        diff += (c1 - c2) ** 2
+    return diff ** 0.5
+
+
 class MonoDataset(data.Dataset):
     """Superclass for monocular dataloaders
 
@@ -46,7 +67,9 @@ class MonoDataset(data.Dataset):
                  frame_idxs,
                  num_scales,
                  is_train=False,
-                 img_ext='.jpg'):
+                 img_ext='.jpg',
+                 load_gps=False
+                 ):
         super(MonoDataset, self).__init__()
 
         self.data_path = data_path
@@ -86,6 +109,7 @@ class MonoDataset(data.Dataset):
                                                interpolation=self.interp)
 
         self.load_depth = self.check_depth()
+        self.load_gps = load_gps
 
     def preprocess(self, inputs, color_aug):
         """Resize colour images to the required scales and augment if required
@@ -159,6 +183,12 @@ class MonoDataset(data.Dataset):
                 inputs[("color", i, -1)] = self.get_color(folder, frame_index, other_side, do_flip)
             else:
                 inputs[("color", i, -1)] = self.get_color(folder, frame_index + i, side, do_flip)
+
+        if self.load_gps:
+            gps_path = os.path.join(self.data_path, folder, folder.split("/")[-1] + ".txt")
+            translations = txt_reader_eigen(gps_path, frame_index)
+            inputs["gps12"] = norm(translations[1], translations[0])
+            inputs["gps23"] = norm(translations[1], translations[2])
 
         # adjusting intrinsics to match each scale in the pyramid
         for scale in range(self.num_scales):
