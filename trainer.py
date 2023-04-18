@@ -1,5 +1,4 @@
-# Copyright Niantic 2019. Patent Pending. All rights reserved.
-#
+# Adapted from MonoDepth2 (Niantic)
 # This software is licensed under the terms of the Monodepth2 licence
 # which allows for non-commercial use only, the full terms of which are made
 # available in the LICENSE file.
@@ -8,6 +7,7 @@ from __future__ import absolute_import, division, print_function
 
 import numpy as np
 import time
+import math
 
 import torch
 import torch.nn.functional as F
@@ -117,6 +117,8 @@ class Trainer:
 
         fpath = os.path.join(os.path.dirname(__file__), "splits", self.opt.split, "{}_files.txt")
 
+        self.g2s = self.opt.g2s
+
         train_filenames = readlines(fpath.format("train"))
         val_filenames = readlines(fpath.format("val"))
         img_ext = '.png' if self.opt.png else '.jpg'
@@ -126,13 +128,17 @@ class Trainer:
 
         train_dataset = self.dataset(
             self.opt.data_path, train_filenames, self.opt.height, self.opt.width,
-            self.opt.frame_ids, 4, is_train=True, img_ext=img_ext)
+            self.opt.frame_ids, 4, is_train=True, img_ext=img_ext,
+            load_gps=self.g2s
+        )
         self.train_loader = DataLoader(
             train_dataset, self.opt.batch_size, True,
             num_workers=self.opt.num_workers, pin_memory=True, drop_last=True)
         val_dataset = self.dataset(
             self.opt.data_path, val_filenames, self.opt.height, self.opt.width,
-            self.opt.frame_ids, 4, is_train=False, img_ext=img_ext)
+            self.opt.frame_ids, 4, is_train=False, img_ext=img_ext,
+            load_gps=self.g2s
+        )
         self.val_loader = DataLoader(
             val_dataset, self.opt.batch_size, True,
             num_workers=self.opt.num_workers, pin_memory=True, drop_last=True)
@@ -166,6 +172,9 @@ class Trainer:
             len(train_dataset), len(val_dataset)))
 
         self.save_opts()
+
+    def g2s_weight(self):
+        return math.exp(self.epoch - self.opt.num_epochs + 1)
 
     def set_train(self):
         """Convert all models to training mode
@@ -215,7 +224,10 @@ class Trainer:
             late_phase = self.step % 2000 == 0
 
             if early_phase or late_phase:
-                self.log_time(batch_idx, duration, losses["loss"].cpu().data)
+                if self.g2s:
+                    self.log_time(batch_idx, duration, losses["loss"].cpu().data, losses["scale"].cpu().data)
+                else:
+                    self.log_time(batch_idx, duration, losses["loss"].cpu().data)
 
                 if "depth_gt" in inputs:
                     self.compute_depth_losses(inputs, outputs, losses)
@@ -492,6 +504,18 @@ class Trainer:
             losses["loss/{}".format(scale)] = loss
 
         total_loss /= self.num_scales
+
+        if self.g2s:
+            #TRANSLATIONS
+            t12 = torch.norm(outputs[("translation", 0, -1)][:, 0].squeeze(), dim=1)
+            t23 = torch.norm(outputs[("translation", 0, 1)][:, 0].squeeze(), dim=1)
+            #SCALES
+            s1 = inputs["gps12"].float() / t12
+            s2 = inputs["gps23"].float() / t23
+            g2s_loss = torch.mean((s1 - 1) ** 2 + (s2 - 1) ** 2)
+            total_loss += self.g2s_weight() * g2s_loss
+            losses["scale"] = 0.5 * torch.mean(s1 + s2)
+
         losses["loss"] = total_loss
         return losses
 
@@ -525,7 +549,7 @@ class Trainer:
         for i, metric in enumerate(self.depth_metric_names):
             losses[metric] = np.array(depth_errors[i].cpu())
 
-    def log_time(self, batch_idx, duration, loss):
+    def log_time(self, batch_idx, duration, loss, scale=None):
         """Print a logging statement to the terminal
         """
         samples_per_sec = self.opt.batch_size / duration
@@ -534,8 +558,13 @@ class Trainer:
             self.num_total_steps / self.step - 1.0) * time_sofar if self.step > 0 else 0
         print_string = "epoch {:>3} | batch {:>6} | examples/s: {:5.1f}" + \
             " | loss: {:.5f} | time elapsed: {} | time left: {}"
-        print(print_string.format(self.epoch, batch_idx, samples_per_sec, loss,
-                                  sec_to_hm_str(time_sofar), sec_to_hm_str(training_time_left)))
+        print_data = [self.epoch, batch_idx, samples_per_sec, loss,
+                              sec_to_hm_str(time_sofar), sec_to_hm_str(training_time_left)]
+        if scale is not None:
+            print_string = print_string + " | scale: {}"
+            print_data.append(scale)
+
+        print(print_string.format(*print_data))
 
     def log(self, mode, inputs, outputs, losses):
         """Write an event to the tensorboard events file
