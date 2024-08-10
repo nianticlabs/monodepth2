@@ -56,10 +56,14 @@ class Trainer:
         self.models["encoder"].to(self.device)
         self.parameters_to_train += list(self.models["encoder"].parameters())
 
+        
         self.models["depth"] = networks.DepthDecoder(
             self.models["encoder"].num_ch_enc, self.opt.scales)
+        print("sending model to device")
         self.models["depth"].to(self.device)
+        print("done sending model to device")        
         self.parameters_to_train += list(self.models["depth"].parameters())
+        
 
         if self.use_pose_net:
             if self.opt.pose_model_type == "separate_resnet":
@@ -193,7 +197,6 @@ class Trainer:
     def run_epoch(self):
         """Run a single epoch of training and validation
         """
-        self.model_lr_scheduler.step()
 
         print("Training")
         self.set_train()
@@ -207,6 +210,7 @@ class Trainer:
             self.model_optimizer.zero_grad()
             losses["loss"].backward()
             self.model_optimizer.step()
+            self.model_lr_scheduler.step()
 
             duration = time.time() - before_op_time
 
@@ -322,10 +326,10 @@ class Trainer:
         """
         self.set_eval()
         try:
-            inputs = self.val_iter.next()
+            inputs = next(self.val_iter)
         except StopIteration:
             self.val_iter = iter(self.val_loader)
-            inputs = self.val_iter.next()
+            inputs = next(self.val_iter)
 
         with torch.no_grad():
             outputs, losses = self.process_batch(inputs)
@@ -384,7 +388,8 @@ class Trainer:
                 outputs[("color", frame_id, scale)] = F.grid_sample(
                     inputs[("color", frame_id, source_scale)],
                     outputs[("sample", frame_id, scale)],
-                    padding_mode="border")
+                    padding_mode="border",
+                    align_corners=True)
 
                 if not self.opt.disable_automasking:
                     outputs[("color_identity", frame_id, scale)] = \

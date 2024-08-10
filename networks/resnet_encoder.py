@@ -10,27 +10,16 @@ import numpy as np
 
 import torch
 import torch.nn as nn
-import torchvision.models as models
 import torch.utils.model_zoo as model_zoo
+import torchvision.models as models
+from torchvision.models.resnet import BasicBlock, Bottleneck, ResNet, ResNet18_Weights, ResNet50_Weights
 
-
-class ResNetMultiImageInput(models.ResNet):
-    """Constructs a resnet model with varying number of input images.
-    Adapted from https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py
-    """
-    def __init__(self, block, layers, num_classes=1000, num_input_images=1):
-        super(ResNetMultiImageInput, self).__init__(block, layers)
-        self.inplanes = 64
+class ResNetMultiImageInput(ResNet):
+    """Constructs a ResNet model with a varying number of input images."""
+    def __init__(self, block, layers, num_input_images=1, **kwargs):
+        super(ResNetMultiImageInput, self).__init__(block, layers, **kwargs)
         self.conv1 = nn.Conv2d(
             num_input_images * 3, 64, kernel_size=7, stride=2, padding=3, bias=False)
-        self.bn1 = nn.BatchNorm2d(64)
-        self.relu = nn.ReLU(inplace=True)
-        self.maxpool = nn.MaxPool2d(kernel_size=3, stride=2, padding=1)
-        self.layer1 = self._make_layer(block, 64, layers[0])
-        self.layer2 = self._make_layer(block, 128, layers[1], stride=2)
-        self.layer3 = self._make_layer(block, 256, layers[2], stride=2)
-        self.layer4 = self._make_layer(block, 512, layers[3], stride=2)
-
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
                 nn.init.kaiming_normal_(m.weight, mode='fan_out', nonlinearity='relu')
@@ -38,26 +27,44 @@ class ResNetMultiImageInput(models.ResNet):
                 nn.init.constant_(m.weight, 1)
                 nn.init.constant_(m.bias, 0)
 
-
-def resnet_multiimage_input(num_layers, pretrained=False, num_input_images=1):
-    """Constructs a ResNet model.
+def resnet_multiimage_input(num_layers, pretrained=False, num_input_images=1, progress=True):
+    """Constructs a ResNet model with varying number of input images.
     Args:
-        num_layers (int): Number of resnet layers. Must be 18 or 50
-        pretrained (bool): If True, returns a model pre-trained on ImageNet
-        num_input_images (int): Number of frames stacked as input
+        num_layers (int): Number of ResNet layers. Must be 18 or 50.
+        pretrained (bool): If True, returns a model pre-trained on ImageNet.
+        num_input_images (int): Number of frames stacked as input.
+        progress (bool): If True, displays a progress bar of the download.
     """
-    assert num_layers in [18, 50], "Can only run with 18 or 50 layer resnet"
-    blocks = {18: [2, 2, 2, 2], 50: [3, 4, 6, 3]}[num_layers]
-    block_type = {18: models.resnet.BasicBlock, 50: models.resnet.Bottleneck}[num_layers]
-    model = ResNetMultiImageInput(block_type, blocks, num_input_images=num_input_images)
+    assert num_layers in [18, 50], "Can only run with 18 or 50 layer ResNet"
+    
+    layers = {18: [2, 2, 2, 2], 50: [3, 4, 6, 3]}[num_layers]
+    block = {18: BasicBlock, 50: Bottleneck}[num_layers]
+    
+    # Choose the correct weights based on the num_layers
+    if num_layers == 18:
+        weights_enum = ResNet18_Weights if pretrained else None
+        weights = ResNet18_Weights.DEFAULT if pretrained else None
+    elif num_layers == 50:
+        weights_enum = ResNet50_Weights if pretrained else None
+        weights = ResNet50_Weights.DEFAULT if pretrained else None
+
+    model = ResNetMultiImageInput(block, layers, num_input_images=num_input_images)
 
     if pretrained:
-        loaded = model_zoo.load_url(models.resnet.model_urls['resnet{}'.format(num_layers)])
-        loaded['conv1.weight'] = torch.cat(
-            [loaded['conv1.weight']] * num_input_images, 1) / num_input_images
-        model.load_state_dict(loaded)
-    return model
+        state_dict = weights.get_state_dict(progress=progress, check_hash=True)
+        
+        # Modify the conv1 weight to accommodate multiple input images
+        conv1_weight = state_dict['conv1.weight']
+        if num_input_images > 1:
+            # Repeat the conv1 weights for the additional image channels
+            conv1_weight = conv1_weight.repeat(1, num_input_images, 1, 1) / num_input_images
+        
+        state_dict['conv1.weight'] = conv1_weight
+        
+        # Load the modified state dict into the model
+        model.load_state_dict(state_dict, strict=False)
 
+    return model
 
 class ResnetEncoder(nn.Module):
     """Pytorch module for a resnet encoder
