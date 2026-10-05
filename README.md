@@ -17,18 +17,16 @@ This code is for non-commercial use; please see the [license file](LICENSE) for 
 If you find our work useful in your research please consider citing our paper:
 
 ```
-@article{monodepth2,
+@inproceedings{godard2019monodepth2,
   title     = {Digging into Self-Supervised Monocular Depth Prediction},
-  author    = {Cl{\'{e}}ment Godard and
+  author    = {Cl{\'e}ment Godard and
                Oisin {Mac Aodha} and
                Michael Firman and
                Gabriel J. Brostow},
-  booktitle = {The International Conference on Computer Vision (ICCV)},
-  month = {October},
-year = {2019}
+  booktitle = {International Conference on Computer Vision (ICCV)},
+  year      = {2019},
 }
 ```
-
 
 
 ## ⚙️ Setup
