@@ -2,7 +2,7 @@
 
 This is the reference PyTorch implementation for training and testing depth estimation models using the method described in
 
-> **Digging into Self-Supervised Monocular Depth Prediction**
+> **Digging into Self-Supervised Monocular Depth Estimation**
 >
 > [Clément Godard](http://www0.cs.ucl.ac.uk/staff/C.Godard/), [Oisin Mac Aodha](http://vision.caltech.edu/~macaodha/), [Michael Firman](http://www.michaelfirman.co.uk) and [Gabriel J. Brostow](http://www0.cs.ucl.ac.uk/staff/g.brostow/)
 >
@@ -18,7 +18,7 @@ If you find our work useful in your research please consider citing our paper:
 
 ```
 @inproceedings{godard2019monodepth2,
-  title     = {Digging into Self-Supervised Monocular Depth Prediction},
+  title     = {Digging into Self-Supervised Monocular Depth Estimation},
   author    = {Cl{\'e}ment Godard and
                Oisin {Mac Aodha} and
                Michael Firman and
